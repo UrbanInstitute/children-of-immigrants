@@ -33,7 +33,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Citizenship","citCitPar","Who are citizens with citizen parents",1,"New Mexico","NM",45.36,47.24,47.5,44.51,45.56,43.66,54.73,60.61
 "Citizenship","citCitPar","Who are citizens with citizen parents",1,"New York","NY",62.6,63.17,63.54,63.77,62.73,62.51,72.55,72.53
 "Citizenship","citCitPar","Who are citizens with citizen parents",1,"North Carolina","NC",40.96,40.31,40.92,42.5,42.85,44.19,51.35,48.95
-"Citizenship","citCitPar","Who are citizens with citizen parents",1,"North Dakota","ND",80.02,-9700,-9700,65.42,71.23,64.59,52.35,63.5
+"Citizenship","citCitPar","Who are citizens with citizen parents",1,"North Dakota","ND",80.02,,,65.42,71.23,64.59,52.35,63.5
 "Citizenship","citCitPar","Who are citizens with citizen parents",1,"Ohio","OH",63.29,63.26,64.59,63.98,63.03,63.41,69.92,71.61
 "Citizenship","citCitPar","Who are citizens with citizen parents",1,"Oklahoma","OK",51.24,48.32,48.63,49.85,46.52,48.37,55.61,51.03
 "Citizenship","citCitPar","Who are citizens with citizen parents",1,"Oregon","OR",45.43,46.03,48.02,47.24,48.41,50.51,61.76,63.95
@@ -85,7 +85,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Citizenship","citNotCitPar","Who are citizens with non-citizen parents",1,"New Mexico","NM",37.24,37.44,38.67,40.7,40.81,43.23,32.19,28.21
 "Citizenship","citNotCitPar","Who are citizens with non-citizen parents",1,"New York","NY",26.11,26.08,25.89,25.88,26.97,27.32,18.9,18.7
 "Citizenship","citNotCitPar","Who are citizens with non-citizen parents",1,"North Carolina","NC",39.22,41.29,42.43,42.57,42.34,42.53,36.64,39.46
-"Citizenship","citNotCitPar","Who are citizens with non-citizen parents",1,"North Dakota","ND",8.67,-9700,-9700,15.52,14.44,7.33,10.7,13.49
+"Citizenship","citNotCitPar","Who are citizens with non-citizen parents",1,"North Dakota","ND",8.67,,,15.52,14.44,7.33,10.7,13.49
 "Citizenship","citNotCitPar","Who are citizens with non-citizen parents",1,"Ohio","OH",20.51,21.43,19.31,21.28,22.16,22.09,17.71,17.82
 "Citizenship","citNotCitPar","Who are citizens with non-citizen parents",1,"Oklahoma","OK",33.68,37.47,38.62,39.21,39.86,37.6,32.03,37.28
 "Citizenship","citNotCitPar","Who are citizens with non-citizen parents",1,"Oregon","OR",36.53,39.68,38.9,39.88,38.74,37.3,29.54,27.46
@@ -137,7 +137,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Citizenship","notCit","Who are not citizens",1,"New Mexico","NM",17.4,15.32,13.82,14.79,13.63,13.11,13.43,12.15
 "Citizenship","notCit","Who are not citizens",1,"New York","NY",11.29,10.75,10.57,10.34,10.3,10.17,9.94,9.97
 "Citizenship","notCit","Who are not citizens",1,"North Carolina","NC",19.82,18.4,16.65,14.92,14.81,13.28,12.21,11.87
-"Citizenship","notCit","Who are not citizens",1,"North Dakota","ND",11.31,-9700,-9700,19.06,14.33,28.08,38.6,21.57
+"Citizenship","notCit","Who are not citizens",1,"North Dakota","ND",11.31,,,19.06,14.33,28.08,38.6,21.57
 "Citizenship","notCit","Who are not citizens",1,"Ohio","OH",16.2,15.31,16.1,14.74,14.81,14.5,12.86,11.3
 "Citizenship","notCit","Who are not citizens",1,"Oklahoma","OK",15.08,14.21,12.75,10.94,13.61,14.03,12.95,11.57
 "Citizenship","notCit","Who are not citizens",1,"Oregon","OR",18.04,14.29,13.07,12.88,12.85,12.19,10.3,9.72
@@ -189,7 +189,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Country_of_Origin_of_Parents","Africa","Africa",1,"New Mexico","NM",.63,.97,.78,1.38,1.75,.91,.74,.57
 "Country_of_Origin_of_Parents","Africa","Africa",1,"New York","NY",19.62,19.26,19.68,19.34,18.68,18.44,18.79,18.71
 "Country_of_Origin_of_Parents","Africa","Africa",1,"North Carolina","NC",7.91,7.77,7.56,7.97,8.87,8.33,7.28,7.92
-"Country_of_Origin_of_Parents","Africa","Africa",1,"North Dakota","ND",11.78,-9700,-9700,4.96,8.16,15.38,27.75,22.88
+"Country_of_Origin_of_Parents","Africa","Africa",1,"North Dakota","ND",11.78,,,4.96,8.16,15.38,27.75,22.88
 "Country_of_Origin_of_Parents","Africa","Africa",1,"Ohio","OH",16.39,15.01,16.21,15.31,15.58,16.68,18.92,22.14
 "Country_of_Origin_of_Parents","Africa","Africa",1,"Oklahoma","OK",4.77,5.13,3.86,4.14,5,5.42,4.1,3.47
 "Country_of_Origin_of_Parents","Africa","Africa",1,"Oregon","OR",3.4,2.49,1.53,2.22,3.04,4.09,3.65,2.78
@@ -241,7 +241,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Country_of_Origin_of_Parents","centralAmerica","Other Central America & Spanish Caribbean",1,"New Mexico","NM",3.8,3.56,3.87,3.19,2.31,3.24,3.15,1.87
 "Country_of_Origin_of_Parents","centralAmerica","Other Central America & Spanish Caribbean",1,"New York","NY",19.81,19.33,19.34,19.4,19.22,18.99,19.36,20.01
 "Country_of_Origin_of_Parents","centralAmerica","Other Central America & Spanish Caribbean",1,"North Carolina","NC",12.88,12.86,12.94,12.87,13.72,15.04,14.73,15.05
-"Country_of_Origin_of_Parents","centralAmerica","Other Central America & Spanish Caribbean",1,"North Dakota","ND",13.9,-9700,-9700,0,1.55,1.51,.33,1.18
+"Country_of_Origin_of_Parents","centralAmerica","Other Central America & Spanish Caribbean",1,"North Dakota","ND",13.9,,,0,1.55,1.51,.33,1.18
 "Country_of_Origin_of_Parents","centralAmerica","Other Central America & Spanish Caribbean",1,"Ohio","OH",4.08,4.32,4.76,6.59,5.29,4.87,6,5.94
 "Country_of_Origin_of_Parents","centralAmerica","Other Central America & Spanish Caribbean",1,"Oklahoma","OK",4.25,3.96,5.12,5.32,4.47,5.57,6.26,6.38
 "Country_of_Origin_of_Parents","centralAmerica","Other Central America & Spanish Caribbean",1,"Oregon","OR",3.97,4.49,5.16,4.91,4.16,3.66,3.75,3.86
@@ -293,7 +293,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Country_of_Origin_of_Parents","eAsia","East Asia & Pacific",1,"New Mexico","NM",3.69,3.67,4.19,3.77,3.46,3.91,4.24,3.68
 "Country_of_Origin_of_Parents","eAsia","East Asia & Pacific",1,"New York","NY",10.54,10.57,10.5,11.34,11.44,10.98,10.74,10.85
 "Country_of_Origin_of_Parents","eAsia","East Asia & Pacific",1,"North Carolina","NC",6.13,6.02,6.03,5.74,5.69,5.68,6,5.98
-"Country_of_Origin_of_Parents","eAsia","East Asia & Pacific",1,"North Dakota","ND",5.64,-9700,-9700,11.15,13.36,10.67,7.87,15.93
+"Country_of_Origin_of_Parents","eAsia","East Asia & Pacific",1,"North Dakota","ND",5.64,,,11.15,13.36,10.67,7.87,15.93
 "Country_of_Origin_of_Parents","eAsia","East Asia & Pacific",1,"Ohio","OH",11.89,12.91,13.74,13.22,12.73,12.51,11.93,11.02
 "Country_of_Origin_of_Parents","eAsia","East Asia & Pacific",1,"Oklahoma","OK",8.26,7.45,6.48,7.2,6.99,5.71,6.42,6.29
 "Country_of_Origin_of_Parents","eAsia","East Asia & Pacific",1,"Oregon","OR",10.44,12.18,11.85,10.89,11.48,11.38,11.26,10.81
@@ -345,7 +345,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Country_of_Origin_of_Parents","europe","Europe, Canada & Australia",1,"New Mexico","NM",5.65,6.23,5.89,5.86,5.27,3.94,3.87,4.82
 "Country_of_Origin_of_Parents","europe","Europe, Canada & Australia",1,"New York","NY",17.1,16.72,15.96,15.93,15.58,15.55,15.83,15.71
 "Country_of_Origin_of_Parents","europe","Europe, Canada & Australia",1,"North Carolina","NC",11.77,11.19,10.94,10.82,10.02,9.26,9.62,9.68
-"Country_of_Origin_of_Parents","europe","Europe, Canada & Australia",1,"North Dakota","ND",38.84,-9700,-9700,48.23,43.53,25.14,24.95,30.61
+"Country_of_Origin_of_Parents","europe","Europe, Canada & Australia",1,"North Dakota","ND",38.84,,,48.23,43.53,25.14,24.95,30.61
 "Country_of_Origin_of_Parents","europe","Europe, Canada & Australia",1,"Ohio","OH",25.87,26.19,23.87,22.22,21.12,20.77,18.94,17.77
 "Country_of_Origin_of_Parents","europe","Europe, Canada & Australia",1,"Oklahoma","OK",7.99,7.37,8.32,7.54,7.52,7.85,7.21,6.35
 "Country_of_Origin_of_Parents","europe","Europe, Canada & Australia",1,"Oregon","OR",15.66,14.37,15.74,15.95,13.99,13.51,14.89,17.25
@@ -397,7 +397,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Country_of_Origin_of_Parents","mexico","Mexico",1,"New Mexico","NM",81.05,80.12,79.03,81.28,82.89,84.24,83.82,83.47
 "Country_of_Origin_of_Parents","mexico","Mexico",1,"New York","NY",6.74,7.34,7.57,7.85,8.64,8.88,8.52,8.58
 "Country_of_Origin_of_Parents","mexico","Mexico",1,"North Carolina","NC",44.06,45.48,46.15,45.28,44.04,44.05,45.11,44.41
-"Country_of_Origin_of_Parents","mexico","Mexico",1,"North Dakota","ND",7.46,-9700,-9700,18.19,9.61,19.88,13.43,12.75
+"Country_of_Origin_of_Parents","mexico","Mexico",1,"North Dakota","ND",7.46,,,18.19,9.61,19.88,13.43,12.75
 "Country_of_Origin_of_Parents","mexico","Mexico",1,"Ohio","OH",11.76,13.22,12.37,13.77,16.54,17.04,16.01,15.37
 "Country_of_Origin_of_Parents","mexico","Mexico",1,"Oklahoma","OK",55.82,59.06,61.36,61.64,61.44,61.18,62.33,63.37
 "Country_of_Origin_of_Parents","mexico","Mexico",1,"Oregon","OR",51.63,52.01,52.18,52.32,53.43,55.11,54.27,52.28
@@ -449,7 +449,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Country_of_Origin_of_Parents","midEast","The Middle East & South Asia",1,"New Mexico","NM",2.01,1.85,2.43,1.93,1.74,1.74,2.22,2.19
 "Country_of_Origin_of_Parents","midEast","The Middle East & South Asia",1,"New York","NY",11.5,12.38,12.66,11.72,11.94,12.74,12.23,11.58
 "Country_of_Origin_of_Parents","midEast","The Middle East & South Asia",1,"North Carolina","NC",7.12,6.43,6.44,7.16,6.74,7.27,7.58,6.95
-"Country_of_Origin_of_Parents","midEast","The Middle East & South Asia",1,"North Dakota","ND",16.24,-9700,-9700,4.84,7.66,13.69,12.32,9.6
+"Country_of_Origin_of_Parents","midEast","The Middle East & South Asia",1,"North Dakota","ND",16.24,,,4.84,7.66,13.69,12.32,9.6
 "Country_of_Origin_of_Parents","midEast","The Middle East & South Asia",1,"Ohio","OH",19.28,19.73,20.78,19.79,19.3,20.09,20.12,18.93
 "Country_of_Origin_of_Parents","midEast","The Middle East & South Asia",1,"Oklahoma","OK",9.44,7.68,3.87,5.28,5.55,4.18,4.99,6.2
 "Country_of_Origin_of_Parents","midEast","The Middle East & South Asia",1,"Oregon","OR",4.92,5.83,4.7,4.23,5.04,4.66,4.53,5.17
@@ -501,7 +501,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Country_of_Origin_of_Parents","seAsia","Southeast Asia",1,"New Mexico","NM",1.27,1.94,2.39,1.6,1.27,.94,.9,1.93
 "Country_of_Origin_of_Parents","seAsia","Southeast Asia",1,"New York","NY",1.12,.92,1.04,1.27,1.27,1.19,1.29,1.37
 "Country_of_Origin_of_Parents","seAsia","Southeast Asia",1,"North Carolina","NC",5.79,5.73,5.14,4.98,5.31,4.95,5.01,5.36
-"Country_of_Origin_of_Parents","seAsia","Southeast Asia",1,"North Dakota","ND",2.38,-9700,-9700,6.55,9.11,11.21,4.15,0
+"Country_of_Origin_of_Parents","seAsia","Southeast Asia",1,"North Dakota","ND",2.38,,,6.55,9.11,11.21,4.15,0
 "Country_of_Origin_of_Parents","seAsia","Southeast Asia",1,"Ohio","OH",6.51,5.23,3.97,4.17,4.85,4.39,4.73,5.29
 "Country_of_Origin_of_Parents","seAsia","Southeast Asia",1,"Oklahoma","OK",5.86,6.73,7.77,5.96,6.33,7.35,7.17,6.63
 "Country_of_Origin_of_Parents","seAsia","Southeast Asia",1,"Oregon","OR",7.49,6.7,6.74,7.58,6.98,5.74,6.32,6.83
@@ -553,7 +553,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Country_of_Origin_of_Parents","southAmerica","South America",1,"New Mexico","NM",1.9,1.65,1.42,.99,1.32,1.09,1.07,1.48
 "Country_of_Origin_of_Parents","southAmerica","South America",1,"New York","NY",13.57,13.49,13.25,13.15,13.22,13.24,13.24,13.19
 "Country_of_Origin_of_Parents","southAmerica","South America",1,"North Carolina","NC",4.33,4.52,4.79,5.19,5.6,5.42,4.68,4.64
-"Country_of_Origin_of_Parents","southAmerica","South America",1,"North Dakota","ND",3.78,-9700,-9700,6.08,7.01,2.53,9.2,7.05
+"Country_of_Origin_of_Parents","southAmerica","South America",1,"North Dakota","ND",3.78,,,6.08,7.01,2.53,9.2,7.05
 "Country_of_Origin_of_Parents","southAmerica","South America",1,"Ohio","OH",4.22,3.39,4.3,4.92,4.59,3.65,3.35,3.54
 "Country_of_Origin_of_Parents","southAmerica","South America",1,"Oklahoma","OK",3.6,2.62,3.23,2.92,2.69,2.74,1.52,1.3
 "Country_of_Origin_of_Parents","southAmerica","South America",1,"Oregon","OR",2.49,1.93,2.1,1.9,1.87,1.85,1.33,1.02
@@ -605,7 +605,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Education","HS","With parents who have a high school degree",1,"New Mexico","NM",43.84,44.08,46.15,43.89,45.82,51.03,51.09,50.89
 "Education","HS","With parents who have a high school degree",1,"New York","NY",48.28,48.18,47.11,45.82,46.06,46.65,45.17,45.1
 "Education","HS","With parents who have a high school degree",1,"North Carolina","NC",40.26,39.52,40.15,40.58,42.17,42.66,41.12,38.95
-"Education","HS","With parents who have a high school degree",1,"North Dakota","ND",39.49,-9700,-9700,43.83,28.2,32.53,36.29,47.53
+"Education","HS","With parents who have a high school degree",1,"North Dakota","ND",39.49,,,43.83,28.2,32.53,36.29,47.53
 "Education","HS","With parents who have a high school degree",1,"Ohio","OH",40.47,38.31,37.26,36.34,37.16,36.74,35.96,37.18
 "Education","HS","With parents who have a high school degree",1,"Oklahoma","OK",43.36,43.69,45.25,42.17,46.15,47.31,45.12,45.79
 "Education","HS","With parents who have a high school degree",1,"Oregon","OR",44.3,43.55,41.79,40.25,42.09,44.24,46.05,44.05
@@ -657,7 +657,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Education","NIS35","Who are not in school, age 3 to 5",1,"New Mexico","NM",11.94,11.18,12.06,11.17,9.88,9.21,51.62,54.78
 "Education","NIS35","Who are not in school, age 3 to 5",1,"New York","NY",7.81,7.41,6.8,6.82,6.84,6.21,30.9,32.55
 "Education","NIS35","Who are not in school, age 3 to 5",1,"North Carolina","NC",13.85,13.54,13.3,12.69,11.96,11.34,47.67,47.86
-"Education","NIS35","Who are not in school, age 3 to 5",1,"North Dakota","ND",11.42,-9700,-9700,13.02,12.79,8.21,51.44,53.56
+"Education","NIS35","Who are not in school, age 3 to 5",1,"North Dakota","ND",11.42,,,13.02,12.79,8.21,51.44,53.56
 "Education","NIS35","Who are not in school, age 3 to 5",1,"Ohio","OH",9,11,10.21,8.72,9.54,9.62,34.22,33.64
 "Education","NIS35","Who are not in school, age 3 to 5",1,"Oklahoma","OK",9.5,10.32,10.58,10.59,9.9,9.55,41.72,43.57
 "Education","NIS35","Who are not in school, age 3 to 5",1,"Oregon","OR",13.52,11.27,12.08,13.11,12.92,12.09,50.59,46.47
@@ -709,7 +709,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Education","NIS617","Who are not in school, age 6 to 17",1,"New Mexico","NM",1.9,2.1,1.69,1.44,2.14,1.59,.99,1.74
 "Education","NIS617","Who are not in school, age 6 to 17",1,"New York","NY",1.7,1.63,1.78,2.02,1.97,1.55,1.38,1.4
 "Education","NIS617","Who are not in school, age 6 to 17",1,"North Carolina","NC",1.81,2.18,2.55,2.17,1.68,1.43,1.37,1.49
-"Education","NIS617","Who are not in school, age 6 to 17",1,"North Dakota","ND",5.87,-9700,-9700,.76,0,1.01,1.48,1.66
+"Education","NIS617","Who are not in school, age 6 to 17",1,"North Dakota","ND",5.87,,,.76,0,1.01,1.48,1.66
 "Education","NIS617","Who are not in school, age 6 to 17",1,"Ohio","OH",1.79,1.21,.82,1.27,1.74,2.19,1.57,.83
 "Education","NIS617","Who are not in school, age 6 to 17",1,"Oklahoma","OK",2.31,2.1,1.53,1.55,2.62,3.04,1.95,1.43
 "Education","NIS617","Who are not in school, age 6 to 17",1,"Oregon","OR",1.79,1.93,1.94,2.05,2.09,1.95,1.83,1.58
@@ -969,7 +969,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Education","col","With parents who have at least four year college degree",1,"New Mexico","NM",15.37,15.81,15.44,15.8,16.02,13.85,15.05,18.12
 "Education","col","With parents who have at least four year college degree",1,"New York","NY",34.67,34.91,35.37,36.01,35.23,35,36.3,36.29
 "Education","col","With parents who have at least four year college degree",1,"North Carolina","NC",27.87,28.5,27.59,27.15,27.64,27.03,26.47,27.52
-"Education","col","With parents who have at least four year college degree",1,"North Dakota","ND",59.49,-9700,-9700,44.52,55.91,52.91,53.84,49.09
+"Education","col","With parents who have at least four year college degree",1,"North Dakota","ND",59.49,,,44.52,55.91,52.91,53.84,49.09
 "Education","col","With parents who have at least four year college degree",1,"Ohio","OH",47.94,51.78,53.56,51.95,49.71,50.77,50.14,47.74
 "Education","col","With parents who have at least four year college degree",1,"Oklahoma","OK",25.89,26.03,22.17,23.16,21.88,22.02,20.76,18.25
 "Education","col","With parents who have at least four year college degree",1,"Oregon","OR",25.9,26.06,27.61,27.21,25.6,25.52,26.44,28.75
@@ -1021,7 +1021,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Education","lTHS","With parents who have less than a high school degree",1,"New Mexico","NM",40.79,40.11,38.41,40.31,38.16,35.11,33.86,30.99
 "Education","lTHS","With parents who have less than a high school degree",1,"New York","NY",17.05,16.91,17.52,18.17,18.71,18.35,18.54,18.61
 "Education","lTHS","With parents who have less than a high school degree",1,"North Carolina","NC",31.87,31.98,32.26,32.27,30.19,30.31,32.41,33.53
-"Education","lTHS","With parents who have less than a high school degree",1,"North Dakota","ND",1.03,-9700,-9700,11.65,15.88,14.56,9.86,3.38
+"Education","lTHS","With parents who have less than a high school degree",1,"North Dakota","ND",1.03,,,11.65,15.88,14.56,9.86,3.38
 "Education","lTHS","With parents who have less than a high school degree",1,"Ohio","OH",11.59,9.9,9.18,11.71,13.13,12.48,13.9,15.08
 "Education","lTHS","With parents who have less than a high school degree",1,"Oklahoma","OK",30.76,30.28,32.58,34.68,31.97,30.67,34.12,35.96
 "Education","lTHS","With parents who have less than a high school degree",1,"Oregon","OR",29.8,30.39,30.61,32.54,32.32,30.24,27.5,27.2
@@ -1073,7 +1073,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "English_Proficiency","engPro","Who are English Proficient",1,"New Mexico","NM",75.26,76.91,79.57,79.04,83.06,85.41,83.37,83.58
 "English_Proficiency","engPro","Who are English Proficient",1,"New York","NY",86.11,86.11,86.06,85.65,85.18,85.66,86.3,86.31
 "English_Proficiency","engPro","Who are English Proficient",1,"North Carolina","NC",76.53,76.34,76.21,78.9,81.2,81.65,81.39,82
-"English_Proficiency","engPro","Who are English Proficient",1,"North Dakota","ND",98.8,-9700,-9700,77.77,86.56,71.27,71.96,90.84
+"English_Proficiency","engPro","Who are English Proficient",1,"North Dakota","ND",98.8,,,77.77,86.56,71.27,71.96,90.84
 "English_Proficiency","engPro","Who are English Proficient",1,"Ohio","OH",86.66,87.7,87.52,87.13,87.65,87.75,88.03,89.06
 "English_Proficiency","engPro","Who are English Proficient",1,"Oklahoma","OK",84,85.24,83.23,85.68,84.28,83.62,85.47,86.39
 "English_Proficiency","engPro","Who are English Proficient",1,"Oregon","OR",73.27,78.43,79.46,79.8,82.6,83.03,81.65,82.66
@@ -1125,7 +1125,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "English_Proficiency","eppars","English Proficient Parents",1,"New Mexico","NM",27.73,31.43,34.98,34.77,35.41,31.81,34.12,38.09
 "English_Proficiency","eppars","English Proficient Parents",1,"New York","NY",50.47,48.64,48.23,48.18,47.85,48.43,48.76,48.82
 "English_Proficiency","eppars","English Proficient Parents",1,"North Carolina","NC",37.92,38.88,36.53,36.94,39.48,39.93,38.05,38.02
-"English_Proficiency","eppars","English Proficient Parents",1,"North Dakota","ND",63.25,-9700,-9700,64.4,70.44,52.44,54.1,66.91
+"English_Proficiency","eppars","English Proficient Parents",1,"North Dakota","ND",63.25,,,64.4,70.44,52.44,54.1,66.91
 "English_Proficiency","eppars","English Proficient Parents",1,"Ohio","OH",55.66,58.24,60.32,58.06,55.58,55.09,54.62,53.91
 "English_Proficiency","eppars","English Proficient Parents",1,"Oklahoma","OK",35.7,34.17,32.55,37.89,37.9,37.9,35.22,32.89
 "English_Proficiency","eppars","English Proficient Parents",1,"Oregon","OR",30.68,31.52,35.43,34.59,34.82,35.22,37.53,40.35
@@ -1177,7 +1177,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "English_Proficiency","limEng","With Limited English Proficiency",1,"New Mexico","NM",24.74,23.09,20.43,20.96,16.94,14.59,12.21,12.1
 "English_Proficiency","limEng","With Limited English Proficiency",1,"New York","NY",13.89,13.89,13.94,14.35,14.82,14.34,9.93,9.89
 "English_Proficiency","limEng","With Limited English Proficiency",1,"North Carolina","NC",23.47,23.66,23.79,21.1,18.8,18.35,12.84,12.61
-"English_Proficiency","limEng","With Limited English Proficiency",1,"North Dakota","ND",1.2,-9700,-9700,22.23,13.44,28.73,23.58,6.5
+"English_Proficiency","limEng","With Limited English Proficiency",1,"North Dakota","ND",1.2,,,22.23,13.44,28.73,23.58,6.5
 "English_Proficiency","limEng","With Limited English Proficiency",1,"Ohio","OH",13.34,12.3,12.48,12.87,12.35,12.25,8.18,7.66
 "English_Proficiency","limEng","With Limited English Proficiency",1,"Oklahoma","OK",16,14.76,16.77,14.32,15.72,16.38,10.13,9.59
 "English_Proficiency","limEng","With Limited English Proficiency",1,"Oregon","OR",26.73,21.57,20.54,20.2,17.4,16.97,13.25,12.61
@@ -1229,7 +1229,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "English_Proficiency","linIso","Who live in Linguistically Isolated Households",1,"New Mexico","NM",32.54,25.94,25.54,29.83,25.14,23.74,24.16,18.67
 "English_Proficiency","linIso","Who live in Linguistically Isolated Households",1,"New York","NY",22.51,23.08,22.96,23.64,23.46,22.2,21.39,21.33
 "English_Proficiency","linIso","Who live in Linguistically Isolated Households",1,"North Carolina","NC",35.97,34.85,34.72,33.86,30.53,28.08,30.11,30.26
-"English_Proficiency","linIso","Who live in Linguistically Isolated Households",1,"North Dakota","ND",18.37,-9700,-9700,8.85,11.1,20.9,18.15,3.49
+"English_Proficiency","linIso","Who live in Linguistically Isolated Households",1,"North Dakota","ND",18.37,,,8.85,11.1,20.9,18.15,3.49
 "English_Proficiency","linIso","Who live in Linguistically Isolated Households",1,"Ohio","OH",18.62,16.29,15.67,17.04,18.48,19,17.92,18.65
 "English_Proficiency","linIso","Who live in Linguistically Isolated Households",1,"Oklahoma","OK",31.42,34.08,35.09,28.02,26.28,28.75,30.18,28.92
 "English_Proficiency","linIso","Who live in Linguistically Isolated Households",1,"Oregon","OR",36.01,31.1,28.24,28.76,26.87,25.2,23.46,21.73
@@ -1281,7 +1281,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "English_Proficiency","noeppars","No English Proficient Parents",1,"New Mexico","NM",51.57,48.57,46.24,48.2,46.03,49.1,45.19,38.04
 "English_Proficiency","noeppars","No English Proficient Parents",1,"New York","NY",37.52,39.55,39.42,38.92,39.08,38.18,37.74,37.76
 "English_Proficiency","noeppars","No English Proficient Parents",1,"North Carolina","NC",48.07,46.95,47.15,46.82,44.96,44.14,46.54,47.47
-"English_Proficiency","noeppars","No English Proficient Parents",1,"North Dakota","ND",21.29,-9700,-9700,18.09,18.06,32.54,34.06,16.96
+"English_Proficiency","noeppars","No English Proficient Parents",1,"North Dakota","ND",21.29,,,18.09,18.06,32.54,34.06,16.96
 "English_Proficiency","noeppars","No English Proficient Parents",1,"Ohio","OH",27.81,25.42,24.41,26.46,28.38,29.03,28.81,29
 "English_Proficiency","noeppars","No English Proficient Parents",1,"Oklahoma","OK",46.02,50.08,48.55,40.8,42.76,45.94,48.91,49.37
 "English_Proficiency","noeppars","No English Proficient Parents",1,"Oregon","OR",53.88,51.67,48.04,47.96,47.46,47.32,42.65,39.77
@@ -1333,7 +1333,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "English_Proficiency","oneleppar","At least one Limited English Proficient Parent",1,"New Mexico","NM",72.27,68.57,65.02,65.23,64.59,68.19,65.88,61.91
 "English_Proficiency","oneleppar","At least one Limited English Proficient Parent",1,"New York","NY",49.53,51.36,51.77,51.82,52.15,51.57,51.24,51.18
 "English_Proficiency","oneleppar","At least one Limited English Proficient Parent",1,"North Carolina","NC",62.08,61.12,63.47,63.06,60.52,60.07,61.95,61.98
-"English_Proficiency","oneleppar","At least one Limited English Proficient Parent",1,"North Dakota","ND",36.75,-9700,-9700,35.6,29.56,47.56,45.9,33.09
+"English_Proficiency","oneleppar","At least one Limited English Proficient Parent",1,"North Dakota","ND",36.75,,,35.6,29.56,47.56,45.9,33.09
 "English_Proficiency","oneleppar","At least one Limited English Proficient Parent",1,"Ohio","OH",44.34,41.76,39.68,41.94,44.42,44.91,45.38,46.09
 "English_Proficiency","oneleppar","At least one Limited English Proficient Parent",1,"Oklahoma","OK",64.3,65.83,67.45,62.11,62.1,62.1,64.78,67.11
 "English_Proficiency","oneleppar","At least one Limited English Proficient Parent",1,"Oregon","OR",69.32,68.48,64.57,65.41,65.18,64.78,62.47,59.65
@@ -1385,7 +1385,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Family_Structure","fourkid","More than four children in family",1,"New Mexico","NM",4.83,5.45,6.22,7.22,5.37,5.42,.19,0
 "Family_Structure","fourkid","More than four children in family",1,"New York","NY",5.27,5.98,6.41,5.65,5.18,5.57,.71,.69
 "Family_Structure","fourkid","More than four children in family",1,"North Carolina","NC",6.41,5.46,6.09,5.79,6.12,6.17,.63,.88
-"Family_Structure","fourkid","More than four children in family",1,"North Dakota","ND",0,-9700,-9700,3.82,0,10.52,6.01,5.99
+"Family_Structure","fourkid","More than four children in family",1,"North Dakota","ND",0,,,3.82,0,10.52,6.01,5.99
 "Family_Structure","fourkid","More than four children in family",1,"Ohio","OH",9.48,6,4.86,4.83,5.68,6.27,.27,.34
 "Family_Structure","fourkid","More than four children in family",1,"Oklahoma","OK",7.97,6.54,5.53,6.5,7.51,6.55,.16,.83
 "Family_Structure","fourkid","More than four children in family",1,"Oregon","OR",6.77,9.61,9.64,7.98,7.77,7.77,.35,.55
@@ -1437,7 +1437,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Family_Structure","onekid","One child in family",1,"New Mexico","NM",17.19,16.19,16.75,17.37,17.03,18.94,19.09,15.95
 "Family_Structure","onekid","One child in family",1,"New York","NY",24.37,23.9,24.25,24.41,23.76,24.1,24.22,24.42
 "Family_Structure","onekid","One child in family",1,"North Carolina","NC",20.66,20.74,19.1,18.57,17,15.8,16.84,17.9
-"Family_Structure","onekid","One child in family",1,"North Dakota","ND",24.84,-9700,-9700,14.41,18.37,16.13,21.55,34.92
+"Family_Structure","onekid","One child in family",1,"North Dakota","ND",24.84,,,14.41,18.37,16.13,21.55,34.92
 "Family_Structure","onekid","One child in family",1,"Ohio","OH",22.14,21.04,20.98,21.56,20.83,20.7,21.17,20.16
 "Family_Structure","onekid","One child in family",1,"Oklahoma","OK",20.72,19.29,20.11,19.15,16.26,15.32,17.39,17.82
 "Family_Structure","onekid","One child in family",1,"Oregon","OR",18.76,18.2,15.62,16.23,16.44,16.17,15.86,15.98
@@ -1489,7 +1489,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Family_Structure","sPar","In single parent families",1,"New Mexico","NM",20.41,21.9,22.06,22.03,22.82,19.8,18.56,20
 "Family_Structure","sPar","In single parent families",1,"New York","NY",26.46,25.87,25.87,25.51,24.39,24.35,25.1,25.55
 "Family_Structure","sPar","In single parent families",1,"North Carolina","NC",16.36,17.37,17.15,16.01,16.91,18.25,17.75,17.52
-"Family_Structure","sPar","In single parent families",1,"North Dakota","ND",2.29,-9700,-9700,19.09,18.25,11.35,13.49,14.63
+"Family_Structure","sPar","In single parent families",1,"North Dakota","ND",2.29,,,19.09,18.25,11.35,13.49,14.63
 "Family_Structure","sPar","In single parent families",1,"Ohio","OH",14.92,14.97,13.6,14.73,15.79,15.37,16.3,15.91
 "Family_Structure","sPar","In single parent families",1,"Oklahoma","OK",17.07,18.02,15.74,17.57,17.63,16.83,16.33,17.11
 "Family_Structure","sPar","In single parent families",1,"Oregon","OR",18.89,19.05,15.32,14.2,14.4,15.54,17.27,16.45
@@ -1541,7 +1541,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Family_Structure","tPar","In two-parent families",1,"New Mexico","NM",79.59,78.1,77.94,77.97,77.18,80.2,81.44,80
 "Family_Structure","tPar","In two-parent families",1,"New York","NY",73.54,74.13,74.13,74.49,75.61,75.65,74.9,74.45
 "Family_Structure","tPar","In two-parent families",1,"North Carolina","NC",83.64,82.63,82.85,83.99,83.09,81.75,82.25,82.48
-"Family_Structure","tPar","In two-parent families",1,"North Dakota","ND",97.71,-9700,-9700,80.91,81.75,88.65,86.51,85.37
+"Family_Structure","tPar","In two-parent families",1,"North Dakota","ND",97.71,,,80.91,81.75,88.65,86.51,85.37
 "Family_Structure","tPar","In two-parent families",1,"Ohio","OH",85.08,85.03,86.4,85.27,84.21,84.63,83.7,84.09
 "Family_Structure","tPar","In two-parent families",1,"Oklahoma","OK",82.93,81.98,84.26,82.43,82.37,83.17,83.67,82.89
 "Family_Structure","tPar","In two-parent families",1,"Oregon","OR",81.11,80.95,84.68,85.8,85.6,84.46,82.73,83.55
@@ -1593,7 +1593,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Family_Structure","threekid","Three children in family",1,"New Mexico","NM",42.01,41.62,38.6,37.95,39.58,40.59,41.17,44
 "Family_Structure","threekid","Three children in family",1,"New York","NY",29.95,29.81,29.51,30.24,30.97,30.54,30.39,30.73
 "Family_Structure","threekid","Three children in family",1,"North Carolina","NC",35.58,36.63,36.62,36.45,38.7,40.19,40.45,39.66
-"Family_Structure","threekid","Three children in family",1,"North Dakota","ND",28.82,-9700,-9700,42.6,43.66,39.49,25.2,19.5
+"Family_Structure","threekid","Three children in family",1,"North Dakota","ND",28.82,,,42.6,43.66,39.49,25.2,19.5
 "Family_Structure","threekid","Three children in family",1,"Ohio","OH",31.35,35.49,34.61,34.26,35.84,35.35,35.83,34.19
 "Family_Structure","threekid","Three children in family",1,"Oklahoma","OK",43.02,44.86,41.87,41.74,40.85,41.81,39.91,37.8
 "Family_Structure","threekid","Three children in family",1,"Oregon","OR",39.52,37.74,38.49,39.74,39.27,39.59,40.96,40.43
@@ -1645,7 +1645,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Family_Structure","twokid","Two children in famiy",1,"New Mexico","NM",35.97,36.74,38.42,37.46,38.02,35.05,32.25,35.5
 "Family_Structure","twokid","Two children in famiy",1,"New York","NY",40.4,40.31,39.83,39.7,40.1,39.79,39.31,39.2
 "Family_Structure","twokid","Two children in famiy",1,"North Carolina","NC",37.35,37.18,38.18,39.19,38.18,37.84,37.52,37.12
-"Family_Structure","twokid","Two children in famiy",1,"North Dakota","ND",46.34,-9700,-9700,39.16,37.97,33.87,29.91,20.99
+"Family_Structure","twokid","Two children in famiy",1,"North Dakota","ND",46.34,,,39.16,37.97,33.87,29.91,20.99
 "Family_Structure","twokid","Two children in famiy",1,"Ohio","OH",37.03,37.47,39.56,39.35,37.65,37.67,36.76,37.83
 "Family_Structure","twokid","Two children in famiy",1,"Oklahoma","OK",28.29,29.31,32.5,32.61,35.38,36.32,37.46,39.51
 "Family_Structure","twokid","Two children in famiy",1,"Oregon","OR",34.95,34.44,36.25,36.05,36.52,36.46,36.66,38.29
@@ -1853,7 +1853,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Poverty_Income_and_Benefit_Receipt","LIWF","In low income working families",1,"New Mexico","NM",60.46,59.38,54.49,55.5,58.77,58.28,55.3,53.66
 "Poverty_Income_and_Benefit_Receipt","LIWF","In low income working families",1,"New York","NY",36.01,36.81,36.47,37.66,39.73,40.5,39.49,38.91
 "Poverty_Income_and_Benefit_Receipt","LIWF","In low income working families",1,"North Carolina","NC",53.87,53.35,53.66,54.46,54.53,55.07,55.03,55.37
-"Poverty_Income_and_Benefit_Receipt","LIWF","In low income working families",1,"North Dakota","ND",38.68,-9700,-9700,25.85,14.56,31.73,37,34.32
+"Poverty_Income_and_Benefit_Receipt","LIWF","In low income working families",1,"North Dakota","ND",38.68,,,25.85,14.56,31.73,37,34.32
 "Poverty_Income_and_Benefit_Receipt","LIWF","In low income working families",1,"Ohio","OH",29.84,32.7,29.45,31.07,35.68,35.07,37.11,36.96
 "Poverty_Income_and_Benefit_Receipt","LIWF","In low income working families",1,"Oklahoma","OK",56.25,53.31,54.59,56.57,55.62,55.15,59.11,62.05
 "Poverty_Income_and_Benefit_Receipt","LIWF","In low income working families",1,"Oregon","OR",50.65,51.4,50.13,50.74,53.6,52.76,48.8,46.61
@@ -1905,7 +1905,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Poverty_Income_and_Benefit_Receipt","home","Household owns Home",1,"New Mexico","NM",64.49,66.14,64.63,63.67,61.33,60.52,60.83,60.72
 "Poverty_Income_and_Benefit_Receipt","home","Household owns Home",1,"New York","NY",43.26,43.76,43.45,42.54,41.45,40.77,40.32,39.93
 "Poverty_Income_and_Benefit_Receipt","home","Household owns Home",1,"North Carolina","NC",54.37,55.62,56.98,57.55,57.32,55.12,54.12,52.62
-"Poverty_Income_and_Benefit_Receipt","home","Household owns Home",1,"North Dakota","ND",57.09,-9700,-9700,66.75,71.97,64.96,42.88,46.28
+"Poverty_Income_and_Benefit_Receipt","home","Household owns Home",1,"North Dakota","ND",57.09,,,66.75,71.97,64.96,42.88,46.28
 "Poverty_Income_and_Benefit_Receipt","home","Household owns Home",1,"Ohio","OH",68.38,67,63.98,63.26,61.04,57.84,56.76,57.14
 "Poverty_Income_and_Benefit_Receipt","home","Household owns Home",1,"Oklahoma","OK",60.89,62.83,62.09,58.28,58.64,59.33,57.74,57.77
 "Poverty_Income_and_Benefit_Receipt","home","Household owns Home",1,"Oregon","OR",53.82,56.07,57.18,57.29,56.19,52.21,49.67,50.77
@@ -1957,7 +1957,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Poverty_Income_and_Benefit_Receipt","pov100","In families below 100% of the poverty line",1,"New Mexico","NM",34.92,35.31,34.32,35.87,38.81,39.26,36.91,38.62
 "Poverty_Income_and_Benefit_Receipt","pov100","In families below 100% of the poverty line",1,"New York","NY",22.44,21.26,20.47,21.34,23,23.78,24.36,24.35
 "Poverty_Income_and_Benefit_Receipt","pov100","In families below 100% of the poverty line",1,"North Carolina","NC",28.33,26.52,26.04,28.76,33.68,33.95,33.44,31.89
-"Poverty_Income_and_Benefit_Receipt","pov100","In families below 100% of the poverty line",1,"North Dakota","ND",6,-9700,-9700,19.54,16.09,19.38,33.33,27.06
+"Poverty_Income_and_Benefit_Receipt","pov100","In families below 100% of the poverty line",1,"North Dakota","ND",6,,,19.54,16.09,19.38,33.33,27.06
 "Poverty_Income_and_Benefit_Receipt","pov100","In families below 100% of the poverty line",1,"Ohio","OH",19.69,18.91,17.01,19.34,25.79,26.52,24.94,22.17
 "Poverty_Income_and_Benefit_Receipt","pov100","In families below 100% of the poverty line",1,"Oklahoma","OK",31.93,33.16,30.12,31.13,33.84,31.24,31.44,28.23
 "Poverty_Income_and_Benefit_Receipt","pov100","In families below 100% of the poverty line",1,"Oregon","OR",25.04,21.12,21.18,23.15,24.38,28.19,29.59,25.27
@@ -2009,7 +2009,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Poverty_Income_and_Benefit_Receipt","pov200","In families below 200% of the poverty line",1,"New Mexico","NM",72.45,69.62,65.7,67.3,71.71,72.77,68.81,66.11
 "Poverty_Income_and_Benefit_Receipt","pov200","In families below 200% of the poverty line",1,"New York","NY",46.24,46.4,45.37,45.77,48.94,50.03,48.99,48.67
 "Poverty_Income_and_Benefit_Receipt","pov200","In families below 200% of the poverty line",1,"North Carolina","NC",62.45,60.52,59.35,61.47,64.56,66.6,66.16,64.18
-"Poverty_Income_and_Benefit_Receipt","pov200","In families below 200% of the poverty line",1,"North Dakota","ND",44.68,-9700,-9700,37.46,28.37,49.28,54.48,46.08
+"Poverty_Income_and_Benefit_Receipt","pov200","In families below 200% of the poverty line",1,"North Dakota","ND",44.68,,,37.46,28.37,49.28,54.48,46.08
 "Poverty_Income_and_Benefit_Receipt","pov200","In families below 200% of the poverty line",1,"Ohio","OH",40.19,39.72,36.7,39.27,45.86,46.37,47.89,46.69
 "Poverty_Income_and_Benefit_Receipt","pov200","In families below 200% of the poverty line",1,"Oklahoma","OK",64.51,62.41,62.36,64.64,66.83,65.33,66.55,68.6
 "Poverty_Income_and_Benefit_Receipt","pov200","In families below 200% of the poverty line",1,"Oregon","OR",58.51,56.45,54.83,57.12,60.86,61.6,58.65,55.81
@@ -2061,7 +2061,7 @@ GROUPCODE,STATCODE,STAT,ISSTATE,StateName,StateCode,y2006,y2007,y2008,y2009,y201
 "Poverty_Income_and_Benefit_Receipt","work","Working Family",1,"New Mexico","NM",87.39,88.98,87.71,87.12,86.4,85.2,86,86.92
 "Poverty_Income_and_Benefit_Receipt","work","Working Family",1,"New York","NY",88.69,89.51,90.16,91.21,90.16,89.75,89.56,89.32
 "Poverty_Income_and_Benefit_Receipt","work","Working Family",1,"North Carolina","NC",90.73,91.75,93.52,92.36,89.16,87.75,88.38,90.69
-"Poverty_Income_and_Benefit_Receipt","work","Working Family",1,"North Dakota","ND",92.16,-9700,-9700,88.39,86.2,80.83,81.07,88.24
+"Poverty_Income_and_Benefit_Receipt","work","Working Family",1,"North Dakota","ND",92.16,,,88.39,86.2,80.83,81.07,88.24
 "Poverty_Income_and_Benefit_Receipt","work","Working Family",1,"Ohio","OH",88.31,91.84,91.6,90.96,89.24,88.26,88.63,89.82
 "Poverty_Income_and_Benefit_Receipt","work","Working Family",1,"Oklahoma","OK",91.08,90.16,91.82,91.85,88.75,89.69,92.39,93.34
 "Poverty_Income_and_Benefit_Receipt","work","Working Family",1,"Oregon","OR",91.65,94.42,94.37,92.54,91.92,90.42,88.92,89.92
