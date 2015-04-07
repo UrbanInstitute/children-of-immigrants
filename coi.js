@@ -828,15 +828,15 @@ function getData() {
                     if (selectedCat ==
                         "Country_of_Origin_of_Parents") {
                         $('#rightNav a').css({
-                            paddingTop: 8 + "px",
-                            paddingBottom: 8 + "px"
+                            paddingTop: 6 + "px",
+                            paddingBottom: 6 + "px"
                         })
                     }
                     if (selectedCat ==
                         "English_Proficiency") {
                         $('#rightNav a').css({
-                            paddingTop: 8 + "px",
-                            paddingBottom: 8 + "px"
+                            paddingTop: 7 + "px",
+                            paddingBottom: 7 + "px"
                         })
                     }
                     if (selectedCat ==
@@ -849,15 +849,15 @@ function getData() {
                     if (selectedCat ==
                         "Family_Structure") {
                         $('#rightNav a').css({
-                            paddingTop: 8 + "px",
-                            paddingBottom: 8 + "px"
+                            paddingTop: 5 + "px",
+                            paddingBottom: 5 + "px"
                         })
                     }
                     if (selectedCat ==
                         "Education") {
                         $('#rightNav a').css({
-                            paddingTop: 4 + "px",
-                            paddingBottom: 4 + "px",
+                            paddingTop: 3 + "px",
+                            paddingBottom: 3 + "px",
                             fontSize: 13
                         })
                     }
