@@ -1,6 +1,9 @@
 
 var groupCode, statCode, stat, stateMetro;
 
+var margin = 30;
+var startYear = 2006;
+var endYear = 2014;
 var w = 500;
 var h = 385;
 var selectedYear = 2013;
@@ -8,50 +11,50 @@ var selectedCat = "Population";
 var selectedStat = "perChange";
 var selectedData = [];
 var addCommas = d3.format(",");
+var bucketArray;
 
-
-
-var ShareExplainer = "The share of children in each state that are children of immigrants.";
-var TotalNumExplainer = "The number of children of immigrants in each state";
-var PercentExplainer = "The percent of all children of immigrants in the United States living in each state";
-var AfricaExplainer = "The share of children of immigrants whose parents were born in Africa";
-var eAsiaExplainer = "The share of children of immigrants whose parents were born in Asia";
-var europeExplainer = "The share of children of immigrants whose parents were born in Europe";
-var mexicoExplainer = "The share of children of immigrants whose parents were born in Mexico";
-var centralAmericaExplainer = "The share of children of immigrants whose parents were born in Central America ";
-var southAmericaExplainer = "The share of children of immigrants whose parents were born in South America ";
-var seAsiaExplainer = " The share of children of immigrants whose parents were born in Southeast Asia ";
-var midEastExplainer = "The share of children of immigrants whose parents were born in the Middle East";
-var notCitExplainer = " The share of children of immigrants who are not U.S. citizens ";
-var citNotCitParExplainer = "The share of children of immigrants who are U.S. citizens with parent(s) that are not U.S. Citizens ";
-var citCitParExplainer = "The share of children of immigrants who are U.S. citizens with parents that are U.S. Citizens ";
-var limEngExplainer = "The share of children of immigrants who are limited English proficient";
-var engProExplainer = "The share of children of immigrants who are English proficient";
-var linIsoExplainer = "The share of children of immigrants who live in linguistically isolated households ";
-var onelepparExplainer = "The share of children of immigrants who have at least one limited English proficient parent ";
-var epparsExplainer = " The share of children of immigrants who have English proficient parents";
-var noepparsExplainer = " The share of children of immigrants who have no English proficient parents";
-var age0_3Explainer = "The share of children age 0 to 3 who are children of immigrants";
-var age4_5Explainer = "The share of children age 4 to 5 who are children of immigrants";
-var age6_12Explainer = "The share of children age 6 to 12 who are children of immigrants";
-var age13_17Explainer = "The share of children age 13 to 17 who are children of immigrants";
-var NIS35Explainer = "The share of children of immigrants who are 3-5 years old and not in school";
-var NIS617Explainer = "The share of children of immigrants who are 6-17 years old and not in school";
-var lTHSExplainer = " The share of children of immigrants with parents with less than a High School degree";
-var HSExplainer = " The share of children of immigrants with parents with a High School degree";
-var colExplainer = " The share of children of immigrants with parents with at least a four-year college education ";
-var sParExplainer = "The share of children of immigrants who live in one-parent families";
-var tParExplainer = " The share of children of immigrants who live in two-parent families ";
-var onekidExplainer = "The share of children of immigrants who live in families with one child";
-var twokidExplainer = "The share of children of immigrants who live in families with two children";
-var threekidExplainer = "The share of children of immigrants who live in families with three children ";
-var fourkidExplainer = "The share of children of immigrants who live in families with more than four children";
-var pov100Explainer = "The share of children of immigrants who live in families with income below 100% of the poverty line";
-var pov200Explainer = "The share of children of immigrants who live in families with income below 200% of the poverty line";
-var LIWFExplainer = "The share of children of immigrants who live in low-income working families";
-var homeExplainer = "The share of children of immigrants who live in households that own their home";
-var workExplainer = " The share of children of immigrants who live in working families ";
-
+var description = {
+    "ShareExplainer" : "The share of children in each state that are children of immigrants.",
+    "TotalNumExplainer" : "The number of children of immigrants in each state",
+    "PercentExplainer" : "The percent of all children of immigrants in the United States living in each state",
+    "AfricaExplainer" : "The share of children of immigrants whose parents were born in Africa",
+    "eAsiaExplainer" : "The share of children of immigrants whose parents were born in Asia",
+    "europeExplainer" : "The share of children of immigrants whose parents were born in Europe",
+    "mexicoExplainer" : "The share of children of immigrants whose parents were born in Mexico",
+    "centralAmericaExplainer" : "The share of children of immigrants whose parents were born in Central America ",
+    "southAmericaExplainer" : "The share of children of immigrants whose parents were born in South America ",
+    "seAsiaExplainer" : " The share of children of immigrants whose parents were born in Southeast Asia ",
+    "midEastExplainer" : "The share of children of immigrants whose parents were born in the Middle East",
+    "notCitExplainer" : " The share of children of immigrants who are not U.S. citizens ",
+    "citNotCitParExplainer" : "The share of children of immigrants who are U.S. citizens with parent(s) that are not U.S. Citizens ",
+    "citCitParExplainer" : "The share of children of immigrants who are U.S. citizens with parents that are U.S. Citizens ",
+    "limEngExplainer" : "The share of children of immigrants who are limited English proficient",
+    "engProExplainer" : "The share of children of immigrants who are English proficient",
+    "linIsoExplainer" : "The share of children of immigrants who live in linguistically isolated households ",
+    "onelepparExplainer" : "The share of children of immigrants who have at least one limited English proficient parent ",
+    "epparsExplainer" : " The share of children of immigrants who have English proficient parents",
+    "noepparsExplainer" : " The share of children of immigrants who have no English proficient parents",
+    "age0_3Explainer" : "The share of children age 0 to 3 who are children of immigrants",
+    "age4_5Explainer" : "The share of children age 4 to 5 who are children of immigrants",
+    "age6_12Explainer" : "The share of children age 6 to 12 who are children of immigrants",
+    "age13_17Explainer" : "The share of children age 13 to 17 who are children of immigrants",
+    "NIS35Explainer" : "The share of children of immigrants who are 3-5 years old and not in school",
+    "NIS617Explainer" : "The share of children of immigrants who are 6-17 years old and not in school",
+    "lTHSExplainer" : " The share of children of immigrants with parents with less than a High School degree",
+    "HSExplainer" : " The share of children of immigrants with parents with a High School degree",
+    "colExplainer" : " The share of children of immigrants with parents with at least a four-year college education ",
+    "sParExplainer" : "The share of children of immigrants who live in one-parent families",
+    "tParExplainer" : " The share of children of immigrants who live in two-parent families ",
+    "onekidExplainer" : "The share of children of immigrants who live in families with one child",
+    "twokidExplainer" : "The share of children of immigrants who live in families with two children",
+    "threekidExplainer" : "The share of children of immigrants who live in families with three children ",
+    "fourkidExplainer" : "The share of children of immigrants who live in families with more than four children",
+    "pov100Explainer" : "The share of children of immigrants who live in families with income below 100% of the poverty line",
+    "pov200Explainer" : "The share of children of immigrants who live in families with income below 200% of the poverty line",
+    "LIWFExplainer" : "The share of children of immigrants who live in low-income working families",
+    "homeExplainer" : "The share of children of immigrants who live in households that own their home",
+    "workExplainer" : " The share of children of immigrants who live in working families "
+};
 
 var vis = d3.select("#vis")
     .append("svg:svg")
@@ -60,6 +63,19 @@ var vis = d3.select("#vis")
     .attr("margin-right", "30px")
     .append("svg:g");
 
+
+var y = d3.scale.linear()
+    .range([
+        0 + margin,
+        h - margin
+    ]);
+
+var x = d3.scale.linear()
+    .range([
+        0 + margin - 5,
+        w - 20
+    ])
+    .domain([2006, 2013]);
 
 d3.selection.prototype.moveToFront = function() {
     return this.each(function() {
@@ -79,20 +95,7 @@ var line = d3.svg.line()
 
 getData();
 
-$('#buttons').click(function(e) {
-    // clearInterval(interval);
-    if ($(e.target).hasClass('years')) {
-        var thisBtn = $(e.target).attr('id');
-        currentYear = thisBtn;
-        selectedYear = thisBtn;
-        shadeMap(
-            selectedYear,
-            selectedData,
-            selectedCat,
-            selectedStat
-        ); //shade after year button click
-    }
-});
+
 
 ///////////////functions
 
@@ -108,14 +111,12 @@ function drawLines(states) {
     var startEnd = {},
         stateCodes = {};
 
-    var margin = 30;
-    var startYear = 2006;
-    var endYear = 2014;
+
     var years = d3.range(startYear, endYear);
 
     for (i = 1; i < states.length; i++) {
 
-        var values = states[i].slice(2, states[i.length - 1]);
+        var values = states[i].slice(2);
         var currData = [];
         var started = false;
 
@@ -140,28 +141,17 @@ function drawLines(states) {
                 }
 
             }
-            var max_of_array = Math.max.apply(Math, values);
-            var min_of_array = Math.min.apply(Math, values);
+            var max_of_array = d3.max(values);
+            var min_of_array = d3.min(values);
             stateMax.push(max_of_array);
             stateMin.push(min_of_array);
         }
 
-        endPer = Math.max.apply(Math, stateMax);
-        startPer = Math.min.apply(Math, stateMin);
+        endPer = d3.max(stateMax);
+        startPer = d3.min(stateMin);
 
-        y = d3.scale.linear()
-            .domain([endPer, startPer])
-            .range([
-                0 + margin,
-                h - margin
-            ]);
+        y.domain([endPer, startPer]);
 
-        x = d3.scale.linear()
-            .domain([2006, 2013])
-            .range([
-                0 + margin - 5,
-                w - 20
-            ]);
 
     }
     for (i = 0; i < states.length; i++) {
@@ -185,10 +175,8 @@ function drawLines(states) {
                     };
                     started = true;
                 } else if (j == values.length - 1) {
-                    startEnd[states[i][1]]['endYear'] = years[
-                        j];
-                    startEnd[states[i][1]]['endVal'] = values[
-                        j];
+                    startEnd[states[i][1]]['endYear'] = years[j];
+                    startEnd[states[i][1]]['endVal'] = values[j];
                 }
 
             }
@@ -206,7 +194,7 @@ function drawLines(states) {
             .attr("y1", y(startPer))
             .attr("x2", x(2013))
             .attr("y2", y(startPer))
-            .attr("class", "axis")
+            .attr("class", "axis");
     }
 
     vis.append("svg:line")
@@ -214,7 +202,7 @@ function drawLines(states) {
         //.attr("y1", y(startPer))
         .attr("x2", x(startYear))
         //.attr("y2", y(endPer))
-        .attr("class", "axis")
+        .attr("class", "axis");
 
     vis.selectAll(".xLabel")
         .data(x.ticks(5))
@@ -271,6 +259,40 @@ function drawLines(states) {
         .moveToFront();
 }
 
+
+
+function colors(value) {
+
+    var thisColor, thisLabelColor;
+
+    if (value === null) {
+        thisColor = '#e0e0e0';
+        thisLabelColor = '#000';
+    }
+
+    if (value <= bucketArray[0]) {
+        thisColor = '#F1EEF6';
+        thisLabelColor = '#000000';
+    } else if (value < bucketArray[1]) {
+        thisLabelColor = '#000000';
+        thisColor = '#BDC9E1';
+    } else if (value < bucketArray[2]) {
+        thisLabelColor = '#000000';
+        thisColor = '#74A9CF';
+    } else if (value < bucketArray[3]) {
+        thisLabelColor = '#ffffff';
+        thisColor = '#2B8CBE';
+    } else if (value < bucketArray[4]) {
+        thisLabelColor = '#ffffff';
+        thisColor = '#045A8D';
+    } else if (value >= bucketArray[4]) {
+        thisColor = '#002244';
+        thisLabelColor = '#ffffff';
+    }
+
+    return [thisColor, thisLabelColor];
+}
+
 function onmouseover(d, i) {
         var currClass = d3.select(this).attr("class");
         var USClass = d3.select("#vis #US").attr("class");
@@ -282,21 +304,6 @@ function onmouseover(d, i) {
             .moveToFront();
 
     }
-    /*
-    function onmouseout(d, i) {
-    	console.log("intopMouseout");
-        var USClass = d3.select("#vis #US").attr("class");
-        d3.select("#vis #US") //always keep US line darker
-        .attr("class", USClass + " USLine")
-            .moveToFront();
-        var currClass = d3.select(this).attr("class");
-        var prevClass = currClass.substring(0, currClass.length - 8);
-        d3.select(this)
-            .attr("class", prevClass)
-            .classed("current", false);
-
-    }
-    */
 
 function shadeMap(currentYear, dataArray, category, stat) {
     ///currentYear is the selected year
@@ -361,7 +368,6 @@ function shadeMap(currentYear, dataArray, category, stat) {
         }
     }
 
-    var bucketArray = [];
     bucketArray = setBuckets(dataArray);
 
     //rekey the map
@@ -386,29 +392,11 @@ function shadeMap(currentYear, dataArray, category, stat) {
                 $('#' + dataArray[i][1]).css({
                     fill: '#ffffff'
                 });
-                if (dataArray[i][k] <= bucketArray[0]) {
-                    var thisColor = '#F1EEF6';
-                    var thisLabelColor = '#000000';
-                } else if (dataArray[i][k] < bucketArray[1]) {
-                    var thisLabelColor = '#000000';
-                    var thisColor = '#BDC9E1';
-                } else if (dataArray[i][k] < bucketArray[2]) {
-                    var thisLabelColor = '#000000';
-                    var thisColor = '#74A9CF';
-                } else if (dataArray[i][k] < bucketArray[3]) {
-                    var thisLabelColor = '#ffffff';
-                    var thisColor = '#2B8CBE';
-                } else if (dataArray[i][k] < bucketArray[4]) {
-                    var thisLabelColor = '#ffffff';
-                    var thisColor = '#045A8D';
-                } else if (dataArray[i][k] >= bucketArray[4]) {
-                    var thisColor = '#002244';
-                    var thisLabelColor = '#ffffff';
-                }
-                if (dataArray[i][k] == null) {
-                    var thisColor = '#e0e0e0';
-                    var thisLabelColor = '#000';
-                }
+                var value = dataArray[i][k];
+
+                var cols = colors(value);
+                var thisColor = cols[0];
+                var thisLabelColor = cols[1];
 
                 $('#' + dataArray[i][1]).css({
                     fill: thisColor
@@ -437,7 +425,7 @@ function shadeMap(currentYear, dataArray, category, stat) {
         .attr("id", "currentYearLine")
         .style("stroke-dasharray", ("3, 3"))*/
 
-    $('path')
+    $('path:not(.metro-map-states)')
         .mouseover(function(e) { //pass in event object
             //every time, initialize thisID and thisLine
             var thisID, thisLine, selectedState = null;
@@ -646,7 +634,8 @@ function getData() {
 
     var files = [
         'InteractiveMap_Metro.csv',
-        'metro_coordinates.json'
+        'metro_coordinates.json',
+        'us.json'
     ];
 
     var q = queue();
@@ -658,7 +647,7 @@ function getData() {
         extension = extension && extension[1];
         if (extension) {
             q.defer(d3[extension], f);
-        };
+        }
     });
 
     q.awaitAll(function(error, data) {
@@ -674,13 +663,50 @@ function getData() {
 
 }
 
+
+
 function render(text, metro_data) {
 
-    
+    var metroMap;
+
+    selectedStat = "Share";
+    selectedCat = "Population";
+
+
+    var metroNest = d3.nest()
+        .key(function(d) { return d.GROUPCODE; }) // outer key (GROUPCODE)
+        .key(function(d) { return d.STATCODE; }) // inner key (STATCODE)
+        .entries(metro_data['InteractiveMap_Metro.csv'])
+        .reduce(function(outer_obj, inner) {
+            outer_obj[inner.key] = inner.values.reduce(function(inner_obj, row) {
+                inner_obj[row.key] = row.values;
+                return inner_obj;
+            }, {});
+            return outer_obj;
+        }, {});
+
+    /*** end additions */
+
+
+    $('#buttons').click(function(e) {
+        // clearInterval(interval);
+        if ($(e.target).hasClass('years')) {
+            var thisBtn = $(e.target).attr('id');
+            currentYear = thisBtn;
+            selectedYear = thisBtn;
+            shadeMap(
+                selectedYear,
+                selectedData,
+                selectedCat,
+                selectedStat
+            ); //shade after year button click
+            metroMap.update(selectedCat, selectedStat, "y" + selectedYear);
+        }
+    });
 
 
     var megaData = d3.csv.parseRows(text);
-    //  console.log(megaData);
+
     var groupArray = [];
     var i;
     for (i = 1; i < megaData.length; i++) {
@@ -726,8 +752,6 @@ function render(text, metro_data) {
     }
 
     //initial shade
-    selectedStat = "Share";
-    selectedCat = "Population";
     selectedData = parseData(selectedStat, megaData);
     //   shadeMap(selectedYear, selectedData, selectedCat, selectedStat);
     drawLines(selectedData);
@@ -740,6 +764,119 @@ function render(text, metro_data) {
     ///////                   
     shadeMap(2013, selectedData, selectedCat);
     //end initial shade
+
+
+
+metroMap = (function() {
+
+        var container = d3.select("#map-container");
+
+        var bb = container.node().getBoundingClientRect();
+
+        var ratio = 588 / 1011;
+
+        var margin = { top: 10, right: 10, bottom: 10, left: 10 },
+            width = bb.width - margin.left - margin.right,
+            height = bb.width*ratio - margin.top - margin.bottom;
+
+        var svg = container.append('svg')
+            .attr('id', "metro-map")
+            .attr('width', width + margin.left + margin.right)
+            .attr('height', height + margin.top + margin.bottom)
+          .append('g')
+            .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+        svg.classed('hidden', true);
+
+
+        var projection = d3.geo.albersUsa()
+                        .scale(width*1.2)
+                        .translate([width/2, height/2]);
+
+        var path = d3.geo.path().projection(projection);
+
+        var usjson = metro_data["us.json"];
+
+        // state topology
+        var topology = topojson.feature(
+          usjson,
+          usjson.objects.states
+        ).features;
+
+        var states = svg.append('g')
+            .selectAll('path')
+            .data(topology)
+          .enter().append('path')
+            .attr('class', 'metro-map-states')
+            .attr('id', function(d) { return d.id; })
+            .attr('d', path);
+
+        var coords = metro_data['metro_coordinates.json'];
+
+        var data = metroNest[selectedCat][selectedStat];
+
+        var size = d3.scale.linear()
+            .domain(d3.extent(data, function(d) { return d.y2011; }))
+            .range([1, 20]);
+
+        var circles = svg.append('g')
+            .selectAll('circle')
+            .data(data.filter(function(d) {
+                return coords[d.MetroCode];
+            }))
+            .enter().append('circle')
+            .attr('class', 'metro-map-circles')
+            .attr('r', function(d) {
+                return size(d.y2011);
+            })
+            .attr('fill', function(d) {
+                return colors(d.y2011*100)[0];
+            })
+            .attr("transform", function(d) {
+                var id = d.MetroCode;
+                var lat = Number(coords[id].INTPTLAT);
+                var lon = Number(coords[id].INTPTLON);
+                return "translate(" + projection([lon, lat]) + ")";
+            });
+
+        function update(cat, stat, year) {
+
+            year = year || "y2011";
+
+            var data = metroNest[cat][stat];
+
+            size.domain(d3.extent(data, function(d) { return d[year]; }));
+
+            circles.data(data).enter();
+
+            circles.transition()
+                .duration(300)
+                .attr('r', function(d) {
+                    return size(d[year]);
+                })
+                .attr('fill', function(d) {
+                    return colors(d[year]*100)[0];
+                });
+        }
+
+        function hide() {
+            svg.classed('hidden', true);
+        }
+
+        function show() {
+            svg.classed('hidden', false);
+        }
+
+        return {
+            update : update,
+            hide : hide,
+            show : show
+        };
+
+    })();
+
+
+
 
     // Add the initial contents of the groupArray to the left navigation:
     // Add the initial contents of the statArray to the right navigation:
@@ -780,7 +917,7 @@ function render(text, metro_data) {
         //  console.log(this.textContent);
         $('#explainerHead').html(this.textContent);
         var explainerText = selectedStat + "Explainer";
-        $('#explainerText').html(eval(explainerText));
+        $('#explainerText').html(description[explainerText]);
 
     });
 
@@ -872,6 +1009,7 @@ function render(text, metro_data) {
             }
         }
         $('#rightNav li').click(function(event) {
+
             for (j = 0; j < statCodes.length; j++) {
                 for (k = 0; k < statCodes[j].length; k++) {
                     $('#' + statCodes[j][k]).css({
@@ -891,12 +1029,25 @@ function render(text, metro_data) {
             drawLines(selectedData);
             shadeMap(selectedYear, selectedData,
                 selectedCat, selectedStat);
+
+            // update metro map circles
+            metroMap.update(selectedCat, selectedStat);
+
             $('#explainerHead').html(this.textContent);
 
             var explainerText = selectedStat + "Explainer";
-            $('#explainerText').html(eval(explainerText));
+            $('#explainerText').html(description[explainerText]);
 
         });
+    });
+
+    $('#view-metro').click(function() {
+        metroMap.show();
+        d3.select("#svg2").style('display', 'none');
+    });
+    $('#view-states').click(function() {
+        metroMap.hide();
+        d3.select("#svg2").style('display', 'block');
     });
 
 }
@@ -904,19 +1055,21 @@ function render(text, metro_data) {
 
 function parseData(stat, data) {
     /*
-data format: 2d array. first array is list. third array is individual row:
-	0: "GROUPCODE"
-1: "STATCODE"
-2: "STAT"
-3: "ISSTATE"
-4: "StateName"
-5: "StateCode"
-6: "2006"
-7: "2007"
-8: "2008"
-9: "2009"
-10: "2010"
-11: "2011"*/
+        data format: 2d array. first array is list.
+        third array is individual row:
+    	0: "GROUPCODE"
+        1: "STATCODE"
+        2: "STAT"
+        3: "ISSTATE"
+        4: "StateName"
+        5: "StateCode"
+        6: "2006"
+        7: "2007"
+        8: "2008"
+        9: "2009"
+        10: "2010"
+        11: "2011"
+    */
 
     // need to get it in the following format: StateName	StateCode	2006	2007	2008	2009	2010	2011
     var selectedDataCounter = 0;

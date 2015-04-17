@@ -114,9 +114,6 @@
       </div>
       <div id="coi">
         <div id="key">
-          <?xml version="1.0" encoding="utf-8" ?>
-          <!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="81.167px" height="119.5px" viewBox="0 0 81.167 119.5" enable-background="new 0 0 81.167 119.5" xml:space="preserve">
             <g>
               <g>
@@ -152,6 +149,8 @@
           <div id="explainerText">
             The share of children in each state that are children of immigrants.
           </div>
+          <button id="view-metro" class="view-toggle-button">View Top 100 Metros</button>
+          <button id="view-states" class="view-toggle-button">View States</button>
           <div id="buttons">
             <button type="button" class="years" id="2006">2006</button>
             <button type="button" class="years" id="2007">2007</button>
@@ -165,9 +164,7 @@
             <!--<button type="button" id="play">Play</button>
 <button type="button" id="stop">Stop</button>-->
           </div>
-          <?xml version="1.0" encoding="utf-8" ?>
-          <!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+          <div id="map-container">
           <svg version="1.1" id="svg2" inkscape:output_extension="org.inkscape.output.svg.inkscape" sodipodi:version="0.32" inkscape:version="0.46" sodipodi:docname="United States WIP.svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="493.455px" height="302.255px" viewBox="-2.455 347.745 493.455 302.255" enable-background="new -2.455 347.745 493.455 302.255" xml:space="preserve">
             <path id="MD" fill="#D3D3D3" stroke="#FFFFFF" class="state" d="M490.5,525.5h-25v-15h25V525.5z M425.694,478.771l-1.049,2.103l-3.477,1.461
 
@@ -1815,6 +1812,7 @@
 
   c0,0-0.64-0.761-0.64-0.972c0-0.212,0-1.141,0-1.141L27.03,536.04z" />
           </svg>
+          </div>
         </div>
         <!-- @end map -->
         <div id="explainer">
@@ -1838,6 +1836,7 @@
   <!-- @end #main-wrapper -->
   <script type="text/javascript" src="jquery-1.4.4.min.js"></script>
   <script type="text/javascript" src="d3.v3.min.js"></script>
+  <script type="text/javascript" src="topojson.min.js"></script>
   <script type="text/javascript" src="queue.v1.min.js"></script>
   <script type="text/javascript" src="data.js"></script>
   <script type="text/javascript" src="coi.js"></script>

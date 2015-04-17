@@ -27,6 +27,8 @@ legend {
   padding: 0;
 }
 
+
+
 #textIntro {
   margin-bottom: 15px;
   width: 600px;
@@ -377,4 +379,14 @@ a:active {
   height: 22px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+
+.metro-map-circles {
+  stroke: #000;
+  opacity : 0.65;
+}
+
+.hidden {
+  opacity : 0;
 }
