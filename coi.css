@@ -130,7 +130,7 @@ h2 {
 #vis {
   min-height: 350px;
   position: absolute;
-  top: 370px;
+  top: 400px;
   left: 355px;
 }
 
@@ -146,8 +146,12 @@ path {
   fill: none;
 }
 
-path.current,
-path.highlight.current {
+path.current, circle.current {
+  stroke : #000;
+  stroke-width: 3px;
+}
+
+path.time-series-lines.current {
   stroke: #6699cc;
   stroke-width: 2;
 }

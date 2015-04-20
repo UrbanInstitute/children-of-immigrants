@@ -1,17 +1,25 @@
 
+d3.selection.prototype.moveToFront = function() {
+    return this.each(function() {
+        this.parentNode.appendChild(this);
+    });
+};
+
 var groupCode, statCode, stat, stateMetro;
 
 var margin = 30;
 var startYear = 2006;
 var endYear = 2014;
-var w = 500;
-var h = 385;
-var selectedYear = 2013;
+
+var selectedYear = 2011;
 var selectedCat = "Population";
 var selectedStat = "perChange";
+var selectedGeo = "states";
 var selectedData = [];
 var addCommas = d3.format(",");
 var bucketArray;
+
+$("#thisYearText").text(selectedYear);
 
 var description = {
     "ShareExplainer" : "The share of children in each state that are children of immigrants.",
@@ -56,32 +64,26 @@ var description = {
     "workExplainer" : " The share of children of immigrants who live in working families "
 };
 
-var vis = d3.select("#vis")
-    .append("svg:svg")
-    .attr("width", w)
-    .attr("height", h)
-    .attr("margin-right", "30px")
-    .append("svg:g");
 
+var w = 500;
+var h = 385;
+
+var margin = { top: 40, right: 20, bottom: 50, left: 50 },
+    width = w - margin.left - margin.right,
+    height = h - margin.top - margin.bottom;
+
+var vis = d3.select('#vis').append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom)
+  .append('g')
+    .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
 var y = d3.scale.linear()
-    .range([
-        0 + margin,
-        h - margin
-    ]);
+    .range([height, 0]);
 
 var x = d3.scale.linear()
-    .range([
-        0 + margin - 5,
-        w - 20
-    ])
+    .range([0, width])
     .domain([2006, 2013]);
-
-d3.selection.prototype.moveToFront = function() {
-    return this.each(function() {
-        this.parentNode.appendChild(this);
-    });
-};
 
 
 var line = d3.svg.line()
@@ -93,170 +95,135 @@ var line = d3.svg.line()
         return y(d.y);
     });
 
+
+var yAxis = d3.svg.axis()
+              .scale(y)
+              .ticks(4)
+              .orient("left");
+
+var xAxis = d3.svg.axis()
+              .scale(x)
+              .orient("bottom")
+              .tickFormat(function(d) { return d; })
+              .tickSubdivide(true);
+
 getData();
 
 
+/*
+    format state data for rendering by drawLines
 
-///////////////functions
+    @param states {Object} : nested array
+        of state-level data for given variable
+*/
+function stateLineData(states) {
 
-function drawLines(states) {
+    // first sub array contains headers
+    var headers = states[0];
+    var data = states.slice(1);
 
-    vis.selectAll("path").remove();
-    vis.selectAll(".yLabel").remove();
-    vis.selectAll(".yTicks").remove();
+    // find the extent of the y-values
+    var data_max = d3.max(
+        data.reduce(function(out, row) {
+            // build up one-dimensional array of the y values
+            // row[0] == state name
+            // row[1] == state abbr
+            // row[2...] == y values
+            return out.concat(row.slice(2).map(Number));
+        }, [])
+    );
 
-    var stateMax = [];
-    var stateMin = [];
+    // skip state abbreviation and name
+    // "zip" y values with years from header row
+    var out_data = data.map(function(d) {
+        return {
+            // skip first two elements of d as
+            // they contain the name and abbreviation
+            values : d.slice(2).map(function(v, i) {
+                return {
+                    y : Number(v),
+                    x : Number(headers[2 + i].replace("y", ""))
+                };
+            }),
+            // state abbreviation as id
+            id : d[1],
+            name : d[0]
+        };
+    });
 
-    var startEnd = {},
-        stateCodes = {};
+
+    return { max : data_max, values : out_data };
+}
 
 
-    var years = d3.range(startYear, endYear);
+/*
+    format metro data for rendering by drawLines
 
-    for (i = 1; i < states.length; i++) {
+    @param metro_nest {Object} : d3 nest of metro data
+*/
+function metroLineData(metro_nest) {
 
-        var values = states[i].slice(2);
-        var currData = [];
-        var started = false;
+    // match a year key
+    var yearRX = /y\d{4}/;
+    var filterYears = yearRX.exec.bind(yearRX);
 
-        stateCodes[states[i][1]] = states[i][0];
+    var data_max = d3.max(metro_nest.map(function(d) {
+        return d3.max(
+            Object.keys(d)
+                .filter(filterYears)
+                .map(function(k) {
+                    return Number(d[k]);
+                })
+        );
+    }));
 
-        for (j = 0; j < values.length; j++) {
-            if (values[j] != '') {
-                currData.push({
-                    x: years[j],
-                    y: values[j]
-                });
-
-                if (!started) {
-                    startEnd[states[i][1]] = {
-                        'startYear': years[j],
-                        'startVal': values[j]
+    var out_data = metro_nest.map(function(d) {
+        return {
+            id : "m" + d.MetroCode,
+            name : d.MetroName,
+            values : Object.keys(d)
+                .filter(filterYears)
+                .map(function(k) {
+                    return {
+                        x : Number(k.replace("y", "")),
+                        y : Number(d[k])
                     };
-                    started = true;
-                } else if (j == values.length - 1) {
-                    startEnd[states[i][1]].endYear = years[j];
-                    startEnd[states[i][1]].endVal = values[j];
-                }
+                })
+        };
+    });
 
-            }
-            var max_of_array = d3.max(values);
-            var min_of_array = d3.min(values);
-            stateMax.push(max_of_array);
-            stateMin.push(min_of_array);
-        }
-
-        endPer = d3.max(stateMax);
-        startPer = d3.min(stateMin);
-
-        y.domain([endPer, startPer]);
+    return { max : data_max, values : out_data };
+}
 
 
-    }
-    for (i = 0; i < states.length; i++) {
-        var values = states[i].slice(2, states[i.length - 1]);
-        var currData = [];
-        stateCodes[states[i][1]] = states[i][0];
-        //	console.log(stateCodes);
+function drawLines(data) {
 
-        var started = false;
-        for (j = 0; j < values.length; j++) {
-            if (values[j] != '') {
-                currData.push({
-                    x: years[j],
-                    y: values[j]
-                });
+    // bound y domain by current max value
+    y.domain([0, data.max]);
 
-                if (!started) {
-                    startEnd[states[i][1]] = {
-                        'startYear': years[j],
-                        'startVal': values[j]
-                    };
-                    started = true;
-                } else if (j == values.length - 1) {
-                    startEnd[states[i][1]]['endYear'] = years[j];
-                    startEnd[states[i][1]]['endVal'] = values[j];
-                }
+    // remove old paths and add new ones
+    vis.html('').selectAll('path')
+        .data(data.values)
+        .enter().append('path')
+        .classed('time-series-lines', true)
+        .attr('id', function(d) { return d.id; })
+        .attr('d', function(d) { return line(d.values); });
 
-            }
-        }
+    // Add the x-axis.
+    vis.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
 
-        vis.append("svg:path")
-            .data([currData])
-            .attr("id", states[i][1])
-            .attr("d", line)
-            .on("mouseover", onmouseover)
-            .on("mouseout", onmouseout);
+    // Add the y-axis.
+    vis.append("g")
+      .attr("class", "y axis")
+      .call(yAxis);
 
-        vis.append("svg:line")
-            .attr("x1", x(2006))
-            .attr("y1", y(startPer))
-            .attr("x2", x(2013))
-            .attr("y2", y(startPer))
-            .attr("class", "axis");
-    }
-
-    vis.append("svg:line")
-        .attr("x1", x(startYear))
-        //.attr("y1", y(startPer))
-        .attr("x2", x(startYear))
-        //.attr("y2", y(endPer))
-        .attr("class", "axis");
-
-    vis.selectAll(".xLabel")
-        .data(x.ticks(5))
-        .enter().append("svg:text")
-        .attr("class", "xLabel")
-        .text(String)
-        .attr("x", function(d) {
-            return x(d)
-        })
-        .attr("y", h - 10)
-        .attr("text-anchor", "middle")
-
-    vis.selectAll(".yLabel")
-        .data(y.ticks(4))
-        .enter().append("svg:text")
-        .attr("class", "yLabel")
-        .text(String)
-        .attr("x", 0)
-        .attr("y", function(d) {
-            return y(d)
-        })
-        .attr("text-anchor", "right")
-        .attr("dy", 3)
-
-    vis.selectAll(".xTicks")
-        .data(x.ticks(5))
-        .enter().append("svg:line")
-        .attr("class", "xTicks")
-        .attr("x1", function(d) {
-            return x(d);
-        })
-        .attr("y1", y(startPer))
-        .attr("x2", function(d) {
-            return x(d);
-        })
-        .attr("y2", y(startPer) + 7)
-
-    vis.selectAll(".yTicks")
-        .data(y.ticks(4))
-        .enter().append("svg:line")
-        .attr("class", "yTicks")
-        .attr("y1", function(d) {
-            return y(d);
-        })
-        .attr("x1", x(2005.95))
-        .attr("y2", function(d) {
-            return y(d);
-        })
-        .attr("x2", x(2006))
-
-    var USClass = d3.select("#vis #US").attr("class");
-    d3.select("#vis #US") //always keep US line darker
-        .attr("class", USClass + " USLine")
+    //always keep US line darker
+    d3.select("#vis #US").classed('USLine', true)
         .moveToFront();
+
 }
 
 
@@ -294,16 +261,16 @@ function colors(value) {
 }
 
 function onmouseover(d, i) {
-        var currClass = d3.select(this).attr("class");
-        var USClass = d3.select("#vis #US").attr("class");
-        d3.select("#vis #US") //always keep US line darker
-            .attr("class", USClass + " USLine")
-            .moveToFront();
-        d3.select(this)
-            .attr("class", currClass + " current")
-            .moveToFront();
+    var currClass = d3.select(this).attr("class");
+    var USClass = d3.select("#vis #US").attr("class");
+    d3.select("#vis #US") //always keep US line darker
+        .attr("class", USClass + " USLine")
+        .moveToFront();
+    d3.select(this)
+        .attr("class", currClass + " current")
+        .moveToFront();
 
-    }
+}
 
 function shadeMap(currentYear, dataArray, category, stat) {
     ///currentYear is the selected year
@@ -388,7 +355,7 @@ function shadeMap(currentYear, dataArray, category, stat) {
     for (k = 0; k <= dataArray[0].length; k++) {
         if (dataArray[0][k] == currentYear) {
             for (i = 0; i < dataArray.length; i++) { //getting location of ID in first array
-                //init color 
+                //init color
                 $('#' + dataArray[i][1]).css({
                     fill: '#ffffff'
                 });
@@ -412,222 +379,88 @@ function shadeMap(currentYear, dataArray, category, stat) {
 
     d3.select("#vis #currentYearLine")
         .remove();
-    //console.log("******" + currentYear);
-    startPer = 0;
-    endPer = 40;
-    //console.log("*startPer**" + startPer);
-    /*    vis.append("svg:line")
-        .attr("x1", x(currentYear))
-        .attr("y1", y(startPer))
-        .attr("x2", x(currentYear))
-        .attr("y2", y(endPer))
-        .attr("class", "linecurrentYear")
-        .attr("id", "currentYearLine")
-        .style("stroke-dasharray", ("3, 3"))*/
 
-    $('path:not(.metro-map-states)')
-        .mouseover(function(e) { //pass in event object
-            //every time, initialize thisID and thisLine
-            var thisID, thisLine, selectedState = null;
-            //var selectedState;
-            var thisID = $(e.target).attr('id');
-            //console.log(this.id);
-            var thisLine = $(e.target).attr('state');
+}
 
-            //if browser is IE, turn all lines off
-            if ($.browser.msie) {
-                for (k = 0; k <= dataArray[0].length; k++) {
-                    if (dataArray[0][k] == currentYear) {
-                        for (i = 1; i < dataArray.length; i++) { //getting location of ID in first array
-                            var stateAbbr = dataArray[i][1];
-                            //	console.log(stateAbbr);
+var commas = d3.format(",.2f");
 
-                            $('#selected_' + stateAbbr).hide();
-                            d3.selectAll("#vis #" + stateAbbr)
-                                //    .attr("class", prevClass)
-                                .classed("current", false);
-                            var USClass = d3.select(
-                                "#vis #US").attr(
-                                "class");
-                            if (USClass) {
-                                d3.select("#vis #US") //always keep US line darker
-                                    .attr("class", "USLine")
-                                    .moveToFront();
-                            }
-                        }
-                    }
-                }
+function updateTooltip(data, is_map, is_state) {
+    var name = data.name;
+    var format = (selectedStat === "TotalNum") ?
+                    function(d){ return d;} :
+                    function(d) { return commas(is_state ? d : d*100) + "%"; };
+    if (is_map) {
+        $("#mapPopup #currentState").text(name);
+        $("#mapPopup #currentValue").text(format(data[selectedYear]));
+        $("#currentYear").text(selectedYear);
+        $('#chartPopup').hide(); //show the popup
+        $('#mapPopup').show(); //hide the map popup
+    } else {
+        $('#currentChartState').html('<b>' + name);
+        d3.range(startYear, endYear).forEach(function(y) {
+            var str_year = y.toString().slice(2);
+            $('#value' + str_year).html('<b>' + (data[y] ? format(data[y]) : "") );
+        });
+        $('#chartPopup').show(); //show the popup
+        $('#mapPopup').hide(); //hide the map popup
+    }
+}
 
-            }
+function bindMouseoverEvents() {
 
-            var isLineChart = this.parentNode.parentNode.parentNode;
-            //console.log(isLineChart);
-            if (isLineChart.id == "vis") {
-                var isVis = true;
-            } else {
-                var isVis = false;
-            }
-            for (k = 0; k <= dataArray[0].length; k++) {
-                if (dataArray[0][k] == currentYear) {
-                    var thisYear = k;
-                    break;
-                }
-            }
-            //console.log(thisID);
-            for (i = 0; i < dataArray.length; i++) { //getting location of ID in first array
-                if (thisID == dataArray[i][1]) {
-                    $('#mapPopup').show(); //show the popup
-                    $('#mapPopup').css({
-                        top: e.pageY - 60 + 'px',
-                        left: e.pageX - 175 + 'px'
-                    });
-                    var thisIndex = i; //location of ID]
-                    var dataValue = null;
-                    dataValue = dataArray[thisIndex][thisYear];
-                    //console.log(thisYear);
-                    //console.log(thisIndex + " " + dataValue + " || " + dataArray );
-                    $('#currentState').html('<b>' + dataArray[
-                        thisIndex][0]);
-                    $('#currentYear').html('<b>' + currentYear +
-                        '</b>');
-                    if (selectedStat != "TotalNum") {
-                        $('#currentValue').html('<b>' + dataValue +
-                            '%</b>');
-                    } else {
-                        $('#currentValue').html('<b>' + addCommas(
-                            dataValue) + '</b>');
-                    }
-                    $('#selected_' + dataArray[thisIndex][1]).show();
-                    selectedState = 'selected_' + dataArray[
-                        thisIndex][1];
-                    var stateAbbr = dataArray[thisIndex][1];
+    // match state abbreviation
+    var stateRX = /[A-Z]{2}/;
+    var isState = stateRX.test.bind(stateRX);
 
-                    ///////			when mousing over state on map, also highlight state in lower chart	  
-                    var currClass = d3.select("#vis #" +
-                        stateAbbr).attr("class");
-                    d3.select("#vis #" + stateAbbr)
-                        .attr("class", currClass + " current")
-                        .each(moveToFront);
-                    ///////					  
-                    break;
-                }
+    // select all the lines, the states, and the circles
+    var paths = d3.selectAll(
+        'path:not(.metro-map-states), .metro-map-circles'
+    );
 
-            }
-            if (isVis == true) { //on the line
-                var thisChartIndex = i; //location of ID
-                $('#chartPopup').show(); //show the popup
-                $('#mapPopup').hide(); //hide the map popup						
+    paths
+        .on('mouseover', function() {
 
-                if (selectedStat != "TotalNum") {
-                    $('#currentChartState').html('<b>' +
-                        dataArray[
-                            thisChartIndex][0]);
-                    $('#value06').html('<b>' + dataArray[
-                            thisChartIndex]
-                        [2] + '%');
-                    $('#value07').html('<b>' + dataArray[
-                            thisChartIndex]
-                        [3] + '%');
-                    $('#value08').html('<b>' + dataArray[
-                            thisChartIndex]
-                        [4] + '%');
-                    $('#value09').html('<b>' + dataArray[
-                            thisChartIndex]
-                        [5] + '%');
-                    $('#value10').html('<b>' + dataArray[
-                            thisChartIndex]
-                        [6] + '%');
-                    $('#value11').html('<b>' + dataArray[
-                            thisChartIndex]
-                        [7] + '%');
-                    $('#value12').html('<b>' + dataArray[
-                            thisChartIndex]
-                        [8] + '%');
-                    $('#value13').html('<b>' + dataArray[
-                            thisChartIndex]
-                        [9] + '%');
-                } else {
-                    $('#currentChartState').html('<b>' +
-                        dataArray[
-                            thisChartIndex][0]);
-                    $('#value06').html('<b>' + addCommas(
-                        dataArray[
-                            thisChartIndex]
-                        [2]));
-                    $('#value07').html('<b>' + addCommas(
-                        dataArray[
-                            thisChartIndex]
-                        [3]));
-                    $('#value08').html('<b>' + addCommas(
-                        dataArray[
-                            thisChartIndex]
-                        [4]));
-                    $('#value09').html('<b>' + addCommas(
-                        dataArray[
-                            thisChartIndex]
-                        [5]));
-                    $('#value10').html('<b>' + addCommas(
-                        dataArray[
-                            thisChartIndex]
-                        [6]));
-                    $('#value11').html('<b>' + addCommas(
-                        dataArray[
-                            thisChartIndex]
-                        [7]));
-                    $('#value12').html('<b>' + addCommas(
-                        dataArray[
-                            thisChartIndex]
-                        [8]));
-                    $('#value13').html('<b>' + addCommas(
-                        dataArray[
-                            thisChartIndex]
-                        [9]));
-                }
+            var selection = d3.select(this);
+            var isMap = !selection.classed('time-series-lines');
+            var id = this.id;
 
-            }
+            if (!id) return;
+
+            var time_series = d3.select('#' + id + '.time-series-lines');
+
+            time_series.moveToFront();
+
+            // get data from relevant line
+            var data = time_series.data()[0];
+
+            // reshape into object indexed by year
+            var data_obj = data.values.reduce(function(out, d) {
+                out[d.x] = d.y;
+                return out;
+            }, {});
+
+            paths.classed('current', function() {
+                return this.id === id;
+            });
+
+            data_obj.name = data.name;
+
+            updateTooltip(data_obj, isMap, isState(id));
 
         })
-        .mousemove(function(e) {
-            var offX = (e.offsetX || e.clientX - $(e.target).offset().left);
-            var offY = (e.offsetY || e.clientY - $(e.target).offset().top);
-            //	console.log(document.getElementById("mapPopup").offsetWidth);
-            $('#mapPopup').css({
-                top: e.pageY - 60 + 'px',
-                left: e.pageX - 175 + 'px'
-            });
-            $('#chartPopup').css({
-                top: e.pageY - 60 + 'px',
-                left: e.pageX - 175 + 'px'
-            });
-            //console.log(e.offsetY);
-        })
-        .mouseout(function() {
-            //console.log("inMousout");
+        .on("mouseout", function() {
             $('#mapPopup').hide(); //hide the popup
             $('#chartPopup').hide(); //hide the popup
-            for (k = 0; k <= dataArray[0].length; k++) {
-                if (dataArray[0][k] == currentYear) {
-                    for (i = 1; i < dataArray.length; i++) { //getting location of ID in first array
-                        var stateAbbr = dataArray[i][1];
-                        //	console.log(stateAbbr);
-
-                        $('#selected_' + stateAbbr).hide();
-                        d3.selectAll("#vis #" + stateAbbr)
-                            //    .attr("class", prevClass)
-                            .classed("current", false);
-                        var USClass = d3.select(
-                            "#vis #US").attr(
-                            "class");
-                        if (USClass) {
-                            d3.select("#vis #US") //always keep US line darker
-                                .attr("class", "USLine")
-                                .moveToFront();
-                        }
-                    }
-                }
-            }
+        })
+        .on("mousemove", function() {
+            var m = d3.mouse(d3.select('body').node());
+            var coords = {
+                top : m[1] - 60 + "px",
+                left : m[0] - 205 + "px"
+            };
+            $('#mapPopup').css(coords);
+            $('#chartPopup').css(coords);
         });
-
 }
 
 function getData() {
@@ -685,7 +518,6 @@ function render(text, metro_data) {
             return outer_obj;
         }, {});
 
-    /*** end additions */
 
 
     $('#buttons').click(function(e) {
@@ -754,20 +586,20 @@ function render(text, metro_data) {
     //initial shade
     selectedData = parseData(selectedStat, megaData);
     //   shadeMap(selectedYear, selectedData, selectedCat, selectedStat);
-    drawLines(selectedData);
+    toggleLines(selectedGeo);
 
-    ///////         selectUS line     
+    ///////         selectUS line
     var USClass = d3.select("#vis #US").attr("class");
     d3.select("#vis #US")
         .attr("class", USClass + " USLine")
         .moveToFront();
-    ///////                   
-    shadeMap(2013, selectedData, selectedCat);
+    ///////
+    shadeMap(selectedYear, selectedData.slice(1), selectedCat);
     //end initial shade
 
 
 
-metroMap = (function() {
+    metroMap = (function() {
 
         var container = d3.select("#map-container");
 
@@ -826,6 +658,9 @@ metroMap = (function() {
             }))
             .enter().append('circle')
             .attr('class', 'metro-map-circles')
+            .attr('id', function(d) {
+                return "m" + d["MetroCode"];
+            })
             .attr('r', function(d) {
                 return size(d.y2011);
             })
@@ -911,8 +746,8 @@ metroMap = (function() {
             backgroundColor: "#fff"
         });
         selectedData = parseData(selectedStat, megaData);
-        drawLines(selectedData);
-        shadeMap(selectedYear, selectedData, selectedCat,
+        toggleLines(selectedGeo);
+        shadeMap(selectedYear, selectedData.slice(1), selectedCat,
             selectedStat);
         //  console.log(this.textContent);
         $('#explainerHead').html(this.textContent);
@@ -1026,8 +861,9 @@ metroMap = (function() {
             selectedData = parseData(selectedStat,
                 megaData);
             //currentYear, dataArray, category, stat
-            drawLines(selectedData);
-            shadeMap(selectedYear, selectedData,
+            toggleLines(selectedGeo);
+
+            shadeMap(selectedYear, selectedData.slice(1),
                 selectedCat, selectedStat);
 
             // update metro map circles
@@ -1035,17 +871,33 @@ metroMap = (function() {
 
             $('#explainerHead').html(this.textContent);
 
-            var explainerText = selectedStat + "Explainer";
-            $('#explainerText').html(description[explainerText]);
+            var explainerText = description[selectedStat + "Explainer"];
+            $('#explainerText').html(explainerText);
+            $('#currentVar').html(explainerText);
 
         });
     });
 
+    function toggleLines(geoType) {
+        var lineData;
+        if (geoType === "states") {
+            lineData = stateLineData(selectedData);
+        } else {
+            lineData = metroLineData(metroNest[selectedCat][selectedStat]);
+        }
+        drawLines(lineData);
+        bindMouseoverEvents();
+    }
+
     $('#view-metro').click(function() {
+        selectedGeo = "metro";
+        toggleLines(selectedGeo);
         metroMap.show();
         d3.select("#svg2").style('display', 'none');
     });
     $('#view-states').click(function() {
+        selectedGeo = "states";
+        toggleLines(selectedGeo);
         metroMap.hide();
         d3.select("#svg2").style('display', 'block');
     });
@@ -1072,28 +924,14 @@ function parseData(stat, data) {
     */
 
     // need to get it in the following format: StateName	StateCode	2006	2007	2008	2009	2010	2011
-    var selectedDataCounter = 0;
-    var selectedData = [];
+    var selectedData = [data[0].slice(4)];
     for (i = 1; i < data.length; i++) {
-        var tempArray = [];
         if (data[i][1] == stat) {
-            tempArray[0] = data[i][4]; //stateName
-            tempArray[1] = data[i][5]; //stateCode
-            tempArray[2] = data[i][6]; //06
-            tempArray[3] = data[i][7]; //07
-            tempArray[4] = data[i][8]; //08
-            tempArray[5] = data[i][9]; //09
-            tempArray[6] = data[i][10]; //10
-            tempArray[7] = data[i][11]; //11
-            tempArray[8] = data[i][12]; //12
-            tempArray[9] = data[i][13]; //13
             $('#currentVar').text(data[i][2]);
-            // console.log(i);
-            selectedData[selectedDataCounter] = tempArray;
-            selectedDataCounter++;
+            selectedData.push(data[i].slice(4));
         }
-
     }
+
     return selectedData;
 }
 
