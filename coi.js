@@ -585,7 +585,7 @@ function render(text, metro_data) {
 
     //initial shade
     selectedData = parseData(selectedStat, megaData);
-    //   shadeMap(selectedYear, selectedData, selectedCat, selectedStat);
+    // shadeMap(selectedYear, selectedData, selectedCat, selectedStat);
     toggleLines(selectedGeo);
 
     ///////         selectUS line
