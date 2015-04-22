@@ -96,9 +96,15 @@ var line = d3.svg.line()
     });
 
 
+var percent = d3.format("%");
+
 var yAxis = d3.svg.axis()
               .scale(y)
               .ticks(4)
+              .tickFormat(function(d) {
+                if (d > 200) return d;
+                return d <= 1 ? percent(d) : d + "%";
+            })
               .orient("left");
 
 var xAxis = d3.svg.axis()
@@ -665,7 +671,7 @@ function render(text, metro_data) {
                 return size(d.y2011);
             })
             .attr('fill', function(d) {
-                return colors(d.y2011*100)[0];
+                return "none"; //"rgba(0,0,0,0)"; //colors(d.y2011*100)[0];
             })
             .attr("transform", function(d) {
                 var id = d.MetroCode;
@@ -893,12 +899,14 @@ function render(text, metro_data) {
         selectedGeo = "metro";
         toggleLines(selectedGeo);
         metroMap.show();
+        $('#key').hide();
         d3.select("#svg2").style('display', 'none');
     });
     $('#view-states').click(function() {
         selectedGeo = "states";
         toggleLines(selectedGeo);
         metroMap.hide();
+        $('#key').show();
         d3.select("#svg2").style('display', 'block');
     });
 
