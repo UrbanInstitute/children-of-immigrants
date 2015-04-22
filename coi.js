@@ -694,10 +694,10 @@ function render(text, metro_data) {
                 .duration(300)
                 .attr('r', function(d) {
                     return size(d[year]);
-                })
-                .attr('fill', function(d) {
-                    return colors(d[year]*100)[0];
                 });
+                // .attr('fill', function(d) {
+                //     return colors(d[year]*100)[0];
+                // });
         }
 
         function hide() {
