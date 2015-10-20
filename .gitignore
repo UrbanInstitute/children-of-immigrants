@@ -1,0 +1,10 @@
+*.Rproj
+*.Rproj.user
+*.Rhistory
+.Rproj.user
+papers/
+*.docx
+plans/
+*.ai
+data/original
+*.DS_Store

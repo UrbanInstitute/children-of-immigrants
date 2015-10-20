@@ -1,0 +1,16 @@
+.stateborders {
+    fill: none;
+    stroke: #ccc;
+    stroke-linejoin: round;
+    pointer-events: none;
+}
+
+.metros {
+    stroke: none;
+}
+
+.statemap {
+    stroke: #fff;
+    stroke-linejoin: round;
+    pointer-events: none;
+}
