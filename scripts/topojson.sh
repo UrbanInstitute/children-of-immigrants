@@ -1,0 +1,1 @@
+topojson -o data/states.txt --id-property +STATEFP -- scripts/shapefile/cb_2014_us_state_20m.shp
