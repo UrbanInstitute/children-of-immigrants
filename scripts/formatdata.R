@@ -5,24 +5,26 @@ library(dplyr)
 library(tidyr)
 
 states<-read.csv("../higher-ed/data/states.csv",stringsAsFactors = F)
-st<-read.csv("data/original/InteractiveMap_State2013.csv",stringsAsFactors = F)
+st<-read.csv("data/original/InteractiveMap_State2013_10_26_2015.csv",stringsAsFactors = F)
 mt<-read.csv("data/original/metrodata.csv",stringsAsFactors = F)
 
-states <- states %>% select(statefip,abbrev) %>% 
-  rename(FIPS=statefip,ABBREV=abbrev)
+states <- states %>% select(statefip,abbrev) %>% rename (fips=statefip)
+st <- st %>% rename(name=StateName,abbrev=StateCode,category=GROUPCODE,statcode=STATCODE,statlabel=STAT,isstate=ISSTATE)
+#st[st<0]<-NA
+st <- left_join(states,st,by="abbrev")
 
-st <- st %>% rename(NAME=StateName,ABBREV=StateCode)
-st <- left_join(states,st,by="ABBREV")
-#State data includes populations but percentages are coded as whole numbers - except Percent variable
-st <- st %>% replace(y2006 = y2006/100, y2007=y2007/100, y2008=y2008/100, y2009=y2009/100, y2010=y2010/100, y2011=y2011/100, y2012=y2012/100, y2013=y2013/100)
-st <- st %>% mutate(y2006 = replace(y2006, STATCODE !=, y2006/100), 
-       t2_05= replace(t2_05, state=="Alaska", NA),
-       t2_10= replace(t2_10, state=="Alaska", NA),
-       t2_15= replace(t2_15, state=="Alaska", NA),
-       t2_0515= replace(t2_0515, state=="Alaska", NA))
+#Make data long
+formatLong <- function(dt) {
+  long <- dt %>% gather(year,value,10:17)
+  long$year <- as.character(long$year)
+  long <- long %>% mutate(year=sapply(strsplit(long$year, split='y', fixed=TRUE),function(x) (x[2])))
+  long$year <- as.numeric(long$year)
+  long <- long 
+}
+st_long <- formatLong(st)
+write.csv(st_long, "data/areadata_long.csv", na="", row.names=F)
 
-mt <- mt %>% rename(NAME=MetroName,FIPS=MetroCode)
+mt <- mt %>% rename(name=MetroName,fips=MetroCode,category=GROUPCODE,statcode=STATCODE,statlabel=STAT,isstate=ISSTATE)
 dt <- bind_rows(st,mt)
 write.csv(dt, "data/areadata.csv", na="", row.names=F)
 
-orig<-read.csv("data/original/InteractiveMap_State2013backup.csv",stringsAsFactors = F)
