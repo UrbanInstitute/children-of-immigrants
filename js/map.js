@@ -1,7 +1,7 @@
 var MOBILE_THRESHOLD = 600;
 
 var main_data_url = "data/areadata.csv";
-var metro_data_url = "data/metros.txt";
+var map_data_url = "data/metros.txt";
 var data, data_main;
 var FORMATTER,
     STATEMAP,
@@ -12,6 +12,7 @@ var FORMATTER,
     NUMTICKS,
     $GRAPHDIV,
     $LEGENDDIV,
+    $statemultiples = $('#statemultiples'),
     COLORS,
     BREAKS,
     LABELS,
@@ -28,6 +29,113 @@ var palette = {
 var us,
     map_aspect_width = 1,
     map_aspect_height = 0.7;
+
+var dispatch = d3.dispatch("load", "statechange", "hoverState", "dehoverState", "clickState");
+var menuId;
+var selecter = d3.selectAll(".stateselect")
+
+dispatch.on("load.menu", function (stateById) {
+    //populate the dropdowns using main csv's state names & abbreviations
+    selecter.on("change", function () {
+        dispatch.statechange(stateById.get(this.value));
+    });
+
+    selecter.selectAll("option")
+        .data(stateById.values())
+        .enter().append("option")
+        .attr("value", function (d) {
+            return d.STATCODE;
+        })
+        .text(function (d) {
+            return d.STAT;
+        });
+});
+
+//map animation over years
+function animater() {
+
+    var last_layer;
+
+    var control = document.getElementById('layers');
+
+    // Add a play button div
+    var play_button = control.appendChild(document.createElement('a'))
+    var pause = "&#9616;&#9616;";
+    var play = "&#9654;";
+    play_button.innerHTML = play;
+    play_button.id = "play_button";
+    play_button.onclick = function () {
+        if (nextInterval) {
+            nextInterval = clearInterval(nextInterval);
+            play_button.innerHTML = play;
+        } else {
+            highlightLayer(i++);
+            nextInterval = animate();
+            play_button.innerHTML = pause;
+        }
+    }
+    
+    var layers = [{
+        name: "'06"
+     }, {
+        name: "'07"
+     }, {
+        name: "'08"
+     }, {
+        name: "'09"
+     }, {
+        name: "'10"
+     }, {
+        name: "'11"
+     }, {
+        name: "'12"
+     }, {
+        name: "'13"
+     }];
+
+
+    layers.forEach(function (layer, n) {
+
+        layer.button = control.appendChild(document.createElement('a'));
+        layer.button.innerHTML = layers[n].name;
+        layer.button.onclick = function () {
+            highlightLayer(n);
+            i = n;
+            nextInterval = clearInterval(nextInterval);
+            play_button.innerHTML = play;
+        };
+    });
+
+    // we use a layer group to make it simple to remove an existing overlay
+    // and add a new one in the same line of code, as below, without juggling
+    // temporary variables.
+    //var layerGroup = L.layerGroup().addTo(map);
+
+    // i is the number of the currently-selected layer
+    var i = 0;
+
+    // show the first overlay as soon as the map loads
+    //highlightLayer(i++);
+
+    var nextInterval;
+
+    function animate() {
+        // and then time the next() function to run every 1 seconds
+        return setInterval(function () {
+            highlightLayer(i);
+            if (++i >= layers.length) i = 0;
+        }, 1000 * 1);
+
+    }
+
+   function highlightLayer(i) {
+        //layerGroup.clearLayers().addLayer(layers[i].layer);
+        var active = control.getElementsByClassName('active');
+        for (var j = 0; j < active.length; j++) active[j].className = '';
+        layers[i].button.className = 'active';
+    }
+}
+animater();
 
 function statemap() {
     data = data_main.filter(function (d) {
@@ -53,12 +161,12 @@ function metromap() {
     cbsamap("#metromap");
 }
 
-//map of value estimate
+//map - option for state or metro view
 function cbsamap(div) {
 
     data.forEach(function (d) {
         d.FIPS = +d.FIPS;
-        VALUE[d.FIPS] = +d.y2009;
+        VALUE[d.FIPS] = +d.y2011;
     });
 
     var margin = {
@@ -132,6 +240,7 @@ function cbsamap(div) {
     }
 }
 
+
 function drawgraphs() {
     metromap();
     statemap();
@@ -141,9 +250,15 @@ function drawgraphs() {
 $(window).load(function () {
     if (Modernizr.svg) { // if svg is supported, draw dynamic chart
         d3.csv(main_data_url, function (rates) {
-            d3.json(metro_data_url, function (metrodata) {
+            d3.json(map_data_url, function (mapdata) {
                 data_main = rates;
-                us = metrodata;
+                us = mapdata;
+                
+                var stateById = d3.map();
+                    data_main.forEach(function (d) {
+                        stateById.set(d.STATCODE, d);
+                    });
+                    dispatch.load(stateById);
 
                 drawgraphs();
                 window.onresize = drawgraphs;

@@ -1,3 +1,8 @@
+/*temporary width well for dev*/
+.tempwidth {
+    max-width: 940px;
+}
+
 .stateborders {
     fill: none;
     stroke: #ccc;
@@ -13,4 +18,58 @@
     stroke: #fff;
     stroke-linejoin: round;
     pointer-events: none;
+}
+
+.multiple {
+    width: 30%;
+    display: inline-block;
+}
+
+/*animation buttons*/
+.layer-holder {
+    width: 100%;
+}
+
+#layers {
+    margin: auto;
+    color: #333;
+    position: relative !important;
+    top: 12px;
+    height: auto;
+    background-color: #e2e2e2;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 10;
+
+}
+
+#layers {
+    min-height: 36px;
+}
+
+#layers a {
+    display: inline-block;
+    margin: 5px 1px 1px 1px;
+    padding: 6px;
+    height: 17px;
+    width: 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#layers a.active,
+#layers a#play_button:hover {
+    background: #1696d2;
+    color: #fff;
+    font-weight: 900;
+}
+
+#layers a:hover {
+    cursor: pointer;
+}
+
+#layers a#play_button {
+    background: #ccc;
 }
