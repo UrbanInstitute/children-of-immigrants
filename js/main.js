@@ -31,9 +31,8 @@ var us,
     map_aspect_width = 1,
     map_aspect_height = 0.7;
 
-var dispatch = d3.dispatch("load", "statechange", "hoverState", "dehoverState", "clickState");
+var dispatch = d3.dispatch("load", "change", "hoverState", "dehoverState", "clickState");
 var menuId;
-var selecter = d3.selectAll(".stateselect")
 
 function detectIE() {
     var ua = window.navigator.userAgent;
@@ -69,31 +68,50 @@ d3.selection.prototype.moveToFront = function () {
     });
 };
 
-dispatch.on("load.menu", function (stateById) {
-    //populate the dropdowns using main csv's state names & abbreviations
-    /*    selecter.on("change", function () {
-            dispatch.statechange(stateById.get(this.value));
-        });*/
+var selecter = d3.select("#outcome-select")
+dispatch.on("load.menu", function (metric) {
+    //populate the dropdowns using main csv's metric names
+    selecter.on("change", function () {
+        dispatch.change(metric.get(this.value));
+    });
 
     selecter.selectAll("option")
-        .data(stateById.values())
+        .data(metric.values())
         .enter().append("option")
         .attr("value", function (d) {
             return d.statcode;
         })
         .text(function (d) {
-            return d.statistics_label;
+            return d.statlabel;
         });
 });
 
-/*dispatch.on("statechange.menu", function (statebyId) {
-    selecter.property("value", statebyId.STATCODE);
-    menuId = statebyId.STATCODE;
-    drawgraphs();
-});*/
+//changing the metric shown changes: map coloring. Eventually: legend, breaks, line chart, text
+dispatch.on("change.menu", function (metric) {
+    var color = d3.scale.threshold()
+        .domain(BREAKS)
+        .range(COLORS);
+    outcomeSelect = selecter.property("value");
+    console.log(outcomeSelect);
+    data = data_main.filter(function (d) {
+        return d.statcode == outcomeSelect;
+    })
+    data.forEach(function (d) {
+        d.fips = +d.fips;
+        VALUE[d.fips] = +d.y2011;
+    });
 
+    d3.selectAll("path.statemap, path.metros")
+        .attr("fill", function (d) {
+            if (VALUE[d.id] != null) {
+                return color(VALUE[d.id]);
+            } else {
+                return "#fff";
+            }
+        });
+});
 
-//on hover, class those states "hovered" (turn em pink) and change the tooltip
+//on hover, class those states "hovered"
 dispatch.on("hoverState", function (areaName) {
     d3.selectAll("[id='" + areaName + "']")
         .classed("hovered", true)
@@ -109,34 +127,6 @@ dispatch.on("dehoverState", function (areaName) {
     //d3.selectAll("[id='" + menuId + "']")
     //    .moveToFront();
 });
-
-function selections() {
-    var color = d3.scale.threshold()
-        .domain(BREAKS)
-        .range(COLORS);
-
-    d3.selectAll(".stateselect")
-        .on("change", function (d, i) {
-            outcomeSelect = d3.select("#outcome-select").property("value");
-            data = data_main.filter(function (d) {
-                return d.statcode == outcomeSelect;
-            })
-            data.forEach(function (d) {
-                d.fips = +d.fips;
-                VALUE[d.fips] = +d.y2011;
-            });
-
-            d3.selectAll("path.statemap, path.metros")
-                //.attr("d", path)
-                .attr("fill", function (d) {
-                    if (VALUE[d.id] != null) {
-                        return color(VALUE[d.id]);
-                    } else {
-                        return "#fff";
-                    }
-                })
-        });
-}
 
 function statemap() {
     $GRAPHDIV = $("#statemap");
@@ -180,13 +170,12 @@ $(window).load(function () {
                     data_main = rates;
                     data_long = annualrates;
                     us = mapdata;
-                    selections();
 
-                    var stateById = d3.map();
+                    var metric = d3.map();
                     data_main.forEach(function (d) {
-                        stateById.set(d.statistics_label, d);
+                        metric.set(d.statlabel, d);
                     });
-                    dispatch.load(stateById);
+                    dispatch.load(metric);
 
                     drawgraphs();
                     window.onresize = drawgraphs;

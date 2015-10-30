@@ -23,7 +23,8 @@ function animater() {
     }
 
     var layers = [{
-        name: "'06"
+        name: "'06",
+        id: "2006"
      }, {
         name: "'07"
      }, {
@@ -168,7 +169,6 @@ function cbsamap(div) {
             .enter().append("path")
             .attr("d", path);
 
-        selections();
     } else {
 
         svg.selectAll("path")
@@ -202,6 +202,5 @@ function cbsamap(div) {
             .on("mouseout", function (d) {
                 dispatch.dehoverState(this.id);
             });
-        selections();
     }
 }

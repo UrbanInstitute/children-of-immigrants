@@ -156,4 +156,5 @@ function linechart(div, id) {
         .on("mouseout", function (d) {
             dispatch.dehoverState(this.id);
         });
+    
 }
