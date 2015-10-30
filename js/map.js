@@ -24,21 +24,28 @@ function animater() {
 
     var layers = [{
         name: "'06",
-        id: "2006"
+        id: "y2006"
      }, {
-        name: "'07"
+        name: "'07",
+        id: "y2007"
      }, {
-        name: "'08"
+        name: "'08",
+        id: "y2008"
      }, {
-        name: "'09"
+        name: "'09",
+        id: "y2009"
      }, {
-        name: "'10"
+        name: "'10",
+        id: "y2010"
      }, {
-        name: "'11"
+        name: "'11",
+        id: "y2011"
      }, {
-        name: "'12"
+        name: "'12",
+        id: "y2012"
      }, {
-        name: "'13"
+        name: "'13",
+        id: "y2013"
      }];
 
 
@@ -46,9 +53,12 @@ function animater() {
 
         layer.button = control.appendChild(document.createElement('a'));
         layer.button.innerHTML = layers[n].name;
+        layer.button.id = layers[n].id;
         layer.button.onclick = function () {
             highlightLayer(n);
             i = n;
+            yearSelect = layer.button.id;
+            dispatch.yearChange();
             nextInterval = clearInterval(nextInterval);
             play_button.innerHTML = play;
         };
@@ -60,10 +70,10 @@ function animater() {
     //var layerGroup = L.layerGroup().addTo(map);
 
     // i is the number of the currently-selected layer
-    var i = 0;
+    var i = 3;
 
     // show the first overlay as soon as the map loads
-    //highlightLayer(i++);
+    highlightLayer(i++);
 
     var nextInterval;
 
@@ -77,7 +87,6 @@ function animater() {
     }
 
     function highlightLayer(i) {
-        //layerGroup.clearLayers().addLayer(layers[i].layer);
         var active = control.getElementsByClassName('active');
         for (var j = 0; j < active.length; j++) active[j].className = '';
         layers[i].button.className = 'active';
@@ -96,7 +105,7 @@ function cbsamap(div) {
 
     data.forEach(function (d) {
         d.fips = +d.fips;
-        VALUE[d.fips] = +d.y2011;
+        VALUE[d.fips] = +d[yearSelect];
     });
 
     var color = d3.scale.threshold()

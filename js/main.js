@@ -18,7 +18,8 @@ var FORMATTER,
     BREAKS,
     LABELS,
     stateSelect,
-    outcomeSelect;
+    outcomeSelect,
+    yearSelect;
 
 var palette = {
     blue5: ["#b0d5f1", "#82c4e9", "#1696d2", "#00578b", "#00152A"],
@@ -31,7 +32,7 @@ var us,
     map_aspect_width = 1,
     map_aspect_height = 0.7;
 
-var dispatch = d3.dispatch("load", "change", "hoverState", "dehoverState", "clickState");
+var dispatch = d3.dispatch("load", "change","yearChange", "hoverState", "dehoverState", "clickState");
 var menuId;
 
 function detectIE() {
@@ -92,13 +93,32 @@ dispatch.on("change.menu", function (metric) {
         .domain(BREAKS)
         .range(COLORS);
     outcomeSelect = selecter.property("value");
-    console.log(outcomeSelect);
     data = data_main.filter(function (d) {
         return d.statcode == outcomeSelect;
     })
     data.forEach(function (d) {
         d.fips = +d.fips;
-        VALUE[d.fips] = +d.y2011;
+        VALUE[d.fips] = +d[yearSelect];
+    });
+
+    d3.selectAll("path.statemap, path.metros")
+        .attr("fill", function (d) {
+            if (VALUE[d.id] != null) {
+                return color(VALUE[d.id]);
+            } else {
+                return "#fff";
+            }
+        });
+});
+
+dispatch.on("yearChange", function () {
+    var color = d3.scale.threshold()
+        .domain(BREAKS)
+        .range(COLORS);
+    
+    data.forEach(function (d) {
+        d.fips = +d.fips;
+        VALUE[d.fips] = +d[yearSelect];
     });
 
     d3.selectAll("path.statemap, path.metros")
@@ -170,6 +190,8 @@ $(window).load(function () {
                     data_main = rates;
                     data_long = annualrates;
                     us = mapdata;
+                    
+                    yearSelect = "y2009";
 
                     var metric = d3.map();
                     data_main.forEach(function (d) {

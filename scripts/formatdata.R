@@ -5,7 +5,6 @@ library(dplyr)
 library(tidyr)
 library(doBy)
 
-
 states<-read.csv("../higher-ed/data/states.csv",stringsAsFactors = F)
 st<-read.csv("data/original/InteractiveMap_State2013_10_26_2015.csv",stringsAsFactors = F)
 mt<-read.csv("data/original/metrodata.csv",stringsAsFactors = F)
@@ -35,4 +34,13 @@ write.csv(st_long, "data/areadata_long.csv", na="", row.names=F)
 
 mt <- mt %>% rename(name=MetroName,fips=MetroCode,category=GROUPCODE,statcode=STATCODE,statlabel=STAT,isstate=ISSTATE)
 dt <- bind_rows(st,mt)
+
+#join new metric ids to wide data
+metrics<-read.csv("data/metrics_edited.csv", stringsAsFactors = F)
+metrics <- metrics %>% select(statcode,cat,catnum,level)
+dt <- left_join(dt,metrics,by="statcode")
+dt <- dt %>% select(c(cat,catnum,level,statcode,statlabel,fips,name),everything()) %>% 
+  select(-c(abbrev,category,statid,statistics_label))
+dt <- dt %>% arrange(catnum,level)
+
 write.csv(dt, "data/areadata.csv", na="", row.names=F)
