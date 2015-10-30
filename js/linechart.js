@@ -7,6 +7,7 @@ function formatYear(d) {
     return "'" + yearf(Math.abs(2000 - d));
 }
 
+
 function linechart(div, id) {
     var margin = {
         top: 25,
@@ -33,9 +34,6 @@ function linechart(div, id) {
     var x = d3.scale.linear()
         .range([0, width]);
 
-    var y = d3.scale.linear()
-        .range([height, 0]);
-
     var color = d3.scale.ordinal()
         .range(["#ccc"]);
 
@@ -50,7 +48,7 @@ function linechart(div, id) {
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    
+
     data2 = data_long.filter(function (d) {
         return d.statcode == outcomeSelect & d.isstate == STATEMAP;
     })
@@ -72,10 +70,13 @@ function linechart(div, id) {
         return d.year;
     }));
 
+    var gx = svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .attr("class", "x axis-show")
+        .call(xAxis);
 
-    x.domain(d3.extent(data, function (d) {
-        return d.year;
-    }));
+    var y = d3.scale.linear()
+        .range([height, 0]);
 
     //if positive/negative values, use full extent for y domain. if all positive, use 0 to max
     var ymin = d3.min(data, function (d) {
@@ -91,11 +92,6 @@ function linechart(div, id) {
             return d.val;
         }));
     }
-
-    var gx = svg.append("g")
-        .attr("transform", "translate(0," + height + ")")
-        .attr("class", "x axis-show")
-        .call(xAxis);
 
     var yAxis = d3.svg.axis()
         .scale(y)
@@ -141,7 +137,7 @@ function linechart(div, id) {
                 return "#ccc";
             }
         })
-            .on("click", function (d) {
+        .on("click", function (d) {
             dispatch.clickState(this.id);
         })
         .on("mouseover", function (d) {
@@ -160,5 +156,4 @@ function linechart(div, id) {
         .on("mouseout", function (d) {
             dispatch.dehoverState(this.id);
         });
-
 }

@@ -111,9 +111,30 @@ dispatch.on("dehoverState", function (areaName) {
 });
 
 function selections() {
+    var color = d3.scale.threshold()
+        .domain(BREAKS)
+        .range(COLORS);
+
     d3.selectAll(".stateselect")
         .on("change", function (d, i) {
-            drawgraphs();
+            outcomeSelect = d3.select("#outcome-select").property("value");
+            data = data_main.filter(function (d) {
+                return d.statcode == outcomeSelect;
+            })
+            data.forEach(function (d) {
+                d.fips = +d.fips;
+                VALUE[d.fips] = +d.y2011;
+            });
+
+            d3.selectAll("path.statemap, path.metros")
+                //.attr("d", path)
+                .attr("fill", function (d) {
+                    if (VALUE[d.id] != null) {
+                        return color(VALUE[d.id]);
+                    } else {
+                        return "#fff";
+                    }
+                })
         });
 }
 
@@ -149,7 +170,6 @@ function drawgraphs() {
     statemap();
     statelines();
 }
-
 
 
 $(window).load(function () {

@@ -19,7 +19,7 @@
 .metros.hovered,
 .statemap.selected,
 .statemap.hovered {
-    stroke: #ec008b;
+    stroke: #fdbf11;
     stroke-width: 2px;
     z-index: 1000;
 }
@@ -100,7 +100,7 @@
 
 .chartline.selected,
 .chartline.hovered {
-    stroke: #ec008b;
+    stroke: #fdbf11;
     stroke-width: 3;
 }
 

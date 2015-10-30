@@ -90,13 +90,17 @@ function cbsamap(div) {
     outcomeSelect = d3.select("#outcome-select").property("value");
 
     data = data_main.filter(function (d) {
-        return d.statcode == outcomeSelect & d.isstate == STATEMAP;
+        return d.statcode == outcomeSelect;
     })
 
     data.forEach(function (d) {
         d.fips = +d.fips;
         VALUE[d.fips] = +d.y2011;
     });
+
+    var color = d3.scale.threshold()
+        .domain(BREAKS)
+        .range(COLORS);
 
     var margin = {
         top: 10,
@@ -116,10 +120,6 @@ function cbsamap(div) {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    var color = d3.scale.threshold()
-        .domain(BREAKS)
-        .range(COLORS);
-
     var projection = d3.geo.albersUsa()
         .scale(width * 1.3)
         .translate([width / 2, height / 2]);
@@ -128,6 +128,7 @@ function cbsamap(div) {
         .projection(projection);
 
     if (STATEMAP == 0) {
+
         svg.selectAll("path")
             .data(topojson.feature(us, us.objects.tl_2015_us_cbsa).features)
             .enter().append("path")
@@ -166,8 +167,10 @@ function cbsamap(div) {
             .data(topojson.feature(us, us.objects.cb_2014_us_state_20m).features)
             .enter().append("path")
             .attr("d", path);
-        
+
+        selections();
     } else {
+
         svg.selectAll("path")
             .data(topojson.feature(us, us.objects.cb_2014_us_state_20m).features)
             .enter().append("path")
@@ -199,6 +202,6 @@ function cbsamap(div) {
             .on("mouseout", function (d) {
                 dispatch.dehoverState(this.id);
             });
-
+        selections();
     }
 }

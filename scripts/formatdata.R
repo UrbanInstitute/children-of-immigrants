@@ -3,6 +3,8 @@
 
 library(dplyr)
 library(tidyr)
+library(doBy)
+
 
 states<-read.csv("../higher-ed/data/states.csv",stringsAsFactors = F)
 st<-read.csv("data/original/InteractiveMap_State2013_10_26_2015.csv",stringsAsFactors = F)
@@ -13,18 +15,24 @@ st <- st %>% rename(name=StateName,abbrev=StateCode,category=GROUPCODE,statcode=
 #st[st<0]<-NA
 st <- left_join(states,st,by="abbrev")
 
+#dataset of the metrics used and their descriptions - will need to edit
+metrics <- summaryBy(isstate ~ category + statcode + statistics_label + statlabel + statid, data=st) %>% 
+  select(-isstate.mean) %>% 
+  arrange(statid)
+write.csv(metrics, "data/metrics.csv", na="", row.names=F)
+
 #Make data long
 formatLong <- function(dt) {
-  long <- dt %>% gather(year,value,10:17)
+  long <- dt %>% gather(year,value,6:13)
   long$year <- as.character(long$year)
   long <- long %>% mutate(year=sapply(strsplit(long$year, split='y', fixed=TRUE),function(x) (x[2])))
   long$year <- as.numeric(long$year)
   long <- long 
 }
-st_long <- formatLong(st)
+st2 <- st %>% select(fips,name,isstate,category,statcode,y2006,y2007,y2008,y2009,y2010,y2011,y2012,y2013)
+st_long <- formatLong(st2)
 write.csv(st_long, "data/areadata_long.csv", na="", row.names=F)
 
 mt <- mt %>% rename(name=MetroName,fips=MetroCode,category=GROUPCODE,statcode=STATCODE,statlabel=STAT,isstate=ISSTATE)
 dt <- bind_rows(st,mt)
 write.csv(dt, "data/areadata.csv", na="", row.names=F)
-
