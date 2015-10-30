@@ -88,7 +88,7 @@ dispatch.on("load.menu", function (metric) {
 });
 
 //changing the metric shown changes: map coloring. Eventually: legend, breaks, line chart, text
-dispatch.on("change.menu", function (metric) {
+dispatch.on("change.menu", function () {
     var color = d3.scale.threshold()
         .domain(BREAKS)
         .range(COLORS);
@@ -111,7 +111,11 @@ dispatch.on("change.menu", function (metric) {
         });
 });
 
-dispatch.on("yearChange", function () {
+//by changing the year, update the viz - good example to check functionality is "Household owns home"
+//note - this is getting a "data is undefined error bc yearChange is called in highlightLayer which is called when the animator loads on page load. doesn't cause issues but deal with this later
+dispatch.on("yearChange", function (year) {
+    yearSelect = year;
+
     var color = d3.scale.threshold()
         .domain(BREAKS)
         .range(COLORS);
