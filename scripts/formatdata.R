@@ -11,8 +11,8 @@ mt<-read.csv("data/original/metrodata.csv",stringsAsFactors = F)
 
 states <- states %>% select(statefip,abbrev) %>% rename (fips=statefip)
 st <- st %>% rename(name=StateName,abbrev=StateCode,category=GROUPCODE,statcode=STATCODE,statlabel=STAT,isstate=ISSTATE)
+#low sample size flag: -97
 st[st == -97] <- NA
-#st[st<0]<-NA
 st <- left_join(states,st,by="abbrev")
 
 #dataset of the metrics used and their descriptions - will need to edit

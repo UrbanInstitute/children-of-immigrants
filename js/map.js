@@ -9,7 +9,11 @@ function cbsamap(div) {
 
     data.forEach(function (d) {
         d.fips = +d.fips;
-        VALUE[d.fips] = +d[yearSelect];
+        if (d[yearSelect] == "") {
+            VALUE[d.fips] = null;
+        } else {
+            VALUE[d.fips] = +d[yearSelect];
+        }
     });
 
     var color = d3.scale.threshold()
@@ -93,10 +97,10 @@ function cbsamap(div) {
             })
             .attr("class", "statemap")
             .attr("fill", function (d) {
-                if (VALUE[d.id] != null) {
-                    return color(VALUE[d.id]);
+                if (VALUE[d.id] == null) {
+                    return "#ececec";
                 } else {
-                    return "#fff";
+                    return color(VALUE[d.id]);
                 }
             })
             .on("mouseover", function (d) {

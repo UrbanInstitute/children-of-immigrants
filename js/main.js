@@ -32,7 +32,7 @@ var us,
     map_aspect_width = 1,
     map_aspect_height = 0.7;
 
-var dispatch = d3.dispatch("load", "change","yearChange", "hoverState", "dehoverState", "clickState");
+var dispatch = d3.dispatch("load", "change", "yearChange", "hoverState", "dehoverState", "clickState");
 var menuId;
 
 function detectIE() {
@@ -98,15 +98,26 @@ dispatch.on("change.menu", function () {
     })
     data.forEach(function (d) {
         d.fips = +d.fips;
-        VALUE[d.fips] = +d[yearSelect];
+        if (d[yearSelect] == "") {
+            VALUE[d.fips] = null;
+        } else {
+            VALUE[d.fips] = +d[yearSelect];
+        }
     });
-
-    d3.selectAll("path.statemap, path.metros")
+    d3.selectAll("path.statemap")
         .attr("fill", function (d) {
-            if (VALUE[d.id] != null) {
-                return color(VALUE[d.id]);
+            if (VALUE[d.id] == null) {
+                return "#ececec";
             } else {
+                return color(VALUE[d.id]);
+            }
+        });
+    d3.selectAll("path.metros")
+        .attr("fill", function (d) {
+            if (VALUE[d.id] == null) {
                 return "#fff";
+            } else {
+                return color(VALUE[d.id]);
             }
         });
 });
@@ -119,18 +130,30 @@ dispatch.on("yearChange", function (year) {
     var color = d3.scale.threshold()
         .domain(BREAKS)
         .range(COLORS);
-    
+
     data.forEach(function (d) {
         d.fips = +d.fips;
-        VALUE[d.fips] = +d[yearSelect];
+        if (d[yearSelect] == "") {
+            VALUE[d.fips] = null;
+        } else {
+            VALUE[d.fips] = +d[yearSelect];
+        }
     });
 
-    d3.selectAll("path.statemap, path.metros")
+    d3.selectAll("path.statemap")
         .attr("fill", function (d) {
-            if (VALUE[d.id] != null) {
-                return color(VALUE[d.id]);
+            if (VALUE[d.id] == null) {
+                return "#ececec";
             } else {
+                return color(VALUE[d.id]);
+            }
+        });
+    d3.selectAll("path.metros")
+        .attr("fill", function (d) {
+            if (VALUE[d.id] == null) {
                 return "#fff";
+            } else {
+                return color(VALUE[d.id]);
             }
         });
 });
@@ -194,7 +217,7 @@ $(window).load(function () {
                     data_main = rates;
                     data_long = annualrates;
                     us = mapdata;
-                    
+
                     yearSelect = "y2009";
 
                     var metric = d3.map();

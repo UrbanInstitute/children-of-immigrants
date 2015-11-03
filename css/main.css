@@ -12,7 +12,6 @@
 .statemap {
     stroke: #fff;
     stroke-linejoin: round;
-    pointer-events: none;
 }
 
 .metros.selected,
