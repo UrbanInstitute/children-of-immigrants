@@ -6,11 +6,12 @@ library(tidyr)
 library(doBy)
 
 states<-read.csv("../higher-ed/data/states.csv",stringsAsFactors = F)
-st<-read.csv("data/original/InteractiveMap_State2013_10_26_2015.csv",stringsAsFactors = F)
+st<-read.csv("data/original/InteractiveMap_State2013_10_30_2015.csv",stringsAsFactors = F)
 mt<-read.csv("data/original/metrodata.csv",stringsAsFactors = F)
 
 states <- states %>% select(statefip,abbrev) %>% rename (fips=statefip)
 st <- st %>% rename(name=StateName,abbrev=StateCode,category=GROUPCODE,statcode=STATCODE,statlabel=STAT,isstate=ISSTATE)
+st[st == -97] <- NA
 #st[st<0]<-NA
 st <- left_join(states,st,by="abbrev")
 
