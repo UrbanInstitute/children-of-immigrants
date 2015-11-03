@@ -32,6 +32,7 @@ function linechart(div, id) {
     $GRAPHDIV.empty();
 
     var x = d3.scale.linear()
+        .domain([2006, 2013])
         .range([0, width]);
 
     var color = d3.scale.ordinal()
@@ -49,27 +50,28 @@ function linechart(div, id) {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    data2 = data_long.filter(function (d) {
+    data = data_main.filter(function (d) {
         return d.statcode == outcomeSelect & d.isstate == STATEMAP;
     })
 
-    color.domain(d3.keys(data2[0]).filter(function (key) {
+    color.domain(d3.keys(data[0]).filter(function (key) {
         return key == "name";
     }));
 
-    data = data2.map(function (d) {
+    var datayears = ["y2006", "y2007", "y2008", "y2009", "y2010", "y2011", "y2012", "y2013"];
+    var linegroups = data.map(function (name) {
         return {
-            abbrev: d.fips,
-            year: +d[YEARVAL],
-            val: +d[LINEVAL]
+            fips: name.fips,
+            values: datayears.map(function (d) {
+                return {
+                    year: +d.slice(1),
+                    val: name[d]
+                };
+            })
         };
     });
 
-
-    x.domain(d3.extent(data, function (d) {
-        return d.year;
-    }));
-
+    console.log(linegroups);
     var gx = svg.append("g")
         .attr("transform", "translate(0," + height + ")")
         .attr("class", "x axis-show")
@@ -78,20 +80,11 @@ function linechart(div, id) {
     var y = d3.scale.linear()
         .range([height, 0]);
 
-    //if positive/negative values, use full extent for y domain. if all positive, use 0 to max
-    var ymin = d3.min(data, function (d) {
-        return d.val;
-    });
-
-    if (ymin >= 0) {
-        y.domain([0, d3.max(data, function (d) {
-            return d.val;
-        })]);
-    } else {
-        y.domain(d3.extent(data, function (d) {
-            return d.val;
-        }));
-    }
+    y.domain([0, d3.max(linegroups, function (c) {
+        return d3.max(c.values, function (v) {
+            return v.val;
+        });
+    })]);
 
     var yAxis = d3.svg.axis()
         .scale(y)
@@ -103,11 +96,10 @@ function linechart(div, id) {
         .attr("class", "y axis")
         .call(yAxis);
 
-    data_nest = d3.nest().key(function (d) {
-        return d.abbrev;
-    }).entries(data);
-
     var line = d3.svg.line()
+        .defined(function (d) {
+            return d.val != "";
+        })
         .x(function (d) {
             return x(d.year);
         })
@@ -116,9 +108,7 @@ function linechart(div, id) {
         });
 
     var states = svg.selectAll(".state")
-        .data(data_nest, function (d) {
-            return d.key;
-        })
+        .data(linegroups)
         .enter().append("g")
         .attr("class", "state");
 
@@ -128,7 +118,7 @@ function linechart(div, id) {
             return line(d.values);
         })
         .attr("id", function (d) {
-            return "m" + d.key;
+            return "m" + d.fips;
         })
         .attr("stroke", function (d) {
             if (d.key == 0) {
@@ -156,5 +146,5 @@ function linechart(div, id) {
         .on("mouseout", function (d) {
             dispatch.dehoverState(this.id);
         });
-    
+
 }

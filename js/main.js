@@ -87,12 +87,14 @@ dispatch.on("load.menu", function (metric) {
         });
 });
 
-//changing the metric shown changes: map coloring. Eventually: legend, breaks, line chart, text
+//changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks, text
 dispatch.on("change.menu", function () {
     var color = d3.scale.threshold()
         .domain(BREAKS)
         .range(COLORS);
     outcomeSelect = selecter.property("value");
+    statelines();
+
     data = data_main.filter(function (d) {
         return d.statcode == outcomeSelect;
     })
@@ -212,23 +214,20 @@ function drawgraphs() {
 $(window).load(function () {
     if (Modernizr.svg) { // if svg is supported, draw dynamic chart
         d3.csv(main_data_url, function (rates) {
-            d3.csv(long_data_url, function (annualrates) {
-                d3.json(map_data_url, function (mapdata) {
-                    data_main = rates;
-                    data_long = annualrates;
-                    us = mapdata;
+            d3.json(map_data_url, function (mapdata) {
+                data_main = rates;
+                us = mapdata;
 
-                    yearSelect = "y2009";
+                yearSelect = "y2009";
 
-                    var metric = d3.map();
-                    data_main.forEach(function (d) {
-                        metric.set(d.statlabel, d);
-                    });
-                    dispatch.load(metric);
-
-                    drawgraphs();
-                    window.onresize = drawgraphs;
+                var metric = d3.map();
+                data_main.forEach(function (d) {
+                    metric.set(d.statlabel, d);
                 });
+                dispatch.load(metric);
+
+                drawgraphs();
+                window.onresize = drawgraphs;
             });
         });
     }
