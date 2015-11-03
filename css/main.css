@@ -19,7 +19,7 @@
 .statemap.selected,
 .statemap.hovered {
     stroke: #fdbf11;
-    stroke-width: 2px;
+    stroke-width: 3px;
     z-index: 1000;
 }
 

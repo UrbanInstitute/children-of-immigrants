@@ -121,7 +121,7 @@ function linechart(div, id) {
             return "m" + d.fips;
         })
         .attr("stroke", function (d) {
-            if (d.key == 0) {
+            if (d.fips == 0) {
                 return "#000";
             } else {
                 return "#ccc";
