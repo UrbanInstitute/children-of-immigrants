@@ -1,5 +1,6 @@
 var linechart_aspect_width = 1;
-var linechart_aspect_height = 0.7;
+var linechart_aspect_height = 0.5;
+var NUMTICKS = 6;
 
 var yearf = d3.format("02d");
 
@@ -41,8 +42,7 @@ function linechart(div, id) {
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
-        .tickFormat(formatYear)
-        .ticks(NUMTICKS);
+        .tickFormat(formatYear);
 
     var svg = d3.select(div).append("svg")
         .attr("width", width + margin.left + margin.right)
@@ -58,14 +58,15 @@ function linechart(div, id) {
         return key == "name";
     }));
 
+    //nest data by fips, then have one year-value pair for each year in datayears
     var datayears = ["y2006", "y2007", "y2008", "y2009", "y2010", "y2011", "y2012", "y2013"];
-    var linegroups = data.map(function (name) {
+    var linegroups = data.map(function (d) {
         return {
-            fips: name.fips,
-            values: datayears.map(function (d) {
+            fips: +d.fips,
+            values: datayears.map(function (y) {
                 return {
-                    year: +d.slice(1),
-                    val: name[d]
+                    year: +y.slice(1),
+                    val: d[y]
                 };
             })
         };
@@ -90,7 +91,8 @@ function linechart(div, id) {
         .scale(y)
         .outerTickSize(0)
         .tickFormat(FORMATTER)
-        .orient("left");
+        .orient("left")
+        .ticks(NUMTICKS);
 
     var gy = svg.append("g")
         .attr("class", "y axis")

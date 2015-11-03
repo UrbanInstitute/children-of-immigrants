@@ -14,7 +14,6 @@ var FORMATTER,
     $GRAPHDIV,
     $LEGENDDIV,
     $statemultiples = $('#statemultiples'),
-    COLORS,
     BREAKS,
     LABELS,
     stateSelect,
@@ -27,6 +26,8 @@ var palette = {
     yellowblue: ["#ca5800", "#fcb918", "#ffedcd", "#d7e8f6", "#1696d2", "#00578b"],
     gray5: ["#ECECEC", "#DCDBDB", "#ccc", "#777", "#000"]
 };
+
+var COLORS = palette.blue5;
 
 var us,
     map_aspect_width = 1,
@@ -94,6 +95,7 @@ dispatch.on("change.menu", function () {
         .range(COLORS);
     outcomeSelect = selecter.property("value");
     statelines();
+    metrolines();
 
     data = data_main.filter(function (d) {
         return d.statcode == outcomeSelect;
@@ -181,18 +183,14 @@ function statemap() {
     $GRAPHDIV = $("#statemap");
     STATEMAP = 1;
     BREAKS = [0.2, 0.4, 0.6, 0.8];
-    COLORS = palette.blue5;
     cbsamap("#statemap");
 }
 
 function statelines() {
     $GRAPHDIV = $("#statelines");
-    LINEVAL = "value";
-    YEARVAL = "year";
     FORMATTER = d3.format("%");
     STATEMAP = 1;
     isMobile = false;
-    NUMTICKS = 7;
     linechart("#statelines");
 }
 
@@ -200,14 +198,22 @@ function metromap() {
     $GRAPHDIV = $("#metromap");
     STATEMAP = 0;
     BREAKS = [0.2, 0.4, 0.6, 0.8];
-    COLORS = palette.blue5;
     cbsamap("#metromap");
+}
+
+function metrolines() {
+    $GRAPHDIV = $("#metrolines");
+    FORMATTER = d3.format("%");
+    STATEMAP = 0;
+    isMobile = false;
+    linechart("#metrolines");
 }
 
 function drawgraphs() {
     metromap();
     statemap();
     statelines();
+    metrolines();
 }
 
 
