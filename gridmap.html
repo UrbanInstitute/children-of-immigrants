@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Children of Immigrants Data Tool</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/urban-text.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Children of Immigrants</h1>
+                <p>The share of immigrants living in the United States has grown substantially over the last 40 years, but both the share and the characteristics of immigrants vary widely by state and even within state across metro areas. As the share of immigrants has grown so has the share of children whose parents are immigrants. Understanding the current share and characteristics of children of immigrants as well as the trends at the state and metro area are vital for policies that affect children and family. For instance, in order to determine the types of language accessibility policies necessary for schools, it is important to know both the share of children of immigrants as well the proportion that have limited or no English proficiency. This page expands on the children of immigrants' data tool available here. All of the statistics used to generate the interactive maps on this page can be extracted from the children of immigrants' data tool. </p>
+
+                <div id="gridmap"></div>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-130 275.8 351 242.2" style="enable-background:new -130 275.8 351 242.2;" xml:space="preserve">
+                    <style type="text/css">
+                        /*.st0 {
+                            fill: #EEEEEE;
+                        }*/
+                        
+                        .st1 {
+                            font-family: 'Lato';
+                        }
+                        
+                        .st2 {
+                            font-size: 10px;
+                        }
+                    </style>
+                    <defs xmlns="http://www.w3.org/1999/xhtml">
+                        <style type="text/css">
+                            <![CDATA[ #nameplate {
+                                padding-bottom: 40px;
+                            }
+                            
+                            .small-chart {
+                                float: right;
+                                margin: 0px 0px 20px 40px;
+                            }
+                            
+                            p.intro-text {
+                                font-family: FranklinITCProThin;
+                                font-weight: normal;
+                                text-align: left;
+                                font-size: 1.5em !important;
+                                line-height: 1.6em !important;
+                            }
+                            
+                            p {
+                                font-weight: normal !important;
+                            }
+                            
+                            p.body {
+                                font-size: 1.4em;
+                                line-height: 1.6em;
+                            }
+                            
+                            .graphic-chunk {
+                                padding: 40px 0px;
+                                border-top-width: 1px;
+                                border-top-style: solid;
+                                border-top-color: rgb(153, 153, 153);
+                            }
+                            
+                            #legend {
+                                margin: 0px auto;
+                                border-bottom-width: 1px;
+                                border-bottom-style: dotted;
+                                border-bottom-color: rgb(204, 204, 204);
+                            }
+                            
+                            .group-1 {
+                                background: rgb(170, 0, 0);
+                            }
+                            
+                            .group-2 {
+                                background: rgb(239, 101, 72);
+                            }
+                            
+                            .group-3 {
+                                background: rgb(254, 176, 110);
+                            }
+                            
+                            .group-4 {
+                                background: rgb(253, 212, 158);
+                            }
+                            
+                            .modelchunk {
+                                padding: 40px 0px;
+                            }
+                            
+                            .modelchunk--split {
+                                width: 47.5%;
+                                float: left;
+                                display: inline-block;
+                            }
+                            
+                            .split--left {
+                                padding-right: 2.5%;
+                            }
+                            
+                            .split--right {
+                                padding-left: 2.5%;
+                            }
+                            
+                            .sim-info {
+                                color: rgb(102, 102, 102);
+                                font-weight: normal;
+                            }
+                            
+                            .box-wrapper {
+                                margin-top: 30px;
+                            }
+                            
+                            .box-unit {
+                                display: inline-block;
+                                margin: -3px -1px;
+                                border: 1px solid rgb(255, 255, 255);
+                                box-shadow: none !important;
+                                width: 20px !important;
+                                height: 20px !important;
+                            }
+                            
+                            .group-1 {
+                                border: 5px solid rgb(0, 0, 0);
+                                margin: -8px -5px;
+                                position: relative;
+                                z-index: 9999;
+                            }
+                            
+                            .group-1::before {
+                                content: 'Patient Zero';
+                                position: absolute;
+                                top: -25px;
+                                left: -6px;
+                                width: 100px;
+                                font-family: FranklinITCProBold;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                font-weight: normal;
+                            }
+                            
+                            .box-unit.dead {
+                                box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 25px inset !important;
+                            }
+                            
+                            .state {
+                                fill: rgb(238, 238, 238);
+                            }
+                            
+                            .state-label {
+                                font-size: 12px;
+                                -webkit-user-select: none !important;
+                            }
+                            
+                            .key text {
+                                dominant-baseline: central;
+                                font-size: 11px;
+                            }
+                            
+                            .leader {
+                                stroke: rgb(102, 102, 102);
+                                shape-rendering: crispEdges;
+                            }
+                            
+                            .chunk {
+                                width: 30%;
+                                padding: 0px;
+                                float: left;
+                            }
+                            
+                            .chunk--left {
+                                padding-left: 5%;
+                            }
+                            
+                            .chunk--right {
+                                padding-right: 5%;
+                            }
+                            
+                            .en-markup-crop-options {
+                                top: 18px !important;
+                                left: 50% !important;
+                                margin-left: -100px !important;
+                                width: 200px !important;
+                                border: 2px solid rgba(255, 255, 255, 0.380392) !important;
+                                border-radius: 4px !important;
+                            }
+                            
+                            .en-markup-crop-options div div:first-of-type {
+                                margin-left: 0px !important;
+                            }
+                            
+                            ]]>
+                        </style>
+                    </defs>
+                    <g transform="translate(29.25,29.25)">
+                        <g>
+                            <rect id="AL" x="28.2" y="407.7" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 34.2009 422.8725)" class="st1 st2">AL</text>
+                        </g>
+                        <g>
+                            <rect id="HI" x="-130" y="434.1" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -123.8226 449.2475)" class="st1 st2">HI</text>
+                        </g>
+                        <g>
+                            <rect id="AZ" x="-103.6" y="381.3" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -97.4576 396.4975)" class="st1 st2">AZ</text>
+                        </g>
+                        <g>
+                            <rect id="AR" x="-24.5" y="381.3" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -19.0002 396.4975)" class="st1 st2">AR</text>
+                        </g>
+                        <g>
+                            <rect id="CA" x="-130" y="354.9" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -125.3328 370.1225)" class="st1 st2">CA</text>
+                        </g>
+                        <g>
+                            <rect id="CO" x="-77.2" y="354.9" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -72.6422 370.1225)" class="st1 st2">CO</text>
+                        </g>
+                        <g>
+                            <rect id="CT" x="107.4" y="328.6" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 112.9374 343.7475)" class="st1 st2">CT</text>
+                        </g>
+                        <g>
+                            <rect id="DC" x="81" y="381.3" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 85.8643 396.4975)" class="st1 st2">DC</text>
+                        </g>
+                        <g>
+                            <rect id="DE" x="107.4" y="354.9" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 112.6425 370.1225)" class="st1 st2">DE</text>
+                        </g>
+                        <g>
+                            <rect id="FL" x="81" y="434.1" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 87.6543 449.2475)" class="st1 st2">FL</text>
+                        </g>
+                        <g>
+                            <rect id="GA" x="54.6" y="407.7" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 59.7125 422.8725)" class="st1 st2">GA</text>
+                        </g>
+                        <g>
+                            <rect id="AK" x="-130" y="249.4" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -125.6177 264.6225)" class="st1 st2">AK</text>
+                        </g>
+                        <g>
+                            <rect id="ID" x="-103.6" y="302.2" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -96.2374 317.3725)" class="st1 st2">ID</text>
+                        </g>
+                        <g>
+                            <rect id="IL" x="1.9" y="302.2" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 9.7347 317.3725)" class="st1 st2">IL</text>
+                        </g>
+                        <g>
+                            <rect id="IN" x="1.9" y="328.6" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 8.5253 343.7475)" class="st1 st2">IN</text>
+                        </g>
+                        <g>
+                            <rect id="IA" x="-24.5" y="328.6" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -17.3151 343.7475)" class="st1 st2">IA</text>
+                        </g>
+                        <g>
+                            <rect id="KS" x="-50.9" y="381.3" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -45.0218 396.4975)" class="st1 st2">KS</text>
+                        </g>
+                        <g>
+                            <rect id="KY" x="1.9" y="354.9" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 7.2897 370.1225)" class="st1 st2">KY</text>
+                        </g>
+                        <g>
+                            <rect id="LA" x="-24.5" y="407.7" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -18.3503 422.8725)" class="st1 st2">LA</text>
+                        </g>
+                        <g>
+                            <rect id="ME" x="133.8" y="249.4" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 138.5439 264.6225)" class="st1 st2">ME</text>
+                        </g>
+                        <g>
+                            <rect id="MD" x="81" y="354.9" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 84.689 370.1225)" class="st1 st2">MD</text>
+                        </g>
+                        <g>
+                            <rect id="MA" x="107.4" y="302.2" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 111.3124 317.3725)" class="st1 st2">MA</text>
+                        </g>
+                        <g>
+                            <rect id="MI" x="28.2" y="302.2" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 34.0353 317.3725)" class="st1 st2">MI</text>
+                        </g>
+                        <g>
+                            <rect id="MN" x="-24.5" y="302.2" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -20.7602 317.3725)" class="st1 st2">MN</text>
+                        </g>
+                        <g>
+                            <rect id="MS" x="1.9" y="407.7" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 6.59 422.8725)" class="st1 st2">MS</text>
+                        </g>
+                        <g>
+                            <rect id="MO" x="-24.5" y="354.9" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -20.9702 370.1225)" class="st1 st2">MO</text>
+                        </g>
+                        <g>
+                            <rect id="MT" x="-77.2" y="302.2" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -72.7772 317.3725)" class="st1 st2">MT</text>
+                        </g>
+                        <g>
+                            <rect id="NE" x="-50.9" y="354.9" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -45.6519 370.1225)" class="st1 st2">NE</text>
+                        </g>
+                        <g>
+                            <rect id="NV" x="-103.6" y="328.6" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -98.1176 343.7475)" class="st1 st2">NV</text>
+                        </g>
+                        <g>
+                            <rect id="NH" x="133.8" y="275.8" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 138.4888 290.9975)" class="st1 st2">NH</text>
+                        </g>
+                        <g>
+                            <rect id="NJ" x="81" y="328.6" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 87.0542 343.7475)" class="st1 st2">NJ</text>
+                        </g>
+                        <g>
+                            <rect id="NM" x="-77.2" y="381.3" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -73.6071 396.4975)" class="st1 st2">NM</text>
+                        </g>
+                        <g>
+                            <rect id="NY" x="81" y="302.2" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 86.1294 317.3725)" class="st1 st2">NY</text>
+                        </g>
+                        <g>
+                            <rect id="NC" x="28.2" y="381.3" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 32.9655 396.4975)" class="st1 st2">NC</text>
+                        </g>
+                        <g>
+                            <rect id="ND" x="-50.9" y="302.2" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -46.5118 317.3725)" class="st1 st2">ND</text>
+                        </g>
+                        <g>
+                            <rect id="OH" x="28.2" y="328.6" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 32.4006 343.7475)" class="st1 st2">OH</text>
+                        </g>
+                        <g>
+                            <rect id="OK" x="-50.9" y="407.7" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -46.3619 422.8725)" class="st1 st2">OK</text>
+                        </g>
+                        <g>
+                            <rect id="OR" x="-130" y="328.6" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -125.7178 343.7475)" class="st1 st2">OR</text>
+                        </g>
+                        <g>
+                            <rect id="PA" x="54.6" y="328.6" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 60.3268 343.7475)" class="st1 st2">PA</text>
+                        </g>
+                        <g>
+                            <rect id="RI" x="133.8" y="328.6" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 141.2939 343.7475)" class="st1 st2">RI</text>
+                        </g>
+                        <g>
+                            <rect id="SC" x="54.6" y="381.3" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 60.7072 396.4975)" class="st1 st2">SC</text>
+                        </g>
+                        <g>
+                            <rect id="SD" x="-50.9" y="328.6" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -45.3819 343.7475)" class="st1 st2">SD</text>
+                        </g>
+                        <g>
+                            <rect id="TN" x="1.9" y="381.3" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 7.1097 396.4975)" class="st1 st2">TN</text>
+                        </g>
+                        <g>
+                            <rect id="TX" x="-50.9" y="434.1" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -45.1319 449.2475)" class="st1 st2">TX</text>
+                        </g>
+                        <g>
+                            <rect id="UT" x="-103.6" y="354.9" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -97.5375 370.1225)" class="st1 st2">UT</text>
+                        </g>
+                        <g>
+                            <rect id="VT" x="107.4" y="275.8" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 112.9628 290.9975)" class="st1 st2">VT</text>
+                        </g>
+                        <g>
+                            <rect id="VA" x="54.6" y="354.9" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 59.9825 370.1225)" class="st1 st2">VA</text>
+                        </g>
+                        <g>
+                            <rect id="WA" x="-130" y="302.2" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -127.0032 317.3725)" class="st1 st2">WA</text>
+                        </g>
+                        <g>
+                            <rect id="WV" x="28.2" y="354.9" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 31.6755 370.1225)" class="st1 st2">WV</text>
+                        </g>
+                        <g>
+                            <rect id="WI" x="1.9" y="275.8" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 7.2101 290.9975)" class="st1 st2">WI</text>
+                        </g>
+                        <g>
+                            <rect id="WY" x="-77.2" y="328.6" class="st0" width="24.4" height="24.4" />
+                            <text transform="matrix(1 0 0 1 -73.4672 343.7475)" class="st1 st2">WY</text>
+                        </g>
+                    </g>
+                </svg>
+
+            </div>
+        </div>
+
+
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/topojson.min.js"></script>
+        <script src="lib/d3.min.js"></script>
+        <script src="lib/modernizr.svg.min.js"></script>
+        <script src="lib/bootstrap.min.js"></script>
+
+        <script src="js/gridmap.js"></script>
+
+        <!--    <script>
+        var pymChild = new pym.Child();
+    </script>-->
+
+</body>
+
+</html>

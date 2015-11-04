@@ -22,16 +22,16 @@ metrics <- summaryBy(isstate ~ category + statcode + statistics_label + statlabe
 write.csv(metrics, "data/metrics.csv", na="", row.names=F)
 
 #Make data long
-formatLong <- function(dt) {
-  long <- dt %>% gather(year,value,6:13)
-  long$year <- as.character(long$year)
-  long <- long %>% mutate(year=sapply(strsplit(long$year, split='y', fixed=TRUE),function(x) (x[2])))
-  long$year <- as.numeric(long$year)
-  long <- long 
-}
-st2 <- st %>% select(fips,name,isstate,category,statcode,y2006,y2007,y2008,y2009,y2010,y2011,y2012,y2013)
-st_long <- formatLong(st2)
-write.csv(st_long, "data/areadata_long.csv", na="", row.names=F)
+# formatLong <- function(dt) {
+#   long <- dt %>% gather(year,value,6:13)
+#   long$year <- as.character(long$year)
+#   long <- long %>% mutate(year=sapply(strsplit(long$year, split='y', fixed=TRUE),function(x) (x[2])))
+#   long$year <- as.numeric(long$year)
+#   long <- long 
+# }
+# st2 <- st %>% select(fips,name,isstate,category,statcode,y2006,y2007,y2008,y2009,y2010,y2011,y2012,y2013)
+# st_long <- formatLong(st2)
+# write.csv(st_long, "data/areadata_long.csv", na="", row.names=F)
 
 mt <- mt %>% rename(name=MetroName,fips=MetroCode,category=GROUPCODE,statcode=STATCODE,statlabel=STAT,isstate=ISSTATE)
 dt <- bind_rows(st,mt)
@@ -40,8 +40,8 @@ dt <- bind_rows(st,mt)
 metrics<-read.csv("data/metrics_edited.csv", stringsAsFactors = F)
 metrics <- metrics %>% select(statcode,cat,catnum,level)
 dt <- left_join(dt,metrics,by="statcode")
-dt <- dt %>% select(c(cat,catnum,level,statcode,statlabel,fips,name),everything()) %>% 
-  select(-c(abbrev,category,statid,statistics_label))
+dt <- dt %>% select(c(cat,catnum,level,statcode,statlabel,fips,abbrev,name),everything()) %>% 
+  select(-c(category,statid,statistics_label))
 dt <- dt %>% arrange(catnum,level)
 
 write.csv(dt, "data/areadata.csv", na="", row.names=F)

@@ -72,7 +72,6 @@ function linechart(div, id) {
         };
     });
 
-    console.log(linegroups);
     var gx = svg.append("g")
         .attr("transform", "translate(0," + height + ")")
         .attr("class", "x axis-show")
