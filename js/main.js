@@ -13,8 +13,6 @@ var FORMATTER,
     NUMTICKS,
     $GRAPHDIV,
     $LEGENDDIV,
-    $statemultiples = $('#statemultiples'),
-    BREAKS,
     LABELS,
     stateSelect,
     outcomeSelect,
@@ -28,7 +26,7 @@ var palette = {
 };
 
 var COLORS = palette.blue5;
-
+var BREAKS = [0.2, 0.4, 0.6, 0.8];
 var us,
     map_aspect_width = 1,
     map_aspect_height = 0.7;
@@ -135,8 +133,6 @@ dispatch.on("yearChange", function (year) {
     var color = d3.scale.threshold()
         .domain(BREAKS)
         .range(COLORS);
-    
-gridmap();
 
     data.forEach(function (d) {
         d.fips = +d.fips;
@@ -146,6 +142,18 @@ gridmap();
             VALUE[d.fips] = +d[yearSelect];
         }
     });
+
+    d3.selectAll("rect")
+        .attr("d", function (d) {
+            return d[yearSelect];
+        })
+        .attr("fill", function (d) {
+            if (d[yearSelect] == "") {
+                return "#ececec";
+            } else {
+                return color(d[yearSelect]);
+            }
+        });
 
     d3.selectAll("path.statemap")
         .attr("fill", function (d) {
@@ -185,7 +193,6 @@ dispatch.on("dehoverState", function (areaName) {
 function statemap() {
     $GRAPHDIV = $("#statemap");
     STATEMAP = 1;
-    BREAKS = [0.2, 0.4, 0.6, 0.8];
     cbsamap("#statemap");
 }
 
@@ -200,7 +207,6 @@ function statelines() {
 function metromap() {
     $GRAPHDIV = $("#metromap");
     STATEMAP = 0;
-    BREAKS = [0.2, 0.4, 0.6, 0.8];
     cbsamap("#metromap");
 }
 
