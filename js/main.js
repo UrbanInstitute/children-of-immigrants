@@ -96,6 +96,7 @@ dispatch.on("change.menu", function () {
     outcomeSelect = selecter.property("value");
     statelines();
     metrolines();
+    gridmap();
 
     data = data_main.filter(function (d) {
         return d.statcode == outcomeSelect;
@@ -134,6 +135,8 @@ dispatch.on("yearChange", function (year) {
     var color = d3.scale.threshold()
         .domain(BREAKS)
         .range(COLORS);
+    
+gridmap();
 
     data.forEach(function (d) {
         d.fips = +d.fips;
@@ -214,6 +217,7 @@ function drawgraphs() {
     statemap();
     statelines();
     metrolines();
+    gridmap();
 }
 
 

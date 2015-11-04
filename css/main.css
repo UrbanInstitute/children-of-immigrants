@@ -23,7 +23,6 @@
     z-index: 1000;
 }
 
-
 .tt {
     margin-bottom: 1em;
 }
@@ -42,8 +41,8 @@
     display: inline-block;
     font-size: 14px;
 }
-
 /*animation buttons*/
+
 .layer-holder {
     width: 100%;
 }
@@ -89,7 +88,6 @@
 #layers a#play_button {
     background: #ccc;
 }
-
 /***line charts***/
 
 .chartline {
@@ -140,4 +138,10 @@
 .legend {
     font-size: 12px;
     fill: #333;
+}
+
+/*svg grid map*/
+.st2 {
+    font-size: 10px;
+    fill: #fff;
 }
