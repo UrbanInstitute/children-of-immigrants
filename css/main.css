@@ -17,10 +17,22 @@
 .metros.selected,
 .metros.hovered,
 .statemap.selected,
-.statemap.hovered {
+.statemap.hovered,
+.st0.selected,
+.st0.hovered {
     stroke: #fdbf11;
     stroke-width: 3px;
-    z-index: 1000;
+}
+
+/*svg grid map*/
+
+.st2 {
+    font-size: 10px;
+    fill: #fff;
+}
+
+#tilemap {
+    margin-top: 30px;
 }
 
 .tt {
@@ -138,10 +150,4 @@
 .legend {
     font-size: 12px;
     fill: #333;
-}
-
-/*svg grid map*/
-.st2 {
-    font-size: 10px;
-    fill: #fff;
 }

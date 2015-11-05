@@ -1,5 +1,8 @@
-#HR, 10-20-15
+#Hannah Recht, 10-20-15
 #Format Children of Immigrants data
+#Two original CSVs: state-level and CBSA-level (100 most populous)
+#End result: areadata.csv has rows for each geography*metric with columns for each year of data (2007-2013)
+#Use original statcodes but create new metric categories and numbers for grouping
 
 library(dplyr)
 library(tidyr)
@@ -21,18 +24,6 @@ metrics <- summaryBy(isstate ~ category + statcode + statistics_label + statlabe
   arrange(statid)
 write.csv(metrics, "data/metrics.csv", na="", row.names=F)
 
-#Make data long
-# formatLong <- function(dt) {
-#   long <- dt %>% gather(year,value,6:13)
-#   long$year <- as.character(long$year)
-#   long <- long %>% mutate(year=sapply(strsplit(long$year, split='y', fixed=TRUE),function(x) (x[2])))
-#   long$year <- as.numeric(long$year)
-#   long <- long 
-# }
-# st2 <- st %>% select(fips,name,isstate,category,statcode,y2006,y2007,y2008,y2009,y2010,y2011,y2012,y2013)
-# st_long <- formatLong(st2)
-# write.csv(st_long, "data/areadata_long.csv", na="", row.names=F)
-
 mt <- mt %>% rename(name=MetroName,fips=MetroCode,category=GROUPCODE,statcode=STATCODE,statlabel=STAT,isstate=ISSTATE)
 dt <- bind_rows(st,mt)
 
@@ -45,3 +36,15 @@ dt <- dt %>% select(c(cat,catnum,level,statcode,statlabel,fips,abbrev,name),ever
 dt <- dt %>% arrange(catnum,level)
 
 write.csv(dt, "data/areadata.csv", na="", row.names=F)
+
+#Make data long
+# formatLong <- function(dt) {
+#   long <- dt %>% gather(year,value,6:13)
+#   long$year <- as.character(long$year)
+#   long <- long %>% mutate(year=sapply(strsplit(long$year, split='y', fixed=TRUE),function(x) (x[2])))
+#   long$year <- as.numeric(long$year)
+#   long <- long 
+# }
+# st2 <- st %>% select(fips,name,isstate,category,statcode,y2006,y2007,y2008,y2009,y2010,y2011,y2012,y2013)
+# st_long <- formatLong(st2)
+# write.csv(st_long, "data/areadata_long.csv", na="", row.names=F)

@@ -177,7 +177,7 @@ dispatch.on("yearChange", function (year) {
 dispatch.on("hoverState", function (areaName) {
     d3.selectAll("[id='" + areaName + "']")
         .classed("hovered", true)
-        .moveToFront();
+        //.moveToFront();
     //tooltip(areaName);
 });
 
@@ -220,7 +220,7 @@ function metrolines() {
 
 function drawgraphs() {
     metromap();
-    statemap();
+    //statemap();
     statelines();
     metrolines();
     gridmap();

@@ -1,5 +1,5 @@
 var linechart_aspect_width = 1;
-var linechart_aspect_height = 0.5;
+var linechart_aspect_height = 0.4;
 var NUMTICKS = 6;
 
 var yearf = d3.format("02d");

@@ -10,10 +10,16 @@ function gridmap() {
         return d.statcode == outcomeSelect & d.isstate == 1;
     })
 
-    var rects = d3.selectAll("rect")
+    var rect = d3.selectAll("rect")
         .data(data)
-        .attr("d", function (d) {
-            return d[yearSelect];
+        .enter().append("rect")
+
+    var rects = d3.selectAll("rect")
+        .data(data, function (d) {
+            return d.fips;
+        })
+        .attr("id", function (d) {
+            return "m" + d.fips;
         })
         //.attr("class", "stategrid")
         .attr("fill", function (d) {
@@ -22,5 +28,23 @@ function gridmap() {
             } else {
                 return color(d[yearSelect]);
             }
+        })
+        .on("mouseover", function (d) {
+            if (isIE != false) {
+                d3.selectAll(".hovered")
+                    .classed("hovered", false);
+                d3.selectAll("#" + this.id)
+                    .classed("hovered", true)
+                    .moveToFront();
+                //tooltip(this.id);
+                this.parentNode.appendChild(this);
+            } else {
+                dispatch.hoverState(this.id);
+            }
+        })
+        .on("mouseout", function (d) {
+            dispatch.dehoverState(this.id);
         });
+
+
 }
