@@ -18,8 +18,8 @@ function gridmap() {
         .data(data, function (d) {
             return d.fips;
         })
-        .attr("id", function (d) {
-            return "m" + d.fips;
+        .attr("fid", function (d) {
+            return "f" + d.fips;
         })
         //.attr("class", "stategrid")
         .attr("fill", function (d) {
@@ -29,22 +29,23 @@ function gridmap() {
                 return color(d[yearSelect]);
             }
         })
+        .on("click", function (d) {
+            dispatch.clickState(d3.select(this).attr("fid"));
+        })
         .on("mouseover", function (d) {
             if (isIE != false) {
                 d3.selectAll(".hovered")
                     .classed("hovered", false);
-                d3.selectAll("#" + this.id)
+                d3.selectAll("[fid='" + d3.select(this).attr("fid"))
                     .classed("hovered", true)
                     .moveToFront();
                 //tooltip(this.id);
                 this.parentNode.appendChild(this);
             } else {
-                dispatch.hoverState(this.id);
+                dispatch.hoverState(d3.select(this).attr("fid"));
             }
         })
         .on("mouseout", function (d) {
-            dispatch.dehoverState(this.id);
+            dispatch.dehoverState(d3.select(this).attr("fid"));
         });
-
-
 }

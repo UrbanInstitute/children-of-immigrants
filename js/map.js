@@ -51,8 +51,8 @@ function cbsamap(div) {
             .data(topojson.feature(us, us.objects.tl_2015_us_cbsa).features)
             .enter().append("path")
             .attr("d", path)
-            .attr("id", function (d) {
-                return "m" + d.id;
+            .attr("fid", function (d) {
+                return "f" + d.id;
             })
             .attr("class", "metros")
             .attr("fill", function (d) {
@@ -66,17 +66,17 @@ function cbsamap(div) {
                 if (isIE != false) {
                     d3.selectAll(".hovered")
                         .classed("hovered", false);
-                    d3.selectAll("#" + this.id)
+                    d3.selectAll("[fid='" + this.fid)
                         .classed("hovered", true)
                         .moveToFront();
                     //tooltip(this.id);
                     this.parentNode.appendChild(this);
                 } else {
-                    dispatch.hoverState(this.id);
+                    dispatch.hoverState(this.fid);
                 }
             })
             .on("mouseout", function (d) {
-                dispatch.dehoverState(this.id);
+                dispatch.dehoverState(this.fid);
             });
 
         svg.append("g")
@@ -92,8 +92,8 @@ function cbsamap(div) {
             .data(topojson.feature(us, us.objects.cb_2014_us_state_20m).features)
             .enter().append("path")
             .attr("d", path)
-            .attr("id", function (d) {
-                return "m" + d.id;
+            .attr("fid", function (d) {
+                return "f" + d.id;
             })
             .attr("class", "statemap")
             .attr("fill", function (d) {
@@ -103,21 +103,24 @@ function cbsamap(div) {
                     return color(VALUE[d.id]);
                 }
             })
+            .on("click", function (d) {
+                dispatch.clickState(d3.select(this).attr("fid"));
+            })
             .on("mouseover", function (d) {
                 if (isIE != false) {
                     d3.selectAll(".hovered")
                         .classed("hovered", false);
-                    d3.selectAll("#" + this.id)
+                    d3.selectAll("[fid='" + d3.select(this).attr("fid"))
                         .classed("hovered", true)
                         .moveToFront();
                     //tooltip(this.id);
                     this.parentNode.appendChild(this);
                 } else {
-                    dispatch.hoverState(this.id);
+                    dispatch.hoverState(d3.select(this).attr("fid"));
                 }
             })
             .on("mouseout", function (d) {
-                dispatch.dehoverState(this.id);
+                dispatch.dehoverState(d3.select(this).attr("fid"));
             });
     }
 }

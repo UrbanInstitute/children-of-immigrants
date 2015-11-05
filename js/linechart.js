@@ -118,8 +118,8 @@ function linechart(div, id) {
         .attr("d", function (d) {
             return line(d.values);
         })
-        .attr("id", function (d) {
-            return "m" + d.fips;
+        .attr("fid", function (d) {
+            return "f" + d.fips;
         })
         .attr("stroke", function (d) {
             if (d.fips == 0) {
@@ -129,23 +129,23 @@ function linechart(div, id) {
             }
         })
         .on("click", function (d) {
-            dispatch.clickState(this.id);
+            dispatch.clickState(d3.select(this).attr("fid"));
         })
         .on("mouseover", function (d) {
             if (isIE != false) {
                 d3.selectAll(".hovered")
                     .classed("hovered", false);
-                d3.selectAll("#" + this.id)
+                d3.selectAll("[fid='" + d3.select(this).attr("fid"))
                     .classed("hovered", true)
                     .moveToFront();
                 //tooltip(this.id);
                 this.parentNode.appendChild(this);
             } else {
-                dispatch.hoverState(this.id);
+                dispatch.hoverState(d3.select(this).attr("fid"));
             }
         })
         .on("mouseout", function (d) {
-            dispatch.dehoverState(this.id);
+            dispatch.dehoverState(d3.select(this).attr("fid"));
         });
 
 }

@@ -175,7 +175,7 @@ dispatch.on("yearChange", function (year) {
 
 //on hover, class those states "hovered"
 dispatch.on("hoverState", function (areaName) {
-    d3.selectAll("[id='" + areaName + "']")
+    d3.selectAll("[fid='" + areaName + "']")
         .classed("hovered", true)
         //.moveToFront();
     //tooltip(areaName);
@@ -183,7 +183,7 @@ dispatch.on("hoverState", function (areaName) {
 
 //declass "hovered" and return tooltip back to value in dropdowns
 dispatch.on("dehoverState", function (areaName) {
-    d3.selectAll("[id='" + areaName).classed("hovered", false);
+    d3.selectAll("[fid='" + areaName).classed("hovered", false);
     //menuId = selecter.property("value");
     //tooltip(menuId);
     //d3.selectAll("[id='" + menuId + "']")
