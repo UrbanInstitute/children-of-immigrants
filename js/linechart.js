@@ -1,5 +1,5 @@
 var linechart_aspect_width = 1;
-var linechart_aspect_height = 0.4;
+var linechart_aspect_height = 0.7;
 var NUMTICKS = 6;
 
 var yearf = d3.format("02d");
@@ -19,11 +19,8 @@ function linechart(div, id) {
 
     if ($GRAPHDIV.width() <= MOBILE_THRESHOLD) {
         isMobile = true;
-        NUMTICKS = 7;
-        linechart_aspect_height = 1;
     } else {
         isMobile = false;
-        linechart_aspect_height = 0.7;
     }
 
     var width = $GRAPHDIV.width() - margin.left - margin.right,

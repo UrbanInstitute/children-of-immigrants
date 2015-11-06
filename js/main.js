@@ -25,14 +25,21 @@ var palette = {
     gray5: ["#ECECEC", "#DCDBDB", "#ccc", "#777", "#000"]
 };
 
+var FORMATTER = d3.format("%");
 var COLORS = palette.blue5;
 var BREAKS = [0.2, 0.4, 0.6, 0.8];
-var us,
-    map_aspect_width = 1,
-    map_aspect_height = 0.7;
+var us;
 
 var dispatch = d3.dispatch("load", "change", "yearChange", "hoverState", "dehoverState", "clickState");
 var menuId;
+
+function formatNApct(d) {
+        if (d == "" | d == null) {
+            return "NA";
+        } else {
+            return FORMATTER(d);
+        }
+    }
 
 function detectIE() {
     var ua = window.navigator.userAgent;
@@ -123,6 +130,7 @@ dispatch.on("change.menu", function () {
                 return color(VALUE[d.id]);
             }
         });
+    tooltip("f0");
 });
 
 //by changing the year, update the viz - good example to check functionality is "Household owns home"
@@ -171,24 +179,38 @@ dispatch.on("yearChange", function (year) {
                 return color(VALUE[d.id]);
             }
         });
+    //tooltip("f0");
 });
 
 //on hover, class those states "hovered"
 dispatch.on("hoverState", function (areaName) {
     d3.selectAll("[fid='" + areaName + "']")
-        .classed("hovered", true)
-        //.moveToFront();
-    //tooltip(areaName);
+        .classed("hovered", true);
+    d3.selectAll("[fid='" + areaName + "']".chartline)
+        .moveToFront();
+    tooltip(areaName);
 });
 
 //declass "hovered" and return tooltip back to value in dropdowns
 dispatch.on("dehoverState", function (areaName) {
     d3.selectAll("[fid='" + areaName).classed("hovered", false);
     //menuId = selecter.property("value");
-    //tooltip(menuId);
+    tooltip("f0");
     //d3.selectAll("[id='" + menuId + "']")
     //    .moveToFront();
 });
+
+function tooltip(state) {
+    var row = data.filter(function (d) {
+        return "f" + d.fips == state;
+    });
+
+    row.forEach(function (d) {
+        d3.selectAll(".tt-name").text(d.name);
+        d3.select("#tt-year").text(yearSelect.slice(1));
+        d3.select("#tt-num").text(formatNApct(VALUE[d.fips]));
+    });
+}
 
 function statemap() {
     $GRAPHDIV = $("#statemap");
@@ -198,7 +220,6 @@ function statemap() {
 
 function statelines() {
     $GRAPHDIV = $("#statelines");
-    FORMATTER = d3.format("%");
     STATEMAP = 1;
     isMobile = false;
     linechart("#statelines");
@@ -212,7 +233,6 @@ function metromap() {
 
 function metrolines() {
     $GRAPHDIV = $("#metrolines");
-    FORMATTER = d3.format("%");
     STATEMAP = 0;
     isMobile = false;
     linechart("#metrolines");
@@ -235,7 +255,7 @@ $(window).load(function () {
                 us = mapdata;
 
                 yearSelect = "y2009";
-
+                
                 var metric = d3.map();
                 data_main.forEach(function (d) {
                     metric.set(d.statlabel, d);

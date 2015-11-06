@@ -1,3 +1,5 @@
+var map_aspect_width = 1,
+    map_aspect_height = 0.7;
 //map - option for state or metro view
 function cbsamap(div) {
 

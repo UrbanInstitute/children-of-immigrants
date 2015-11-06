@@ -37,21 +37,24 @@
 
 .tt {
     margin-bottom: 1em;
+    color: #333;
 }
 
-.tt-value {
-    display: inline-block;
+.tt-value, #tt-num {
+    /*display: inline-block;*/
+    font-size: 14px;
 }
 
 .tt-name,
 .tt-title {
-    font-size: 20px;
-    margin-bottom: 4px;
+    font-size: 18px;
+    display: inline-block;
 }
 
-.tt-name.tt-value {
+#tt-year {
     display: inline-block;
     font-size: 14px;
+    padding-left: 20px;
 }
 /*animation buttons*/
 

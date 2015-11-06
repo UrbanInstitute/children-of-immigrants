@@ -63,11 +63,6 @@ function animator() {
         };
     });
 
-    // we use a layer group to make it simple to remove an existing overlay
-    // and add a new one in the same line of code, as below, without juggling
-    // temporary variables.
-    //var layerGroup = L.layerGroup().addTo(map);
-
     // i is the number of the currently-selected layer
     var i = 3;
 
