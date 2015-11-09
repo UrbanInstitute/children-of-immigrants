@@ -47,7 +47,7 @@ function linechart(div, id) {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     
-    outcomeSelect = d3.select("#statbtns .selected").attr("value")
+    outcomeSelect = d3.select("#statbtns .active").attr("value")
     catSelect = d3.select("#cat-select").property("value");
 
     data = data_main.filter(function (d) {

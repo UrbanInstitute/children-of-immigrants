@@ -3,6 +3,7 @@ body {
     font-weight: 400;
     font-size: 16pt;
     color: #666;
+    margin-bottom: 15px;
 }
 
 h1,
@@ -173,8 +174,8 @@ li {
 #statbtns {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
-    display: table;
+    width: 100% !important;
+    display: table !important;
 }
 
 .urban-button {
@@ -185,16 +186,19 @@ li {
     border: none;
     color: #ffffff;
     background-color: #000;
-    display: table-cell;
+    display: table-cell !important;
     line-height: 12px;
     text-transform: uppercase;
     text-align: center;
     margin-right: 0px;
-    white-space: normal;
+    white-space: normal !important;
+    border-radius: 0px;
 }
 
 .urban-button:hover,
-.urban-button.selected {
+.urban-button.selected,
+.urban-button.active,
+.urban-button:checked {
     background-color: #fdbf11;
     color: #000000;
     text-decoration: none;

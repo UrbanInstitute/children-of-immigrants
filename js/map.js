@@ -3,7 +3,7 @@ var map_aspect_width = 1,
 //map - option for state or metro view
 function cbsamap(div) {
     
-    outcomeSelect = d3.select("#statbtns .selected").attr("value")
+    outcomeSelect = d3.select("#statbtns .active").attr("value")
     catSelect = d3.select("#cat-select").property("value");
 
     data = data_main.filter(function (d) {

@@ -1,6 +1,6 @@
 function gridmap() {
 
-    outcomeSelect = d3.select("#statbtns .selected").attr("value")
+    outcomeSelect = d3.select("#statbtns .active").attr("value")
     catSelect = d3.select("#cat-select").property("value");
 
     var color = d3.scale.threshold()

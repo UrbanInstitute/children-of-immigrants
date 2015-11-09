@@ -16,7 +16,7 @@ var catname = {
 
 //text for levels of categories - don't bother with the csvs! make all edits here
 var levels = {
-    main: ["Share", "Age 0 to 3", "Age 4 to 5", "Age 6 to 8", "Age 13 to 15", "Total", "Percent of total"],
+    main: ["Share, age 0 to 18", "Share, Age 0 to 3", "Share, Age 4 to 5", "Share, Age 6 to 12", "Share, Age 13 to 15", "Total number", "Percent of national total"],
     origin: ["Mexico", "Other Central America & Spanish Caribbean", "Europe, Canada & Australia", "East Asia & Pacific", "Africa", "The Middle East & South Asia", "South America", "Southeast Asia"],
     citizenship: ["Citizen with citizen parents", "Citizen with non-citizen parents", "Non-citizen"],
     edukids: ["Not in school, age 3 to 5", "Not in school, age 6 to 17"],

@@ -85,22 +85,50 @@ function makebtns() {
 
     $("#statbtns").empty();
 
-    d3.select("#statbtns").selectAll("input")
+    /*    d3.select("#statbtns").selectAll("input")
+            .data(levels[catSelect])
+            .enter().append("btn")
+            .attr("class", "urban-button")
+            .attr("value", function (d, i) {
+                return i + 1;
+            })
+            .text(function (d) {
+                return d;
+            });
+        d3.select('btn[value="1"]')
+            .classed("selected", true);*/
+
+    var labels = d3.select("#statbtns").selectAll("label")
         .data(levels[catSelect])
-        .enter().append("btn")
-        .attr("class", "urban-button")
+        .enter()
+        .append("label")
+        .attr("class", "urban-button btn")
         .attr("value", function (d, i) {
             return i + 1;
         })
         .text(function (d) {
             return d;
+        })
+        .insert("input")
+        .attr({
+            type: "radio",
+            name: "outcome",
+            value: function (d, i) {
+                return i + 1;
+            }
         });
-    d3.select('btn[value="1"]')
-        .classed("selected", true);
-
+    d3.select('label[value="1"]')
+        .classed("active", true);
 };
+d3.select("#statbtns").on("click", function () {
+    //outcomeSelect = d3.select("#statbtns .active").attr("value");
+    //console.log("hi");
+    //console.log($(this).find("label").value);
+    dispatch.change();
+});
+
 makebtns();
-outcomeSelect = d3.select("#statbtns .selected").attr("value")
+outcomeSelect = d3.select("#statbtns .active").attr("value")
 
 selecter.on("change", function () {
     makebtns();
@@ -109,10 +137,12 @@ selecter.on("change", function () {
 
 //changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks
 dispatch.on("change", function () {
-
+    outcomeSelect = d3.select("#statbtns .active").attr("value")
+    
     var color = d3.scale.threshold()
         .domain(BREAKS)
         .range(COLORS);
+    
     catSelect = selecter.property("value");
     statelines();
     metrolines();
