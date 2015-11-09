@@ -80,6 +80,8 @@ var selecter = d3.select("#cat-select");
 
 function makebtns() {
     catSelect = selecter.property("value");
+    d3.select("#cat-text")
+        .html(cattext[catSelect]);
 
     $("#statbtns").empty();
 

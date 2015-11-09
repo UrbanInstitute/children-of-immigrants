@@ -1,4 +1,5 @@
-//labels and text for categories and metrics
+//labels and text for categories and metrics - baking this into the html for now
+/*
 var catname = {
     main: "Population",
     origin: "Country of origin",
@@ -11,8 +12,9 @@ var catname = {
     numpar: "Number of parents in household",
     incbenefits: "Income and benefits"
 };
+*/
 
-//text for levels of categories
+//text for levels of categories - don't bother with the csvs! make all edits here
 var levels = {
     main: ["Share", "Age 0 to 3", "Age 4 to 5", "Age 6 to 8", "Age 13 to 15", "Total", "Percent of total"],
     origin: ["Mexico", "Other Central America & Spanish Caribbean", "Europe, Canada & Australia", "East Asia & Pacific", "Africa", "The Middle East & South Asia", "South America", "Southeast Asia"],
@@ -38,6 +40,5 @@ var cattext = {
     engpar: "English proficiency of both children of immigrants and their immigrant parents is very important for language accessibility policies. Parents with limited or no English proficiency may experience difficulties navigating schools, health providers, and other public and private community institutions <a href='http://www.urban.org/' target='_blank'>(Holcomb et al. 2003).</a> While the share of children of immigrants with limited English proficiency has fallen from 19% in 2006 to 16% in 2011, the share of children of immigrants who have no English proficient parent has remained steady at around 44%.",
     numkids: "Children of immigrants are also more likely to have a large number of siblings, with 64% of children of immigrants living in families with more than four children versus 50% of children of native born parents.",
     numpar: "Children of immigrants are much more likely to live in two parent homes than children of native-born parents. While the share of children of immigrants with single parents is increasing it is increasing very slowly.",
-    incbenefits: "While there was an overall increase in the share of children below the poverty line, children of immigrants were especially affected, despite being more likely to be in families with at least one parent working.  While the share of children of immigrants living in poor families actually declined from 2006 to 2008, the share jumped from 20% in 2008 to 26% in 2011.",
-    all: "For more information please see the <a href='http://www.urban.org/publications/413113.html' target='_blank'>Children of Immigrants Brief</a>"
+    incbenefits: "While there was an overall increase in the share of children below the poverty line, children of immigrants were especially affected, despite being more likely to be in families with at least one parent working.  While the share of children of immigrants living in poor families actually declined from 2006 to 2008, the share jumped from 20% in 2008 to 26% in 2011."
 };
