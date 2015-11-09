@@ -268,6 +268,7 @@ function metrolines() {
 }
 
 function drawgraphs() {
+    //legend();
     metromap();
     //statemap();
     statelines();
