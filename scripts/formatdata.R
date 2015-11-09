@@ -9,7 +9,7 @@ library(tidyr)
 library(doBy)
 
 states<-read.csv("../higher-ed/data/states.csv",stringsAsFactors = F)
-st<-read.csv("data/original/InteractiveMap_State2013_10_30_2015.csv",stringsAsFactors = F)
+st<-read.csv("data/original/InteractiveMap_State2013_11_09_2015.csv",stringsAsFactors = F)
 mt<-read.csv("data/original/metrodata.csv",stringsAsFactors = F)
 
 states <- states %>% select(statefip,abbrev) %>% rename (fips=statefip)

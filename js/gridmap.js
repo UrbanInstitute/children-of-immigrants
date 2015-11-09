@@ -7,7 +7,7 @@ function gridmap() {
         .range(COLORS);
 
     data = data_main.filter(function (d) {
-        return d.statcode == outcomeSelect & d.isstate == 1;
+        return d.cat == outcomeSelect & d.isstate == 1;
     })
 
     var rect = d3.selectAll("rect")

@@ -48,7 +48,7 @@ function linechart(div, id) {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     data = data_main.filter(function (d) {
-        return d.statcode == outcomeSelect & d.isstate == STATEMAP;
+        return d.cat == outcomeSelect & d.isstate == STATEMAP;
     })
 
     color.domain(d3.keys(data[0]).filter(function (key) {

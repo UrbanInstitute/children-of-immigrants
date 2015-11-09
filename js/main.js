@@ -34,12 +34,12 @@ var dispatch = d3.dispatch("load", "change", "yearChange", "hoverState", "dehove
 var menuId;
 
 function formatNApct(d) {
-        if (d == "" | d == null) {
-            return "NA";
-        } else {
-            return FORMATTER(d);
-        }
+    if (d == "" | d == null) {
+        return "NA";
+    } else {
+        return FORMATTER(d);
     }
+}
 
 function detectIE() {
     var ua = window.navigator.userAgent;
@@ -82,16 +82,40 @@ dispatch.on("load.menu", function (metric) {
         dispatch.change(metric.get(this.value));
     });
 
-    selecter.selectAll("option")
-        .data(metric.values())
-        .enter().append("option")
-        .attr("value", function (d) {
-            return d.statcode;
+    /*    selecter.selectAll("option")
+            .data(catname)
+            .enter().append("option")
+            .attr("value", function (d) {
+                return d;
+            })
+            .text(function (d) {
+                return d;
+            });*/
+});
+
+outcomeSelect = selecter.property("value");
+console.log(outcomeSelect);
+
+function makebtns() {
+
+    d3.select("#statbtns").selectAll("input")
+        .data(levels[outcomeSelect])
+        .enter().append("btn")
+        .attr("class", "urban-button")
+        .attr("value", function (d, i) {
+            return i + 1;
         })
         .text(function (d) {
-            return d.statlabel;
+            return d;
         });
-});
+    d3.select('btn[value="1"]')
+        .classed("selected", true);
+
+};
+makebtns();
+var temp = d3.select("#statbtns.selected").value;
+console.log(temp);
+
 
 //changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks, text
 dispatch.on("change.menu", function () {
@@ -200,6 +224,7 @@ dispatch.on("dehoverState", function (areaName) {
     //    .moveToFront();
 });
 
+
 function tooltip(state) {
     var row = data.filter(function (d) {
         return "f" + d.fips == state;
@@ -255,12 +280,6 @@ $(window).load(function () {
                 us = mapdata;
 
                 yearSelect = "y2009";
-                
-                var metric = d3.map();
-                data_main.forEach(function (d) {
-                    metric.set(d.statlabel, d);
-                });
-                dispatch.load(metric);
 
                 drawgraphs();
                 window.onresize = drawgraphs;

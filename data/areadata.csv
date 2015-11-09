@@ -1,56 +1,56 @@
 "cat","catnum","level","statcode","statlabel","fips","abbrev","name","isstate","y2006","y2007","y2008","y2009","y2010","y2011","y2012","y2013"
-"main",1,1,"Share","Children of Immigrants, Share",1,"AL","Alabama",1,0.95604062,0.95576078,0.95443809,0.95050472,0.94407415,0.94136554,0.94127762,0.94207209
-"main",1,1,"Share","Children of Immigrants, Share",2,"AK","Alaska",1,0.88624388,0.86523759,0.86757398,0.8552652,0.84640616,0.85085136,0.83237493,0.85710347
-"main",1,1,"Share","Children of Immigrants, Share",4,"AZ","Arizona",1,0.69510067,0.680507,0.68544245,0.69238114,0.6965664,0.70139003,0.7002061,0.70361733
-"main",1,1,"Share","Children of Immigrants, Share",5,"AR","Arkansas",1,0.92499548,0.92454088,0.92144608,0.91154099,0.90594471,0.90407473,0.90695387,0.9107058
-"main",1,1,"Share","Children of Immigrants, Share",6,"CA","California",1,0.556701,0.55745149,0.55884111,0.55628318,0.54751247,0.54452091,0.54572439,0.54813516
-"main",1,1,"Share","Children of Immigrants, Share",8,"CO","Colorado",1,0.81679237,0.81632012,0.81395686,0.80832994,0.80646026,0.80399472,0.80533826,0.80125111
-"main",1,1,"Share","Children of Immigrants, Share",9,"CT","Connecticut",1,0.82426298,0.8197878,0.81953603,0.8161779,0.81181258,0.80790603,0.80017489,0.79721183
-"main",1,1,"Share","Children of Immigrants, Share",10,"DE","Delaware",1,0.88263971,0.88097376,0.88565236,0.88530189,0.87173933,0.8552801,0.85298949,0.85829926
-"main",1,1,"Share","Children of Immigrants, Share",11,"DC","District of Columbia",1,0.87602031,0.87109691,0.88044947,0.8940376,0.88486236,0.86118275,0.83155113,0.81217927
-"main",1,1,"Share","Children of Immigrants, Share",12,"FL","Florida",1,0.74603307,0.74266833,0.74244869,0.74123579,0.72967577,0.72136611,0.71657807,0.71848398
-"main",1,1,"Share","Children of Immigrants, Share",13,"GA","Georgia",1,0.88652343,0.88165075,0.87347817,0.86560243,0.86147839,0.85463607,0.8512798,0.8496266
-"main",1,1,"Share","Children of Immigrants, Share",15,"HI","Hawaii",1,0.83296287,0.82644928,0.82334083,0.83623815,0.83239973,0.81201917,0.80836284,0.80360013
-"main",1,1,"Share","Children of Immigrants, Share",16,"ID","Idaho",1,0.88685519,0.87971622,0.88121885,0.88498569,0.8783747,0.87258542,0.87809747,0.87485451
-"main",1,1,"Share","Children of Immigrants, Share",17,"IL","Illinois",1,0.78171116,0.7732116,0.7745536,0.77364928,0.76822752,0.75686836,0.7531445,0.75679028
-"main",1,1,"Share","Children of Immigrants, Share",18,"IN","Indiana",1,0.92018145,0.9179377,0.91795701,0.91755199,0.9113282,0.89876145,0.8987329,0.9029581
-"main",1,1,"Share","Children of Immigrants, Share",19,"IA","Iowa",1,0.91702306,0.91738272,0.91602421,0.91584826,0.91021979,0.89825207,0.90213275,0.90661901
-"main",1,1,"Share","Children of Immigrants, Share",20,"KS","Kansas",1,0.88994396,0.88539153,0.88439393,0.88090104,0.87956059,0.86721414,0.85917097,0.86237764
-"main",1,1,"Share","Children of Immigrants, Share",21,"KY","Kentucky",1,0.95647806,0.95568687,0.95131284,0.94962883,0.94739699,0.94400132,0.94101328,0.93820161
-"main",1,1,"Share","Children of Immigrants, Share",22,"LA","Louisiana",1,0.94883406,0.94648731,0.94501358,0.94596612,0.94464839,0.93765271,0.93720597,0.94144058
-"main",1,1,"Share","Children of Immigrants, Share",23,"ME","Maine",1,0.93259865,0.9334448,0.9483726,0.94791871,0.94286931,0.94477654,0.94379932,0.94488895
-"main",1,1,"Share","Children of Immigrants, Share",24,"MD","Maryland",1,0.8675366,0.86274678,0.86192423,0.85339981,0.84433526,0.83742362,0.83175462,0.83028704
-"main",1,1,"Share","Children of Immigrants, Share",25,"MA","Massachusetts",1,0.8110745,0.81402445,0.80590218,0.80003828,0.79476392,0.78921914,0.78588969,0.77964628
-"main",1,1,"Share","Children of Immigrants, Share",26,"MI","Michigan",1,0.90662742,0.90609503,0.90781122,0.9059307,0.90205336,0.9018786,0.89878404,0.89882368
-"main",1,1,"Share","Children of Immigrants, Share",27,"MN","Minnesota",1,0.88216621,0.88539946,0.87974572,0.87330759,0.870251,0.86353201,0.86072016,0.86763304
-"main",1,1,"Share","Children of Immigrants, Share",28,"MS","Mississippi",1,0.9702425,0.970689,0.96863443,0.96631354,0.96576142,0.96345705,0.96536499,0.96762466
-"main",1,1,"Share","Children of Immigrants, Share",29,"MO","Missouri",1,0.93534887,0.93559158,0.93575585,0.93473017,0.93327594,0.93127853,0.93053871,0.93380558
-"main",1,1,"Share","Children of Immigrants, Share",30,"MT","Montana",1,0.95438802,0.95638669,0.95800036,0.95741987,0.9562543,0.94889569,0.95037776,0.96240282
-"main",1,1,"Share","Children of Immigrants, Share",31,"NE","Nebraska",1,0.8863883,0.88620895,0.87509555,0.87248719,0.87192559,0.87091416,0.85819423,0.84937501
-"main",1,1,"Share","Children of Immigrants, Share",32,"NV","Nevada",1,0.71282589,0.70022702,0.68491179,0.68023765,0.67491543,0.66095829,0.66421938,0.6702894
-"main",1,1,"Share","Children of Immigrants, Share",33,"NH","New Hampshire",1,0.94155723,0.94314694,0.93543524,0.92116338,0.92396903,0.92852348,0.92163783,0.92317671
-"main",1,1,"Share","Children of Immigrants, Share",34,"NJ","New Jersey",1,0.75672048,0.74880487,0.74085879,0.73627168,0.72828716,0.72216886,0.7145716,0.71261442
-"main",1,1,"Share","Children of Immigrants, Share",35,"NM","New Mexico",1,0.68851215,0.67722166,0.70013297,0.70653397,0.682625,0.67110872,0.68352705,0.68590957
-"main",1,1,"Share","Children of Immigrants, Share",36,"NY","New York",1,0.7315684,0.72675234,0.72602338,0.72552323,0.71854979,0.71138531,0.70465159,0.70136935
-"main",1,1,"Share","Children of Immigrants, Share",37,"NC","North Carolina",1,0.89584982,0.89140898,0.88450122,0.87790585,0.86971301,0.86361331,0.8582679,0.8549366
-"main",1,1,"Share","Children of Immigrants, Share",38,"ND","North Dakota",1,0.93947178,0.95506734,0.9446137,0.9388938,0.95706624,0.95601773,0.94813097,0.96061778
-"main",1,1,"Share","Children of Immigrants, Share",39,"OH","Ohio",1,0.94080913,0.94260544,0.94217664,0.93661535,0.93157721,0.92867911,0.92925811,0.93132812
-"main",1,1,"Share","Children of Immigrants, Share",40,"OK","Oklahoma",1,0.91390967,0.91259241,0.9082852,0.90462184,0.89919657,0.89258003,0.88714623,0.88741124
-"main",1,1,"Share","Children of Immigrants, Share",41,"OR","Oregon",1,0.82830888,0.8157059,0.81358498,0.81047583,0.80374557,0.79980838,0.79892421,0.79245657
-"main",1,1,"Share","Children of Immigrants, Share",42,"PA","Pennsylvania",1,0.90020072,0.89751387,0.89575303,0.89597124,0.89055502,0.8848204,0.88268036,0.88300836
-"main",1,1,"Share","Children of Immigrants, Share",44,"RI","Rhode island",1,0.78100914,0.77037036,0.78429538,0.7921713,0.77696174,0.77314407,0.7727378,0.76252836
-"main",1,1,"Share","Children of Immigrants, Share",45,"SC","South Carolina",1,0.93753648,0.93567997,0.93258309,0.92836529,0.92241448,0.92362279,0.92480099,0.92170495
-"main",1,1,"Share","Children of Immigrants, Share",46,"SD","South Dakota",1,0.92741001,0.93450528,0.93338364,0.93439502,0.93116665,0.91529441,0.91698712,0.93287569
-"main",1,1,"Share","Children of Immigrants, Share",47,"TN","Tennessee",1,0.94149905,0.93700594,0.92943871,0.92908734,0.92673868,0.91952628,0.9180671,0.92114884
-"main",1,1,"Share","Children of Immigrants, Share",48,"TX","Texas",1,0.65867108,0.65714401,0.65847325,0.65266418,0.64501333,0.64195591,0.63957971,0.64513171
-"main",1,1,"Share","Children of Immigrants, Share",49,"UT","Utah",1,0.87071985,0.87105286,0.87710434,0.87758255,0.87059569,0.85820699,0.85572314,0.86328697
-"main",1,1,"Share","Children of Immigrants, Share",50,"VT","Vermont",1,0.96471125,0.95605916,0.95336884,0.95267719,0.94674134,0.94617057,0.96271402,0.96719307
-"main",1,1,"Share","Children of Immigrants, Share",51,"VA","Virginia",1,0.8749783,0.87230718,0.86964661,0.86582583,0.85890442,0.84793472,0.84525275,0.84958583
-"main",1,1,"Share","Children of Immigrants, Share",53,"WA","Washington",1,0.82204932,0.80917037,0.80735683,0.80441439,0.78803688,0.7807098,0.77961743,0.77629709
-"main",1,1,"Share","Children of Immigrants, Share",54,"WV","West Virginia",1,0.97086453,0.97438985,0.97491825,0.97449714,0.97369152,0.97471046,0.97709769,0.97556663
-"main",1,1,"Share","Children of Immigrants, Share",55,"WI","Wisconsin",1,0.90692139,0.90212989,0.89495033,0.8910405,0.89247179,0.89124465,0.89022845,0.88212126
-"main",1,1,"Share","Children of Immigrants, Share",56,"WY","Wyoming",1,0.9356668,0.93137378,0.94273168,0.94540536,0.93874431,0.93123323,0.92728478,0.93039548
-"main",1,1,"Share","Children of Immigrants, Share",0,"US","United States",1,0.79853225,0.79653376,0.79538202,0.79221189,0.78593016,0.78065991,0.77852231,0.77958316
+"main",1,1,"Share","Children of Immigrants, Share",1,"AL","Alabama",1,0.04580149,0.047412,0.05381161,0.06254026,0.06798784,0.06718104,0.06900467,0.06659893
+"main",1,1,"Share","Children of Immigrants, Share",2,"AK","Alaska",1,0.10037152,0.1191337,0.10991541,0.11326835,0.1091372,0.09576327,0.09932893,0.09676201
+"main",1,1,"Share","Children of Immigrants, Share",4,"AZ","Arizona",1,0.28541812,0.29811558,0.3028678,0.2998808,0.29256883,0.27690935,0.27536392,0.28097576
+"main",1,1,"Share","Children of Immigrants, Share",5,"AR","Arkansas",1,0.07377399,0.079974,0.08870635,0.09529584,0.09886099,0.10122786,0.10104572,0.10344257
+"main",1,1,"Share","Children of Immigrants, Share",6,"CA","California",1,0.4787752,0.48224729,0.48219454,0.48225793,0.48384076,0.48226365,0.48466462,0.48626301
+"main",1,1,"Share","Children of Immigrants, Share",8,"CO","Colorado",1,0.19633026,0.19746189,0.20642908,0.20768325,0.20583791,0.20555246,0.20703018,0.21891651
+"main",1,1,"Share","Children of Immigrants, Share",9,"CT","Connecticut",1,0.18731128,0.19728093,0.20467553,0.21316114,0.21990807,0.22437745,0.2243797,0.22999725
+"main",1,1,"Share","Children of Immigrants, Share",10,"DE","Delaware",1,0.13490619,0.14126375,0.15778705,0.16796118,0.15447214,0.15090328,0.17215057,0.1781636
+"main",1,1,"Share","Children of Immigrants, Share",11,"DC","District of Columbia",1,0.15812615,0.16235358,0.19477825,0.20224988,0.19464383,0.2038659,0.22502507,0.24683605
+"main",1,1,"Share","Children of Immigrants, Share",12,"FL","Florida",1,0.29306442,0.2961565,0.29198012,0.29813376,0.30308691,0.30344892,0.31188804,0.31572679
+"main",1,1,"Share","Children of Immigrants, Share",13,"GA","Georgia",1,0.14909555,0.15475549,0.16270082,0.17376339,0.18097748,0.18323855,0.18711126,0.19131029
+"main",1,1,"Share","Children of Immigrants, Share",15,"HI","Hawaii",1,0.2609258,0.24621823,0.26612988,0.26416731,0.26030305,0.29070857,0.30144733,0.28771678
+"main",1,1,"Share","Children of Immigrants, Share",16,"ID","Idaho",1,0.11834601,0.12594548,0.13020973,0.1329105,0.13337651,0.13132408,0.12766764,0.13178101
+"main",1,1,"Share","Children of Immigrants, Share",17,"IL","Illinois",1,0.22955178,0.23865066,0.24039321,0.24407895,0.24752994,0.25524524,0.25969416,0.26149046
+"main",1,1,"Share","Children of Immigrants, Share",18,"IN","Indiana",1,0.06709281,0.07259752,0.07555261,0.08232981,0.08495395,0.08703215,0.08943813,0.09029362
+"main",1,1,"Share","Children of Immigrants, Share",19,"IA","Iowa",1,0.0682697,0.07155522,0.07720402,0.07846173,0.08574111,0.09046002,0.08759582,0.09619264
+"main",1,1,"Share","Children of Immigrants, Share",20,"KS","Kansas",1,0.11230106,0.12424837,0.12486075,0.12465034,0.12735496,0.13877217,0.14684865,0.14586188
+"main",1,1,"Share","Children of Immigrants, Share",21,"KY","Kentucky",1,0.04004677,0.03874017,0.04450239,0.05225772,0.05680164,0.06207401,0.06788363,0.06905016
+"main",1,1,"Share","Children of Immigrants, Share",22,"LA","Louisiana",1,0.04161878,0.0444508,0.04765901,0.04978747,0.05098917,0.05128358,0.05443843,0.05843176
+"main",1,1,"Share","Children of Immigrants, Share",23,"ME","Maine",1,0.05078164,0.05845825,0.06220787,0.05770989,0.05695136,0.05502309,0.06060346,0.06885791
+"main",1,1,"Share","Children of Immigrants, Share",24,"MD","Maryland",1,0.18390319,0.19427167,0.20644195,0.21552369,0.22640736,0.23258723,0.23737006,0.24598898
+"main",1,1,"Share","Children of Immigrants, Share",25,"MA","Massachusetts",1,0.21398488,0.21568541,0.22748066,0.23619375,0.24347042,0.24942896,0.25371984,0.26522109
+"main",1,1,"Share","Children of Immigrants, Share",26,"MI","Michigan",1,0.09897695,0.1012613,0.10137998,0.10078616,0.10346558,0.10867629,0.11600932,0.12015163
+"main",1,1,"Share","Children of Immigrants, Share",27,"MN","Minnesota",1,0.12565985,0.12683186,0.13049701,0.13963541,0.14772014,0.15444186,0.15984361,0.15874489
+"main",1,1,"Share","Children of Immigrants, Share",28,"MS","Mississippi",1,0.02612777,0.02420732,0.025158,0.03145103,0.03199726,0.03336747,0.0345496,0.03523578
+"main",1,1,"Share","Children of Immigrants, Share",29,"MO","Missouri",1,0.06020349,0.05770068,0.06218189,0.06670099,0.06576981,0.07038348,0.07126015,0.06941564
+"main",1,1,"Share","Children of Immigrants, Share",30,"MT","Montana",1,0.03201967,0.03166292,0.03820594,0.03923821,0.0355201,0.03496991,0.03408799,0.02834618
+"main",1,1,"Share","Children of Immigrants, Share",31,"NE","Nebraska",1,0.11145998,0.1118129,0.11983056,0.12638475,0.12856591,0.1303034,0.14502814,0.15048362
+"main",1,1,"Share","Children of Immigrants, Share",32,"NV","Nevada",1,0.33064625,0.3554714,0.36085999,0.35402289,0.35607144,0.37013105,0.37264946,0.36685365
+"main",1,1,"Share","Children of Immigrants, Share",33,"NH","New Hampshire",1,0.09064154,0.08717411,0.08487993,0.09464379,0.1037491,0.10644879,0.10538865,0.10257708
+"main",1,1,"Share","Children of Immigrants, Share",34,"NJ","New Jersey",1,0.29604617,0.30987158,0.31473249,0.31463495,0.32407129,0.33724281,0.34628737,0.3549099
+"main",1,1,"Share","Children of Immigrants, Share",35,"NM","New Mexico",1,0.18626252,0.20199883,0.19927885,0.20087869,0.20771445,0.2091195,0.20354041,0.21378258
+"main",1,1,"Share","Children of Immigrants, Share",36,"NY","New York",1,0.31755719,0.32532308,0.33138624,0.33159053,0.33181304,0.33273837,0.34263015,0.35073349
+"main",1,1,"Share","Children of Immigrants, Share",37,"NC","North Carolina",1,0.11991005,0.12940221,0.1419865,0.15349497,0.16105676,0.16190395,0.16267793,0.1701827
+"main",1,1,"Share","Children of Immigrants, Share",38,"ND","North Dakota",1,0.04646318,0.03161544,0.03410461,0.04854985,0.04022237,0.04007547,0.04694406,0.04578623
+"main",1,1,"Share","Children of Immigrants, Share",39,"OH","Ohio",1,0.05001163,0.05173403,0.05661926,0.06164558,0.0663937,0.06635261,0.06489568,0.06914776
+"main",1,1,"Share","Children of Immigrants, Share",40,"OK","Oklahoma",1,0.09019502,0.09606074,0.10178254,0.1064131,0.11232095,0.11608844,0.11297242,0.11277936
+"main",1,1,"Share","Children of Immigrants, Share",41,"OR","Oregon",1,0.18903404,0.195143,0.20394,0.20720063,0.21587925,0.22218759,0.2216377,0.22443195
+"main",1,1,"Share","Children of Immigrants, Share",42,"PA","Pennsylvania",1,0.08149886,0.08766509,0.0943673,0.09539495,0.09825684,0.10304659,0.10483492,0.11091719
+"main",1,1,"Share","Children of Immigrants, Share",44,"RI","Rhode island",1,0.2341702,0.24381523,0.25280407,0.23288424,0.22491239,0.2363098,0.23697402,0.24496105
+"main",1,1,"Share","Children of Immigrants, Share",45,"SC","South Carolina",1,0.06515408,0.07264885,0.07679933,0.0833156,0.08891094,0.08639093,0.08782268,0.09029868
+"main",1,1,"Share","Children of Immigrants, Share",46,"SD","South Dakota",1,0.03504593,0.03420388,0.04098969,0.0457248,0.04816652,0.05127538,0.04777477,0.04041022
+"main",1,1,"Share","Children of Immigrants, Share",47,"TN","Tennessee",1,0.06785679,0.07293942,0.0826192,0.08713599,0.09124522,0.09821429,0.09924221,0.09881035
+"main",1,1,"Share","Children of Immigrants, Share",48,"TX","Texas",1,0.30229169,0.30591363,0.31173691,0.32121935,0.32642531,0.3295266,0.33249652,0.33013797
+"main",1,1,"Share","Children of Immigrants, Share",49,"UT","Utah",1,0.14643404,0.15669377,0.1587373,0.15456523,0.14767763,0.15552114,0.16067854,0.15730913
+"main",1,1,"Share","Children of Immigrants, Share",50,"VT","Vermont",1,0.03824995,0.04822773,0.058404,0.06147225,0.06096428,0.06290349,0.05660794,0.05777796
+"main",1,1,"Share","Children of Immigrants, Share",51,"VA","Virginia",1,0.16195343,0.16368107,0.1685065,0.17714038,0.19126482,0.20151062,0.20636073,0.2110742
+"main",1,1,"Share","Children of Immigrants, Share",53,"WA","Washington",1,0.21896808,0.2288101,0.23194917,0.23770551,0.2515808,0.26231784,0.26237527,0.27026266
+"main",1,1,"Share","Children of Immigrants, Share",54,"WV","West Virginia",1,0.02074813,0.01932845,0.02104848,0.01992913,0.01951747,0.02272368,0.02038916,0.02333858
+"main",1,1,"Share","Children of Immigrants, Share",55,"WI","Wisconsin",1,0.07390568,0.07901136,0.08714989,0.09462546,0.09742422,0.09739822,0.09502709,0.10117908
+"main",1,1,"Share","Children of Immigrants, Share",56,"WY","Wyoming",1,0.04533719,0.04681198,0.04340229,0.05261399,0.05385269,0.05469245,0.06992362,0.08223335
+"main",1,1,"Share","Children of Immigrants, Share",0,"US","United States",1,0.21419872,0.21839616,0.22256942,0.2270717,0.23058927,0.23301224,0.23648936,0.23978242
 "main",1,1,"Share","Children of Immigrants, Share",10420,,"Akron, OH",0,,,,0.06829584,0.06865485,0.07461588,,
 "main",1,1,"Share","Children of Immigrants, Share",10580,,"Albany-Schenectady-Troy, NY",0,,,,0.11340747,0.11756568,0.11721169,,
 "main",1,1,"Share","Children of Immigrants, Share",10740,,"Albuquerque, NM",0,,,,0.2135986,0.22376017,0.20929544,,
@@ -3600,308 +3600,156 @@
 "englishkids",6,2,"limEng","With Limited English Proficiency",49340,,"Worcester, MA",0,,,,0.20933888,0.14860796,0.11393962,,
 "englishkids",6,2,"limEng","With Limited English Proficiency",49660,,"Youngstown-Warren-Boardman, OH-PA",0,,,,,,,,
 "engpar",7,1,"eppars","English Proficient Parents",1,"AL","Alabama",1,0.43505558,0.41318503,0.40174612,0.35114521,0.34437245,0.35133693,0.37708426,0.41762581
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",1,"AL","Alabama",1,0.33084697,0.33007753,0.34966898,0.39317855,0.34990829,0.31050432,0.32310003,0.33626559
 "engpar",7,1,"eppars","English Proficient Parents",2,"AK","Alaska",1,0.5907557,0.60482967,0.64413047,0.5694955,0.44871795,0.48649848,0.6226716,0.67267489
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",2,"AK","Alaska",1,0.16196442,0.10115594,0.06708068,0.11341235,0.13819578,0.15081786,0.1124929,0.07863333
 "engpar",7,1,"eppars","English Proficient Parents",4,"AZ","Arizona",1,0.281811,0.28188813,0.29694924,0.32777131,0.33361071,0.34653351,0.3620688,0.35716298
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",4,"AZ","Arizona",1,0.36338544,0.3685894,0.34500134,0.2790336,0.25239435,0.23462373,0.20252496,0.20715472
 "engpar",7,1,"eppars","English Proficient Parents",5,"AR","Arkansas",1,0.35102674,0.31508547,0.30064547,0.33181927,0.33845055,0.36311871,0.39894316,0.36371309
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",5,"AR","Arkansas",1,0.30406117,0.36351386,0.38225365,0.3117038,0.27618027,0.27199662,0.25517797,0.23846212
 "engpar",7,1,"eppars","English Proficient Parents",6,"CA","California",1,0.31638816,0.3228547,0.32361144,0.32623866,0.3327325,0.34247759,0.35338876,0.35824582
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",6,"CA","California",1,0.29347268,0.28700367,0.2768316,0.26877674,0.25788659,0.24477743,0.23432204,0.22337361
 "engpar",7,1,"eppars","English Proficient Parents",8,"CO","Colorado",1,0.34448153,0.34173879,0.36690778,0.36969745,0.36636627,0.34743318,0.3587516,0.38978869
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",8,"CO","Colorado",1,0.32902947,0.31381798,0.28476444,0.28471243,0.29420722,0.26214856,0.21862255,0.20793153
 "engpar",7,1,"eppars","English Proficient Parents",9,"CT","Connecticut",1,0.57428372,0.58469784,0.59573692,0.57076275,0.54296827,0.54815233,0.57121956,0.5643574
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",9,"CT","Connecticut",1,0.18067427,0.1870065,0.16351414,0.15620637,0.17778967,0.1688038,0.16982022,0.18167114
 "engpar",7,1,"eppars","English Proficient Parents",10,"DE","Delaware",1,0.52981681,0.49441108,0.4941909,0.54407978,0.55906034,0.57487398,0.49967375,0.46239838
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",10,"DE","Delaware",1,0.2184435,0.24926233,0.21492085,0.15707161,0.17168055,0.1884854,0.21931741,0.22655734
 "engpar",7,1,"eppars","English Proficient Parents",11,"DC","District of Columbia",1,0.50608599,0.57829487,0.71503532,0.68772739,0.62696189,0.65955776,0.63590389,0.59088659
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",11,"DC","District of Columbia",1,0.21962591,0.20111169,0.13858666,0.1429542,0.15429036,0.13899347,0.19987151,0.2136738
 "engpar",7,1,"eppars","English Proficient Parents",12,"FL","Florida",1,0.49004498,0.48278058,0.48061413,0.47739261,0.483688,0.48876938,0.48665372,0.50378197
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",12,"FL","Florida",1,0.23075832,0.22852641,0.22634901,0.22967838,0.22691023,0.22000545,0.21328902,0.19602059
 "engpar",7,1,"eppars","English Proficient Parents",13,"GA","Georgia",1,0.44351029,0.42921355,0.4123635,0.41021526,0.43454748,0.43359399,0.436331,0.45368531
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",13,"GA","Georgia",1,0.27629822,0.29069868,0.30275446,0.28938574,0.27511594,0.26170918,0.2482456,0.22546069
 "engpar",7,1,"eppars","English Proficient Parents",15,"HI","Hawaii",1,0.52274472,0.52332836,0.51449013,0.51006359,0.54010457,0.55949956,0.54900664,0.4843716
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",15,"HI","Hawaii",1,0.13617259,0.14553066,0.14854103,0.15319581,0.13866197,0.12183909,0.12750535,0.18498075
 "engpar",7,1,"eppars","English Proficient Parents",16,"ID","Idaho",1,0.34905866,0.39265448,0.39329508,0.42666799,0.42162335,0.32425252,0.32378528,0.35930535
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",16,"ID","Idaho",1,0.31496528,0.27215677,0.24882162,0.26819855,0.26851401,0.25232574,0.20735304,0.17615804
 "engpar",7,1,"eppars","English Proficient Parents",17,"IL","Illinois",1,0.34234476,0.34342971,0.35421595,0.35397449,0.34962976,0.35711345,0.37242812,0.38334578
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",17,"IL","Illinois",1,0.30511042,0.3140569,0.29321244,0.27756467,0.27418914,0.25518215,0.23473273,0.21891764
 "engpar",7,1,"eppars","English Proficient Parents",18,"IN","Indiana",1,0.39642438,0.41470793,0.42367324,0.42844495,0.40267023,0.36118072,0.36259395,0.3939175
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",18,"IN","Indiana",1,0.32122096,0.30318078,0.30118209,0.30971673,0.31435129,0.32489675,0.28523231,0.26236868
 "engpar",7,1,"eppars","English Proficient Parents",19,"IA","Iowa",1,0.358284,0.38656539,0.39801776,0.40365955,0.37914824,0.33733889,0.40780964,0.43986312
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",19,"IA","Iowa",1,0.32424766,0.26862332,0.26114544,0.27065146,0.30015561,0.35042644,0.29053831,0.22359462
 "engpar",7,1,"eppars","English Proficient Parents",20,"KS","Kansas",1,0.40539062,0.40327573,0.37722185,0.34802878,0.35561183,0.35993427,0.33340895,0.33865869
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",20,"KS","Kansas",1,0.2803272,0.29040712,0.28474972,0.29943004,0.29568616,0.25204313,0.24797693,0.22886752
 "engpar",7,1,"eppars","English Proficient Parents",21,"KY","Kentucky",1,0.51525891,0.51559705,0.46476617,0.4457365,0.43139562,0.44684029,0.44036499,0.39781636
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",21,"KY","Kentucky",1,0.25013652,0.26792216,0.26113495,0.28443155,0.29416087,0.26208249,0.24891546,0.2391514
 "engpar",7,1,"eppars","English Proficient Parents",22,"LA","Louisiana",1,0.54583269,0.46419194,0.47723866,0.4866851,0.45277056,0.42583632,0.48081866,0.50074893
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",22,"LA","Louisiana",1,0.20747666,0.21209785,0.2244031,0.22584698,0.23083726,0.24968831,0.20914266,0.2298274
 "engpar",7,1,"eppars","English Proficient Parents",23,"ME","Maine",1,0.70259589,0.63662416,0.68554634,0.65194798,0.61304265,0.62302214,0.61226308,0.62235039
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",23,"ME","Maine",1,0.12798202,0.14260016,0.12862059,0.15445183,0.23136765,0.18077812,0.19849865,0.21050453
 "engpar",7,1,"eppars","English Proficient Parents",24,"MD","Maryland",1,0.55918634,0.58875936,0.60232538,0.59123898,0.59220821,0.59926212,0.58804017,0.57207423
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",24,"MD","Maryland",1,0.17808284,0.18087165,0.17535187,0.1781863,0.1728635,0.15051226,0.14985231,0.16098681
 "engpar",7,1,"eppars","English Proficient Parents",25,"MA","Massachusetts",1,0.50942522,0.53583628,0.53182197,0.52382666,0.51760221,0.51797873,0.52081054,0.53781623
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",25,"MA","Massachusetts",1,0.21396033,0.2035061,0.20480865,0.19420128,0.19604021,0.19312043,0.18581283,0.19389024
 "engpar",7,1,"eppars","English Proficient Parents",26,"MI","Michigan",1,0.49631619,0.50173342,0.4936415,0.48663062,0.47054717,0.48297074,0.51047355,0.50456786
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",26,"MI","Michigan",1,0.2155401,0.2002731,0.19822565,0.21369261,0.21628809,0.1801838,0.16321653,0.18998733
 "engpar",7,1,"eppars","English Proficient Parents",27,"MN","Minnesota",1,0.41924599,0.43693113,0.443528,0.45676708,0.43593481,0.43877211,0.47226366,0.47465724
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",27,"MN","Minnesota",1,0.25944275,0.26423571,0.26792601,0.24375372,0.24644068,0.23902836,0.22905597,0.22216374
 "engpar",7,1,"eppars","English Proficient Parents",28,"MS","Mississippi",1,0.49883658,0.44961849,0.49398124,0.4941588,0.40542042,0.36657837,0.45626193,0.55490303
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",28,"MS","Mississippi",1,0.21088573,0.27993938,0.28226754,0.29447535,0.29927713,0.35707885,0.31546229,0.2073306
 "engpar",7,1,"eppars","English Proficient Parents",29,"MO","Missouri",1,0.47464105,0.45772791,0.44865292,0.46043709,0.47811884,0.50662702,0.52318209,0.50403142
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",29,"MO","Missouri",1,0.22782275,0.26262927,0.2412346,0.24164918,0.26670581,0.24778681,0.21803664,0.20012143
 "engpar",7,1,"eppars","English Proficient Parents",30,"MT","Montana",1,0.7341848,0.81614,0.85431987,0.75074047,0.77822965,0.86185777,0.78094411,0.74175084
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",30,"MT","Montana",1,0.05093914,0.01027349,0.09610524,0.14838232,0.0602402,0.02146587,0.03142686,0.04468474
 "engpar",7,1,"eppars","English Proficient Parents",31,"NE","Nebraska",1,0.24635659,0.32051951,0.33483553,0.23985097,0.22187945,0.29600865,0.30285197,0.3184278
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",31,"NE","Nebraska",1,0.41372427,0.33432609,0.29798937,0.35687047,0.34487084,0.27896854,0.27694246,0.26810646
 "engpar",7,1,"eppars","English Proficient Parents",32,"NV","Nevada",1,0.33846456,0.35922191,0.33743167,0.32222307,0.35137543,0.37786818,0.37320116,0.37910521
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",32,"NV","Nevada",1,0.29738742,0.27558506,0.28358999,0.29987308,0.28173545,0.24856924,0.22695142,0.19324461
 "engpar",7,1,"eppars","English Proficient Parents",33,"NH","New Hampshire",1,0.68211538,0.66151261,0.67305362,0.6578694,0.62304211,0.59438771,0.6329357,0.67143369
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",33,"NH","New Hampshire",1,0.13551776,0.13915914,0.15308857,0.17820776,0.13343091,0.1181071,0.14608186,0.1585985
 "engpar",7,1,"eppars","English Proficient Parents",34,"NJ","New Jersey",1,0.50966191,0.51305383,0.51575702,0.50696141,0.4985584,0.49574977,0.50062412,0.50578696
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",34,"NJ","New Jersey",1,0.20536794,0.20472473,0.20921774,0.21937829,0.22351883,0.22304457,0.21747246,0.20174776
 "engpar",7,1,"eppars","English Proficient Parents",35,"NM","New Mexico",1,0.27236784,0.3121748,0.3498686,0.34767514,0.3540687,0.31809786,0.3411997,0.38085532
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",35,"NM","New Mexico",1,0.32668757,0.2597203,0.25549957,0.29834959,0.25137398,0.23742127,0.24157549,0.18674704
 "engpar",7,1,"eppars","English Proficient Parents",36,"NY","New York",1,0.50478292,0.4871119,0.4822883,0.48175418,0.478526,0.48425141,0.48757139,0.48816311
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",36,"NY","New York",1,0.22606063,0.23091795,0.22965251,0.23635846,0.23459288,0.22195883,0.21385142,0.21325316
 "engpar",7,1,"eppars","English Proficient Parents",37,"NC","North Carolina",1,0.37858063,0.38770548,0.36521584,0.36943278,0.3947888,0.39932635,0.38051176,0.38016725
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",37,"NC","North Carolina",1,0.36009085,0.34930366,0.34720501,0.33860052,0.30528975,0.28079253,0.30114466,0.30263636
 "engpar",7,1,"eppars","English Proficient Parents",38,"ND","North Dakota",1,0.63247281,,,0.6439752,0.70441967,0.52440947,0.5410226,0.66905922
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",38,"ND","North Dakota",1,0.18372585,,,0.08852629,0.11095972,0.2090344,0.1815066,0.03491289
 "engpar",7,1,"eppars","English Proficient Parents",39,"OH","Ohio",1,0.55436158,0.58226371,0.60278744,0.58060396,0.55576044,0.55093831,0.54621291,0.53914946
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",39,"OH","Ohio",1,0.18774393,0.16273184,0.15696716,0.17043351,0.18482278,0.19002873,0.17922576,0.18646309
 "engpar",7,1,"eppars","English Proficient Parents",40,"OK","Oklahoma",1,0.35676157,0.34160212,0.32568684,0.37887302,0.37898123,0.37903428,0.35222223,0.32886666
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",40,"OK","Oklahoma",1,0.31618834,0.34205377,0.35112095,0.28016856,0.26275864,0.28754166,0.30175403,0.28923625
 "engpar",7,1,"eppars","English Proficient Parents",41,"OR","Oregon",1,0.30746391,0.31444415,0.35360831,0.34587434,0.34823275,0.35216749,0.37529033,0.40345833
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",41,"OR","Oregon",1,0.36156368,0.31226167,0.28325903,0.28758711,0.26871416,0.2519944,0.23457612,0.2173461
 "engpar",7,1,"eppars","English Proficient Parents",42,"PA","Pennsylvania",1,0.534904,0.52178234,0.53003961,0.53747863,0.53481269,0.53163451,0.53161746,0.53341275
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",42,"PA","Pennsylvania",1,0.22511213,0.21842927,0.20885794,0.19651921,0.18781437,0.19121119,0.19444941,0.20205718
 "engpar",7,1,"eppars","English Proficient Parents",44,"RI","Rhode island",1,0.43752861,0.43815252,0.46334672,0.46453032,0.4492363,0.45310721,0.44880533,0.44166729
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",44,"RI","Rhode island",1,0.23759028,0.26396772,0.25409335,0.21290378,0.21526811,0.18742767,0.18579367,0.20495324
 "engpar",7,1,"eppars","English Proficient Parents",45,"SC","South Carolina",1,0.45411763,0.44232574,0.44319963,0.4335511,0.42093092,0.42930955,0.45627955,0.47055203
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",45,"SC","South Carolina",1,0.28861144,0.3053605,0.30910474,0.3054105,0.27923521,0.24808717,0.24016625,0.22829036
 "engpar",7,1,"eppars","English Proficient Parents",46,"SD","South Dakota",1,0.37555164,0.48865163,0.42858022,0.35813242,0.37127286,0.39891782,0.4626382,0.56821334
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",46,"SD","South Dakota",1,0.4012945,0.20785426,0.21278168,0.222701,0.31287271,0.40279639,0.29848289,0.21136789
 "engpar",7,1,"eppars","English Proficient Parents",47,"TN","Tennessee",1,0.47948298,0.43845376,0.39788061,0.40485787,0.40282121,0.39771062,0.41371492,0.40644902
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",47,"TN","Tennessee",1,0.25194278,0.2974551,0.32218343,0.27961686,0.26299232,0.2818349,0.25609925,0.23590377
 "engpar",7,1,"eppars","English Proficient Parents",48,"TX","Texas",1,0.28171995,0.28371072,0.29053971,0.29836929,0.2945672,0.29748854,0.31314126,0.31953618
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",48,"TX","Texas",1,0.33830062,0.3325825,0.32957035,0.31721523,0.30781311,0.3050755,0.2885499,0.27359208
 "engpar",7,1,"eppars","English Proficient Parents",49,"UT","Utah",1,0.38673949,0.40223244,0.44190362,0.45355469,0.40311101,0.39247125,0.40463543,0.46257189
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",49,"UT","Utah",1,0.28231519,0.28528887,0.26547611,0.21997204,0.22798349,0.20448028,0.19878127,0.19327845
 "engpar",7,1,"eppars","English Proficient Parents",50,"VT","Vermont",1,0.86723411,0.82477725,0.76323968,0.61801618,0.60702449,0.77753019,0.77294308,0.76005608
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",50,"VT","Vermont",1,0.03463458,0.08698052,0.13044629,0.17500159,0.1527282,0.06592386,0.08220537,0.16201822
 "engpar",7,1,"eppars","English Proficient Parents",51,"VA","Virginia",1,0.49858311,0.51100826,0.51774293,0.51644868,0.53483516,0.5235849,0.53189909,0.55066693
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",51,"VA","Virginia",1,0.20789261,0.20574364,0.20462878,0.19491182,0.17972593,0.18158779,0.17074302,0.15237992
 "engpar",7,1,"eppars","English Proficient Parents",53,"WA","Washington",1,0.39538559,0.39540371,0.40318295,0.41105127,0.4097009,0.41156873,0.4294565,0.45215699
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",53,"WA","Washington",1,0.28222716,0.28376716,0.27549067,0.26131824,0.2635496,0.25131521,0.22582105,0.20666236
 "engpar",7,1,"eppars","English Proficient Parents",54,"WV","West Virginia",1,0.77211416,0.77081817,0.80515158,0.81706995,0.60806859,0.63621861,0.71439475,0.74663687
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",54,"WV","West Virginia",1,0.06974576,0.13076262,0.10167611,0.07259337,0.16648944,0.12975098,0.05896572,0.11962043
 "engpar",7,1,"eppars","English Proficient Parents",55,"WI","Wisconsin",1,0.37090015,0.41437608,0.45387703,0.42206168,0.39457464,0.43946001,0.45537677,0.40042168
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",55,"WI","Wisconsin",1,0.24252447,0.23544781,0.19571514,0.22914729,0.23968455,0.21846695,0.24976501,0.27039778
 "engpar",7,1,"eppars","English Proficient Parents",56,"WY","Wyoming",1,0.49734697,0.49673596,0.56382883,0.6369276,0.51910049,0.32270029,0.37814149,0.55855578
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",56,"WY","Wyoming",1,0.21451582,0.23973544,0.14674748,0.13574594,0.31154409,0.36876181,0.16816261,0.12902942
 "engpar",7,1,"eppars","English Proficient Parents",0,"US","United States",1,0.38942659,0.39174816,0.39479041,0.39581767,0.39674035,0.40194041,0.41141403,0.41883826
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",0,"US","United States",1,0.27682707,0.27407008,0.26765525,0.26142678,0.25433058,0.24325339,0.23156767,0.22171509
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",10420,,"Akron, OH",0,,,,0.12817664,0.1822332,0.29131338,,
 "engpar",7,1,"eppars","English Proficient Parents",10420,,"Akron, OH",0,,,,0.60922094,0.50989891,0.50739747,,
 "engpar",7,1,"eppars","English Proficient Parents",10580,,"Albany-Schenectady-Troy, NY",0,,,,0.64904648,0.62466531,0.64465018,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",10580,,"Albany-Schenectady-Troy, NY",0,,,,0.10586168,0.12686873,0.14035345,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",10740,,"Albuquerque, NM",0,,,,0.31523015,0.22717318,0.2201856,,
 "engpar",7,1,"eppars","English Proficient Parents",10740,,"Albuquerque, NM",0,,,,0.36347085,0.3712793,0.29720741,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",10900,,"Allentown-Bethlehem-Easton, PA-NJ",0,,,,0.17113869,0.15171948,0.1642281,,
 "engpar",7,1,"eppars","English Proficient Parents",10900,,"Allentown-Bethlehem-Easton, PA-NJ",0,,,,0.49684497,0.57270767,0.59830926,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",12060,,"Atlanta-Sandy Springs-Marietta, GA",0,,,,0.27230411,0.26791419,0.25899842,,
 "engpar",7,1,"eppars","English Proficient Parents",12060,,"Atlanta-Sandy Springs-Marietta, GA",0,,,,0.4317356,0.45501803,0.45394399,,
 "engpar",7,1,"eppars","English Proficient Parents",12260,,"Augusta-Richmond County, GA-SC",0,,,,0.60160567,0.63406736,0.66844013,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",12260,,"Augusta-Richmond County, GA-SC",0,,,,0.17906158,0.1421425,0.08727551,,
 "engpar",7,1,"eppars","English Proficient Parents",12420,,"Austin-Round Rock, TX",0,,,,0.34092455,0.33171148,0.34432934,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",12420,,"Austin-Round Rock, TX",0,,,,0.3347183,0.33095924,0.33227884,,
 "engpar",7,1,"eppars","English Proficient Parents",12540,,"Bakersfield, CA",0,,,,0.2334333,0.25456889,0.29597005,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",12540,,"Bakersfield, CA",0,,,,0.30536431,0.29535034,0.25289017,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",12580,,"Baltimore-Towson, MD",0,,,,0.1732967,0.15478615,0.13862965,,
 "engpar",7,1,"eppars","English Proficient Parents",12580,,"Baltimore-Towson, MD",0,,,,0.62544208,0.64418247,0.63577343,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",12940,,"Baton Rouge, LA",0,,,,0.21864249,0.26118626,0.28638716,,
 "engpar",7,1,"eppars","English Proficient Parents",12940,,"Baton Rouge, LA",0,,,,0.44132583,0.36305384,0.38933747,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",13820,,"Birmingham-Hoover, AL",0,,,,0.40508358,0.33220881,0.26276873,,
 "engpar",7,1,"eppars","English Proficient Parents",13820,,"Birmingham-Hoover, AL",0,,,,0.32149502,0.3495627,0.38805768,,
 "engpar",7,1,"eppars","English Proficient Parents",14260,,"Boise City-Nampa, ID",0,,,,0.37746946,0.41804075,0.34739629,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",14260,,"Boise City-Nampa, ID",0,,,,0.3201401,0.31740528,0.23036919,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",14460,,"Boston-Cambridge-Quincy, MA-NH",0,,,,0.19472853,0.19608496,0.19405203,,
 "engpar",7,1,"eppars","English Proficient Parents",14460,,"Boston-Cambridge-Quincy, MA-NH",0,,,,0.52528361,0.52159614,0.51368742,,
 "engpar",7,1,"eppars","English Proficient Parents",14600,,"Bradenton-Sarasota-Venice, FL",0,,,,0.5133132,0.54067944,0.52242719,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",14600,,"Bradenton-Sarasota-Venice, FL",0,,,,0.26372495,0.24629936,0.21354583,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",14860,,"Bridgeport-Stamford-Norwalk, CT",0,,,,0.17754795,0.1871844,0.18118387,,
 "engpar",7,1,"eppars","English Proficient Parents",14860,,"Bridgeport-Stamford-Norwalk, CT",0,,,,0.55089722,0.54178652,0.55669518,,
 "engpar",7,1,"eppars","English Proficient Parents",15380,,"Buffalo-Niagara Falls, NY",0,,,,0.56073488,0.50409539,0.53506721,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",15380,,"Buffalo-Niagara Falls, NY",0,,,,0.20887756,0.19151054,0.20198885,,
 "engpar",7,1,"eppars","English Proficient Parents",16700,,"Charleston-North Charleston-Summerville, SC",0,,,,0.44170417,0.43882268,0.44891538,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",16700,,"Charleston-North Charleston-Summerville, SC",0,,,,0.32019426,0.29895929,0.21865312,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",16740,,"Charlotte-Gastonia-Concord, NC-SC",0,,,,0.27286637,0.26843601,0.24287942,,
 "engpar",7,1,"eppars","English Proficient Parents",16740,,"Charlotte-Gastonia-Concord, NC-SC",0,,,,0.40450304,0.43292414,0.41461675,,
 "engpar",7,1,"eppars","English Proficient Parents",16860,,"Chattanooga, TN-GA",0,,,,0.5282954,0.4194232,0.45102581,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",16860,,"Chattanooga, TN-GA",0,,,,0.27420017,0.36146083,0.31406977,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",16980,,"Chicago-Naperville-Joliet, IL-IN-WI",0,,,,0.27668235,0.27540437,0.26012698,,
 "engpar",7,1,"eppars","English Proficient Parents",16980,,"Chicago-Naperville-Joliet, IL-IN-WI",0,,,,0.35152804,0.34597191,0.35262823,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",17140,,"Cincinnati-Middletown, OH-KY-IN",0,,,,0.22181401,0.22272464,0.24053052,,
 "engpar",7,1,"eppars","English Proficient Parents",17140,,"Cincinnati-Middletown, OH-KY-IN",0,,,,0.56948342,0.546537,0.50010431,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",17460,,"Cleveland-Elyria-Mentor, OH",0,,,,0.11569349,0.14714299,0.14173594,,
 "engpar",7,1,"eppars","English Proficient Parents",17460,,"Cleveland-Elyria-Mentor, OH",0,,,,0.62535025,0.58318851,0.54791656,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",17820,,"Colorado Springs, CO",0,,,,0.21263314,0.22666703,0.2233395,,
 "engpar",7,1,"eppars","English Proficient Parents",17820,,"Colorado Springs, CO",0,,,,0.6007164,0.60096055,0.55494266,,
 "engpar",7,1,"eppars","English Proficient Parents",17900,,"Columbia, SC",0,,,,0.56249161,0.460166,0.42857222,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",17900,,"Columbia, SC",0,,,,0.19171247,0.24936064,0.27687966,,
 "engpar",7,1,"eppars","English Proficient Parents",18140,,"Columbus, OH",0,,,,0.48808699,0.45930196,0.53720613,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",18140,,"Columbus, OH",0,,,,0.20885896,0.22713843,0.20401883,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",19100,,"Dallas-Fort Worth-Arlington, TX",0,,,,0.35195241,0.33417961,0.29971555,,
 "engpar",7,1,"eppars","English Proficient Parents",19100,,"Dallas-Fort Worth-Arlington, TX",0,,,,0.287478,0.30066543,0.31147178,,
 "engpar",7,1,"eppars","English Proficient Parents",19380,,"Dayton, OH",0,,,,0.71138629,0.69540415,0.59066339,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",19380,,"Dayton, OH",0,,,,0.14134816,0.09694319,0.12633045,,
 "engpar",7,1,"eppars","English Proficient Parents",19740,,"Denver-Aurora-Broomfield, CO",0,,,,0.33532152,0.32988524,0.31725741,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",19740,,"Denver-Aurora-Broomfield, CO",0,,,,0.31530914,0.31721045,0.2690341,,
 "engpar",7,1,"eppars","English Proficient Parents",19780,,"Des Moines-West Des Moines, IA",0,,,,0.33826831,0.31915869,0.28921973,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",19780,,"Des Moines-West Des Moines, IA",0,,,,0.28524248,0.34064834,0.36854684,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",19820,,"Detroit-Warren-Livonia, MI",0,,,,0.20629838,0.21020476,0.18953253,,
 "engpar",7,1,"eppars","English Proficient Parents",19820,,"Detroit-Warren-Livonia, MI",0,,,,0.46309051,0.44807652,0.46166046,,
 "engpar",7,1,"eppars","English Proficient Parents",21340,,"El Paso, TX",0,,,,0.30720029,0.28315277,0.27152773,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",21340,,"El Paso, TX",0,,,,0.27657305,0.30361378,0.31669137,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",23420,,"Fresno, CA",0,,,,0.28743864,0.26215998,0.28507304,,
 "engpar",7,1,"eppars","English Proficient Parents",23420,,"Fresno, CA",0,,,,0.27225366,0.28235318,0.26343114,,
 "engpar",7,1,"eppars","English Proficient Parents",24340,,"Grand Rapids-Wyoming, MI",0,,,,0.37589243,0.43530214,0.46053653,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",24340,,"Grand Rapids-Wyoming, MI",0,,,,0.20941589,0.26757056,0.23214103,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",24660,,"Greensboro-High Point, NC",0,,,,0.31397522,0.33775479,0.31669427,,
 "engpar",7,1,"eppars","English Proficient Parents",24660,,"Greensboro-High Point, NC",0,,,,0.37913963,0.33202302,0.37525903,,
 "engpar",7,1,"eppars","English Proficient Parents",24860,,"Greenville-Mauldin-Easley, SC",0,,,,0.31998805,0.35759938,0.40509956,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",24860,,"Greenville-Mauldin-Easley, SC",0,,,,0.39193036,0.29936252,0.22286764,,
 "engpar",7,1,"eppars","English Proficient Parents",25420,,"Harrisburg-Carlisle, PA",0,,,,0.4946684,0.5410144,0.57298486,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",25420,,"Harrisburg-Carlisle, PA",0,,,,0.16353706,0.17084116,0.19544251,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",25540,,"Hartford-West Hartford-East Hartford, CT",0,,,,0.11126217,0.1194216,0.12184527,,
 "engpar",7,1,"eppars","English Proficient Parents",25540,,"Hartford-West Hartford-East Hartford, CT",0,,,,0.63583166,0.62285843,0.62585398,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",26180,,"Honolulu, HI",0,,,,0.16164001,0.14830968,0.13750576,,
 "engpar",7,1,"eppars","English Proficient Parents",26180,,"Honolulu, HI",0,,,,0.49921713,0.53230317,0.54026816,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",26420,,"Houston-Sugar Land-Baytown, TX",0,,,,0.32338252,0.30439202,0.31856689,,
 "engpar",7,1,"eppars","English Proficient Parents",26420,,"Houston-Sugar Land-Baytown, TX",0,,,,0.31679983,0.31415109,0.3152869,,
 "engpar",7,1,"eppars","English Proficient Parents",26900,,"Indianapolis-Carmel, IN",0,,,,0.42664128,0.38820156,0.3579261,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",26900,,"Indianapolis-Carmel, IN",0,,,,0.3164574,0.33992694,0.37568593,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",27140,,"Jackson, MS",0,,,,,,,,
 "engpar",7,1,"eppars","English Proficient Parents",27140,,"Jackson, MS",0,,,,,,,,
 "engpar",7,1,"eppars","English Proficient Parents",27260,,"Jacksonville, FL",0,,,,0.59647751,0.65962244,0.66496328,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",27260,,"Jacksonville, FL",0,,,,0.12796632,0.1141914,0.11891711,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",28140,,"Kansas City, MO-KS",0,,,,0.29218016,0.322517,0.25682598,,
 "engpar",7,1,"eppars","English Proficient Parents",28140,,"Kansas City, MO-KS",0,,,,0.4098834,0.42076248,0.40832176,,
 "engpar",7,1,"eppars","English Proficient Parents",28940,,"Knoxville, TN",0,,,,0.47180051,0.4553925,0.47768782,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",28940,,"Knoxville, TN",0,,,,0.19919957,0.18310354,0.18036027,,
 "engpar",7,1,"eppars","English Proficient Parents",29460,,"Lakeland-Winter Haven, FL",0,,,,0.43848995,0.39576248,0.36704384,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",29460,,"Lakeland-Winter Haven, FL",0,,,,0.2923435,0.26611447,0.23587294,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",29540,,"Lancaster, PA",0,,,,0.22342425,0.16395778,0.14410626,,
 "engpar",7,1,"eppars","English Proficient Parents",29540,,"Lancaster, PA",0,,,,0.48565189,0.46939314,0.51641263,,
 "engpar",7,1,"eppars","English Proficient Parents",29620,,"Lansing-East Lansing, MI",0,,,,0.58542759,0.43782733,0.41248264,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",29620,,"Lansing-East Lansing, MI",0,,,,0.23618393,0.28643162,0.19155586,,
 "engpar",7,1,"eppars","English Proficient Parents",29820,,"Las Vegas-Paradise, NV",0,,,,0.31274744,0.35094989,0.37711168,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",29820,,"Las Vegas-Paradise, NV",0,,,,0.30144819,0.29383135,0.25947809,,
 "engpar",7,1,"eppars","English Proficient Parents",30780,,"Little Rock-North Little Rock-Conway, AR",0,,,,0.51072686,0.36151956,0.47629498,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",30780,,"Little Rock-North Little Rock-Conway, AR",0,,,,0.18171638,0.26880537,0.2496818,,
 "engpar",7,1,"eppars","English Proficient Parents",31100,,"Los Angeles-Long Beach-Santa Ana, CA",0,,,,0.2999005,0.30512065,0.31503885,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",31100,,"Los Angeles-Long Beach-Santa Ana, CA",0,,,,0.27148909,0.25962218,0.24210691,,
 "engpar",7,1,"eppars","English Proficient Parents",31140,,"LouisvilleJefferson County, KY-IN",0,,,,0.42996544,0.41124688,0.43479784,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",31140,,"LouisvilleJefferson County, KY-IN",0,,,,0.2376393,0.28605519,0.28554195,,
 "engpar",7,1,"eppars","English Proficient Parents",31540,,"Madison, WI",0,,,,0.44659287,0.35583221,0.42305931,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",31540,,"Madison, WI",0,,,,0.36717222,0.32703647,0.23601645,,
 "engpar",7,1,"eppars","English Proficient Parents",32580,,"McAllen-Edinburg-Mission, TX",0,,,,0.21384499,0.19164136,0.20392633,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",32580,,"McAllen-Edinburg-Mission, TX",0,,,,0.34861162,0.33184149,0.29776066,,
 "engpar",7,1,"eppars","English Proficient Parents",32820,,"Memphis, TN-MS-AR",0,,,,0.33489902,0.29159431,0.35106772,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",32820,,"Memphis, TN-MS-AR",0,,,,0.36505178,0.31058577,0.2836294,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",33100,,"Miami-Fort Lauderdale-Pompano Beach, FL",0,,,,0.23187018,0.22846996,0.22352564,,
 "engpar",7,1,"eppars","English Proficient Parents",33100,,"Miami-Fort Lauderdale-Pompano Beach, FL",0,,,,0.461531,0.4648851,0.46974486,,
 "engpar",7,1,"eppars","English Proficient Parents",33340,,"Milwaukee-Waukesha-West Allis, WI",0,,,,0.4298972,0.37607185,0.43705731,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",33340,,"Milwaukee-Waukesha-West Allis, WI",0,,,,0.23520991,0.2809844,0.23114264,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",33460,,"Minneapolis-St. Paul-Bloomington, MN-WI",0,,,,0.23728462,0.25616082,0.252707,,
 "engpar",7,1,"eppars","English Proficient Parents",33460,,"Minneapolis-St. Paul-Bloomington, MN-WI",0,,,,0.45936573,0.44067633,0.44745153,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",33700,,"Modesto, CA",0,,,,0.28369024,0.29100744,0.2806936,,
 "engpar",7,1,"eppars","English Proficient Parents",33700,,"Modesto, CA",0,,,,0.28571429,0.27836584,0.28340324,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",34980,,"Nashville-Davidson-Murfreesboro-Franklin, TN",0,,,,0.28770861,0.25750401,0.30272715,,
 "engpar",7,1,"eppars","English Proficient Parents",34980,,"Nashville-Davidson-Murfreesboro-Franklin, TN",0,,,,0.40063381,0.42489666,0.38571541,,
 "engpar",7,1,"eppars","English Proficient Parents",35300,,"New Haven-Milford, CT",0,,,,0.52192414,0.46410722,0.47343433,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",35300,,"New Haven-Milford, CT",0,,,,0.16989967,0.2097976,0.17563789,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",35380,,"New Orleans-Metairie-Kenner, LA",0,,,,0.25376859,0.2382036,0.23693472,,
 "engpar",7,1,"eppars","English Proficient Parents",35380,,"New Orleans-Metairie-Kenner, LA",0,,,,0.42413812,0.42526843,0.40542724,,
 "engpar",7,1,"eppars","English Proficient Parents",35620,,"New York-Northern New Jersey-Long Island, NY-NJ-PA",0,,,,0.48081011,0.47732955,0.48154441,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",35620,,"New York-Northern New Jersey-Long Island, NY-NJ-PA",0,,,,0.23568031,0.2350901,0.2259003,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",36420,,"Oklahoma City, OK",0,,,,0.3145219,0.30942671,0.32426276,,
 "engpar",7,1,"eppars","English Proficient Parents",36420,,"Oklahoma City, OK",0,,,,0.31261298,0.35744404,0.3644894,,
 "engpar",7,1,"eppars","English Proficient Parents",36540,,"Omaha-Council Bluffs, NE-IA",0,,,,0.27610723,0.26736829,0.29310007,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",36540,,"Omaha-Council Bluffs, NE-IA",0,,,,0.37022653,0.33119285,0.31157639,,
 "engpar",7,1,"eppars","English Proficient Parents",36740,,"Orlando-Kissimmee, FL",0,,,,0.54784723,0.54244824,0.55624323,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",36740,,"Orlando-Kissimmee, FL",0,,,,0.1933589,0.18791456,0.16623241,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",37100,,"Oxnard-Thousand Oaks-Ventura, CA",0,,,,0.2522069,0.27661336,0.28475471,,
 "engpar",7,1,"eppars","English Proficient Parents",37100,,"Oxnard-Thousand Oaks-Ventura, CA",0,,,,0.33283849,0.33889422,0.36340573,,
 "engpar",7,1,"eppars","English Proficient Parents",37340,,"Palm Bay-Melbourne-Titusville, FL",0,,,,0.69420251,0.71338912,0.72206809,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",37340,,"Palm Bay-Melbourne-Titusville, FL",0,,,,0.15813443,0.15778635,0.12638313,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",37980,,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",0,,,,0.18628999,0.19200231,0.18259285,,
 "engpar",7,1,"eppars","English Proficient Parents",37980,,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",0,,,,0.55853333,0.54107275,0.53310984,,
 "engpar",7,1,"eppars","English Proficient Parents",38060,,"Phoenix-Mesa-Scottsdale, AZ",0,,,,0.31892031,0.33824146,0.35723476,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",38060,,"Phoenix-Mesa-Scottsdale, AZ",0,,,,0.29733452,0.25963697,0.23667493,,
 "engpar",7,1,"eppars","English Proficient Parents",38300,,"Pittsburgh, PA",0,,,,0.67332156,0.70293116,0.69334745,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",38300,,"Pittsburgh, PA",0,,,,0.12103728,0.11433396,0.16746752,,
 "engpar",7,1,"eppars","English Proficient Parents",38860,,"Portland-South Portland-Biddeford, ME",0,,,,0.63361037,0.66328828,0.58448878,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",38860,,"Portland-South Portland-Biddeford, ME",0,,,,0.10315191,0.20733828,0.22028821,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",38900,,"Portland-Vancouver-Beaverton, OR-WA",0,,,,0.28525752,0.29121595,0.26544038,,
 "engpar",7,1,"eppars","English Proficient Parents",38900,,"Portland-Vancouver-Beaverton, OR-WA",0,,,,0.3563446,0.33712349,0.36029904,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",39100,,"Poughkeepsie-Newburgh-Middletown, NY",0,,,,0.15903718,0.18721539,0.1628521,,
 "engpar",7,1,"eppars","English Proficient Parents",39100,,"Poughkeepsie-Newburgh-Middletown, NY",0,,,,0.65543558,0.59675883,0.52438789,,
 "engpar",7,1,"eppars","English Proficient Parents",39300,,"Providence-New Bedford-Fall River, RI-MA",0,,,,0.50966513,0.48768682,0.48187981,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",39300,,"Providence-New Bedford-Fall River, RI-MA",0,,,,0.184646,0.18479162,0.17456285,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",39580,,"Raleigh-Cary, NC",0,,,,0.26216645,0.22067811,0.23759866,,
 "engpar",7,1,"eppars","English Proficient Parents",39580,,"Raleigh-Cary, NC",0,,,,0.48527077,0.50728762,0.48112374,,
 "engpar",7,1,"eppars","English Proficient Parents",40060,,"Richmond, VA",0,,,,0.48283912,0.49641753,0.4527966,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",40060,,"Richmond, VA",0,,,,0.21532746,0.21278028,0.23858037,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",40140,,"Riverside-San Bernardino-Ontario, CA",0,,,,0.25598397,0.23519444,0.20616011,,
 "engpar",7,1,"eppars","English Proficient Parents",40140,,"Riverside-San Bernardino-Ontario, CA",0,,,,0.30680182,0.31910515,0.33779737,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",40380,,"Rochester, NY",0,,,,0.17636117,0.20470606,0.25817773,,
 "engpar",7,1,"eppars","English Proficient Parents",40380,,"Rochester, NY",0,,,,0.56100893,0.5430533,0.52078153,,
 "engpar",7,1,"eppars","English Proficient Parents",40900,,"Sacramento-Arden-Arcade-Roseville, CA",0,,,,0.36865556,0.39017521,0.39882342,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",40900,,"Sacramento-Arden-Arcade-Roseville, CA",0,,,,0.28062986,0.25651479,0.25236968,,
 "engpar",7,1,"eppars","English Proficient Parents",41180,,"St. Louis, MO-IL",0,,,,0.5024627,0.48997448,0.5292872,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",41180,,"St. Louis, MO-IL",0,,,,0.22013531,0.26323579,0.21416305,,
 "engpar",7,1,"eppars","English Proficient Parents",41620,,"Salt Lake City, UT",0,,,,0.43851972,0.38478175,0.36368622,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",41620,,"Salt Lake City, UT",0,,,,0.23210519,0.23005634,0.21464992,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",41700,,"San Antonio, TX",0,,,,0.2009732,0.2034374,0.19970185,,
 "engpar",7,1,"eppars","English Proficient Parents",41700,,"San Antonio, TX",0,,,,0.39922455,0.33744726,0.35259238,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",41740,,"San Diego-Carlsbad-San Marcos, CA",0,,,,0.24370917,0.25700671,0.24739564,,
 "engpar",7,1,"eppars","English Proficient Parents",41740,,"San Diego-Carlsbad-San Marcos, CA",0,,,,0.39475105,0.3843431,0.38853534,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",41860,,"San Francisco-Oakland-Fremont, CA",0,,,,0.23745878,0.21954888,0.21435887,,
 "engpar",7,1,"eppars","English Proficient Parents",41860,,"San Francisco-Oakland-Fremont, CA",0,,,,0.43891731,0.44373493,0.44272388,,
 "engpar",7,1,"eppars","English Proficient Parents",41940,,"San Jose-Sunnyvale-Santa Clara, CA",0,,,,0.43913086,0.44245244,0.45373824,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",41940,,"San Jose-Sunnyvale-Santa Clara, CA",0,,,,0.24346421,0.23437548,0.21570251,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",42220,,"Santa Rosa-Petaluma, CA",0,,,,0.24826622,0.28027982,0.26620887,,
 "engpar",7,1,"eppars","English Proficient Parents",42220,,"Santa Rosa-Petaluma, CA",0,,,,0.36271699,0.32421282,0.29591034,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",42540,,"Scranton-Wilkes-Barre, PA",0,,,,0.298838,0.32417682,0.26993665,,
 "engpar",7,1,"eppars","English Proficient Parents",42540,,"Scranton-Wilkes-Barre, PA",0,,,,0.5238796,0.43130181,0.33100442,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",42660,,"Seattle-Tacoma-Bellevue, WA",0,,,,0.22928271,0.23988566,0.22293752,,
 "engpar",7,1,"eppars","English Proficient Parents",42660,,"Seattle-Tacoma-Bellevue, WA",0,,,,0.45395306,0.43934684,0.44994719,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",44140,,"Springfield, MA",0,,,,0.19230017,0.2224451,0.20800479,,
 "engpar",7,1,"eppars","English Proficient Parents",44140,,"Springfield, MA",0,,,,0.47545398,0.41241706,0.48200589,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",44700,,"Stockton, CA",0,,,,0.26835982,0.26242286,0.29376173,,
 "engpar",7,1,"eppars","English Proficient Parents",44700,,"Stockton, CA",0,,,,0.30717924,0.30199112,0.28796377,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",45060,,"Syracuse, NY",0,,,,0.21984149,0.18266529,0.19272588,,
 "engpar",7,1,"eppars","English Proficient Parents",45060,,"Syracuse, NY",0,,,,0.57203212,0.5469768,0.52128949,,
 "engpar",7,1,"eppars","English Proficient Parents",45300,,"Tampa-St. Petersburg-Clearwater, FL",0,,,,0.50377326,0.51381656,0.54732862,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",45300,,"Tampa-St. Petersburg-Clearwater, FL",0,,,,0.2017736,0.19718351,0.2132781,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",45780,,"Toledo, OH",0,,,,0.15850462,0.14078105,0.18243368,,
 "engpar",7,1,"eppars","English Proficient Parents",45780,,"Toledo, OH",0,,,,0.60701456,0.68036583,0.66294945,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",46060,,"Tucson, AZ",0,,,,0.2237419,0.23622343,0.22255877,,
 "engpar",7,1,"eppars","English Proficient Parents",46060,,"Tucson, AZ",0,,,,0.35900369,0.35604011,0.38036397,,
 "engpar",7,1,"eppars","English Proficient Parents",46140,,"Tulsa, OK",0,,,,0.41113297,0.4108411,0.36419681,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",46140,,"Tulsa, OK",0,,,,0.3006593,0.2448352,0.27650102,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",47260,,"Virginia Beach-Norfolk-Newport News, VA-NC",0,,,,0.10301914,0.11031271,0.10050513,,
 "engpar",7,1,"eppars","English Proficient Parents",47260,,"Virginia Beach-Norfolk-Newport News, VA-NC",0,,,,0.72189466,0.7266342,0.65147253,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",47900,,"Washington-Arlington-Alexandria, DC-VA-MD-WV",0,,,,0.18869291,0.18143409,0.16672476,,
 "engpar",7,1,"eppars","English Proficient Parents",47900,,"Washington-Arlington-Alexandria, DC-VA-MD-WV",0,,,,0.53934282,0.53954521,0.548847,,
 "engpar",7,1,"eppars","English Proficient Parents",48620,,"Wichita, KS",0,,,,0.37811373,0.37659073,0.3643446,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",48620,,"Wichita, KS",0,,,,0.25825058,0.3075563,0.29531312,,
 "engpar",7,1,"eppars","English Proficient Parents",49340,,"Worcester, MA",0,,,,0.49717582,0.53780603,0.55417505,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",49340,,"Worcester, MA",0,,,,0.25100103,0.20475032,0.19148861,,
-"edupar",7,1,"linIso","Who live in Linguistically Isolated Households",49660,,"Youngstown-Warren-Boardman, OH-PA",0,,,,,,,,
 "engpar",7,1,"eppars","English Proficient Parents",49660,,"Youngstown-Warren-Boardman, OH-PA",0,,,,,,,,
 "engpar",7,2,"oneleppar","At least one Limited English Proficient Parent",1,"AL","Alabama",1,0.56494439,0.58681494,0.59825391,0.64885479,0.65562755,0.64866304,0.62291574,0.58237422
 "engpar",7,2,"oneleppar","At least one Limited English Proficient Parent",2,"AK","Alaska",1,0.4092443,0.39517036,0.35586956,0.4305045,0.55128205,0.51350152,0.3773284,0.32732508
@@ -4207,6 +4055,158 @@
 "engpar",7,3,"noeppars","No English Proficient Parents",48620,,"Wichita, KS",0,,,,0.39827092,0.42339082,0.46830399,,
 "engpar",7,3,"noeppars","No English Proficient Parents",49340,,"Worcester, MA",0,,,,0.33805474,0.30105603,0.28600746,,
 "engpar",7,3,"noeppars","No English Proficient Parents",49660,,"Youngstown-Warren-Boardman, OH-PA",0,,,,,,,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",1,"AL","Alabama",1,0.33084697,0.33007753,0.34966898,0.39317855,0.34990829,0.31050432,0.32310003,0.33626559
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",2,"AK","Alaska",1,0.16196442,0.10115594,0.06708068,0.11341235,0.13819578,0.15081786,0.1124929,0.07863333
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",4,"AZ","Arizona",1,0.36338544,0.3685894,0.34500134,0.2790336,0.25239435,0.23462373,0.20252496,0.20715472
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",5,"AR","Arkansas",1,0.30406117,0.36351386,0.38225365,0.3117038,0.27618027,0.27199662,0.25517797,0.23846212
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",6,"CA","California",1,0.29347268,0.28700367,0.2768316,0.26877674,0.25788659,0.24477743,0.23432204,0.22337361
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",8,"CO","Colorado",1,0.32902947,0.31381798,0.28476444,0.28471243,0.29420722,0.26214856,0.21862255,0.20793153
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",9,"CT","Connecticut",1,0.18067427,0.1870065,0.16351414,0.15620637,0.17778967,0.1688038,0.16982022,0.18167114
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",10,"DE","Delaware",1,0.2184435,0.24926233,0.21492085,0.15707161,0.17168055,0.1884854,0.21931741,0.22655734
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",11,"DC","District of Columbia",1,0.21962591,0.20111169,0.13858666,0.1429542,0.15429036,0.13899347,0.19987151,0.2136738
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",12,"FL","Florida",1,0.23075832,0.22852641,0.22634901,0.22967838,0.22691023,0.22000545,0.21328902,0.19602059
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",13,"GA","Georgia",1,0.27629822,0.29069868,0.30275446,0.28938574,0.27511594,0.26170918,0.2482456,0.22546069
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",15,"HI","Hawaii",1,0.13617259,0.14553066,0.14854103,0.15319581,0.13866197,0.12183909,0.12750535,0.18498075
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",16,"ID","Idaho",1,0.31496528,0.27215677,0.24882162,0.26819855,0.26851401,0.25232574,0.20735304,0.17615804
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",17,"IL","Illinois",1,0.30511042,0.3140569,0.29321244,0.27756467,0.27418914,0.25518215,0.23473273,0.21891764
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",18,"IN","Indiana",1,0.32122096,0.30318078,0.30118209,0.30971673,0.31435129,0.32489675,0.28523231,0.26236868
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",19,"IA","Iowa",1,0.32424766,0.26862332,0.26114544,0.27065146,0.30015561,0.35042644,0.29053831,0.22359462
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",20,"KS","Kansas",1,0.2803272,0.29040712,0.28474972,0.29943004,0.29568616,0.25204313,0.24797693,0.22886752
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",21,"KY","Kentucky",1,0.25013652,0.26792216,0.26113495,0.28443155,0.29416087,0.26208249,0.24891546,0.2391514
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",22,"LA","Louisiana",1,0.20747666,0.21209785,0.2244031,0.22584698,0.23083726,0.24968831,0.20914266,0.2298274
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",23,"ME","Maine",1,0.12798202,0.14260016,0.12862059,0.15445183,0.23136765,0.18077812,0.19849865,0.21050453
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",24,"MD","Maryland",1,0.17808284,0.18087165,0.17535187,0.1781863,0.1728635,0.15051226,0.14985231,0.16098681
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",25,"MA","Massachusetts",1,0.21396033,0.2035061,0.20480865,0.19420128,0.19604021,0.19312043,0.18581283,0.19389024
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",26,"MI","Michigan",1,0.2155401,0.2002731,0.19822565,0.21369261,0.21628809,0.1801838,0.16321653,0.18998733
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",27,"MN","Minnesota",1,0.25944275,0.26423571,0.26792601,0.24375372,0.24644068,0.23902836,0.22905597,0.22216374
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",28,"MS","Mississippi",1,0.21088573,0.27993938,0.28226754,0.29447535,0.29927713,0.35707885,0.31546229,0.2073306
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",29,"MO","Missouri",1,0.22782275,0.26262927,0.2412346,0.24164918,0.26670581,0.24778681,0.21803664,0.20012143
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",30,"MT","Montana",1,0.05093914,0.01027349,0.09610524,0.14838232,0.0602402,0.02146587,0.03142686,0.04468474
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",31,"NE","Nebraska",1,0.41372427,0.33432609,0.29798937,0.35687047,0.34487084,0.27896854,0.27694246,0.26810646
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",32,"NV","Nevada",1,0.29738742,0.27558506,0.28358999,0.29987308,0.28173545,0.24856924,0.22695142,0.19324461
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",33,"NH","New Hampshire",1,0.13551776,0.13915914,0.15308857,0.17820776,0.13343091,0.1181071,0.14608186,0.1585985
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",34,"NJ","New Jersey",1,0.20536794,0.20472473,0.20921774,0.21937829,0.22351883,0.22304457,0.21747246,0.20174776
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",35,"NM","New Mexico",1,0.32668757,0.2597203,0.25549957,0.29834959,0.25137398,0.23742127,0.24157549,0.18674704
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",36,"NY","New York",1,0.22606063,0.23091795,0.22965251,0.23635846,0.23459288,0.22195883,0.21385142,0.21325316
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",37,"NC","North Carolina",1,0.36009085,0.34930366,0.34720501,0.33860052,0.30528975,0.28079253,0.30114466,0.30263636
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",38,"ND","North Dakota",1,0.18372585,,,0.08852629,0.11095972,0.2090344,0.1815066,0.03491289
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",39,"OH","Ohio",1,0.18774393,0.16273184,0.15696716,0.17043351,0.18482278,0.19002873,0.17922576,0.18646309
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",40,"OK","Oklahoma",1,0.31618834,0.34205377,0.35112095,0.28016856,0.26275864,0.28754166,0.30175403,0.28923625
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",41,"OR","Oregon",1,0.36156368,0.31226167,0.28325903,0.28758711,0.26871416,0.2519944,0.23457612,0.2173461
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",42,"PA","Pennsylvania",1,0.22511213,0.21842927,0.20885794,0.19651921,0.18781437,0.19121119,0.19444941,0.20205718
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",44,"RI","Rhode island",1,0.23759028,0.26396772,0.25409335,0.21290378,0.21526811,0.18742767,0.18579367,0.20495324
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",45,"SC","South Carolina",1,0.28861144,0.3053605,0.30910474,0.3054105,0.27923521,0.24808717,0.24016625,0.22829036
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",46,"SD","South Dakota",1,0.4012945,0.20785426,0.21278168,0.222701,0.31287271,0.40279639,0.29848289,0.21136789
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",47,"TN","Tennessee",1,0.25194278,0.2974551,0.32218343,0.27961686,0.26299232,0.2818349,0.25609925,0.23590377
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",48,"TX","Texas",1,0.33830062,0.3325825,0.32957035,0.31721523,0.30781311,0.3050755,0.2885499,0.27359208
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",49,"UT","Utah",1,0.28231519,0.28528887,0.26547611,0.21997204,0.22798349,0.20448028,0.19878127,0.19327845
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",50,"VT","Vermont",1,0.03463458,0.08698052,0.13044629,0.17500159,0.1527282,0.06592386,0.08220537,0.16201822
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",51,"VA","Virginia",1,0.20789261,0.20574364,0.20462878,0.19491182,0.17972593,0.18158779,0.17074302,0.15237992
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",53,"WA","Washington",1,0.28222716,0.28376716,0.27549067,0.26131824,0.2635496,0.25131521,0.22582105,0.20666236
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",54,"WV","West Virginia",1,0.06974576,0.13076262,0.10167611,0.07259337,0.16648944,0.12975098,0.05896572,0.11962043
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",55,"WI","Wisconsin",1,0.24252447,0.23544781,0.19571514,0.22914729,0.23968455,0.21846695,0.24976501,0.27039778
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",56,"WY","Wyoming",1,0.21451582,0.23973544,0.14674748,0.13574594,0.31154409,0.36876181,0.16816261,0.12902942
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",0,"US","United States",1,0.27682707,0.27407008,0.26765525,0.26142678,0.25433058,0.24325339,0.23156767,0.22171509
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",10420,,"Akron, OH",0,,,,0.12817664,0.1822332,0.29131338,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",10580,,"Albany-Schenectady-Troy, NY",0,,,,0.10586168,0.12686873,0.14035345,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",10740,,"Albuquerque, NM",0,,,,0.31523015,0.22717318,0.2201856,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",10900,,"Allentown-Bethlehem-Easton, PA-NJ",0,,,,0.17113869,0.15171948,0.1642281,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",12060,,"Atlanta-Sandy Springs-Marietta, GA",0,,,,0.27230411,0.26791419,0.25899842,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",12260,,"Augusta-Richmond County, GA-SC",0,,,,0.17906158,0.1421425,0.08727551,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",12420,,"Austin-Round Rock, TX",0,,,,0.3347183,0.33095924,0.33227884,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",12540,,"Bakersfield, CA",0,,,,0.30536431,0.29535034,0.25289017,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",12580,,"Baltimore-Towson, MD",0,,,,0.1732967,0.15478615,0.13862965,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",12940,,"Baton Rouge, LA",0,,,,0.21864249,0.26118626,0.28638716,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",13820,,"Birmingham-Hoover, AL",0,,,,0.40508358,0.33220881,0.26276873,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",14260,,"Boise City-Nampa, ID",0,,,,0.3201401,0.31740528,0.23036919,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",14460,,"Boston-Cambridge-Quincy, MA-NH",0,,,,0.19472853,0.19608496,0.19405203,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",14600,,"Bradenton-Sarasota-Venice, FL",0,,,,0.26372495,0.24629936,0.21354583,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",14860,,"Bridgeport-Stamford-Norwalk, CT",0,,,,0.17754795,0.1871844,0.18118387,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",15380,,"Buffalo-Niagara Falls, NY",0,,,,0.20887756,0.19151054,0.20198885,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",16700,,"Charleston-North Charleston-Summerville, SC",0,,,,0.32019426,0.29895929,0.21865312,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",16740,,"Charlotte-Gastonia-Concord, NC-SC",0,,,,0.27286637,0.26843601,0.24287942,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",16860,,"Chattanooga, TN-GA",0,,,,0.27420017,0.36146083,0.31406977,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",16980,,"Chicago-Naperville-Joliet, IL-IN-WI",0,,,,0.27668235,0.27540437,0.26012698,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",17140,,"Cincinnati-Middletown, OH-KY-IN",0,,,,0.22181401,0.22272464,0.24053052,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",17460,,"Cleveland-Elyria-Mentor, OH",0,,,,0.11569349,0.14714299,0.14173594,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",17820,,"Colorado Springs, CO",0,,,,0.21263314,0.22666703,0.2233395,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",17900,,"Columbia, SC",0,,,,0.19171247,0.24936064,0.27687966,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",18140,,"Columbus, OH",0,,,,0.20885896,0.22713843,0.20401883,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",19100,,"Dallas-Fort Worth-Arlington, TX",0,,,,0.35195241,0.33417961,0.29971555,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",19380,,"Dayton, OH",0,,,,0.14134816,0.09694319,0.12633045,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",19740,,"Denver-Aurora-Broomfield, CO",0,,,,0.31530914,0.31721045,0.2690341,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",19780,,"Des Moines-West Des Moines, IA",0,,,,0.28524248,0.34064834,0.36854684,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",19820,,"Detroit-Warren-Livonia, MI",0,,,,0.20629838,0.21020476,0.18953253,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",21340,,"El Paso, TX",0,,,,0.27657305,0.30361378,0.31669137,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",23420,,"Fresno, CA",0,,,,0.28743864,0.26215998,0.28507304,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",24340,,"Grand Rapids-Wyoming, MI",0,,,,0.20941589,0.26757056,0.23214103,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",24660,,"Greensboro-High Point, NC",0,,,,0.31397522,0.33775479,0.31669427,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",24860,,"Greenville-Mauldin-Easley, SC",0,,,,0.39193036,0.29936252,0.22286764,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",25420,,"Harrisburg-Carlisle, PA",0,,,,0.16353706,0.17084116,0.19544251,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",25540,,"Hartford-West Hartford-East Hartford, CT",0,,,,0.11126217,0.1194216,0.12184527,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",26180,,"Honolulu, HI",0,,,,0.16164001,0.14830968,0.13750576,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",26420,,"Houston-Sugar Land-Baytown, TX",0,,,,0.32338252,0.30439202,0.31856689,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",26900,,"Indianapolis-Carmel, IN",0,,,,0.3164574,0.33992694,0.37568593,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",27140,,"Jackson, MS",0,,,,,,,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",27260,,"Jacksonville, FL",0,,,,0.12796632,0.1141914,0.11891711,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",28140,,"Kansas City, MO-KS",0,,,,0.29218016,0.322517,0.25682598,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",28940,,"Knoxville, TN",0,,,,0.19919957,0.18310354,0.18036027,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",29460,,"Lakeland-Winter Haven, FL",0,,,,0.2923435,0.26611447,0.23587294,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",29540,,"Lancaster, PA",0,,,,0.22342425,0.16395778,0.14410626,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",29620,,"Lansing-East Lansing, MI",0,,,,0.23618393,0.28643162,0.19155586,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",29820,,"Las Vegas-Paradise, NV",0,,,,0.30144819,0.29383135,0.25947809,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",30780,,"Little Rock-North Little Rock-Conway, AR",0,,,,0.18171638,0.26880537,0.2496818,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",31100,,"Los Angeles-Long Beach-Santa Ana, CA",0,,,,0.27148909,0.25962218,0.24210691,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",31140,,"LouisvilleJefferson County, KY-IN",0,,,,0.2376393,0.28605519,0.28554195,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",31540,,"Madison, WI",0,,,,0.36717222,0.32703647,0.23601645,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",32580,,"McAllen-Edinburg-Mission, TX",0,,,,0.34861162,0.33184149,0.29776066,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",32820,,"Memphis, TN-MS-AR",0,,,,0.36505178,0.31058577,0.2836294,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",33100,,"Miami-Fort Lauderdale-Pompano Beach, FL",0,,,,0.23187018,0.22846996,0.22352564,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",33340,,"Milwaukee-Waukesha-West Allis, WI",0,,,,0.23520991,0.2809844,0.23114264,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",33460,,"Minneapolis-St. Paul-Bloomington, MN-WI",0,,,,0.23728462,0.25616082,0.252707,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",33700,,"Modesto, CA",0,,,,0.28369024,0.29100744,0.2806936,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",34980,,"Nashville-Davidson-Murfreesboro-Franklin, TN",0,,,,0.28770861,0.25750401,0.30272715,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",35300,,"New Haven-Milford, CT",0,,,,0.16989967,0.2097976,0.17563789,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",35380,,"New Orleans-Metairie-Kenner, LA",0,,,,0.25376859,0.2382036,0.23693472,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",35620,,"New York-Northern New Jersey-Long Island, NY-NJ-PA",0,,,,0.23568031,0.2350901,0.2259003,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",36420,,"Oklahoma City, OK",0,,,,0.3145219,0.30942671,0.32426276,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",36540,,"Omaha-Council Bluffs, NE-IA",0,,,,0.37022653,0.33119285,0.31157639,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",36740,,"Orlando-Kissimmee, FL",0,,,,0.1933589,0.18791456,0.16623241,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",37100,,"Oxnard-Thousand Oaks-Ventura, CA",0,,,,0.2522069,0.27661336,0.28475471,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",37340,,"Palm Bay-Melbourne-Titusville, FL",0,,,,0.15813443,0.15778635,0.12638313,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",37980,,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",0,,,,0.18628999,0.19200231,0.18259285,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",38060,,"Phoenix-Mesa-Scottsdale, AZ",0,,,,0.29733452,0.25963697,0.23667493,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",38300,,"Pittsburgh, PA",0,,,,0.12103728,0.11433396,0.16746752,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",38860,,"Portland-South Portland-Biddeford, ME",0,,,,0.10315191,0.20733828,0.22028821,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",38900,,"Portland-Vancouver-Beaverton, OR-WA",0,,,,0.28525752,0.29121595,0.26544038,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",39100,,"Poughkeepsie-Newburgh-Middletown, NY",0,,,,0.15903718,0.18721539,0.1628521,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",39300,,"Providence-New Bedford-Fall River, RI-MA",0,,,,0.184646,0.18479162,0.17456285,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",39580,,"Raleigh-Cary, NC",0,,,,0.26216645,0.22067811,0.23759866,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",40060,,"Richmond, VA",0,,,,0.21532746,0.21278028,0.23858037,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",40140,,"Riverside-San Bernardino-Ontario, CA",0,,,,0.25598397,0.23519444,0.20616011,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",40380,,"Rochester, NY",0,,,,0.17636117,0.20470606,0.25817773,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",40900,,"Sacramento-Arden-Arcade-Roseville, CA",0,,,,0.28062986,0.25651479,0.25236968,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",41180,,"St. Louis, MO-IL",0,,,,0.22013531,0.26323579,0.21416305,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",41620,,"Salt Lake City, UT",0,,,,0.23210519,0.23005634,0.21464992,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",41700,,"San Antonio, TX",0,,,,0.2009732,0.2034374,0.19970185,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",41740,,"San Diego-Carlsbad-San Marcos, CA",0,,,,0.24370917,0.25700671,0.24739564,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",41860,,"San Francisco-Oakland-Fremont, CA",0,,,,0.23745878,0.21954888,0.21435887,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",41940,,"San Jose-Sunnyvale-Santa Clara, CA",0,,,,0.24346421,0.23437548,0.21570251,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",42220,,"Santa Rosa-Petaluma, CA",0,,,,0.24826622,0.28027982,0.26620887,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",42540,,"Scranton-Wilkes-Barre, PA",0,,,,0.298838,0.32417682,0.26993665,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",42660,,"Seattle-Tacoma-Bellevue, WA",0,,,,0.22928271,0.23988566,0.22293752,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",44140,,"Springfield, MA",0,,,,0.19230017,0.2224451,0.20800479,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",44700,,"Stockton, CA",0,,,,0.26835982,0.26242286,0.29376173,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",45060,,"Syracuse, NY",0,,,,0.21984149,0.18266529,0.19272588,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",45300,,"Tampa-St. Petersburg-Clearwater, FL",0,,,,0.2017736,0.19718351,0.2132781,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",45780,,"Toledo, OH",0,,,,0.15850462,0.14078105,0.18243368,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",46060,,"Tucson, AZ",0,,,,0.2237419,0.23622343,0.22255877,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",46140,,"Tulsa, OK",0,,,,0.3006593,0.2448352,0.27650102,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",47260,,"Virginia Beach-Norfolk-Newport News, VA-NC",0,,,,0.10301914,0.11031271,0.10050513,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",47900,,"Washington-Arlington-Alexandria, DC-VA-MD-WV",0,,,,0.18869291,0.18143409,0.16672476,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",48620,,"Wichita, KS",0,,,,0.25825058,0.3075563,0.29531312,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",49340,,"Worcester, MA",0,,,,0.25100103,0.20475032,0.19148861,,
+"engpar",7,4,"linIso","Who live in Linguistically Isolated Households",49660,,"Youngstown-Warren-Boardman, OH-PA",0,,,,,,,,
 "numkids",8,1,"onekid","One child in family",1,"AL","Alabama",1,0.22627302,0.24786398,0.23564705,0.20972501,0.18816194,0.21362966,0.22590098,0.20165268
 "numkids",8,1,"onekid","One child in family",2,"AK","Alaska",1,0.19325575,0.18092474,0.17995065,0.15892588,0.1589153,0.13933854,0.16373201,0.26245257
 "numkids",8,1,"onekid","One child in family",4,"AZ","Arizona",1,0.15542302,0.14619659,0.14497821,0.15080366,0.15319629,0.16915415,0.17746221,0.16770808

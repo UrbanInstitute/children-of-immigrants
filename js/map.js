@@ -6,7 +6,7 @@ function cbsamap(div) {
     outcomeSelect = d3.select("#outcome-select").property("value");
 
     data = data_main.filter(function (d) {
-        return d.statcode == outcomeSelect;
+        return d.cat == outcomeSelect;
     })
 
     data.forEach(function (d) {

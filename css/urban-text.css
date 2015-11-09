@@ -185,7 +185,8 @@ li {
     margin-right: 1px;
 }
 
-.urban-button:hover {
+.urban-button:hover,
+.urban-button.selected{
     background-color: #000;
     text-decoration: none;
 }

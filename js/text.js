@@ -1,5 +1,5 @@
 //labels and text for categories and metrics
-var catnames = {
+var catname = {
     main: "Population",
     origin: "Country of origin",
     citizenship: "Citizenship",
@@ -12,6 +12,22 @@ var catnames = {
     incbenefits: "Income and benefits"
 };
 
+//text for levels of categories
+var levels = {
+    main: ["Share", "Age 0 to 3", "Age 4 to 5", "Age 6 to 8", "Age 13 to 15", "Total", "Percent of total"],
+    origin: ["Mexico", "Other Central America & Spanish Caribbean", "Europe, Canada & Australia", "East Asia & Pacific", "Africa", "The Middle East & South Asia", "South America", "Southeast Asia"],
+    citizenship: ["Citizen with citizen parents", "Citizen with non-citizen parents", "Non-citizen"],
+    edukids: ["Not in school, age 3 to 5", "Not in school, age 6 to 17"],
+    edupar: ["Less than a high school degree", "High school degree", "At least four year college degree"],
+    engkids: ["English Proficient", "With Limited English Proficiency"],
+    engpar: ["English proficient parents", "At least one Limited English Proficient parent", "No English proficient parents", "Who live in Linguistically Isolated Households"],
+    numkids: ["1", "2", "3-4", "5+"],
+    numpar: ["Single parent", "Two parent"],
+    incbenefits: ["In families below 100% of the poverty line", "In families below 200% of the poverty line",
+"Working family", "In low income working family", "Household owns home"]
+};
+
+//sumamary text for each category
 var cattext = {
     main: "From 2006 to 2009, the number of children of immigrants in the United States steadily grew from 15.7 million to 16.8 million; from 2010 to 2011 the growth stagnated increasing at one third the rate of the previous three years.  The share, however, continued to grow steadily as the number of native born children actually fell during that time period. Age statistics is the share of children that are children of immigrants in a certain age group and not the share of children of immigrants who are in a certain age group.",
     origin: "From a policy perspective country of origin is particularly important; it will influence the types of language accessibility programs necessary to serve students and their parents.  While the overall distribution of country of origin of parents of children of immigrants has not changed substantially, some consistent trends are developing, for instance there has been a steady decrease in children with parents from Europe or Canada and an increase in children with parents from the Middle East & South Asia.",
@@ -23,6 +39,5 @@ var cattext = {
     numkids: "Children of immigrants are also more likely to have a large number of siblings, with 64% of children of immigrants living in families with more than four children versus 50% of children of native born parents.",
     numpar: "Children of immigrants are much more likely to live in two parent homes than children of native-born parents. While the share of children of immigrants with single parents is increasing it is increasing very slowly.",
     incbenefits: "While there was an overall increase in the share of children below the poverty line, children of immigrants were especially affected, despite being more likely to be in families with at least one parent working.  While the share of children of immigrants living in poor families actually declined from 2006 to 2008, the share jumped from 20% in 2008 to 26% in 2011.",
-    all:  "For more information please see the <a href='http://www.urban.org/publications/413113.html' target='_blank'>Children of Immigrants Brief</a>"
+    all: "For more information please see the <a href='http://www.urban.org/publications/413113.html' target='_blank'>Children of Immigrants Brief</a>"
 };
-
