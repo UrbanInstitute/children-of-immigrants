@@ -170,24 +170,31 @@ li {
     text-align: center;
 }
 
+#statbtns {
+    width: 100%;
+    display: table;
+}
+
 .urban-button {
     font-size: 14px;
     font-family: Lato, sans-serif;
     padding: 14px;
     cursor: pointer;
     border: none;
-    color: white;
-    background-color: #1696d2;
-    display: inline-block;
+    color: #ffffff;
+    background-color: #000;
+    display: table-cell;
     line-height: 12px;
     text-transform: uppercase;
     text-align: center;
-    margin-right: 1px;
+    margin-right: 0px;
+    white-space: normal;
 }
 
 .urban-button:hover,
-.urban-button.selected{
-    background-color: #000;
+.urban-button.selected {
+    background-color: #fdbf11;
+    color: #000000;
     text-decoration: none;
 }
 

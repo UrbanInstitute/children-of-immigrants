@@ -83,16 +83,16 @@
     height: 28px;
     width: 36px;
     text-align: center;
-    background-color: #fff;
+    background-color: #000000;
     border-radius: 5px;
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
 }
 
 #layers a.active,
 #layers a#play_button:hover {
-    background: #1696d2;
-    color: #fff;
+    background: #fdbf11;
+    color: #000000;
     font-weight: 900;
 }
 
@@ -101,7 +101,7 @@
 }
 
 #layers a#play_button {
-    background: #ccc;
+    background: #000;
 }
 /***line charts***/
 

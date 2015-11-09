@@ -99,8 +99,6 @@ function makebtns() {
 };
 makebtns();
 outcomeSelect = d3.select("#statbtns .selected").attr("value")
-console.log(outcomeSelect);
-
 
 selecter.on("change", function () {
     makebtns();
