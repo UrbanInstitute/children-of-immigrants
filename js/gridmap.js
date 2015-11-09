@@ -1,13 +1,14 @@
 function gridmap() {
 
-    outcomeSelect = d3.select("#outcome-select").property("value");
+    outcomeSelect = d3.select("#statbtns .selected").attr("value")
+    catSelect = d3.select("#cat-select").property("value");
 
     var color = d3.scale.threshold()
         .domain(BREAKS)
         .range(COLORS);
 
     data = data_main.filter(function (d) {
-        return d.cat == outcomeSelect & d.isstate == 1;
+        return d.cat == catSelect & d.level == outcomeSelect & d.isstate == 1;
     })
 
     var rect = d3.selectAll("rect")

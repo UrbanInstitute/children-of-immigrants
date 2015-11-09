@@ -4,7 +4,7 @@
 
 .styled-select select {
     background: transparent;
-    width: 330px;
+    width: 370px;
     height: 45px;
     padding-left: 10px;
     font: 16px Lato;
@@ -21,7 +21,7 @@
 }
 
 .styled-select {
-    width: 280px;
+    width: 320px;
     height: 45px;
     overflow: hidden;
     background: url(../img/urban-select-2x.png) no-repeat right #EFEFEF;

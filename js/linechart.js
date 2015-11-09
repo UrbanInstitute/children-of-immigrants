@@ -46,9 +46,12 @@ function linechart(div, id) {
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    
+    outcomeSelect = d3.select("#statbtns .selected").attr("value")
+    catSelect = d3.select("#cat-select").property("value");
 
     data = data_main.filter(function (d) {
-        return d.cat == outcomeSelect & d.isstate == STATEMAP;
+        return d.cat == catSelect & d.level == outcomeSelect & d.isstate == STATEMAP;
     })
 
     color.domain(d3.keys(data[0]).filter(function (key) {

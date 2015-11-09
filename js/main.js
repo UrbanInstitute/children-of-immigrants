@@ -14,8 +14,9 @@ var FORMATTER,
     $GRAPHDIV,
     $LEGENDDIV,
     LABELS,
-    stateSelect,
     outcomeSelect,
+    stateSelect,
+    catSelect,
     yearSelect;
 
 var palette = {
@@ -75,31 +76,15 @@ d3.selection.prototype.moveToFront = function () {
     });
 };
 
-var selecter = d3.select("#outcome-select")
-dispatch.on("load.menu", function (metric) {
-    //populate the dropdowns using main csv's metric names
-    selecter.on("change", function () {
-        dispatch.change(metric.get(this.value));
-    });
-
-    /*    selecter.selectAll("option")
-            .data(catname)
-            .enter().append("option")
-            .attr("value", function (d) {
-                return d;
-            })
-            .text(function (d) {
-                return d;
-            });*/
-});
-
-outcomeSelect = selecter.property("value");
-console.log(outcomeSelect);
+var selecter = d3.select("#cat-select");
 
 function makebtns() {
+    catSelect = selecter.property("value");
+
+    $("#statbtns").empty();
 
     d3.select("#statbtns").selectAll("input")
-        .data(levels[outcomeSelect])
+        .data(levels[catSelect])
         .enter().append("btn")
         .attr("class", "urban-button")
         .attr("value", function (d, i) {
@@ -113,22 +98,28 @@ function makebtns() {
 
 };
 makebtns();
-var temp = d3.select("#statbtns.selected").value;
-console.log(temp);
+outcomeSelect = d3.select("#statbtns .selected").attr("value")
+console.log(outcomeSelect);
 
 
-//changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks, text
-dispatch.on("change.menu", function () {
+selecter.on("change", function () {
+    makebtns();
+    dispatch.change();
+});
+
+//changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks
+dispatch.on("change", function () {
+
     var color = d3.scale.threshold()
         .domain(BREAKS)
         .range(COLORS);
-    outcomeSelect = selecter.property("value");
+    catSelect = selecter.property("value");
     statelines();
     metrolines();
     gridmap();
 
     data = data_main.filter(function (d) {
-        return d.statcode == outcomeSelect;
+        return d.cat == catSelect & d.level == outcomeSelect;
     })
     data.forEach(function (d) {
         d.fips = +d.fips;
@@ -154,7 +145,6 @@ dispatch.on("change.menu", function () {
                 return color(VALUE[d.id]);
             }
         });
-    tooltip("f0");
 });
 
 //by changing the year, update the viz - good example to check functionality is "Household owns home"
@@ -203,7 +193,6 @@ dispatch.on("yearChange", function (year) {
                 return color(VALUE[d.id]);
             }
         });
-    //tooltip("f0");
 });
 
 //on hover, class those states "hovered"
@@ -212,30 +201,15 @@ dispatch.on("hoverState", function (areaName) {
         .classed("hovered", true);
     d3.selectAll("[fid='" + areaName + "']".chartline)
         .moveToFront();
-    tooltip(areaName);
 });
 
-//declass "hovered" and return tooltip back to value in dropdowns
+//declass "hovered"
 dispatch.on("dehoverState", function (areaName) {
     d3.selectAll("[fid='" + areaName).classed("hovered", false);
-    //menuId = selecter.property("value");
-    tooltip("f0");
     //d3.selectAll("[id='" + menuId + "']")
     //    .moveToFront();
 });
 
-
-function tooltip(state) {
-    var row = data.filter(function (d) {
-        return "f" + d.fips == state;
-    });
-
-    row.forEach(function (d) {
-        d3.selectAll(".tt-name").text(d.name);
-        d3.select("#tt-year").text(yearSelect.slice(1));
-        d3.select("#tt-num").text(formatNApct(VALUE[d.fips]));
-    });
-}
 
 function statemap() {
     $GRAPHDIV = $("#statemap");

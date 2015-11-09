@@ -3295,310 +3295,310 @@
 "edupar",5,3,"col","With parents who have at least four year college degree",48620,,"Wichita, KS",0,,,,0.29810202,0.30746408,0.25690242,,
 "edupar",5,3,"col","With parents who have at least four year college degree",49340,,"Worcester, MA",0,,,,0.48562455,0.52192997,0.5212833,,
 "edupar",5,3,"col","With parents who have at least four year college degree",49660,,"Youngstown-Warren-Boardman, OH-PA",0,,,,,,,,
-"englishkids",6,1,"engPro","Who are English Proficient",1,"AL","Alabama",1,0.77957773,0.74510908,0.77370036,0.80643994,0.78411287,0.76807117,0.80886674,0.80638087
-"englishkids",6,1,"engPro","Who are English Proficient",2,"AK","Alaska",1,0.90849197,0.92227536,0.93430585,0.90908194,0.91362393,0.90981889,0.8617779,0.85869759
-"englishkids",6,1,"engPro","Who are English Proficient",4,"AZ","Arizona",1,0.74578989,0.74479175,0.75482804,0.795192,0.82968146,0.83801907,0.85758758,0.87299389
-"englishkids",6,1,"engPro","Who are English Proficient",5,"AR","Arkansas",1,0.736251,0.74972063,0.75923419,0.79616421,0.80832839,0.81479275,0.84005296,0.84034079
-"englishkids",6,1,"engPro","Who are English Proficient",6,"CA","California",1,0.78740931,0.79778206,0.80653697,0.81011122,0.81189895,0.8241756,0.83868814,0.84573376
-"englishkids",6,1,"engPro","Who are English Proficient",8,"CO","Colorado",1,0.76397365,0.75574154,0.76636928,0.78825843,0.81336349,0.84858513,0.87607878,0.85651678
-"englishkids",6,1,"engPro","Who are English Proficient",9,"CT","Connecticut",1,0.89039177,0.89219218,0.91519463,0.90745264,0.90870792,0.91223198,0.89809531,0.90670913
-"englishkids",6,1,"engPro","Who are English Proficient",10,"DE","Delaware",1,0.87058049,0.83495486,0.83477098,0.88676679,0.88084894,0.86446911,0.87871516,0.90268391
-"englishkids",6,1,"engPro","Who are English Proficient",11,"DC","District of Columbia",1,0.81478608,0.82085806,0.88821858,0.90760595,0.90434968,0.92108792,0.89181578,0.86310786
-"englishkids",6,1,"engPro","Who are English Proficient",12,"FL","Florida",1,0.85477513,0.86376202,0.86393303,0.86753398,0.86925536,0.86820215,0.87595123,0.87839514
-"englishkids",6,1,"engPro","Who are English Proficient",13,"GA","Georgia",1,0.81305158,0.81800127,0.84100258,0.8600046,0.85741681,0.85922438,0.86523598,0.87229675
-"englishkids",6,1,"engPro","Who are English Proficient",15,"HI","Hawaii",1,0.86888981,0.87459433,0.86383086,0.86015755,0.87309819,0.87803489,0.86392635,0.81844765
-"englishkids",6,1,"engPro","Who are English Proficient",16,"ID","Idaho",1,0.812356,0.82576102,0.8330462,0.81954837,0.84861338,0.84638178,0.8556419,0.8421945
-"englishkids",6,1,"engPro","Who are English Proficient",17,"IL","Illinois",1,0.7874164,0.79817545,0.80334544,0.80353075,0.80933231,0.81935507,0.83816266,0.85604173
-"englishkids",6,1,"engPro","Who are English Proficient",18,"IN","Indiana",1,0.77929837,0.79407328,0.81307256,0.81442016,0.79641181,0.81580645,0.84749943,0.83879888
-"englishkids",6,1,"engPro","Who are English Proficient",19,"IA","Iowa",1,0.76896662,0.79467356,0.83691043,0.86991006,0.85330492,0.81051189,0.79742539,0.7907595
-"englishkids",6,1,"engPro","Who are English Proficient",20,"KS","Kansas",1,0.82196271,0.83802933,0.84404111,0.83431488,0.83045542,0.84381104,0.83952475,0.85819477
-"englishkids",6,1,"engPro","Who are English Proficient",21,"KY","Kentucky",1,0.80772918,0.81126386,0.80016428,0.80601948,0.84316635,0.83663124,0.82381678,0.84965479
-"englishkids",6,1,"engPro","Who are English Proficient",22,"LA","Louisiana",1,0.88930148,0.85587358,0.83726853,0.8596195,0.83951485,0.84853154,0.87686384,0.85878593
-"englishkids",6,1,"engPro","Who are English Proficient",23,"ME","Maine",1,0.874879,0.88313174,0.92068195,0.83112609,0.77736759,0.85304981,0.91776931,0.92120904
-"englishkids",6,1,"engPro","Who are English Proficient",24,"MD","Maryland",1,0.87159377,0.87283421,0.87841207,0.87072271,0.87106156,0.89776552,0.90554464,0.89478588
-"englishkids",6,1,"engPro","Who are English Proficient",25,"MA","Massachusetts",1,0.85764301,0.86809689,0.8699249,0.87172258,0.87813479,0.89214545,0.88859224,0.87515402
-"englishkids",6,1,"engPro","Who are English Proficient",26,"MI","Michigan",1,0.82988387,0.85774893,0.85975295,0.86558712,0.86298341,0.86715841,0.88827956,0.89287323
-"englishkids",6,1,"engPro","Who are English Proficient",27,"MN","Minnesota",1,0.80402452,0.77383351,0.77900815,0.79114765,0.80830765,0.83727211,0.83928275,0.83385545
-"englishkids",6,1,"engPro","Who are English Proficient",28,"MS","Mississippi",1,0.87068218,0.83038652,0.85250574,0.85458207,0.82332456,0.78526354,0.80834985,0.86659682
-"englishkids",6,1,"engPro","Who are English Proficient",29,"MO","Missouri",1,0.83801538,0.82630318,0.83024371,0.8294543,0.82936186,0.84870565,0.85583901,0.87537384
-"englishkids",6,1,"engPro","Who are English Proficient",30,"MT","Montana",1,0.97784239,0.98882413,0.96167809,0.91245872,0.89257348,0.91282052,0.92283732,0.93662322
-"englishkids",6,1,"engPro","Who are English Proficient",31,"NE","Nebraska",1,0.76931489,0.79650098,0.78163618,0.74998695,0.77638018,0.81364119,0.786322,0.78864712
-"englishkids",6,1,"engPro","Who are English Proficient",32,"NV","Nevada",1,0.84642887,0.84069014,0.8168717,0.79765224,0.81380469,0.84146428,0.86460495,0.88437176
-"englishkids",6,1,"engPro","Who are English Proficient",33,"NH","New Hampshire",1,0.91181862,0.94779551,0.96345776,0.91324776,0.90063596,0.9165858,0.91152745,0.90404212
-"englishkids",6,1,"engPro","Who are English Proficient",34,"NJ","New Jersey",1,0.88005561,0.88655561,0.88234484,0.87394583,0.87237149,0.87483007,0.88222271,0.89471167
-"englishkids",6,1,"engPro","Who are English Proficient",35,"NM","New Mexico",1,0.75354695,0.77019542,0.79558641,0.7903986,0.83056563,0.85407239,0.83372313,0.83579844
-"englishkids",6,1,"engPro","Who are English Proficient",36,"NY","New York",1,0.86050409,0.86104071,0.8606751,0.85648757,0.8517893,0.85659885,0.86302072,0.86312455
-"englishkids",6,1,"engPro","Who are English Proficient",37,"NC","North Carolina",1,0.76512367,0.76218653,0.76213419,0.78899831,0.81202322,0.81654352,0.81394774,0.81997508
-"englishkids",6,1,"engPro","Who are English Proficient",38,"ND","North Dakota",1,0.98796219,,,0.77770746,0.86561936,0.71265835,0.7195974,0.90839469
-"englishkids",6,1,"engPro","Who are English Proficient",39,"OH","Ohio",1,0.86634535,0.87691492,0.87526608,0.87132269,0.87647319,0.8774879,0.88025308,0.89057076
-"englishkids",6,1,"engPro","Who are English Proficient",40,"OK","Oklahoma",1,0.83854955,0.8523339,0.83228517,0.8568033,0.84275919,0.83624434,0.85472596,0.86391443
-"englishkids",6,1,"engPro","Who are English Proficient",41,"OR","Oregon",1,0.73400182,0.78422105,0.79326957,0.7979818,0.8260147,0.8302778,0.81653178,0.82664305
-"englishkids",6,1,"engPro","Who are English Proficient",42,"PA","Pennsylvania",1,0.85868186,0.86303413,0.87577879,0.87992162,0.86250991,0.85871118,0.86209273,0.85435694
-"englishkids",6,1,"engPro","Who are English Proficient",44,"RI","Rhode island",1,0.87028885,0.87054384,0.86506599,0.85906595,0.84683901,0.87455815,0.86811596,0.89136583
-"englishkids",6,1,"engPro","Who are English Proficient",45,"SC","South Carolina",1,0.80525899,0.80457091,0.81834406,0.83120775,0.84543949,0.881845,0.88505757,0.87616485
-"englishkids",6,1,"engPro","Who are English Proficient",46,"SD","South Dakota",1,0.68250048,0.86271828,0.91977298,0.88400716,0.78162956,0.66171861,0.70890057,0.85058856
-"englishkids",6,1,"engPro","Who are English Proficient",47,"TN","Tennessee",1,0.81865466,0.82358277,0.82369286,0.8465482,0.84669495,0.85159355,0.86399508,0.86197281
-"englishkids",6,1,"engPro","Who are English Proficient",48,"TX","Texas",1,0.73362225,0.732916,0.73448247,0.75204587,0.76312602,0.7645393,0.77444923,0.78350919
-"englishkids",6,1,"engPro","Who are English Proficient",49,"UT","Utah",1,0.8168813,0.81701213,0.83652103,0.85277581,0.84192121,0.86363375,0.88571197,0.88171172
-"englishkids",6,1,"engPro","Who are English Proficient",50,"VT","Vermont",1,0.93651503,0.93762422,0.93590814,0.95779127,0.92032415,0.93238544,0.92204672,0.85912532
-"englishkids",6,1,"engPro","Who are English Proficient",51,"VA","Virginia",1,0.85332382,0.86079061,0.86784381,0.8661328,0.87490988,0.88518107,0.89184535,0.90592074
-"englishkids",6,1,"engPro","Who are English Proficient",53,"WA","Washington",1,0.78310132,0.79361296,0.78666258,0.79747236,0.79813427,0.81531435,0.83846307,0.84374601
-"englishkids",6,1,"engPro","Who are English Proficient",54,"WV","West Virginia",1,0.92728513,0.92460495,0.92492002,0.94572008,0.84687108,0.80751097,0.89747083,0.9420926
-"englishkids",6,1,"engPro","Who are English Proficient",55,"WI","Wisconsin",1,0.81352496,0.7945351,0.81625485,0.81305802,0.80367631,0.81834263,0.82753456,0.81901383
-"englishkids",6,1,"engPro","Who are English Proficient",56,"WY","Wyoming",1,0.88047606,0.91667616,0.9490248,0.88129497,0.75837648,0.81986982,0.85110039,0.87684309
-"englishkids",6,1,"engPro","Who are English Proficient",0,"US","United States",1,0.80563998,0.81153369,0.81609005,0.82151306,0.82570243,0.83398896,0.84452307,0.85029095
-"englishkids",6,1,"engPro","Who are English Proficient",10420,,"Akron, OH",0,,,,0.95539846,0.91203129,0.88383779,,
-"englishkids",6,1,"engPro","Who are English Proficient",10580,,"Albany-Schenectady-Troy, NY",0,,,,0.92446341,0.9240256,0.93810221,,
-"englishkids",6,1,"engPro","Who are English Proficient",10740,,"Albuquerque, NM",0,,,,0.81279604,0.8681883,0.86197395,,
-"englishkids",6,1,"engPro","Who are English Proficient",10900,,"Allentown-Bethlehem-Easton, PA-NJ",0,,,,0.87639625,0.88175037,0.90198952,,
-"englishkids",6,1,"engPro","Who are English Proficient",12060,,"Atlanta-Sandy Springs-Marietta, GA",0,,,,0.88146839,0.8766613,0.86794627,,
-"englishkids",6,1,"engPro","Who are English Proficient",12260,,"Augusta-Richmond County, GA-SC",0,,,,0.82595372,0.87305994,0.92609367,,
-"englishkids",6,1,"engPro","Who are English Proficient",12420,,"Austin-Round Rock, TX",0,,,,0.7326223,0.73631075,0.76276904,,
-"englishkids",6,1,"engPro","Who are English Proficient",12540,,"Bakersfield, CA",0,,,,0.83558248,0.83504703,0.83494771,,
-"englishkids",6,1,"engPro","Who are English Proficient",12580,,"Baltimore-Towson, MD",0,,,,0.85759294,0.88374746,0.91080834,,
-"englishkids",6,1,"engPro","Who are English Proficient",12940,,"Baton Rouge, LA",0,,,,0.87842153,0.80524464,0.85630117,,
-"englishkids",6,1,"engPro","Who are English Proficient",13820,,"Birmingham-Hoover, AL",0,,,,0.82056595,0.75971297,0.75627555,,
-"englishkids",6,1,"engPro","Who are English Proficient",14260,,"Boise City-Nampa, ID",0,,,,0.79463155,0.86272665,0.90013112,,
-"englishkids",6,1,"engPro","Who are English Proficient",14460,,"Boston-Cambridge-Quincy, MA-NH",0,,,,0.87860345,0.88025963,0.89106226,,
-"englishkids",6,1,"engPro","Who are English Proficient",14600,,"Bradenton-Sarasota-Venice, FL",0,,,,0.8478451,0.86366021,0.84473194,,
-"englishkids",6,1,"engPro","Who are English Proficient",14860,,"Bridgeport-Stamford-Norwalk, CT",0,,,,0.89936203,0.89645998,0.90298047,,
-"englishkids",6,1,"engPro","Who are English Proficient",15380,,"Buffalo-Niagara Falls, NY",0,,,,0.88821871,0.89013492,0.83369699,,
-"englishkids",6,1,"engPro","Who are English Proficient",16700,,"Charleston-North Charleston-Summerville, SC",0,,,,0.84908244,0.84113053,0.91116632,,
-"englishkids",6,1,"engPro","Who are English Proficient",16740,,"Charlotte-Gastonia-Concord, NC-SC",0,,,,0.85919762,0.86230606,0.86120832,,
-"englishkids",6,1,"engPro","Who are English Proficient",16860,,"Chattanooga, TN-GA",0,,,,0.79488889,0.75547844,0.74144853,,
-"englishkids",6,1,"engPro","Who are English Proficient",16980,,"Chicago-Naperville-Joliet, IL-IN-WI",0,,,,0.80518072,0.80908441,0.81802838,,
-"englishkids",6,1,"engPro","Who are English Proficient",17140,,"Cincinnati-Middletown, OH-KY-IN",0,,,,0.81868141,0.84661267,0.86906059,,
-"englishkids",6,1,"engPro","Who are English Proficient",17460,,"Cleveland-Elyria-Mentor, OH",0,,,,0.8991448,0.88721915,0.88511307,,
-"englishkids",6,1,"engPro","Who are English Proficient",17820,,"Colorado Springs, CO",0,,,,0.87134801,0.86926034,0.88651417,,
-"englishkids",6,1,"engPro","Who are English Proficient",17900,,"Columbia, SC",0,,,,0.91445124,0.88814138,0.88150607,,
-"englishkids",6,1,"engPro","Who are English Proficient",18140,,"Columbus, OH",0,,,,0.86663459,0.84792839,0.84961193,,
-"englishkids",6,1,"engPro","Who are English Proficient",19100,,"Dallas-Fort Worth-Arlington, TX",0,,,,0.75294118,0.7752092,0.78980387,,
-"englishkids",6,1,"engPro","Who are English Proficient",19380,,"Dayton, OH",0,,,,0.86727732,0.90650175,0.89342639,,
-"englishkids",6,1,"engPro","Who are English Proficient",19740,,"Denver-Aurora-Broomfield, CO",0,,,,0.77421313,0.79076261,0.84133499,,
-"englishkids",6,1,"engPro","Who are English Proficient",19780,,"Des Moines-West Des Moines, IA",0,,,,0.84781764,0.85529664,0.82066965,,
-"englishkids",6,1,"engPro","Who are English Proficient",19820,,"Detroit-Warren-Livonia, MI",0,,,,0.87091404,0.86634695,0.8617272,,
-"englishkids",6,1,"engPro","Who are English Proficient",21340,,"El Paso, TX",0,,,,0.71284252,0.67943992,0.66906628,,
-"englishkids",6,1,"engPro","Who are English Proficient",23420,,"Fresno, CA",0,,,,0.8059268,0.83017352,0.81974195,,
-"englishkids",6,1,"engPro","Who are English Proficient",24340,,"Grand Rapids-Wyoming, MI",0,,,,0.81513154,0.87709227,0.87799762,,
-"englishkids",6,1,"engPro","Who are English Proficient",24660,,"Greensboro-High Point, NC",0,,,,0.7701428,0.8071843,0.80240157,,
-"englishkids",6,1,"engPro","Who are English Proficient",24860,,"Greenville-Mauldin-Easley, SC",0,,,,0.76015962,0.86155379,0.88571511,,
-"englishkids",6,1,"engPro","Who are English Proficient",25420,,"Harrisburg-Carlisle, PA",0,,,,0.93990199,0.93953298,0.90461966,,
-"englishkids",6,1,"engPro","Who are English Proficient",25540,,"Hartford-West Hartford-East Hartford, CT",0,,,,0.9258525,0.93508394,0.91978276,,
-"englishkids",6,1,"engPro","Who are English Proficient",26180,,"Honolulu, HI",0,,,,0.84462886,0.85013359,0.85818676,,
-"englishkids",6,1,"engPro","Who are English Proficient",26420,,"Houston-Sugar Land-Baytown, TX",0,,,,0.74791133,0.76932684,0.7543257,,
-"englishkids",6,1,"engPro","Who are English Proficient",26900,,"Indianapolis-Carmel, IN",0,,,,0.79743621,0.77025952,0.792178,,
-"englishkids",6,1,"engPro","Who are English Proficient",27140,,"Jackson, MS",0,,,,,,,,
-"englishkids",6,1,"engPro","Who are English Proficient",27260,,"Jacksonville, FL",0,,,,0.92420132,0.93552176,0.95607864,,
-"englishkids",6,1,"engPro","Who are English Proficient",28140,,"Kansas City, MO-KS",0,,,,0.84569237,0.82673751,0.8421863,,
-"englishkids",6,1,"engPro","Who are English Proficient",28940,,"Knoxville, TN",0,,,,0.88721411,0.89739964,0.91821084,,
-"englishkids",6,1,"engPro","Who are English Proficient",29460,,"Lakeland-Winter Haven, FL",0,,,,0.79532964,0.81283658,0.79285305,,
-"englishkids",6,1,"engPro","Who are English Proficient",29540,,"Lancaster, PA",0,,,,0.86259483,0.86728917,0.75722949,,
-"englishkids",6,1,"engPro","Who are English Proficient",29620,,"Lansing-East Lansing, MI",0,,,,0.79182652,0.61662675,0.76945915,,
-"englishkids",6,1,"engPro","Who are English Proficient",29820,,"Las Vegas-Paradise, NV",0,,,,0.7822292,0.80229927,0.82989727,,
-"englishkids",6,1,"engPro","Who are English Proficient",30780,,"Little Rock-North Little Rock-Conway, AR",0,,,,0.93557618,0.80509231,0.78226771,,
-"englishkids",6,1,"engPro","Who are English Proficient",31100,,"Los Angeles-Long Beach-Santa Ana, CA",0,,,,0.8138449,0.81384722,0.82370741,,
-"englishkids",6,1,"engPro","Who are English Proficient",31140,,"LouisvilleJefferson County, KY-IN",0,,,,0.87814312,0.85897469,0.81259427,,
-"englishkids",6,1,"engPro","Who are English Proficient",31540,,"Madison, WI",0,,,,0.75509808,0.76103251,0.8023407,,
-"englishkids",6,1,"engPro","Who are English Proficient",32580,,"McAllen-Edinburg-Mission, TX",0,,,,0.7218574,0.73137126,0.75458359,,
-"englishkids",6,1,"engPro","Who are English Proficient",32820,,"Memphis, TN-MS-AR",0,,,,0.80131965,0.7901371,0.85834241,,
-"englishkids",6,1,"engPro","Who are English Proficient",33100,,"Miami-Fort Lauderdale-Pompano Beach, FL",0,,,,0.8740019,0.87643021,0.87536461,,
-"englishkids",6,1,"engPro","Who are English Proficient",33340,,"Milwaukee-Waukesha-West Allis, WI",0,,,,0.80230496,0.80307992,0.83675968,,
-"englishkids",6,1,"engPro","Who are English Proficient",33460,,"Minneapolis-St. Paul-Bloomington, MN-WI",0,,,,0.78492188,0.80007601,0.82707152,,
-"englishkids",6,1,"engPro","Who are English Proficient",33700,,"Modesto, CA",0,,,,0.78384701,0.77808933,0.81365234,,
-"englishkids",6,1,"engPro","Who are English Proficient",34980,,"Nashville-Davidson-Murfreesboro-Franklin, TN",0,,,,0.86446987,0.86446461,0.83878568,,
-"englishkids",6,1,"engPro","Who are English Proficient",35300,,"New Haven-Milford, CT",0,,,,0.89645252,0.89241346,0.91177296,,
-"englishkids",6,1,"engPro","Who are English Proficient",35380,,"New Orleans-Metairie-Kenner, LA",0,,,,0.82375439,0.79806448,0.80128514,,
-"englishkids",6,1,"engPro","Who are English Proficient",35620,,"New York-Northern New Jersey-Long Island, NY-NJ-PA",0,,,,0.85914937,0.85506225,0.86141613,,
-"englishkids",6,1,"engPro","Who are English Proficient",36420,,"Oklahoma City, OK",0,,,,0.8321689,0.82333679,0.83346879,,
-"englishkids",6,1,"engPro","Who are English Proficient",36540,,"Omaha-Council Bluffs, NE-IA",0,,,,0.77788096,0.76794092,0.76163643,,
-"englishkids",6,1,"engPro","Who are English Proficient",36740,,"Orlando-Kissimmee, FL",0,,,,0.90067006,0.90079591,0.91122168,,
-"englishkids",6,1,"engPro","Who are English Proficient",37100,,"Oxnard-Thousand Oaks-Ventura, CA",0,,,,0.80812355,0.82485859,0.80419051,,
-"englishkids",6,1,"engPro","Who are English Proficient",37340,,"Palm Bay-Melbourne-Titusville, FL",0,,,,0.91025289,0.85208251,0.87934756,,
-"englishkids",6,1,"engPro","Who are English Proficient",37980,,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",0,,,,0.87882353,0.85227271,0.86199831,,
-"englishkids",6,1,"engPro","Who are English Proficient",38060,,"Phoenix-Mesa-Scottsdale, AZ",0,,,,0.78740185,0.82695516,0.84013987,,
-"englishkids",6,1,"engPro","Who are English Proficient",38300,,"Pittsburgh, PA",0,,,,0.93050548,0.89029431,0.83064762,,
-"englishkids",6,1,"engPro","Who are English Proficient",38860,,"Portland-South Portland-Biddeford, ME",0,,,,0.88800559,0.85663392,0.87220417,,
-"englishkids",6,1,"engPro","Who are English Proficient",38900,,"Portland-Vancouver-Beaverton, OR-WA",0,,,,0.80261215,0.80747257,0.82095052,,
-"englishkids",6,1,"engPro","Who are English Proficient",39100,,"Poughkeepsie-Newburgh-Middletown, NY",0,,,,0.88138634,0.87648405,0.84997157,,
-"englishkids",6,1,"engPro","Who are English Proficient",39300,,"Providence-New Bedford-Fall River, RI-MA",0,,,,0.88356167,0.87568841,0.88750313,,
-"englishkids",6,1,"engPro","Who are English Proficient",39580,,"Raleigh-Cary, NC",0,,,,0.84008823,0.84937965,0.84276797,,
-"englishkids",6,1,"engPro","Who are English Proficient",40060,,"Richmond, VA",0,,,,0.86519194,0.88312278,0.84307111,,
-"englishkids",6,1,"engPro","Who are English Proficient",40140,,"Riverside-San Bernardino-Ontario, CA",0,,,,0.81016543,0.82124985,0.85639578,,
-"englishkids",6,1,"engPro","Who are English Proficient",40380,,"Rochester, NY",0,,,,0.92638729,0.91259464,0.87285001,,
-"englishkids",6,1,"engPro","Who are English Proficient",40900,,"Sacramento-Arden-Arcade-Roseville, CA",0,,,,0.79640039,0.8078989,0.83551215,,
-"englishkids",6,1,"engPro","Who are English Proficient",41180,,"St. Louis, MO-IL",0,,,,0.85525942,0.88483778,0.89888168,,
-"englishkids",6,1,"engPro","Who are English Proficient",41620,,"Salt Lake City, UT",0,,,,0.82658798,0.84640257,0.87305361,,
-"englishkids",6,1,"engPro","Who are English Proficient",41700,,"San Antonio, TX",0,,,,0.83787484,0.84311265,0.85070559,,
-"englishkids",6,1,"engPro","Who are English Proficient",41740,,"San Diego-Carlsbad-San Marcos, CA",0,,,,0.80228685,0.77644439,0.77769364,,
-"englishkids",6,1,"engPro","Who are English Proficient",41860,,"San Francisco-Oakland-Fremont, CA",0,,,,0.83597887,0.84319959,0.86067122,,
-"englishkids",6,1,"engPro","Who are English Proficient",41940,,"San Jose-Sunnyvale-Santa Clara, CA",0,,,,0.84837184,0.8474385,0.84520579,,
-"englishkids",6,1,"engPro","Who are English Proficient",42220,,"Santa Rosa-Petaluma, CA",0,,,,0.80617853,0.81313082,0.81741214,,
-"englishkids",6,1,"engPro","Who are English Proficient",42540,,"Scranton-Wilkes-Barre, PA",0,,,,0.82735298,0.79733811,0.88581716,,
-"englishkids",6,1,"engPro","Who are English Proficient",42660,,"Seattle-Tacoma-Bellevue, WA",0,,,,0.84273299,0.83701132,0.8442896,,
-"englishkids",6,1,"engPro","Who are English Proficient",44140,,"Springfield, MA",0,,,,0.86323141,0.84749843,0.88049483,,
-"englishkids",6,1,"engPro","Who are English Proficient",44700,,"Stockton, CA",0,,,,0.80842523,0.80105838,0.80759738,,
-"englishkids",6,1,"engPro","Who are English Proficient",45060,,"Syracuse, NY",0,,,,0.92648158,0.85933402,0.80516985,,
-"englishkids",6,1,"engPro","Who are English Proficient",45300,,"Tampa-St. Petersburg-Clearwater, FL",0,,,,0.87488919,0.87050132,0.86708527,,
-"englishkids",6,1,"engPro","Who are English Proficient",45780,,"Toledo, OH",0,,,,0.78959468,0.88487929,0.89847574,,
-"englishkids",6,1,"engPro","Who are English Proficient",46060,,"Tucson, AZ",0,,,,0.82704426,0.85586072,0.86082132,,
-"englishkids",6,1,"engPro","Who are English Proficient",46140,,"Tulsa, OK",0,,,,0.86255258,0.84132938,0.79720595,,
-"englishkids",6,1,"engPro","Who are English Proficient",47260,,"Virginia Beach-Norfolk-Newport News, VA-NC",0,,,,0.91747939,0.92610525,0.93335488,,
-"englishkids",6,1,"engPro","Who are English Proficient",47900,,"Washington-Arlington-Alexandria, DC-VA-MD-WV",0,,,,0.86847139,0.86544116,0.88904269,,
-"englishkids",6,1,"engPro","Who are English Proficient",48620,,"Wichita, KS",0,,,,0.87086262,0.87565002,0.86193209,,
-"englishkids",6,1,"engPro","Who are English Proficient",49340,,"Worcester, MA",0,,,,0.79066112,0.85139204,0.88606038,,
-"englishkids",6,1,"engPro","Who are English Proficient",49660,,"Youngstown-Warren-Boardman, OH-PA",0,,,,,,,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",1,"AL","Alabama",1,0.22042225,0.25489092,0.22629966,0.19356006,0.21588711,0.23192886,0.19113326,0.19361915
-"englishkids",6,2,"limEng","With Limited English Proficiency",2,"AK","Alaska",1,0.09150805,0.07772467,0.06569418,0.09091806,0.08637609,0.09018111,0.13822211,0.14130242
-"englishkids",6,2,"limEng","With Limited English Proficiency",4,"AZ","Arizona",1,0.25421014,0.25520822,0.24517195,0.204808,0.17031854,0.16198091,0.14241242,0.12700613
-"englishkids",6,2,"limEng","With Limited English Proficiency",5,"AR","Arkansas",1,0.263749,0.25027937,0.24076578,0.20383577,0.19167159,0.18520725,0.15994705,0.15965924
-"englishkids",6,2,"limEng","With Limited English Proficiency",6,"CA","California",1,0.21259069,0.20221792,0.19346301,0.18988875,0.18810104,0.1758244,0.16131185,0.15426622
-"englishkids",6,2,"limEng","With Limited English Proficiency",8,"CO","Colorado",1,0.23602635,0.24425845,0.23363075,0.21174157,0.18663651,0.15141486,0.12392122,0.14348319
-"englishkids",6,2,"limEng","With Limited English Proficiency",9,"CT","Connecticut",1,0.10960823,0.1078078,0.08480538,0.09254735,0.09129211,0.08776804,0.10190467,0.09329087
-"englishkids",6,2,"limEng","With Limited English Proficiency",10,"DE","Delaware",1,0.12941952,0.16504513,0.16522899,0.1132332,0.11915103,0.13553087,0.12128484,0.0973161
-"englishkids",6,2,"limEng","With Limited English Proficiency",11,"DC","District of Columbia",1,0.18521391,0.17914191,0.11178145,0.09239406,0.09565031,0.07891206,0.10818423,0.13689215
-"englishkids",6,2,"limEng","With Limited English Proficiency",12,"FL","Florida",1,0.1452249,0.13623795,0.13606696,0.13246602,0.13074464,0.13179782,0.12404879,0.12160489
-"englishkids",6,2,"limEng","With Limited English Proficiency",13,"GA","Georgia",1,0.18694839,0.18199874,0.1589974,0.13999543,0.14258318,0.14077561,0.13476402,0.12770325
-"englishkids",6,2,"limEng","With Limited English Proficiency",15,"HI","Hawaii",1,0.13111019,0.12540565,0.13616914,0.13984248,0.12690179,0.12196512,0.13607366,0.18155238
-"englishkids",6,2,"limEng","With Limited English Proficiency",16,"ID","Idaho",1,0.18764399,0.17423899,0.16695377,0.18045162,0.15138662,0.15361823,0.14435808,0.1578055
-"englishkids",6,2,"limEng","With Limited English Proficiency",17,"IL","Illinois",1,0.2125836,0.20182458,0.19665456,0.19646926,0.19066766,0.18064494,0.16183734,0.14395827
-"englishkids",6,2,"limEng","With Limited English Proficiency",18,"IN","Indiana",1,0.22070166,0.2059267,0.18692744,0.18557985,0.2035882,0.18419354,0.15250055,0.16120109
-"englishkids",6,2,"limEng","With Limited English Proficiency",19,"IA","Iowa",1,0.23103338,0.20532644,0.16308959,0.13008992,0.14669509,0.18948808,0.20257461,0.20924048
-"englishkids",6,2,"limEng","With Limited English Proficiency",20,"KS","Kansas",1,0.17803727,0.16197069,0.15595886,0.16568509,0.16954456,0.15618895,0.16047524,0.1418052
-"englishkids",6,2,"limEng","With Limited English Proficiency",21,"KY","Kentucky",1,0.19227085,0.18873616,0.1998357,0.19398053,0.15683365,0.16336873,0.17618322,0.15034524
-"englishkids",6,2,"limEng","With Limited English Proficiency",22,"LA","Louisiana",1,0.1106985,0.14412639,0.16273148,0.14038047,0.16048516,0.15146844,0.12313619,0.14121406
-"englishkids",6,2,"limEng","With Limited English Proficiency",23,"ME","Maine",1,0.12512101,0.11686826,0.07931807,0.16887388,0.22263241,0.14695019,0.08223066,0.07879096
-"englishkids",6,2,"limEng","With Limited English Proficiency",24,"MD","Maryland",1,0.12840623,0.12716578,0.12158795,0.12927727,0.12893842,0.1022345,0.09445535,0.10521411
-"englishkids",6,2,"limEng","With Limited English Proficiency",25,"MA","Massachusetts",1,0.14235701,0.13190314,0.13007508,0.12827745,0.12186521,0.10785452,0.11140776,0.12484595
-"englishkids",6,2,"limEng","With Limited English Proficiency",26,"MI","Michigan",1,0.17011614,0.1422511,0.14024705,0.13441291,0.13701661,0.13284157,0.11172044,0.10712675
-"englishkids",6,2,"limEng","With Limited English Proficiency",27,"MN","Minnesota",1,0.19597548,0.2261665,0.22099186,0.20885234,0.19169238,0.16272791,0.16071725,0.16614458
-"englishkids",6,2,"limEng","With Limited English Proficiency",28,"MS","Mississippi",1,0.12931782,0.1696135,0.14749426,0.14541794,0.17667545,0.21473645,0.19165012,0.13340318
-"englishkids",6,2,"limEng","With Limited English Proficiency",29,"MO","Missouri",1,0.16198465,0.17369685,0.16975628,0.17054568,0.17063811,0.15129434,0.14416096,0.12462615
-"englishkids",6,2,"limEng","With Limited English Proficiency",30,"MT","Montana",1,0.02215761,0.01117585,0.03832194,0.08754127,0.10742651,0.08717949,0.07716269,0.06337678
-"englishkids",6,2,"limEng","With Limited English Proficiency",31,"NE","Nebraska",1,0.2306851,0.20349903,0.21836379,0.25001302,0.2236198,0.18635881,0.21367802,0.21135287
-"englishkids",6,2,"limEng","With Limited English Proficiency",32,"NV","Nevada",1,0.15357111,0.15930985,0.1831283,0.20234774,0.1861953,0.15853573,0.13539506,0.11562826
-"englishkids",6,2,"limEng","With Limited English Proficiency",33,"NH","New Hampshire",1,0.08818137,0.05220449,0.03654222,0.08675221,0.09936401,0.08341418,0.08847254,0.09595786
-"englishkids",6,2,"limEng","With Limited English Proficiency",34,"NJ","New Jersey",1,0.11994441,0.11344437,0.11765517,0.12605415,0.12762851,0.1251699,0.11777728,0.10528835
-"englishkids",6,2,"limEng","With Limited English Proficiency",35,"NM","New Mexico",1,0.24645303,0.22980456,0.20441362,0.20960137,0.16943438,0.14592761,0.16627684,0.16420156
-"englishkids",6,2,"limEng","With Limited English Proficiency",36,"NY","New York",1,0.13949588,0.13895929,0.13932492,0.14351243,0.1482107,0.14340116,0.13697927,0.13687544
-"englishkids",6,2,"limEng","With Limited English Proficiency",37,"NC","North Carolina",1,0.2348763,0.23781346,0.23786579,0.21100168,0.18797679,0.18345651,0.18605226,0.18002492
-"englishkids",6,2,"limEng","With Limited English Proficiency",38,"ND","North Dakota",1,0.01203783,,,0.22229253,0.13438067,0.28734162,0.2804026,0.0916053
-"englishkids",6,2,"limEng","With Limited English Proficiency",39,"OH","Ohio",1,0.13365462,0.12308507,0.12473392,0.12867734,0.1235268,0.12251212,0.11974694,0.10942922
-"englishkids",6,2,"limEng","With Limited English Proficiency",40,"OK","Oklahoma",1,0.16145045,0.14766608,0.16771482,0.14319672,0.15724082,0.16375569,0.14527403,0.13608558
-"englishkids",6,2,"limEng","With Limited English Proficiency",41,"OR","Oregon",1,0.26599818,0.21577893,0.20673044,0.20201819,0.17398529,0.1697222,0.18346822,0.17335694
-"englishkids",6,2,"limEng","With Limited English Proficiency",42,"PA","Pennsylvania",1,0.14131813,0.13696589,0.1242212,0.12007838,0.13749009,0.14128883,0.13790727,0.14564307
-"englishkids",6,2,"limEng","With Limited English Proficiency",44,"RI","Rhode island",1,0.12971118,0.12945615,0.13493402,0.14093405,0.15316102,0.12544185,0.13188405,0.10863418
-"englishkids",6,2,"limEng","With Limited English Proficiency",45,"SC","South Carolina",1,0.19474104,0.19542907,0.18165593,0.16879226,0.15456048,0.11815498,0.11494244,0.12383513
-"englishkids",6,2,"limEng","With Limited English Proficiency",46,"SD","South Dakota",1,0.31749952,0.13728172,0.08022704,0.11599283,0.21837047,0.33828142,0.2910994,0.14941145
-"englishkids",6,2,"limEng","With Limited English Proficiency",47,"TN","Tennessee",1,0.18134536,0.17641722,0.17630714,0.15345182,0.15330504,0.14840648,0.13600492,0.13802718
-"englishkids",6,2,"limEng","With Limited English Proficiency",48,"TX","Texas",1,0.26637775,0.267084,0.26551753,0.24795415,0.23687398,0.23546067,0.22555077,0.21649078
-"englishkids",6,2,"limEng","With Limited English Proficiency",49,"UT","Utah",1,0.18311869,0.18298784,0.16347894,0.14722417,0.1580788,0.13636623,0.11428805,0.11828828
-"englishkids",6,2,"limEng","With Limited English Proficiency",50,"VT","Vermont",1,0.06348498,0.0623758,0.06409188,0.04220873,0.07967583,0.06761456,0.07795326,0.14087468
-"englishkids",6,2,"limEng","With Limited English Proficiency",51,"VA","Virginia",1,0.14667618,0.1392094,0.13215621,0.13386717,0.12509014,0.11481895,0.10815468,0.09407925
-"englishkids",6,2,"limEng","With Limited English Proficiency",53,"WA","Washington",1,0.21689871,0.20638706,0.21333745,0.20252764,0.20186573,0.18468563,0.16153695,0.15625399
-"englishkids",6,2,"limEng","With Limited English Proficiency",54,"WV","West Virginia",1,0.07271486,0.07539507,0.07508,0.05427993,0.15312891,0.19248903,0.10252918,0.05790742
-"englishkids",6,2,"limEng","With Limited English Proficiency",55,"WI","Wisconsin",1,0.18647504,0.20546491,0.18374516,0.186942,0.19632366,0.18165736,0.17246541,0.18098618
-"englishkids",6,2,"limEng","With Limited English Proficiency",56,"WY","Wyoming",1,0.11952393,0.08332384,0.05097523,0.11870503,0.24162351,0.18013017,0.14889959,0.12315688
-"englishkids",6,2,"limEng","With Limited English Proficiency",0,"US","United States",1,0.19436002,0.18846634,0.18390995,0.17848694,0.17429757,0.16601104,0.15547694,0.14970906
-"englishkids",6,2,"limEng","With Limited English Proficiency",10420,,"Akron, OH",0,,,,0.04460154,0.08796871,0.11616221,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",10580,,"Albany-Schenectady-Troy, NY",0,,,,0.07553659,0.0759744,0.06189779,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",10740,,"Albuquerque, NM",0,,,,0.18720396,0.1318117,0.13802605,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",10900,,"Allentown-Bethlehem-Easton, PA-NJ",0,,,,0.12360375,0.11824963,0.09801048,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",12060,,"Atlanta-Sandy Springs-Marietta, GA",0,,,,0.11853161,0.1233387,0.13205373,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",12260,,"Augusta-Richmond County, GA-SC",0,,,,0.17404628,0.12694006,0.07390633,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",12420,,"Austin-Round Rock, TX",0,,,,0.2673777,0.26368925,0.23723096,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",12540,,"Bakersfield, CA",0,,,,0.16441752,0.16495297,0.16505229,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",12580,,"Baltimore-Towson, MD",0,,,,0.14240706,0.11625254,0.08919166,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",12940,,"Baton Rouge, LA",0,,,,0.12157847,0.19475536,0.14369883,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",13820,,"Birmingham-Hoover, AL",0,,,,0.17943406,0.24028703,0.24372445,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",14260,,"Boise City-Nampa, ID",0,,,,0.20536845,0.13727335,0.09986888,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",14460,,"Boston-Cambridge-Quincy, MA-NH",0,,,,0.12139655,0.11974037,0.10893774,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",14600,,"Bradenton-Sarasota-Venice, FL",0,,,,0.1521549,0.13633979,0.15526806,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",14860,,"Bridgeport-Stamford-Norwalk, CT",0,,,,0.10063797,0.10354002,0.09701953,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",15380,,"Buffalo-Niagara Falls, NY",0,,,,0.11178129,0.10986508,0.16630301,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",16700,,"Charleston-North Charleston-Summerville, SC",0,,,,0.15091756,0.15886947,0.08883368,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",16740,,"Charlotte-Gastonia-Concord, NC-SC",0,,,,0.14080238,0.13769394,0.13879168,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",16860,,"Chattanooga, TN-GA",0,,,,0.20511111,0.24452156,0.25855147,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",16980,,"Chicago-Naperville-Joliet, IL-IN-WI",0,,,,0.19481928,0.19091559,0.18197162,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",17140,,"Cincinnati-Middletown, OH-KY-IN",0,,,,0.18131859,0.15338733,0.13093941,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",17460,,"Cleveland-Elyria-Mentor, OH",0,,,,0.10085521,0.11278085,0.11488693,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",17820,,"Colorado Springs, CO",0,,,,0.12865199,0.13073966,0.11348583,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",17900,,"Columbia, SC",0,,,,0.08554876,0.11185862,0.11849393,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",18140,,"Columbus, OH",0,,,,0.13336541,0.15207161,0.15038807,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",19100,,"Dallas-Fort Worth-Arlington, TX",0,,,,0.24705882,0.2247908,0.21019613,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",19380,,"Dayton, OH",0,,,,0.13272268,0.09349825,0.10657361,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",19740,,"Denver-Aurora-Broomfield, CO",0,,,,0.22578687,0.20923739,0.15866501,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",19780,,"Des Moines-West Des Moines, IA",0,,,,0.15218236,0.14470336,0.17933035,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",19820,,"Detroit-Warren-Livonia, MI",0,,,,0.12908596,0.13365305,0.1382728,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",21340,,"El Paso, TX",0,,,,0.28715748,0.32056008,0.33093372,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",23420,,"Fresno, CA",0,,,,0.1940732,0.16982648,0.18025805,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",24340,,"Grand Rapids-Wyoming, MI",0,,,,0.18486846,0.12290773,0.12200238,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",24660,,"Greensboro-High Point, NC",0,,,,0.2298572,0.1928157,0.19759843,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",24860,,"Greenville-Mauldin-Easley, SC",0,,,,0.23984038,0.13844621,0.11428489,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",25420,,"Harrisburg-Carlisle, PA",0,,,,0.06009801,0.06046702,0.09538034,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",25540,,"Hartford-West Hartford-East Hartford, CT",0,,,,0.0741475,0.06491606,0.08021724,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",26180,,"Honolulu, HI",0,,,,0.15537114,0.14986641,0.14181324,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",26420,,"Houston-Sugar Land-Baytown, TX",0,,,,0.25208867,0.23067316,0.2456743,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",26900,,"Indianapolis-Carmel, IN",0,,,,0.20256379,0.22974048,0.207822,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",27140,,"Jackson, MS",0,,,,,,,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",27260,,"Jacksonville, FL",0,,,,0.07579868,0.06447824,0.04392136,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",28140,,"Kansas City, MO-KS",0,,,,0.15430763,0.17326249,0.1578137,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",28940,,"Knoxville, TN",0,,,,0.11278589,0.10260036,0.08178916,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",29460,,"Lakeland-Winter Haven, FL",0,,,,0.20467036,0.18716342,0.20714695,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",29540,,"Lancaster, PA",0,,,,0.13740517,0.13271083,0.24277051,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",29620,,"Lansing-East Lansing, MI",0,,,,0.20817348,0.38337325,0.23054085,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",29820,,"Las Vegas-Paradise, NV",0,,,,0.2177708,0.19770073,0.17010273,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",30780,,"Little Rock-North Little Rock-Conway, AR",0,,,,0.06442382,0.19490769,0.21773229,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",31100,,"Los Angeles-Long Beach-Santa Ana, CA",0,,,,0.1861551,0.18615278,0.17629259,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",31140,,"LouisvilleJefferson County, KY-IN",0,,,,0.12185688,0.14102531,0.18740573,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",31540,,"Madison, WI",0,,,,0.24490192,0.23896749,0.1976593,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",32580,,"McAllen-Edinburg-Mission, TX",0,,,,0.2781426,0.26862874,0.24541641,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",32820,,"Memphis, TN-MS-AR",0,,,,0.19868035,0.2098629,0.14165759,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",33100,,"Miami-Fort Lauderdale-Pompano Beach, FL",0,,,,0.1259981,0.12356979,0.12463539,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",33340,,"Milwaukee-Waukesha-West Allis, WI",0,,,,0.19769504,0.19692008,0.16324032,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",33460,,"Minneapolis-St. Paul-Bloomington, MN-WI",0,,,,0.21507812,0.19992399,0.17292848,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",33700,,"Modesto, CA",0,,,,0.21615299,0.22191067,0.18634766,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",34980,,"Nashville-Davidson-Murfreesboro-Franklin, TN",0,,,,0.13553013,0.13553539,0.16121432,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",35300,,"New Haven-Milford, CT",0,,,,0.10354748,0.10758654,0.08822704,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",35380,,"New Orleans-Metairie-Kenner, LA",0,,,,0.17624561,0.20193552,0.19871486,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",35620,,"New York-Northern New Jersey-Long Island, NY-NJ-PA",0,,,,0.14085063,0.14493775,0.13858387,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",36420,,"Oklahoma City, OK",0,,,,0.1678311,0.17666321,0.16653121,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",36540,,"Omaha-Council Bluffs, NE-IA",0,,,,0.22211904,0.23205908,0.23836357,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",36740,,"Orlando-Kissimmee, FL",0,,,,0.09932994,0.09920409,0.08877832,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",37100,,"Oxnard-Thousand Oaks-Ventura, CA",0,,,,0.19187645,0.17514141,0.19580949,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",37340,,"Palm Bay-Melbourne-Titusville, FL",0,,,,0.08974711,0.14791749,0.12065244,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",37980,,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",0,,,,0.12117647,0.14772729,0.13800169,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",38060,,"Phoenix-Mesa-Scottsdale, AZ",0,,,,0.21259815,0.17304484,0.15986013,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",38300,,"Pittsburgh, PA",0,,,,0.06949452,0.10970569,0.16935238,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",38860,,"Portland-South Portland-Biddeford, ME",0,,,,0.11199441,0.14336608,0.12779583,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",38900,,"Portland-Vancouver-Beaverton, OR-WA",0,,,,0.19738785,0.19252743,0.17904948,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",39100,,"Poughkeepsie-Newburgh-Middletown, NY",0,,,,0.11861366,0.12351595,0.15002843,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",39300,,"Providence-New Bedford-Fall River, RI-MA",0,,,,0.11643833,0.12431159,0.11249687,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",39580,,"Raleigh-Cary, NC",0,,,,0.15991177,0.15062035,0.15723203,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",40060,,"Richmond, VA",0,,,,0.13480806,0.11687722,0.15692889,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",40140,,"Riverside-San Bernardino-Ontario, CA",0,,,,0.18983457,0.17875015,0.14360422,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",40380,,"Rochester, NY",0,,,,0.07361271,0.08740536,0.12714999,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",40900,,"Sacramento-Arden-Arcade-Roseville, CA",0,,,,0.20359961,0.1921011,0.16448785,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",41180,,"St. Louis, MO-IL",0,,,,0.14474058,0.11516222,0.10111832,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",41620,,"Salt Lake City, UT",0,,,,0.17341202,0.15359743,0.12694639,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",41700,,"San Antonio, TX",0,,,,0.16212516,0.15688735,0.14929441,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",41740,,"San Diego-Carlsbad-San Marcos, CA",0,,,,0.19771315,0.22355561,0.22230636,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",41860,,"San Francisco-Oakland-Fremont, CA",0,,,,0.16402113,0.15680041,0.13932878,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",41940,,"San Jose-Sunnyvale-Santa Clara, CA",0,,,,0.15162816,0.1525615,0.15479421,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",42220,,"Santa Rosa-Petaluma, CA",0,,,,0.19382147,0.18686918,0.18258786,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",42540,,"Scranton-Wilkes-Barre, PA",0,,,,0.17264702,0.20266189,0.11418284,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",42660,,"Seattle-Tacoma-Bellevue, WA",0,,,,0.15726701,0.16298868,0.1557104,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",44140,,"Springfield, MA",0,,,,0.13676859,0.15250157,0.11950517,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",44700,,"Stockton, CA",0,,,,0.19157477,0.19894162,0.19240262,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",45060,,"Syracuse, NY",0,,,,0.07351842,0.14066598,0.19483015,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",45300,,"Tampa-St. Petersburg-Clearwater, FL",0,,,,0.12511081,0.12949868,0.13291473,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",45780,,"Toledo, OH",0,,,,0.21040532,0.11512071,0.10152426,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",46060,,"Tucson, AZ",0,,,,0.17295574,0.14413928,0.13917868,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",46140,,"Tulsa, OK",0,,,,0.13744742,0.15867062,0.20279405,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",47260,,"Virginia Beach-Norfolk-Newport News, VA-NC",0,,,,0.08252061,0.07389475,0.06664512,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",47900,,"Washington-Arlington-Alexandria, DC-VA-MD-WV",0,,,,0.13152861,0.13455884,0.11095731,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",48620,,"Wichita, KS",0,,,,0.12913738,0.12434998,0.13806791,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",49340,,"Worcester, MA",0,,,,0.20933888,0.14860796,0.11393962,,
-"englishkids",6,2,"limEng","With Limited English Proficiency",49660,,"Youngstown-Warren-Boardman, OH-PA",0,,,,,,,,
+"engkids",6,1,"engPro","Who are English Proficient",1,"AL","Alabama",1,0.77957773,0.74510908,0.77370036,0.80643994,0.78411287,0.76807117,0.80886674,0.80638087
+"engkids",6,1,"engPro","Who are English Proficient",2,"AK","Alaska",1,0.90849197,0.92227536,0.93430585,0.90908194,0.91362393,0.90981889,0.8617779,0.85869759
+"engkids",6,1,"engPro","Who are English Proficient",4,"AZ","Arizona",1,0.74578989,0.74479175,0.75482804,0.795192,0.82968146,0.83801907,0.85758758,0.87299389
+"engkids",6,1,"engPro","Who are English Proficient",5,"AR","Arkansas",1,0.736251,0.74972063,0.75923419,0.79616421,0.80832839,0.81479275,0.84005296,0.84034079
+"engkids",6,1,"engPro","Who are English Proficient",6,"CA","California",1,0.78740931,0.79778206,0.80653697,0.81011122,0.81189895,0.8241756,0.83868814,0.84573376
+"engkids",6,1,"engPro","Who are English Proficient",8,"CO","Colorado",1,0.76397365,0.75574154,0.76636928,0.78825843,0.81336349,0.84858513,0.87607878,0.85651678
+"engkids",6,1,"engPro","Who are English Proficient",9,"CT","Connecticut",1,0.89039177,0.89219218,0.91519463,0.90745264,0.90870792,0.91223198,0.89809531,0.90670913
+"engkids",6,1,"engPro","Who are English Proficient",10,"DE","Delaware",1,0.87058049,0.83495486,0.83477098,0.88676679,0.88084894,0.86446911,0.87871516,0.90268391
+"engkids",6,1,"engPro","Who are English Proficient",11,"DC","District of Columbia",1,0.81478608,0.82085806,0.88821858,0.90760595,0.90434968,0.92108792,0.89181578,0.86310786
+"engkids",6,1,"engPro","Who are English Proficient",12,"FL","Florida",1,0.85477513,0.86376202,0.86393303,0.86753398,0.86925536,0.86820215,0.87595123,0.87839514
+"engkids",6,1,"engPro","Who are English Proficient",13,"GA","Georgia",1,0.81305158,0.81800127,0.84100258,0.8600046,0.85741681,0.85922438,0.86523598,0.87229675
+"engkids",6,1,"engPro","Who are English Proficient",15,"HI","Hawaii",1,0.86888981,0.87459433,0.86383086,0.86015755,0.87309819,0.87803489,0.86392635,0.81844765
+"engkids",6,1,"engPro","Who are English Proficient",16,"ID","Idaho",1,0.812356,0.82576102,0.8330462,0.81954837,0.84861338,0.84638178,0.8556419,0.8421945
+"engkids",6,1,"engPro","Who are English Proficient",17,"IL","Illinois",1,0.7874164,0.79817545,0.80334544,0.80353075,0.80933231,0.81935507,0.83816266,0.85604173
+"engkids",6,1,"engPro","Who are English Proficient",18,"IN","Indiana",1,0.77929837,0.79407328,0.81307256,0.81442016,0.79641181,0.81580645,0.84749943,0.83879888
+"engkids",6,1,"engPro","Who are English Proficient",19,"IA","Iowa",1,0.76896662,0.79467356,0.83691043,0.86991006,0.85330492,0.81051189,0.79742539,0.7907595
+"engkids",6,1,"engPro","Who are English Proficient",20,"KS","Kansas",1,0.82196271,0.83802933,0.84404111,0.83431488,0.83045542,0.84381104,0.83952475,0.85819477
+"engkids",6,1,"engPro","Who are English Proficient",21,"KY","Kentucky",1,0.80772918,0.81126386,0.80016428,0.80601948,0.84316635,0.83663124,0.82381678,0.84965479
+"engkids",6,1,"engPro","Who are English Proficient",22,"LA","Louisiana",1,0.88930148,0.85587358,0.83726853,0.8596195,0.83951485,0.84853154,0.87686384,0.85878593
+"engkids",6,1,"engPro","Who are English Proficient",23,"ME","Maine",1,0.874879,0.88313174,0.92068195,0.83112609,0.77736759,0.85304981,0.91776931,0.92120904
+"engkids",6,1,"engPro","Who are English Proficient",24,"MD","Maryland",1,0.87159377,0.87283421,0.87841207,0.87072271,0.87106156,0.89776552,0.90554464,0.89478588
+"engkids",6,1,"engPro","Who are English Proficient",25,"MA","Massachusetts",1,0.85764301,0.86809689,0.8699249,0.87172258,0.87813479,0.89214545,0.88859224,0.87515402
+"engkids",6,1,"engPro","Who are English Proficient",26,"MI","Michigan",1,0.82988387,0.85774893,0.85975295,0.86558712,0.86298341,0.86715841,0.88827956,0.89287323
+"engkids",6,1,"engPro","Who are English Proficient",27,"MN","Minnesota",1,0.80402452,0.77383351,0.77900815,0.79114765,0.80830765,0.83727211,0.83928275,0.83385545
+"engkids",6,1,"engPro","Who are English Proficient",28,"MS","Mississippi",1,0.87068218,0.83038652,0.85250574,0.85458207,0.82332456,0.78526354,0.80834985,0.86659682
+"engkids",6,1,"engPro","Who are English Proficient",29,"MO","Missouri",1,0.83801538,0.82630318,0.83024371,0.8294543,0.82936186,0.84870565,0.85583901,0.87537384
+"engkids",6,1,"engPro","Who are English Proficient",30,"MT","Montana",1,0.97784239,0.98882413,0.96167809,0.91245872,0.89257348,0.91282052,0.92283732,0.93662322
+"engkids",6,1,"engPro","Who are English Proficient",31,"NE","Nebraska",1,0.76931489,0.79650098,0.78163618,0.74998695,0.77638018,0.81364119,0.786322,0.78864712
+"engkids",6,1,"engPro","Who are English Proficient",32,"NV","Nevada",1,0.84642887,0.84069014,0.8168717,0.79765224,0.81380469,0.84146428,0.86460495,0.88437176
+"engkids",6,1,"engPro","Who are English Proficient",33,"NH","New Hampshire",1,0.91181862,0.94779551,0.96345776,0.91324776,0.90063596,0.9165858,0.91152745,0.90404212
+"engkids",6,1,"engPro","Who are English Proficient",34,"NJ","New Jersey",1,0.88005561,0.88655561,0.88234484,0.87394583,0.87237149,0.87483007,0.88222271,0.89471167
+"engkids",6,1,"engPro","Who are English Proficient",35,"NM","New Mexico",1,0.75354695,0.77019542,0.79558641,0.7903986,0.83056563,0.85407239,0.83372313,0.83579844
+"engkids",6,1,"engPro","Who are English Proficient",36,"NY","New York",1,0.86050409,0.86104071,0.8606751,0.85648757,0.8517893,0.85659885,0.86302072,0.86312455
+"engkids",6,1,"engPro","Who are English Proficient",37,"NC","North Carolina",1,0.76512367,0.76218653,0.76213419,0.78899831,0.81202322,0.81654352,0.81394774,0.81997508
+"engkids",6,1,"engPro","Who are English Proficient",38,"ND","North Dakota",1,0.98796219,,,0.77770746,0.86561936,0.71265835,0.7195974,0.90839469
+"engkids",6,1,"engPro","Who are English Proficient",39,"OH","Ohio",1,0.86634535,0.87691492,0.87526608,0.87132269,0.87647319,0.8774879,0.88025308,0.89057076
+"engkids",6,1,"engPro","Who are English Proficient",40,"OK","Oklahoma",1,0.83854955,0.8523339,0.83228517,0.8568033,0.84275919,0.83624434,0.85472596,0.86391443
+"engkids",6,1,"engPro","Who are English Proficient",41,"OR","Oregon",1,0.73400182,0.78422105,0.79326957,0.7979818,0.8260147,0.8302778,0.81653178,0.82664305
+"engkids",6,1,"engPro","Who are English Proficient",42,"PA","Pennsylvania",1,0.85868186,0.86303413,0.87577879,0.87992162,0.86250991,0.85871118,0.86209273,0.85435694
+"engkids",6,1,"engPro","Who are English Proficient",44,"RI","Rhode island",1,0.87028885,0.87054384,0.86506599,0.85906595,0.84683901,0.87455815,0.86811596,0.89136583
+"engkids",6,1,"engPro","Who are English Proficient",45,"SC","South Carolina",1,0.80525899,0.80457091,0.81834406,0.83120775,0.84543949,0.881845,0.88505757,0.87616485
+"engkids",6,1,"engPro","Who are English Proficient",46,"SD","South Dakota",1,0.68250048,0.86271828,0.91977298,0.88400716,0.78162956,0.66171861,0.70890057,0.85058856
+"engkids",6,1,"engPro","Who are English Proficient",47,"TN","Tennessee",1,0.81865466,0.82358277,0.82369286,0.8465482,0.84669495,0.85159355,0.86399508,0.86197281
+"engkids",6,1,"engPro","Who are English Proficient",48,"TX","Texas",1,0.73362225,0.732916,0.73448247,0.75204587,0.76312602,0.7645393,0.77444923,0.78350919
+"engkids",6,1,"engPro","Who are English Proficient",49,"UT","Utah",1,0.8168813,0.81701213,0.83652103,0.85277581,0.84192121,0.86363375,0.88571197,0.88171172
+"engkids",6,1,"engPro","Who are English Proficient",50,"VT","Vermont",1,0.93651503,0.93762422,0.93590814,0.95779127,0.92032415,0.93238544,0.92204672,0.85912532
+"engkids",6,1,"engPro","Who are English Proficient",51,"VA","Virginia",1,0.85332382,0.86079061,0.86784381,0.8661328,0.87490988,0.88518107,0.89184535,0.90592074
+"engkids",6,1,"engPro","Who are English Proficient",53,"WA","Washington",1,0.78310132,0.79361296,0.78666258,0.79747236,0.79813427,0.81531435,0.83846307,0.84374601
+"engkids",6,1,"engPro","Who are English Proficient",54,"WV","West Virginia",1,0.92728513,0.92460495,0.92492002,0.94572008,0.84687108,0.80751097,0.89747083,0.9420926
+"engkids",6,1,"engPro","Who are English Proficient",55,"WI","Wisconsin",1,0.81352496,0.7945351,0.81625485,0.81305802,0.80367631,0.81834263,0.82753456,0.81901383
+"engkids",6,1,"engPro","Who are English Proficient",56,"WY","Wyoming",1,0.88047606,0.91667616,0.9490248,0.88129497,0.75837648,0.81986982,0.85110039,0.87684309
+"engkids",6,1,"engPro","Who are English Proficient",0,"US","United States",1,0.80563998,0.81153369,0.81609005,0.82151306,0.82570243,0.83398896,0.84452307,0.85029095
+"engkids",6,1,"engPro","Who are English Proficient",10420,,"Akron, OH",0,,,,0.95539846,0.91203129,0.88383779,,
+"engkids",6,1,"engPro","Who are English Proficient",10580,,"Albany-Schenectady-Troy, NY",0,,,,0.92446341,0.9240256,0.93810221,,
+"engkids",6,1,"engPro","Who are English Proficient",10740,,"Albuquerque, NM",0,,,,0.81279604,0.8681883,0.86197395,,
+"engkids",6,1,"engPro","Who are English Proficient",10900,,"Allentown-Bethlehem-Easton, PA-NJ",0,,,,0.87639625,0.88175037,0.90198952,,
+"engkids",6,1,"engPro","Who are English Proficient",12060,,"Atlanta-Sandy Springs-Marietta, GA",0,,,,0.88146839,0.8766613,0.86794627,,
+"engkids",6,1,"engPro","Who are English Proficient",12260,,"Augusta-Richmond County, GA-SC",0,,,,0.82595372,0.87305994,0.92609367,,
+"engkids",6,1,"engPro","Who are English Proficient",12420,,"Austin-Round Rock, TX",0,,,,0.7326223,0.73631075,0.76276904,,
+"engkids",6,1,"engPro","Who are English Proficient",12540,,"Bakersfield, CA",0,,,,0.83558248,0.83504703,0.83494771,,
+"engkids",6,1,"engPro","Who are English Proficient",12580,,"Baltimore-Towson, MD",0,,,,0.85759294,0.88374746,0.91080834,,
+"engkids",6,1,"engPro","Who are English Proficient",12940,,"Baton Rouge, LA",0,,,,0.87842153,0.80524464,0.85630117,,
+"engkids",6,1,"engPro","Who are English Proficient",13820,,"Birmingham-Hoover, AL",0,,,,0.82056595,0.75971297,0.75627555,,
+"engkids",6,1,"engPro","Who are English Proficient",14260,,"Boise City-Nampa, ID",0,,,,0.79463155,0.86272665,0.90013112,,
+"engkids",6,1,"engPro","Who are English Proficient",14460,,"Boston-Cambridge-Quincy, MA-NH",0,,,,0.87860345,0.88025963,0.89106226,,
+"engkids",6,1,"engPro","Who are English Proficient",14600,,"Bradenton-Sarasota-Venice, FL",0,,,,0.8478451,0.86366021,0.84473194,,
+"engkids",6,1,"engPro","Who are English Proficient",14860,,"Bridgeport-Stamford-Norwalk, CT",0,,,,0.89936203,0.89645998,0.90298047,,
+"engkids",6,1,"engPro","Who are English Proficient",15380,,"Buffalo-Niagara Falls, NY",0,,,,0.88821871,0.89013492,0.83369699,,
+"engkids",6,1,"engPro","Who are English Proficient",16700,,"Charleston-North Charleston-Summerville, SC",0,,,,0.84908244,0.84113053,0.91116632,,
+"engkids",6,1,"engPro","Who are English Proficient",16740,,"Charlotte-Gastonia-Concord, NC-SC",0,,,,0.85919762,0.86230606,0.86120832,,
+"engkids",6,1,"engPro","Who are English Proficient",16860,,"Chattanooga, TN-GA",0,,,,0.79488889,0.75547844,0.74144853,,
+"engkids",6,1,"engPro","Who are English Proficient",16980,,"Chicago-Naperville-Joliet, IL-IN-WI",0,,,,0.80518072,0.80908441,0.81802838,,
+"engkids",6,1,"engPro","Who are English Proficient",17140,,"Cincinnati-Middletown, OH-KY-IN",0,,,,0.81868141,0.84661267,0.86906059,,
+"engkids",6,1,"engPro","Who are English Proficient",17460,,"Cleveland-Elyria-Mentor, OH",0,,,,0.8991448,0.88721915,0.88511307,,
+"engkids",6,1,"engPro","Who are English Proficient",17820,,"Colorado Springs, CO",0,,,,0.87134801,0.86926034,0.88651417,,
+"engkids",6,1,"engPro","Who are English Proficient",17900,,"Columbia, SC",0,,,,0.91445124,0.88814138,0.88150607,,
+"engkids",6,1,"engPro","Who are English Proficient",18140,,"Columbus, OH",0,,,,0.86663459,0.84792839,0.84961193,,
+"engkids",6,1,"engPro","Who are English Proficient",19100,,"Dallas-Fort Worth-Arlington, TX",0,,,,0.75294118,0.7752092,0.78980387,,
+"engkids",6,1,"engPro","Who are English Proficient",19380,,"Dayton, OH",0,,,,0.86727732,0.90650175,0.89342639,,
+"engkids",6,1,"engPro","Who are English Proficient",19740,,"Denver-Aurora-Broomfield, CO",0,,,,0.77421313,0.79076261,0.84133499,,
+"engkids",6,1,"engPro","Who are English Proficient",19780,,"Des Moines-West Des Moines, IA",0,,,,0.84781764,0.85529664,0.82066965,,
+"engkids",6,1,"engPro","Who are English Proficient",19820,,"Detroit-Warren-Livonia, MI",0,,,,0.87091404,0.86634695,0.8617272,,
+"engkids",6,1,"engPro","Who are English Proficient",21340,,"El Paso, TX",0,,,,0.71284252,0.67943992,0.66906628,,
+"engkids",6,1,"engPro","Who are English Proficient",23420,,"Fresno, CA",0,,,,0.8059268,0.83017352,0.81974195,,
+"engkids",6,1,"engPro","Who are English Proficient",24340,,"Grand Rapids-Wyoming, MI",0,,,,0.81513154,0.87709227,0.87799762,,
+"engkids",6,1,"engPro","Who are English Proficient",24660,,"Greensboro-High Point, NC",0,,,,0.7701428,0.8071843,0.80240157,,
+"engkids",6,1,"engPro","Who are English Proficient",24860,,"Greenville-Mauldin-Easley, SC",0,,,,0.76015962,0.86155379,0.88571511,,
+"engkids",6,1,"engPro","Who are English Proficient",25420,,"Harrisburg-Carlisle, PA",0,,,,0.93990199,0.93953298,0.90461966,,
+"engkids",6,1,"engPro","Who are English Proficient",25540,,"Hartford-West Hartford-East Hartford, CT",0,,,,0.9258525,0.93508394,0.91978276,,
+"engkids",6,1,"engPro","Who are English Proficient",26180,,"Honolulu, HI",0,,,,0.84462886,0.85013359,0.85818676,,
+"engkids",6,1,"engPro","Who are English Proficient",26420,,"Houston-Sugar Land-Baytown, TX",0,,,,0.74791133,0.76932684,0.7543257,,
+"engkids",6,1,"engPro","Who are English Proficient",26900,,"Indianapolis-Carmel, IN",0,,,,0.79743621,0.77025952,0.792178,,
+"engkids",6,1,"engPro","Who are English Proficient",27140,,"Jackson, MS",0,,,,,,,,
+"engkids",6,1,"engPro","Who are English Proficient",27260,,"Jacksonville, FL",0,,,,0.92420132,0.93552176,0.95607864,,
+"engkids",6,1,"engPro","Who are English Proficient",28140,,"Kansas City, MO-KS",0,,,,0.84569237,0.82673751,0.8421863,,
+"engkids",6,1,"engPro","Who are English Proficient",28940,,"Knoxville, TN",0,,,,0.88721411,0.89739964,0.91821084,,
+"engkids",6,1,"engPro","Who are English Proficient",29460,,"Lakeland-Winter Haven, FL",0,,,,0.79532964,0.81283658,0.79285305,,
+"engkids",6,1,"engPro","Who are English Proficient",29540,,"Lancaster, PA",0,,,,0.86259483,0.86728917,0.75722949,,
+"engkids",6,1,"engPro","Who are English Proficient",29620,,"Lansing-East Lansing, MI",0,,,,0.79182652,0.61662675,0.76945915,,
+"engkids",6,1,"engPro","Who are English Proficient",29820,,"Las Vegas-Paradise, NV",0,,,,0.7822292,0.80229927,0.82989727,,
+"engkids",6,1,"engPro","Who are English Proficient",30780,,"Little Rock-North Little Rock-Conway, AR",0,,,,0.93557618,0.80509231,0.78226771,,
+"engkids",6,1,"engPro","Who are English Proficient",31100,,"Los Angeles-Long Beach-Santa Ana, CA",0,,,,0.8138449,0.81384722,0.82370741,,
+"engkids",6,1,"engPro","Who are English Proficient",31140,,"LouisvilleJefferson County, KY-IN",0,,,,0.87814312,0.85897469,0.81259427,,
+"engkids",6,1,"engPro","Who are English Proficient",31540,,"Madison, WI",0,,,,0.75509808,0.76103251,0.8023407,,
+"engkids",6,1,"engPro","Who are English Proficient",32580,,"McAllen-Edinburg-Mission, TX",0,,,,0.7218574,0.73137126,0.75458359,,
+"engkids",6,1,"engPro","Who are English Proficient",32820,,"Memphis, TN-MS-AR",0,,,,0.80131965,0.7901371,0.85834241,,
+"engkids",6,1,"engPro","Who are English Proficient",33100,,"Miami-Fort Lauderdale-Pompano Beach, FL",0,,,,0.8740019,0.87643021,0.87536461,,
+"engkids",6,1,"engPro","Who are English Proficient",33340,,"Milwaukee-Waukesha-West Allis, WI",0,,,,0.80230496,0.80307992,0.83675968,,
+"engkids",6,1,"engPro","Who are English Proficient",33460,,"Minneapolis-St. Paul-Bloomington, MN-WI",0,,,,0.78492188,0.80007601,0.82707152,,
+"engkids",6,1,"engPro","Who are English Proficient",33700,,"Modesto, CA",0,,,,0.78384701,0.77808933,0.81365234,,
+"engkids",6,1,"engPro","Who are English Proficient",34980,,"Nashville-Davidson-Murfreesboro-Franklin, TN",0,,,,0.86446987,0.86446461,0.83878568,,
+"engkids",6,1,"engPro","Who are English Proficient",35300,,"New Haven-Milford, CT",0,,,,0.89645252,0.89241346,0.91177296,,
+"engkids",6,1,"engPro","Who are English Proficient",35380,,"New Orleans-Metairie-Kenner, LA",0,,,,0.82375439,0.79806448,0.80128514,,
+"engkids",6,1,"engPro","Who are English Proficient",35620,,"New York-Northern New Jersey-Long Island, NY-NJ-PA",0,,,,0.85914937,0.85506225,0.86141613,,
+"engkids",6,1,"engPro","Who are English Proficient",36420,,"Oklahoma City, OK",0,,,,0.8321689,0.82333679,0.83346879,,
+"engkids",6,1,"engPro","Who are English Proficient",36540,,"Omaha-Council Bluffs, NE-IA",0,,,,0.77788096,0.76794092,0.76163643,,
+"engkids",6,1,"engPro","Who are English Proficient",36740,,"Orlando-Kissimmee, FL",0,,,,0.90067006,0.90079591,0.91122168,,
+"engkids",6,1,"engPro","Who are English Proficient",37100,,"Oxnard-Thousand Oaks-Ventura, CA",0,,,,0.80812355,0.82485859,0.80419051,,
+"engkids",6,1,"engPro","Who are English Proficient",37340,,"Palm Bay-Melbourne-Titusville, FL",0,,,,0.91025289,0.85208251,0.87934756,,
+"engkids",6,1,"engPro","Who are English Proficient",37980,,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",0,,,,0.87882353,0.85227271,0.86199831,,
+"engkids",6,1,"engPro","Who are English Proficient",38060,,"Phoenix-Mesa-Scottsdale, AZ",0,,,,0.78740185,0.82695516,0.84013987,,
+"engkids",6,1,"engPro","Who are English Proficient",38300,,"Pittsburgh, PA",0,,,,0.93050548,0.89029431,0.83064762,,
+"engkids",6,1,"engPro","Who are English Proficient",38860,,"Portland-South Portland-Biddeford, ME",0,,,,0.88800559,0.85663392,0.87220417,,
+"engkids",6,1,"engPro","Who are English Proficient",38900,,"Portland-Vancouver-Beaverton, OR-WA",0,,,,0.80261215,0.80747257,0.82095052,,
+"engkids",6,1,"engPro","Who are English Proficient",39100,,"Poughkeepsie-Newburgh-Middletown, NY",0,,,,0.88138634,0.87648405,0.84997157,,
+"engkids",6,1,"engPro","Who are English Proficient",39300,,"Providence-New Bedford-Fall River, RI-MA",0,,,,0.88356167,0.87568841,0.88750313,,
+"engkids",6,1,"engPro","Who are English Proficient",39580,,"Raleigh-Cary, NC",0,,,,0.84008823,0.84937965,0.84276797,,
+"engkids",6,1,"engPro","Who are English Proficient",40060,,"Richmond, VA",0,,,,0.86519194,0.88312278,0.84307111,,
+"engkids",6,1,"engPro","Who are English Proficient",40140,,"Riverside-San Bernardino-Ontario, CA",0,,,,0.81016543,0.82124985,0.85639578,,
+"engkids",6,1,"engPro","Who are English Proficient",40380,,"Rochester, NY",0,,,,0.92638729,0.91259464,0.87285001,,
+"engkids",6,1,"engPro","Who are English Proficient",40900,,"Sacramento-Arden-Arcade-Roseville, CA",0,,,,0.79640039,0.8078989,0.83551215,,
+"engkids",6,1,"engPro","Who are English Proficient",41180,,"St. Louis, MO-IL",0,,,,0.85525942,0.88483778,0.89888168,,
+"engkids",6,1,"engPro","Who are English Proficient",41620,,"Salt Lake City, UT",0,,,,0.82658798,0.84640257,0.87305361,,
+"engkids",6,1,"engPro","Who are English Proficient",41700,,"San Antonio, TX",0,,,,0.83787484,0.84311265,0.85070559,,
+"engkids",6,1,"engPro","Who are English Proficient",41740,,"San Diego-Carlsbad-San Marcos, CA",0,,,,0.80228685,0.77644439,0.77769364,,
+"engkids",6,1,"engPro","Who are English Proficient",41860,,"San Francisco-Oakland-Fremont, CA",0,,,,0.83597887,0.84319959,0.86067122,,
+"engkids",6,1,"engPro","Who are English Proficient",41940,,"San Jose-Sunnyvale-Santa Clara, CA",0,,,,0.84837184,0.8474385,0.84520579,,
+"engkids",6,1,"engPro","Who are English Proficient",42220,,"Santa Rosa-Petaluma, CA",0,,,,0.80617853,0.81313082,0.81741214,,
+"engkids",6,1,"engPro","Who are English Proficient",42540,,"Scranton-Wilkes-Barre, PA",0,,,,0.82735298,0.79733811,0.88581716,,
+"engkids",6,1,"engPro","Who are English Proficient",42660,,"Seattle-Tacoma-Bellevue, WA",0,,,,0.84273299,0.83701132,0.8442896,,
+"engkids",6,1,"engPro","Who are English Proficient",44140,,"Springfield, MA",0,,,,0.86323141,0.84749843,0.88049483,,
+"engkids",6,1,"engPro","Who are English Proficient",44700,,"Stockton, CA",0,,,,0.80842523,0.80105838,0.80759738,,
+"engkids",6,1,"engPro","Who are English Proficient",45060,,"Syracuse, NY",0,,,,0.92648158,0.85933402,0.80516985,,
+"engkids",6,1,"engPro","Who are English Proficient",45300,,"Tampa-St. Petersburg-Clearwater, FL",0,,,,0.87488919,0.87050132,0.86708527,,
+"engkids",6,1,"engPro","Who are English Proficient",45780,,"Toledo, OH",0,,,,0.78959468,0.88487929,0.89847574,,
+"engkids",6,1,"engPro","Who are English Proficient",46060,,"Tucson, AZ",0,,,,0.82704426,0.85586072,0.86082132,,
+"engkids",6,1,"engPro","Who are English Proficient",46140,,"Tulsa, OK",0,,,,0.86255258,0.84132938,0.79720595,,
+"engkids",6,1,"engPro","Who are English Proficient",47260,,"Virginia Beach-Norfolk-Newport News, VA-NC",0,,,,0.91747939,0.92610525,0.93335488,,
+"engkids",6,1,"engPro","Who are English Proficient",47900,,"Washington-Arlington-Alexandria, DC-VA-MD-WV",0,,,,0.86847139,0.86544116,0.88904269,,
+"engkids",6,1,"engPro","Who are English Proficient",48620,,"Wichita, KS",0,,,,0.87086262,0.87565002,0.86193209,,
+"engkids",6,1,"engPro","Who are English Proficient",49340,,"Worcester, MA",0,,,,0.79066112,0.85139204,0.88606038,,
+"engkids",6,1,"engPro","Who are English Proficient",49660,,"Youngstown-Warren-Boardman, OH-PA",0,,,,,,,,
+"engkids",6,2,"limEng","With Limited English Proficiency",1,"AL","Alabama",1,0.22042225,0.25489092,0.22629966,0.19356006,0.21588711,0.23192886,0.19113326,0.19361915
+"engkids",6,2,"limEng","With Limited English Proficiency",2,"AK","Alaska",1,0.09150805,0.07772467,0.06569418,0.09091806,0.08637609,0.09018111,0.13822211,0.14130242
+"engkids",6,2,"limEng","With Limited English Proficiency",4,"AZ","Arizona",1,0.25421014,0.25520822,0.24517195,0.204808,0.17031854,0.16198091,0.14241242,0.12700613
+"engkids",6,2,"limEng","With Limited English Proficiency",5,"AR","Arkansas",1,0.263749,0.25027937,0.24076578,0.20383577,0.19167159,0.18520725,0.15994705,0.15965924
+"engkids",6,2,"limEng","With Limited English Proficiency",6,"CA","California",1,0.21259069,0.20221792,0.19346301,0.18988875,0.18810104,0.1758244,0.16131185,0.15426622
+"engkids",6,2,"limEng","With Limited English Proficiency",8,"CO","Colorado",1,0.23602635,0.24425845,0.23363075,0.21174157,0.18663651,0.15141486,0.12392122,0.14348319
+"engkids",6,2,"limEng","With Limited English Proficiency",9,"CT","Connecticut",1,0.10960823,0.1078078,0.08480538,0.09254735,0.09129211,0.08776804,0.10190467,0.09329087
+"engkids",6,2,"limEng","With Limited English Proficiency",10,"DE","Delaware",1,0.12941952,0.16504513,0.16522899,0.1132332,0.11915103,0.13553087,0.12128484,0.0973161
+"engkids",6,2,"limEng","With Limited English Proficiency",11,"DC","District of Columbia",1,0.18521391,0.17914191,0.11178145,0.09239406,0.09565031,0.07891206,0.10818423,0.13689215
+"engkids",6,2,"limEng","With Limited English Proficiency",12,"FL","Florida",1,0.1452249,0.13623795,0.13606696,0.13246602,0.13074464,0.13179782,0.12404879,0.12160489
+"engkids",6,2,"limEng","With Limited English Proficiency",13,"GA","Georgia",1,0.18694839,0.18199874,0.1589974,0.13999543,0.14258318,0.14077561,0.13476402,0.12770325
+"engkids",6,2,"limEng","With Limited English Proficiency",15,"HI","Hawaii",1,0.13111019,0.12540565,0.13616914,0.13984248,0.12690179,0.12196512,0.13607366,0.18155238
+"engkids",6,2,"limEng","With Limited English Proficiency",16,"ID","Idaho",1,0.18764399,0.17423899,0.16695377,0.18045162,0.15138662,0.15361823,0.14435808,0.1578055
+"engkids",6,2,"limEng","With Limited English Proficiency",17,"IL","Illinois",1,0.2125836,0.20182458,0.19665456,0.19646926,0.19066766,0.18064494,0.16183734,0.14395827
+"engkids",6,2,"limEng","With Limited English Proficiency",18,"IN","Indiana",1,0.22070166,0.2059267,0.18692744,0.18557985,0.2035882,0.18419354,0.15250055,0.16120109
+"engkids",6,2,"limEng","With Limited English Proficiency",19,"IA","Iowa",1,0.23103338,0.20532644,0.16308959,0.13008992,0.14669509,0.18948808,0.20257461,0.20924048
+"engkids",6,2,"limEng","With Limited English Proficiency",20,"KS","Kansas",1,0.17803727,0.16197069,0.15595886,0.16568509,0.16954456,0.15618895,0.16047524,0.1418052
+"engkids",6,2,"limEng","With Limited English Proficiency",21,"KY","Kentucky",1,0.19227085,0.18873616,0.1998357,0.19398053,0.15683365,0.16336873,0.17618322,0.15034524
+"engkids",6,2,"limEng","With Limited English Proficiency",22,"LA","Louisiana",1,0.1106985,0.14412639,0.16273148,0.14038047,0.16048516,0.15146844,0.12313619,0.14121406
+"engkids",6,2,"limEng","With Limited English Proficiency",23,"ME","Maine",1,0.12512101,0.11686826,0.07931807,0.16887388,0.22263241,0.14695019,0.08223066,0.07879096
+"engkids",6,2,"limEng","With Limited English Proficiency",24,"MD","Maryland",1,0.12840623,0.12716578,0.12158795,0.12927727,0.12893842,0.1022345,0.09445535,0.10521411
+"engkids",6,2,"limEng","With Limited English Proficiency",25,"MA","Massachusetts",1,0.14235701,0.13190314,0.13007508,0.12827745,0.12186521,0.10785452,0.11140776,0.12484595
+"engkids",6,2,"limEng","With Limited English Proficiency",26,"MI","Michigan",1,0.17011614,0.1422511,0.14024705,0.13441291,0.13701661,0.13284157,0.11172044,0.10712675
+"engkids",6,2,"limEng","With Limited English Proficiency",27,"MN","Minnesota",1,0.19597548,0.2261665,0.22099186,0.20885234,0.19169238,0.16272791,0.16071725,0.16614458
+"engkids",6,2,"limEng","With Limited English Proficiency",28,"MS","Mississippi",1,0.12931782,0.1696135,0.14749426,0.14541794,0.17667545,0.21473645,0.19165012,0.13340318
+"engkids",6,2,"limEng","With Limited English Proficiency",29,"MO","Missouri",1,0.16198465,0.17369685,0.16975628,0.17054568,0.17063811,0.15129434,0.14416096,0.12462615
+"engkids",6,2,"limEng","With Limited English Proficiency",30,"MT","Montana",1,0.02215761,0.01117585,0.03832194,0.08754127,0.10742651,0.08717949,0.07716269,0.06337678
+"engkids",6,2,"limEng","With Limited English Proficiency",31,"NE","Nebraska",1,0.2306851,0.20349903,0.21836379,0.25001302,0.2236198,0.18635881,0.21367802,0.21135287
+"engkids",6,2,"limEng","With Limited English Proficiency",32,"NV","Nevada",1,0.15357111,0.15930985,0.1831283,0.20234774,0.1861953,0.15853573,0.13539506,0.11562826
+"engkids",6,2,"limEng","With Limited English Proficiency",33,"NH","New Hampshire",1,0.08818137,0.05220449,0.03654222,0.08675221,0.09936401,0.08341418,0.08847254,0.09595786
+"engkids",6,2,"limEng","With Limited English Proficiency",34,"NJ","New Jersey",1,0.11994441,0.11344437,0.11765517,0.12605415,0.12762851,0.1251699,0.11777728,0.10528835
+"engkids",6,2,"limEng","With Limited English Proficiency",35,"NM","New Mexico",1,0.24645303,0.22980456,0.20441362,0.20960137,0.16943438,0.14592761,0.16627684,0.16420156
+"engkids",6,2,"limEng","With Limited English Proficiency",36,"NY","New York",1,0.13949588,0.13895929,0.13932492,0.14351243,0.1482107,0.14340116,0.13697927,0.13687544
+"engkids",6,2,"limEng","With Limited English Proficiency",37,"NC","North Carolina",1,0.2348763,0.23781346,0.23786579,0.21100168,0.18797679,0.18345651,0.18605226,0.18002492
+"engkids",6,2,"limEng","With Limited English Proficiency",38,"ND","North Dakota",1,0.01203783,,,0.22229253,0.13438067,0.28734162,0.2804026,0.0916053
+"engkids",6,2,"limEng","With Limited English Proficiency",39,"OH","Ohio",1,0.13365462,0.12308507,0.12473392,0.12867734,0.1235268,0.12251212,0.11974694,0.10942922
+"engkids",6,2,"limEng","With Limited English Proficiency",40,"OK","Oklahoma",1,0.16145045,0.14766608,0.16771482,0.14319672,0.15724082,0.16375569,0.14527403,0.13608558
+"engkids",6,2,"limEng","With Limited English Proficiency",41,"OR","Oregon",1,0.26599818,0.21577893,0.20673044,0.20201819,0.17398529,0.1697222,0.18346822,0.17335694
+"engkids",6,2,"limEng","With Limited English Proficiency",42,"PA","Pennsylvania",1,0.14131813,0.13696589,0.1242212,0.12007838,0.13749009,0.14128883,0.13790727,0.14564307
+"engkids",6,2,"limEng","With Limited English Proficiency",44,"RI","Rhode island",1,0.12971118,0.12945615,0.13493402,0.14093405,0.15316102,0.12544185,0.13188405,0.10863418
+"engkids",6,2,"limEng","With Limited English Proficiency",45,"SC","South Carolina",1,0.19474104,0.19542907,0.18165593,0.16879226,0.15456048,0.11815498,0.11494244,0.12383513
+"engkids",6,2,"limEng","With Limited English Proficiency",46,"SD","South Dakota",1,0.31749952,0.13728172,0.08022704,0.11599283,0.21837047,0.33828142,0.2910994,0.14941145
+"engkids",6,2,"limEng","With Limited English Proficiency",47,"TN","Tennessee",1,0.18134536,0.17641722,0.17630714,0.15345182,0.15330504,0.14840648,0.13600492,0.13802718
+"engkids",6,2,"limEng","With Limited English Proficiency",48,"TX","Texas",1,0.26637775,0.267084,0.26551753,0.24795415,0.23687398,0.23546067,0.22555077,0.21649078
+"engkids",6,2,"limEng","With Limited English Proficiency",49,"UT","Utah",1,0.18311869,0.18298784,0.16347894,0.14722417,0.1580788,0.13636623,0.11428805,0.11828828
+"engkids",6,2,"limEng","With Limited English Proficiency",50,"VT","Vermont",1,0.06348498,0.0623758,0.06409188,0.04220873,0.07967583,0.06761456,0.07795326,0.14087468
+"engkids",6,2,"limEng","With Limited English Proficiency",51,"VA","Virginia",1,0.14667618,0.1392094,0.13215621,0.13386717,0.12509014,0.11481895,0.10815468,0.09407925
+"engkids",6,2,"limEng","With Limited English Proficiency",53,"WA","Washington",1,0.21689871,0.20638706,0.21333745,0.20252764,0.20186573,0.18468563,0.16153695,0.15625399
+"engkids",6,2,"limEng","With Limited English Proficiency",54,"WV","West Virginia",1,0.07271486,0.07539507,0.07508,0.05427993,0.15312891,0.19248903,0.10252918,0.05790742
+"engkids",6,2,"limEng","With Limited English Proficiency",55,"WI","Wisconsin",1,0.18647504,0.20546491,0.18374516,0.186942,0.19632366,0.18165736,0.17246541,0.18098618
+"engkids",6,2,"limEng","With Limited English Proficiency",56,"WY","Wyoming",1,0.11952393,0.08332384,0.05097523,0.11870503,0.24162351,0.18013017,0.14889959,0.12315688
+"engkids",6,2,"limEng","With Limited English Proficiency",0,"US","United States",1,0.19436002,0.18846634,0.18390995,0.17848694,0.17429757,0.16601104,0.15547694,0.14970906
+"engkids",6,2,"limEng","With Limited English Proficiency",10420,,"Akron, OH",0,,,,0.04460154,0.08796871,0.11616221,,
+"engkids",6,2,"limEng","With Limited English Proficiency",10580,,"Albany-Schenectady-Troy, NY",0,,,,0.07553659,0.0759744,0.06189779,,
+"engkids",6,2,"limEng","With Limited English Proficiency",10740,,"Albuquerque, NM",0,,,,0.18720396,0.1318117,0.13802605,,
+"engkids",6,2,"limEng","With Limited English Proficiency",10900,,"Allentown-Bethlehem-Easton, PA-NJ",0,,,,0.12360375,0.11824963,0.09801048,,
+"engkids",6,2,"limEng","With Limited English Proficiency",12060,,"Atlanta-Sandy Springs-Marietta, GA",0,,,,0.11853161,0.1233387,0.13205373,,
+"engkids",6,2,"limEng","With Limited English Proficiency",12260,,"Augusta-Richmond County, GA-SC",0,,,,0.17404628,0.12694006,0.07390633,,
+"engkids",6,2,"limEng","With Limited English Proficiency",12420,,"Austin-Round Rock, TX",0,,,,0.2673777,0.26368925,0.23723096,,
+"engkids",6,2,"limEng","With Limited English Proficiency",12540,,"Bakersfield, CA",0,,,,0.16441752,0.16495297,0.16505229,,
+"engkids",6,2,"limEng","With Limited English Proficiency",12580,,"Baltimore-Towson, MD",0,,,,0.14240706,0.11625254,0.08919166,,
+"engkids",6,2,"limEng","With Limited English Proficiency",12940,,"Baton Rouge, LA",0,,,,0.12157847,0.19475536,0.14369883,,
+"engkids",6,2,"limEng","With Limited English Proficiency",13820,,"Birmingham-Hoover, AL",0,,,,0.17943406,0.24028703,0.24372445,,
+"engkids",6,2,"limEng","With Limited English Proficiency",14260,,"Boise City-Nampa, ID",0,,,,0.20536845,0.13727335,0.09986888,,
+"engkids",6,2,"limEng","With Limited English Proficiency",14460,,"Boston-Cambridge-Quincy, MA-NH",0,,,,0.12139655,0.11974037,0.10893774,,
+"engkids",6,2,"limEng","With Limited English Proficiency",14600,,"Bradenton-Sarasota-Venice, FL",0,,,,0.1521549,0.13633979,0.15526806,,
+"engkids",6,2,"limEng","With Limited English Proficiency",14860,,"Bridgeport-Stamford-Norwalk, CT",0,,,,0.10063797,0.10354002,0.09701953,,
+"engkids",6,2,"limEng","With Limited English Proficiency",15380,,"Buffalo-Niagara Falls, NY",0,,,,0.11178129,0.10986508,0.16630301,,
+"engkids",6,2,"limEng","With Limited English Proficiency",16700,,"Charleston-North Charleston-Summerville, SC",0,,,,0.15091756,0.15886947,0.08883368,,
+"engkids",6,2,"limEng","With Limited English Proficiency",16740,,"Charlotte-Gastonia-Concord, NC-SC",0,,,,0.14080238,0.13769394,0.13879168,,
+"engkids",6,2,"limEng","With Limited English Proficiency",16860,,"Chattanooga, TN-GA",0,,,,0.20511111,0.24452156,0.25855147,,
+"engkids",6,2,"limEng","With Limited English Proficiency",16980,,"Chicago-Naperville-Joliet, IL-IN-WI",0,,,,0.19481928,0.19091559,0.18197162,,
+"engkids",6,2,"limEng","With Limited English Proficiency",17140,,"Cincinnati-Middletown, OH-KY-IN",0,,,,0.18131859,0.15338733,0.13093941,,
+"engkids",6,2,"limEng","With Limited English Proficiency",17460,,"Cleveland-Elyria-Mentor, OH",0,,,,0.10085521,0.11278085,0.11488693,,
+"engkids",6,2,"limEng","With Limited English Proficiency",17820,,"Colorado Springs, CO",0,,,,0.12865199,0.13073966,0.11348583,,
+"engkids",6,2,"limEng","With Limited English Proficiency",17900,,"Columbia, SC",0,,,,0.08554876,0.11185862,0.11849393,,
+"engkids",6,2,"limEng","With Limited English Proficiency",18140,,"Columbus, OH",0,,,,0.13336541,0.15207161,0.15038807,,
+"engkids",6,2,"limEng","With Limited English Proficiency",19100,,"Dallas-Fort Worth-Arlington, TX",0,,,,0.24705882,0.2247908,0.21019613,,
+"engkids",6,2,"limEng","With Limited English Proficiency",19380,,"Dayton, OH",0,,,,0.13272268,0.09349825,0.10657361,,
+"engkids",6,2,"limEng","With Limited English Proficiency",19740,,"Denver-Aurora-Broomfield, CO",0,,,,0.22578687,0.20923739,0.15866501,,
+"engkids",6,2,"limEng","With Limited English Proficiency",19780,,"Des Moines-West Des Moines, IA",0,,,,0.15218236,0.14470336,0.17933035,,
+"engkids",6,2,"limEng","With Limited English Proficiency",19820,,"Detroit-Warren-Livonia, MI",0,,,,0.12908596,0.13365305,0.1382728,,
+"engkids",6,2,"limEng","With Limited English Proficiency",21340,,"El Paso, TX",0,,,,0.28715748,0.32056008,0.33093372,,
+"engkids",6,2,"limEng","With Limited English Proficiency",23420,,"Fresno, CA",0,,,,0.1940732,0.16982648,0.18025805,,
+"engkids",6,2,"limEng","With Limited English Proficiency",24340,,"Grand Rapids-Wyoming, MI",0,,,,0.18486846,0.12290773,0.12200238,,
+"engkids",6,2,"limEng","With Limited English Proficiency",24660,,"Greensboro-High Point, NC",0,,,,0.2298572,0.1928157,0.19759843,,
+"engkids",6,2,"limEng","With Limited English Proficiency",24860,,"Greenville-Mauldin-Easley, SC",0,,,,0.23984038,0.13844621,0.11428489,,
+"engkids",6,2,"limEng","With Limited English Proficiency",25420,,"Harrisburg-Carlisle, PA",0,,,,0.06009801,0.06046702,0.09538034,,
+"engkids",6,2,"limEng","With Limited English Proficiency",25540,,"Hartford-West Hartford-East Hartford, CT",0,,,,0.0741475,0.06491606,0.08021724,,
+"engkids",6,2,"limEng","With Limited English Proficiency",26180,,"Honolulu, HI",0,,,,0.15537114,0.14986641,0.14181324,,
+"engkids",6,2,"limEng","With Limited English Proficiency",26420,,"Houston-Sugar Land-Baytown, TX",0,,,,0.25208867,0.23067316,0.2456743,,
+"engkids",6,2,"limEng","With Limited English Proficiency",26900,,"Indianapolis-Carmel, IN",0,,,,0.20256379,0.22974048,0.207822,,
+"engkids",6,2,"limEng","With Limited English Proficiency",27140,,"Jackson, MS",0,,,,,,,,
+"engkids",6,2,"limEng","With Limited English Proficiency",27260,,"Jacksonville, FL",0,,,,0.07579868,0.06447824,0.04392136,,
+"engkids",6,2,"limEng","With Limited English Proficiency",28140,,"Kansas City, MO-KS",0,,,,0.15430763,0.17326249,0.1578137,,
+"engkids",6,2,"limEng","With Limited English Proficiency",28940,,"Knoxville, TN",0,,,,0.11278589,0.10260036,0.08178916,,
+"engkids",6,2,"limEng","With Limited English Proficiency",29460,,"Lakeland-Winter Haven, FL",0,,,,0.20467036,0.18716342,0.20714695,,
+"engkids",6,2,"limEng","With Limited English Proficiency",29540,,"Lancaster, PA",0,,,,0.13740517,0.13271083,0.24277051,,
+"engkids",6,2,"limEng","With Limited English Proficiency",29620,,"Lansing-East Lansing, MI",0,,,,0.20817348,0.38337325,0.23054085,,
+"engkids",6,2,"limEng","With Limited English Proficiency",29820,,"Las Vegas-Paradise, NV",0,,,,0.2177708,0.19770073,0.17010273,,
+"engkids",6,2,"limEng","With Limited English Proficiency",30780,,"Little Rock-North Little Rock-Conway, AR",0,,,,0.06442382,0.19490769,0.21773229,,
+"engkids",6,2,"limEng","With Limited English Proficiency",31100,,"Los Angeles-Long Beach-Santa Ana, CA",0,,,,0.1861551,0.18615278,0.17629259,,
+"engkids",6,2,"limEng","With Limited English Proficiency",31140,,"LouisvilleJefferson County, KY-IN",0,,,,0.12185688,0.14102531,0.18740573,,
+"engkids",6,2,"limEng","With Limited English Proficiency",31540,,"Madison, WI",0,,,,0.24490192,0.23896749,0.1976593,,
+"engkids",6,2,"limEng","With Limited English Proficiency",32580,,"McAllen-Edinburg-Mission, TX",0,,,,0.2781426,0.26862874,0.24541641,,
+"engkids",6,2,"limEng","With Limited English Proficiency",32820,,"Memphis, TN-MS-AR",0,,,,0.19868035,0.2098629,0.14165759,,
+"engkids",6,2,"limEng","With Limited English Proficiency",33100,,"Miami-Fort Lauderdale-Pompano Beach, FL",0,,,,0.1259981,0.12356979,0.12463539,,
+"engkids",6,2,"limEng","With Limited English Proficiency",33340,,"Milwaukee-Waukesha-West Allis, WI",0,,,,0.19769504,0.19692008,0.16324032,,
+"engkids",6,2,"limEng","With Limited English Proficiency",33460,,"Minneapolis-St. Paul-Bloomington, MN-WI",0,,,,0.21507812,0.19992399,0.17292848,,
+"engkids",6,2,"limEng","With Limited English Proficiency",33700,,"Modesto, CA",0,,,,0.21615299,0.22191067,0.18634766,,
+"engkids",6,2,"limEng","With Limited English Proficiency",34980,,"Nashville-Davidson-Murfreesboro-Franklin, TN",0,,,,0.13553013,0.13553539,0.16121432,,
+"engkids",6,2,"limEng","With Limited English Proficiency",35300,,"New Haven-Milford, CT",0,,,,0.10354748,0.10758654,0.08822704,,
+"engkids",6,2,"limEng","With Limited English Proficiency",35380,,"New Orleans-Metairie-Kenner, LA",0,,,,0.17624561,0.20193552,0.19871486,,
+"engkids",6,2,"limEng","With Limited English Proficiency",35620,,"New York-Northern New Jersey-Long Island, NY-NJ-PA",0,,,,0.14085063,0.14493775,0.13858387,,
+"engkids",6,2,"limEng","With Limited English Proficiency",36420,,"Oklahoma City, OK",0,,,,0.1678311,0.17666321,0.16653121,,
+"engkids",6,2,"limEng","With Limited English Proficiency",36540,,"Omaha-Council Bluffs, NE-IA",0,,,,0.22211904,0.23205908,0.23836357,,
+"engkids",6,2,"limEng","With Limited English Proficiency",36740,,"Orlando-Kissimmee, FL",0,,,,0.09932994,0.09920409,0.08877832,,
+"engkids",6,2,"limEng","With Limited English Proficiency",37100,,"Oxnard-Thousand Oaks-Ventura, CA",0,,,,0.19187645,0.17514141,0.19580949,,
+"engkids",6,2,"limEng","With Limited English Proficiency",37340,,"Palm Bay-Melbourne-Titusville, FL",0,,,,0.08974711,0.14791749,0.12065244,,
+"engkids",6,2,"limEng","With Limited English Proficiency",37980,,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",0,,,,0.12117647,0.14772729,0.13800169,,
+"engkids",6,2,"limEng","With Limited English Proficiency",38060,,"Phoenix-Mesa-Scottsdale, AZ",0,,,,0.21259815,0.17304484,0.15986013,,
+"engkids",6,2,"limEng","With Limited English Proficiency",38300,,"Pittsburgh, PA",0,,,,0.06949452,0.10970569,0.16935238,,
+"engkids",6,2,"limEng","With Limited English Proficiency",38860,,"Portland-South Portland-Biddeford, ME",0,,,,0.11199441,0.14336608,0.12779583,,
+"engkids",6,2,"limEng","With Limited English Proficiency",38900,,"Portland-Vancouver-Beaverton, OR-WA",0,,,,0.19738785,0.19252743,0.17904948,,
+"engkids",6,2,"limEng","With Limited English Proficiency",39100,,"Poughkeepsie-Newburgh-Middletown, NY",0,,,,0.11861366,0.12351595,0.15002843,,
+"engkids",6,2,"limEng","With Limited English Proficiency",39300,,"Providence-New Bedford-Fall River, RI-MA",0,,,,0.11643833,0.12431159,0.11249687,,
+"engkids",6,2,"limEng","With Limited English Proficiency",39580,,"Raleigh-Cary, NC",0,,,,0.15991177,0.15062035,0.15723203,,
+"engkids",6,2,"limEng","With Limited English Proficiency",40060,,"Richmond, VA",0,,,,0.13480806,0.11687722,0.15692889,,
+"engkids",6,2,"limEng","With Limited English Proficiency",40140,,"Riverside-San Bernardino-Ontario, CA",0,,,,0.18983457,0.17875015,0.14360422,,
+"engkids",6,2,"limEng","With Limited English Proficiency",40380,,"Rochester, NY",0,,,,0.07361271,0.08740536,0.12714999,,
+"engkids",6,2,"limEng","With Limited English Proficiency",40900,,"Sacramento-Arden-Arcade-Roseville, CA",0,,,,0.20359961,0.1921011,0.16448785,,
+"engkids",6,2,"limEng","With Limited English Proficiency",41180,,"St. Louis, MO-IL",0,,,,0.14474058,0.11516222,0.10111832,,
+"engkids",6,2,"limEng","With Limited English Proficiency",41620,,"Salt Lake City, UT",0,,,,0.17341202,0.15359743,0.12694639,,
+"engkids",6,2,"limEng","With Limited English Proficiency",41700,,"San Antonio, TX",0,,,,0.16212516,0.15688735,0.14929441,,
+"engkids",6,2,"limEng","With Limited English Proficiency",41740,,"San Diego-Carlsbad-San Marcos, CA",0,,,,0.19771315,0.22355561,0.22230636,,
+"engkids",6,2,"limEng","With Limited English Proficiency",41860,,"San Francisco-Oakland-Fremont, CA",0,,,,0.16402113,0.15680041,0.13932878,,
+"engkids",6,2,"limEng","With Limited English Proficiency",41940,,"San Jose-Sunnyvale-Santa Clara, CA",0,,,,0.15162816,0.1525615,0.15479421,,
+"engkids",6,2,"limEng","With Limited English Proficiency",42220,,"Santa Rosa-Petaluma, CA",0,,,,0.19382147,0.18686918,0.18258786,,
+"engkids",6,2,"limEng","With Limited English Proficiency",42540,,"Scranton-Wilkes-Barre, PA",0,,,,0.17264702,0.20266189,0.11418284,,
+"engkids",6,2,"limEng","With Limited English Proficiency",42660,,"Seattle-Tacoma-Bellevue, WA",0,,,,0.15726701,0.16298868,0.1557104,,
+"engkids",6,2,"limEng","With Limited English Proficiency",44140,,"Springfield, MA",0,,,,0.13676859,0.15250157,0.11950517,,
+"engkids",6,2,"limEng","With Limited English Proficiency",44700,,"Stockton, CA",0,,,,0.19157477,0.19894162,0.19240262,,
+"engkids",6,2,"limEng","With Limited English Proficiency",45060,,"Syracuse, NY",0,,,,0.07351842,0.14066598,0.19483015,,
+"engkids",6,2,"limEng","With Limited English Proficiency",45300,,"Tampa-St. Petersburg-Clearwater, FL",0,,,,0.12511081,0.12949868,0.13291473,,
+"engkids",6,2,"limEng","With Limited English Proficiency",45780,,"Toledo, OH",0,,,,0.21040532,0.11512071,0.10152426,,
+"engkids",6,2,"limEng","With Limited English Proficiency",46060,,"Tucson, AZ",0,,,,0.17295574,0.14413928,0.13917868,,
+"engkids",6,2,"limEng","With Limited English Proficiency",46140,,"Tulsa, OK",0,,,,0.13744742,0.15867062,0.20279405,,
+"engkids",6,2,"limEng","With Limited English Proficiency",47260,,"Virginia Beach-Norfolk-Newport News, VA-NC",0,,,,0.08252061,0.07389475,0.06664512,,
+"engkids",6,2,"limEng","With Limited English Proficiency",47900,,"Washington-Arlington-Alexandria, DC-VA-MD-WV",0,,,,0.13152861,0.13455884,0.11095731,,
+"engkids",6,2,"limEng","With Limited English Proficiency",48620,,"Wichita, KS",0,,,,0.12913738,0.12434998,0.13806791,,
+"engkids",6,2,"limEng","With Limited English Proficiency",49340,,"Worcester, MA",0,,,,0.20933888,0.14860796,0.11393962,,
+"engkids",6,2,"limEng","With Limited English Proficiency",49660,,"Youngstown-Warren-Boardman, OH-PA",0,,,,,,,,
 "engpar",7,1,"eppars","English Proficient Parents",1,"AL","Alabama",1,0.43505558,0.41318503,0.40174612,0.35114521,0.34437245,0.35133693,0.37708426,0.41762581
 "engpar",7,1,"eppars","English Proficient Parents",2,"AK","Alaska",1,0.5907557,0.60482967,0.64413047,0.5694955,0.44871795,0.48649848,0.6226716,0.67267489
 "engpar",7,1,"eppars","English Proficient Parents",4,"AZ","Arizona",1,0.281811,0.28188813,0.29694924,0.32777131,0.33361071,0.34653351,0.3620688,0.35716298
