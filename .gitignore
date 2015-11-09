@@ -8,3 +8,5 @@ plans/
 *.ai
 data/original
 *.DS_Store
+scripts/stateshp
+scripts/cbsashp
