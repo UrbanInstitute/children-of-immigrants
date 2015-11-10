@@ -16,7 +16,8 @@ var catname = {
 
 //text for levels of categories - don't bother with the csvs! make all edits here
 var levels = {
-    main: ["Share, age 0 to 18", "Share, Age 0 to 3", "Share, Age 4 to 5", "Share, Age 6 to 12", "Share, Age 13 to 15", "Total number", "Percent of national total"],
+    main: ["Share of all children who are COI", "Total number", "Percent of national total"],
+    age: ["Age 0 to 3", "Age 4 to 5", "Age 6 to 12", "Age 13 to 17"],
     origin: ["Mexico", "Other Central America & Spanish Caribbean", "Europe, Canada & Australia", "East Asia & Pacific", "Africa", "The Middle East & South Asia", "South America", "Southeast Asia"],
     citizenship: ["Citizen with citizen parents", "Citizen with non-citizen parents", "Non-citizen"],
     edukids: ["Not in school, age 3 to 5", "Not in school, age 6 to 17"],
@@ -31,7 +32,8 @@ var levels = {
 
 //sumamary text for each category
 var cattext = {
-    main: "From 2006 to 2009, the number of children of immigrants in the United States steadily grew from 15.7 million to 16.8 million; from 2010 to 2011 the growth stagnated increasing at one third the rate of the previous three years.  The share, however, continued to grow steadily as the number of native born children actually fell during that time period. Age statistics is the share of children that are children of immigrants in a certain age group and not the share of children of immigrants who are in a certain age group.",
+    main: "From 2006 to 2009, the number of children of immigrants in the United States steadily grew from 15.7 million to 16.8 million; from 2010 to 2011 the growth stagnated increasing at one third the rate of the previous three years.  The share, however, continued to grow steadily as the number of native born children actually fell during that time period.",
+    age: "Share of children that are children of immigrants in a certain age group.",
     origin: "From a policy perspective country of origin is particularly important; it will influence the types of language accessibility programs necessary to serve students and their parents.  While the overall distribution of country of origin of parents of children of immigrants has not changed substantially, some consistent trends are developing, for instance there has been a steady decrease in children with parents from Europe or Canada and an increase in children with parents from the Middle East & South Asia.",
     citizenship: "Because citizenship often determines eligibility for many federal programs aimed at low income families, understanding the distribution of citizenship among children of immigrants is vital for making decisions about supplemental state programs for non-citizens.  While the share of children of immigrants in the US who are not citizens has steadily declined from 14% in 2006 to 11% in 2011, the share of citizen children with noncitizen parents has grown from 30% to 33%.  Non-citizen parents are less likely to participate in programs like SNAP or TANF even when their citizen children are eligible, implying that outreach may become an important factor in ensuring this group does not fall through the social safety net. <br><br><b>Related:</b> ASPE Barriers to Immigrant access.",
     edukids: "From 2006 to 2011 the percentage of children in each age group who are children of immigrants has increased, with the exception of the 0 to 3 years old age group, which did not change. Their participation rates in school have been increasing for both pre-school and kindergarten through high school.",
