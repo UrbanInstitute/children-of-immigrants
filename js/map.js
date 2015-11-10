@@ -2,12 +2,12 @@ var map_aspect_width = 1,
     map_aspect_height = 0.7;
 //map - option for state or metro view
 function cbsamap(div) {
-    
+
     outcomeSelect = d3.select("#statbtns .active").attr("value")
     catSelect = d3.select("#cat-select").property("value");
 
     data = data_main.filter(function (d) {
-        return d.cat == catSelect & d.level == outcomeSelect;
+        return d.cat == catSelect & d.level == outcomeSelect & d.fips != 0;
     })
 
     data.forEach(function (d) {

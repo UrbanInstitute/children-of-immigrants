@@ -46,13 +46,23 @@ function linechart(div, id) {
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    
+
     outcomeSelect = d3.select("#statbtns .active").attr("value")
     catSelect = d3.select("#cat-select").property("value");
 
     data = data_main.filter(function (d) {
-        return d.cat == catSelect & d.level == outcomeSelect & d.isstate == STATEMAP;
+        if (catSelect=="main" & outcomeSelect>1)  {
+            return d.cat == catSelect & d.level == outcomeSelect & d.isstate == STATEMAP & d.fips != 0;
+        } else {
+            return d.cat == catSelect & d.level == outcomeSelect & d.isstate == STATEMAP;
+        }
     })
+    
+    if (catSelect=="main" & outcomeSelect==2) {
+        FORMATTER = d3.format(".0s");
+    } else {
+        FORMATTER = d3.format("%");
+    }
 
     color.domain(d3.keys(data[0]).filter(function (key) {
         return key == "name";
@@ -66,7 +76,7 @@ function linechart(div, id) {
             values: datayears.map(function (y) {
                 return {
                     year: +y.slice(1),
-                    val: d[y]
+                    val: +d[y]
                 };
             })
         };
