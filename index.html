@@ -5,21 +5,54 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
     <title>Children of Immigrants Data Tool</title>
 
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/urban-text.css">
+<link rel="stylesheet" type="text/css" href="css/urban-header.css">
     <link rel="stylesheet" type="text/css" href="css/urban-selects.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 
 <body>
-    <div class="container">
+    
+    <!--    header-->
+    <div id="header-pinned" class="no-touch">
+        <div class="content">
+            <a target="_blank" href="http://www.urban.org" title="Home" rel="home" class="site-logo"></a>
+            <div class="title"><span class="feature-link"><a href="http://www.urban.org/features" class="title-linkback">Features</a> <span>: :</span> </span><a href="index.html" class="title-linkback">Children of Immigrants</a>
+            </div>
+            <div class="share-icons">
+                <div class="shareThisP">
+                    <span onclick="toggle_visibility('shareBox');">
+                            <div class="shareThisB"></div>
+                        </span>
+                    <div class="shareThisW" id="shareBox">
+
+                        <div class="addthis_toolbox addthis_default_style  " addthis:title="" addthis:url="">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://urbn.is/highered" target="_blank" class="addthis_button_facebook at300b" title="Facebook" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-facebook" style="background-color: rgb(48, 88, 145);"><span class="at_a11y">Share on facebook</span></span></a>
+
+                            <a href="http://twitter.com/intent/tweet?text=.%40urbaninstitute%20interactive%3A%20Financing%20public%20higher%20education%2C%20state%20by%20state%20http%3A%2F%2Furbn.is%2Fhighered%20%23highered" target="_blank" class="addthis_button_twitter at300b" title="Tweet" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-twitter" style="background-color: rgb(44, 168, 210);"><span class="at_a11y">Share on twitter</span></span></a>
+
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//urbn.is/highered&title=Financing%20Public%20Higher%20Education&summary=Reducing%20barriers%20to%20college%20requires%20better%20understanding%20of%20how%20opportunities%20differ%20by%20state.%20Urban’s%20new%20dashboard%20illustrates%20these%20differences.&source=Urban.org" target="_blank" class="addthis_button_linkedin at300b" target="_blank" title="LinkedIn" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-linkedin" style="background-color: rgb(68, 152, 200);"><span class="at_a11y">Share on linkedin</span></span></a>
+
+                            <a href="mailto:%20?Subject=New interactive from the Urban Institute &amp;Body=Hi! I thought you'd be interested in this new interactive from the Urban Institute: “Financing Public Higher Education” http://urbn.is/highered" target="_blank" class="addthis_button_email at300b" target="_blank" title="Email" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-email" style="background-color: rgb(115, 138, 141);"><span class="at_a11y">Share on email</span></span></a>
+                            <div class="atclear"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--main content-->
+    <div class="container maincontent">
         <div class="row">
             <div class="col-lg-12">
-                <h1>Children of Immigrants</h1>
                 <p>The share of immigrants living in the United States has grown substantially over the last 40 years, but both the share and the characteristics of immigrants vary widely by state and even within state across metro areas. As the share of immigrants has grown so has the share of children whose parents are immigrants. Understanding the current share and characteristics of children of immigrants as well as the trends at the state and metro area are vital for policies that affect children and family. For instance, in order to determine the types of language accessibility policies necessary for schools, it is important to know both the share of children of immigrants as well the proportion that have limited or no English proficiency. This page expands on the children of immigrants' data tool available here. All of the statistics used to generate the interactive maps on this page can be extracted from the children of immigrants' data tool. For more information please see the <a href='http://www.urban.org/publications/413113.html' target='_blank'>Children of Immigrants Brief</a>.</p>
 
                 <div class="styled-select">
@@ -300,6 +333,7 @@
     <script src="lib/modernizr.svg.min.js"></script>
     <script src="lib/bootstrap.min.js"></script>
     <script src="lib/urban-selects.js"></script>
+    <script src="lib/header.js"></script>
 
     <script src="js/text.js"></script>
     <script src="js/main.js"></script>
