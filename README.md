@@ -1,5 +1,5 @@
 # Children of Immigrants data tool
-Originally built in 2012. Updated 2015.
+Originally built in 2012. Version 2 built in 2015.
 
 ## Data
 * CBSAs: ftp://ftp2.census.gov/geo/tiger/TIGER2015/CBSA/
