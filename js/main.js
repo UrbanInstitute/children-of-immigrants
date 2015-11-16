@@ -76,6 +76,24 @@ d3.selection.prototype.moveToFront = function () {
     });
 };
 
+//toggle between tile map and state map - show tile on page load
+$(function () {
+    $("#statemap").hide();
+    $("#maptoggler").on("click", function () {
+        var temp = d3.select('input[name="maptype"]:checked').node().id;
+        if (temp == "geo") {
+            $("#statemap").hide();
+            $("#tilemap").show();
+        } else if (temp == "tile") {
+            $("#tilemap").hide();
+            $("#statemap").show();
+            statemap();
+        }
+    });
+});
+
+
+//select the metric to display using dynamic buttons
 var selecter = d3.select("#cat-select");
 
 function makebtns() {
@@ -138,11 +156,11 @@ selecter.on("change", function () {
 //changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks
 dispatch.on("change", function () {
     outcomeSelect = d3.select("#statbtns .active").attr("value")
-    
+
     var color = d3.scale.threshold()
         .domain(BREAKS)
         .range(COLORS);
-    
+
     catSelect = selecter.property("value");
     statelines();
     metrolines();
@@ -231,6 +249,8 @@ dispatch.on("hoverState", function (areaName) {
         .classed("hovered", true);
     d3.selectAll("[fid='" + areaName + "']".chartline)
         .moveToFront();
+    d3.selectAll("[fid='" + areaName + "']".statemap)
+        .moveToFront();
 });
 
 //declass "hovered"
@@ -270,7 +290,7 @@ function metrolines() {
 function drawgraphs() {
     //legend();
     metromap();
-    //statemap();
+    statemap();
     statelines();
     metrolines();
     gridmap();

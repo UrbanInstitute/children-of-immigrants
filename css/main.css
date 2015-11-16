@@ -1,4 +1,8 @@
 
+#maptoggler {
+    margin-top: 20px;
+}
+
 .stateborders {
     fill: none;
     stroke: #ccc;
