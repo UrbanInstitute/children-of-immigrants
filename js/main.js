@@ -247,9 +247,9 @@ dispatch.on("yearChange", function (year) {
 dispatch.on("hoverState", function (areaName) {
     d3.selectAll("[fid='" + areaName + "']")
         .classed("hovered", true);
-    d3.selectAll("[fid='" + areaName + "']".chartline)
+    d3.selectAll("[fid='" + areaName + "']")
         .moveToFront();
-    d3.selectAll("[fid='" + areaName + "']".statemap)
+    d3.selectAll(".st1")
         .moveToFront();
 });
 
