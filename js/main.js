@@ -76,18 +76,18 @@ d3.selection.prototype.moveToFront = function () {
     });
 };
 
-//toggle between tile map and state map - show tile on page load
+//toggle between tile map and state map - hide geographic map on page load
 $(function () {
     $("#statemap").hide();
-    $("#maptoggler").on("click", function () {
-        var temp = d3.select('input[name="maptype"]:checked').node().id;
-        if (temp == "geo") {
-            $("#statemap").hide();
-            $("#tilemap").show();
-        } else if (temp == "tile") {
+    $('input:radio[name="maptype"]').change(function () {
+        if ($(this).val() === 'geo') {
             $("#tilemap").hide();
             $("#statemap").show();
             statemap();
+        }
+        if ($(this).val() === 'tile') {
+            $("#statemap").hide();
+            $("#tilemap").show();
         }
     });
 });
