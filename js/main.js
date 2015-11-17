@@ -103,19 +103,6 @@ function makebtns() {
 
     $("#statbtns").empty();
 
-    /*    d3.select("#statbtns").selectAll("input")
-            .data(levels[catSelect])
-            .enter().append("btn")
-            .attr("class", "urban-button")
-            .attr("value", function (d, i) {
-                return i + 1;
-            })
-            .text(function (d) {
-                return d;
-            });
-        d3.select('btn[value="1"]')
-            .classed("selected", true);*/
-
     var labels = d3.select("#statbtns").selectAll("label")
         .data(levels[catSelect])
         .enter()
@@ -288,12 +275,12 @@ function metrolines() {
 }
 
 function drawgraphs() {
-    //legend();
+    gridmap();
     metromap();
     statemap();
     statelines();
     metrolines();
-    gridmap();
+    legend();
 }
 
 

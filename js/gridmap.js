@@ -51,8 +51,61 @@ function gridmap() {
         });
 }
 
-
+var $legend = $("#legend");
 function legend() {
+    var margin = {
+        top: 3,
+        right: 1,
+        bottom: 2,
+        left: 5
+    };
+
+    var width = $legend.width() - margin.left - margin.right,
+        height = 50 - margin.top - margin.bottom;
+    
+    $legend.empty();
+
+    var svg = d3.select("#legend").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var lp_w = 0,
+        ls_w = (width / COLORS.length),
+        ls_h = 15;
+
+    var legend = svg.selectAll("g.legend")
+        .data(COLORS)
+        .enter().append("g")
+        .attr("class", "legend");
+
+    legend.append("text")
+        .data(BREAKS)
+        .attr("x", function (d, i) {
+            return (i * ls_w) + lp_w + ls_w - 2;
+        })
+        .attr("y", 15)
+        .attr("text-anchor", "middle")
+        .text(function (d, i) {
+            return FORMATTER(d);
+        });
+
+    legend.append("rect")
+        .data(COLORS)
+        .attr("x", function (d, i) {
+            return (i * ls_w) + lp_w;
+        })
+        .attr("y", 20)
+        .attr("width", ls_w - 3)
+        .attr("height", ls_h)
+        .style("fill", function (d, i) {
+            return COLORS[i];
+        })
+}
+
+//vertical legend - not using right now
+/*function vlegend() {
 
     var margin = {
         top: 10,
@@ -101,4 +154,4 @@ function legend() {
         .style("fill", function (d, i) {
             return COLORS[i];
         })
-}
+}*/

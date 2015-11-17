@@ -1,6 +1,16 @@
 
+.holder {
+    margin-top: 30px;
+}
+
 #maptoggler {
-    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#legend {
+    min-width: 220px;
+    display: inline-block;
 }
 
 .stateborders {
@@ -37,7 +47,7 @@
 }
 
 #tilemap {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .tt {
