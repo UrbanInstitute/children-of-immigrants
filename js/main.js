@@ -156,7 +156,6 @@ dispatch.on("change", function (metric) {
     catSelect = selecter.property("value");
     statelines();
     metrolines();
-    gridmap();
 
     data = data_main.filter(function (d) {
         return d.cat == catSelect & d.level == outcomeSelect;
@@ -169,6 +168,23 @@ dispatch.on("change", function (metric) {
             VALUE[d.fips] = +d[yearSelect];
         }
     });
+    
+    //recolor grid map
+    d3.selectAll("rect")
+        .data(data, function (d) {
+            return d.fips;
+        })
+        .attr("fid", function (d) {
+            return "f" + d.fips;
+        })
+        .attr("fill", function (d) {
+            if (d[yearSelect] == "") {
+                return "#ececec";
+            } else {
+                return color(d[yearSelect]);
+            }
+        })
+    //recolor geo maps
     d3.selectAll("path.statemap")
         .attr("fill", function (d) {
             if (VALUE[d.id] == null) {

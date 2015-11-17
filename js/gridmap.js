@@ -10,8 +10,6 @@ function gridmap() {
     data = data_main.filter(function (d) {
         return d.cat == catSelect & d.level == outcomeSelect & d.isstate == 1 & d.fips != 0;
     })
-
-    console.log(data);
     
     var rect = d3.selectAll("rect")
         .data(data)
