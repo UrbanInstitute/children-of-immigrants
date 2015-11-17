@@ -76,8 +76,9 @@ d3.selection.prototype.moveToFront = function () {
     });
 };
 
-//toggle between tile map and state map - hide geographic map on page load
+//radio buttons functions
 $(function () {
+    //toggle between tile map and state map - hide geographic map on page load
     $("#statemap").hide();
     $('input:radio[name="maptype"]').change(function () {
         if ($(this).val() === 'geo') {
@@ -89,6 +90,11 @@ $(function () {
             $("#statemap").hide();
             $("#tilemap").show();
         }
+    });
+    //on changing outcome buttons, change the graphs
+    $('input:radio[name="outcome"]').change(function (metric) {
+        var metric = $(this).val();
+        dispatch.change(metric);
     });
 });
 
@@ -125,12 +131,6 @@ function makebtns() {
     d3.select('label[value="1"]')
         .classed("active", true);
 };
-d3.select("#statbtns").on("click", function () {
-    //outcomeSelect = d3.select("#statbtns .active").attr("value");
-    //console.log("hi");
-    //console.log($(this).find("label").value);
-    dispatch.change();
-});
 
 makebtns();
 outcomeSelect = d3.select("#statbtns .active").attr("value")
@@ -141,8 +141,8 @@ selecter.on("change", function () {
 });
 
 //changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks
-dispatch.on("change", function () {
-    outcomeSelect = d3.select("#statbtns .active").attr("value")
+dispatch.on("change", function (metric) {
+    outcomeSelect = metric;
 
     var color = d3.scale.threshold()
         .domain(BREAKS)
