@@ -11,6 +11,8 @@ function gridmap() {
         return d.cat == catSelect & d.level == outcomeSelect & d.isstate == 1 & d.fips != 0;
     })
 
+    console.log(data);
+    
     var rect = d3.selectAll("rect")
         .data(data)
         .enter().append("rect")

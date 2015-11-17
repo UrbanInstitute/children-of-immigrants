@@ -76,6 +76,14 @@ d3.selection.prototype.moveToFront = function () {
     });
 };
 
+//on changing outcome buttons, change the graphs
+function outcomechange() {
+    $('input:radio[name="outcome"]').change(function (metric) {
+        var metric = $(this).val();
+        dispatch.change(metric);
+    });
+}
+
 //radio buttons functions
 $(function () {
     //toggle between tile map and state map - hide geographic map on page load
@@ -91,13 +99,8 @@ $(function () {
             $("#tilemap").show();
         }
     });
-    //on changing outcome buttons, change the graphs
-    $('input:radio[name="outcome"]').change(function (metric) {
-        var metric = $(this).val();
-        dispatch.change(metric);
-    });
+    outcomechange();
 });
-
 
 //select the metric to display using dynamic buttons
 var selecter = d3.select("#cat-select");
@@ -130,6 +133,8 @@ function makebtns() {
         });
     d3.select('label[value="1"]')
         .classed("active", true);
+    //ensure that you can still change outcomes after changing categories
+    outcomechange();
 };
 
 makebtns();
@@ -137,7 +142,7 @@ outcomeSelect = d3.select("#statbtns .active").attr("value")
 
 selecter.on("change", function () {
     makebtns();
-    dispatch.change();
+    dispatch.change(1);
 });
 
 //changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks
