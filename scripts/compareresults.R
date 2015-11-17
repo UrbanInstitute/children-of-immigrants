@@ -27,6 +27,8 @@ summary(imm_num$coi_diff)
 summary(imm_pct$all_diff)
 summary(imm_pct$coi_diff)
 
+write.csv(imm_num, "data/original/totaldifferences.csv", na="", row.names=F)
+
 diff <- imm_num %>% filter(all_diff!=0)
 diffmetros <- as.data.frame(table(diff$metro08))
 colnames(diffmetros) = c("metro08", "nonmatch")

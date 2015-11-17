@@ -11,6 +11,7 @@
 #legend {
     min-width: 220px;
     display: inline-block;
+    float: right;
 }
 
 .stateborders {
@@ -83,7 +84,6 @@
     position: relative !important;
     top: 12px;
     height: auto;
-    background-color: #e2e2e2;
     font-size: 12px;
     border-radius: 5px;
     text-align: center;
@@ -93,10 +93,11 @@
 
 #layers a {
     display: inline-block;
-    margin: 5px 1px 1px 1px;
+    margin: 2px 1px 1px 1px;
     padding: 6px;
     height: 28px;
-    width: 36px;
+    min-width: 36px;
+    width: 10.7%;
     text-align: center;
     background-color: #000000;
     border-radius: 5px;
