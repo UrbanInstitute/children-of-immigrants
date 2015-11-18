@@ -51,27 +51,15 @@
     margin-top: 10px;
 }
 
-.tt {
-    margin-bottom: 1em;
+.map-tooltip {
+    padding: 4px;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.8);
     color: #333;
+    border: 1px solid #aaa;
+    pointer-events: none;
 }
 
-.tt-value, #tt-num {
-    /*display: inline-block;*/
-    font-size: 14px;
-}
-
-.tt-name,
-.tt-title {
-    font-size: 18px;
-    display: inline-block;
-}
-
-#tt-year {
-    display: inline-block;
-    font-size: 14px;
-    padding-left: 20px;
-}
 /*animation buttons*/
 
 .layer-holder {

@@ -32,8 +32,10 @@ metrics<-read.csv("data/metrics_edited.csv", stringsAsFactors = F)
 metrics <- metrics %>% select(statcode,cat,catnum,level)
 dt <- left_join(dt,metrics,by="statcode")
 dt <- dt %>% select(c(cat,catnum,level,statcode,statlabel,fips,abbrev,name),everything()) %>% 
-  select(-c(category,statid,statistics_label,statlabel))
-dt <- dt %>% arrange(catnum,level)
+  select(-c(category,statid,statistics_label,statlabel)) %>% 
+  arrange(catnum,level) %>% 
+  #Island in RI wasn't capitalized
+  mutate(name=replace(name, fips==44, "Rhode Island"))
 
 write.csv(dt, "data/areadata.csv", na="", row.names=F)
 

@@ -2,7 +2,7 @@ var MOBILE_THRESHOLD = 600;
 
 var main_data_url = "data/areadata.csv";
 var long_data_url = "data/areadata_long.csv";
-var map_data_url = "data/metros.txt";
+var map_data_url = "data/metros.json";
 var data, data_main;
 var FORMATTER,
     STATEMAP,
@@ -36,7 +36,7 @@ var color = d3.scale.threshold()
     .domain(BREAKS)
     .range(COLORS);
 
-var dispatch = d3.dispatch("load", "change", "yearChange", "hoverState", "dehoverState", "clickState");
+var dispatch = d3.dispatch("load", "change", "yearChange", "hoverState", "hoverMap", "dehoverState", "clickState");
 var menuId;
 
 function formatNApct(d) {
@@ -243,7 +243,6 @@ dispatch.on("yearChange", function (year) {
     recolor();
 });
 
-//on hover, class those states "hovered"
 dispatch.on("hoverState", function (areaName) {
     d3.selectAll("[fid='" + areaName + "']")
         .classed("hovered", true);
@@ -251,13 +250,29 @@ dispatch.on("hoverState", function (areaName) {
         .moveToFront();
     d3.selectAll(".st1")
         .moveToFront();
+
+    //tooltips
+    // Clean up lost tooltips
+    d3.select('body').selectAll('div.tooltip').remove();
+    // Append tooltip
+    tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
+    var absoluteMousePos = d3.mouse(bodyNode);
+    tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
+        .style('top', (absoluteMousePos[1] - 50) + 'px')
+        .style('position', 'absolute')
+        .style('z-index', 1001);
+    // Add text using the accessor function
+    var tooltipText = areaName;
 });
+
+
 
 //declass "hovered"
 dispatch.on("dehoverState", function (areaName) {
     d3.selectAll("[fid='" + areaName).classed("hovered", false);
     //d3.selectAll("[id='" + menuId + "']")
     //    .moveToFront();
+    tooltipDiv.remove();
 });
 
 

@@ -51,14 +51,14 @@ function linechart(div, id) {
     catSelect = d3.select("#cat-select").property("value");
 
     data = data_main.filter(function (d) {
-        if (catSelect=="main" & outcomeSelect>1)  {
+        if (catSelect == "main" & outcomeSelect > 1) {
             return d.cat == catSelect & d.level == outcomeSelect & d.isstate == STATEMAP & d.fips != 0;
         } else {
             return d.cat == catSelect & d.level == outcomeSelect & d.isstate == STATEMAP;
         }
     })
-    
-    if (catSelect=="main" & outcomeSelect==2) {
+
+    if (catSelect == "main" & outcomeSelect == 2) {
         FORMATTER = d3.format(".0s");
     } else {
         FORMATTER = d3.format("%");
@@ -73,6 +73,7 @@ function linechart(div, id) {
     var linegroups = data.map(function (d) {
         return {
             fips: +d.fips,
+            name: d.name,
             values: datayears.map(function (y) {
                 return {
                     year: +y.slice(1),
@@ -153,6 +154,15 @@ function linechart(div, id) {
             } else {
                 dispatch.hoverState(d3.select(this).attr("fid"));
             }
+        })
+        .on('mousemove', function (d, i) {
+            // Move tooltip
+            var absoluteMousePos = d3.mouse(bodyNode);
+
+            tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
+                .style('top', (absoluteMousePos[1] - 50) + 'px');
+            var tooltipText = d.name;
+            tooltipDiv.html(tooltipText);
         })
         .on("mouseout", function (d) {
             dispatch.dehoverState(d3.select(this).attr("fid"));

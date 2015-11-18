@@ -6,7 +6,7 @@ function gridmap() {
     data = data_main.filter(function (d) {
         return d.cat == catSelect & d.level == outcomeSelect & d.isstate == 1 & d.fips != 0;
     })
-    
+
     var rect = d3.selectAll("rect")
         .data(data)
         .enter().append("rect")
@@ -42,12 +42,22 @@ function gridmap() {
                 dispatch.hoverState(d3.select(this).attr("fid"));
             }
         })
+        .on('mousemove', function (d, i) {
+            // Move tooltip
+            var absoluteMousePos = d3.mouse(bodyNode);
+
+            tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
+                .style('top', (absoluteMousePos[1] - 50) + 'px');
+            var tooltipText = d.name + "<br>" + formatNApct(d[yearSelect]);
+            tooltipDiv.html(tooltipText);
+        })
         .on("mouseout", function (d) {
             dispatch.dehoverState(d3.select(this).attr("fid"));
         });
 }
 
 var $legend = $("#legend");
+
 function legend() {
     var margin = {
         top: 3,
@@ -58,7 +68,7 @@ function legend() {
 
     var width = $legend.width() - margin.left - margin.right,
         height = 50 - margin.top - margin.bottom;
-    
+
     $legend.empty();
 
     var svg = d3.select("#legend").append("svg")

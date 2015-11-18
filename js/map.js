@@ -1,3 +1,6 @@
+var tooltipDiv;
+        var bodyNode = d3.select('body').node();
+
 var map_aspect_width = 1,
     map_aspect_height = 0.7;
 //map - option for state or metro view
@@ -117,6 +120,15 @@ function cbsamap(div) {
                 } else {
                     dispatch.hoverState(d3.select(this).attr("fid"));
                 }
+            })
+            .on('mousemove', function (d, i) {
+                // Move tooltip
+                var absoluteMousePos = d3.mouse(bodyNode);
+
+                tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
+                    .style('top', (absoluteMousePos[1] - 50) + 'px');
+                var tooltipText = d.properties.name + "<br>" + formatNApct(VALUE[d.id]);
+                tooltipDiv.html(tooltipText);
             })
             .on("mouseout", function (d) {
                 dispatch.dehoverState(d3.select(this).attr("fid"));
