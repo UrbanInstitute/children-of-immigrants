@@ -1,5 +1,5 @@
 var tooltipDiv;
-        var bodyNode = d3.select('body').node();
+var bodyNode = d3.select('body').node();
 
 var map_aspect_width = 1,
     map_aspect_height = 0.7;
@@ -50,7 +50,7 @@ function cbsamap(div) {
     if (STATEMAP == 0) {
 
         svg.selectAll("path")
-            .data(topojson.feature(us, us.objects.tl_2015_us_cbsa).features)
+            .data(topojson.feature(us, us.objects.coicbsa).features)
             .enter().append("path")
             .attr("d", path)
             .attr("fid", function (d) {
@@ -74,11 +74,20 @@ function cbsamap(div) {
                     //tooltip(this.id);
                     this.parentNode.appendChild(this);
                 } else {
-                    dispatch.hoverState(this.fid);
+                    dispatch.hoverState(d3.select(this).attr("fid"));
                 }
             })
+            .on('mousemove', function (d, i) {
+                // Move tooltip
+                var absoluteMousePos = d3.mouse(bodyNode);
+
+                tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
+                    .style('top', (absoluteMousePos[1] - 50) + 'px');
+                var tooltipText = d.properties.name + "<br>" + formatNApct(VALUE[d.id]);
+                tooltipDiv.html(tooltipText);
+            })
             .on("mouseout", function (d) {
-                dispatch.dehoverState(this.fid);
+                dispatch.dehoverState(d3.select(this).attr("fid"));
             });
 
         svg.append("g")
