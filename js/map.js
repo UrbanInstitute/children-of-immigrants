@@ -19,10 +19,6 @@ function cbsamap(div) {
         }
     });
 
-    var color = d3.scale.threshold()
-        .domain(BREAKS)
-        .range(COLORS);
-
     var margin = {
         top: 10,
         right: 5,

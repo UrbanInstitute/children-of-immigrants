@@ -31,6 +31,11 @@ var COLORS = palette.blue5;
 var BREAKS = [0.2, 0.4, 0.6, 0.8];
 var us;
 
+//universal color ramp for maps
+var color = d3.scale.threshold()
+    .domain(BREAKS)
+    .range(COLORS);
+
 var dispatch = d3.dispatch("load", "change", "yearChange", "hoverState", "dehoverState", "clickState");
 var menuId;
 
@@ -75,14 +80,6 @@ d3.selection.prototype.moveToFront = function () {
         this.parentNode.parentNode.appendChild(this.parentNode);
     });
 };
-
-//on changing outcome buttons, change the graphs
-function outcomechange() {
-    $('input:radio[name="outcome"]').change(function (metric) {
-        var metric = $(this).val();
-        dispatch.change(metric);
-    });
-}
 
 //radio buttons functions
 $(function () {
@@ -145,37 +142,23 @@ selecter.on("change", function () {
     dispatch.change(1);
 });
 
-//changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks
-dispatch.on("change", function (metric) {
-    outcomeSelect = metric;
-
-    var color = d3.scale.threshold()
-        .domain(BREAKS)
-        .range(COLORS);
-
-    catSelect = selecter.property("value");
-    statelines();
-    metrolines();
-
-    data = data_main.filter(function (d) {
-        return d.cat == catSelect & d.level == outcomeSelect;
-    })
-    data.forEach(function (d) {
-        d.fips = +d.fips;
-        if (d[yearSelect] == "") {
-            VALUE[d.fips] = null;
-        } else {
-            VALUE[d.fips] = +d[yearSelect];
-        }
+//on changing outcome buttons, change the graphs
+function outcomechange() {
+    $('input:radio[name="outcome"]').change(function (metric) {
+        var metric = $(this).val();
+        dispatch.change(metric);
     });
-    
+}
+
+//recolor the maps after changing the outcome or year displayed
+function recolor() {
     //recolor grid map
     d3.selectAll("rect")
         .data(data, function (d) {
             return d.fips;
         })
-        .attr("fid", function (d) {
-            return "f" + d.fips;
+        .attr("d", function (d) {
+            return d[yearSelect];
         })
         .attr("fill", function (d) {
             if (d[yearSelect] == "") {
@@ -183,7 +166,7 @@ dispatch.on("change", function (metric) {
             } else {
                 return color(d[yearSelect]);
             }
-        })
+        });
     //recolor geo maps
     d3.selectAll("path.statemap")
         .attr("fill", function (d) {
@@ -201,16 +184,52 @@ dispatch.on("change", function (metric) {
                 return color(VALUE[d.id]);
             }
         });
+}
+
+//changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks
+dispatch.on("change", function (metric) {
+
+    function updateData() {
+        data = data_main.filter(function (d) {
+            return d.cat == catSelect & d.level == outcomeSelect;
+        })
+        data.forEach(function (d) {
+            d.fips = +d.fips;
+            if (d[yearSelect] == "") {
+                VALUE[d.fips] = null;
+            } else {
+                VALUE[d.fips] = +d[yearSelect];
+            }
+        });
+    };
+
+    function updateGraphs() {
+        recolor();
+        statelines();
+        metrolines();
+    }
+
+    //need promise w/ gridmap to get around asynchronous data loading
+    var promise = new Promise(function (resolve, reject) {
+        outcomeSelect = metric;
+        catSelect = selecter.property("value");
+
+        var resp = updateData();
+        resolve(resp)
+        console.log("hi");
+    })
+    promise.then(function (result) {
+        return updateGraphs(result);
+    })
+
 });
+
 
 //by changing the year, update the viz - good example to check functionality is "Household owns home"
 //note - this is getting a "data is undefined error bc yearChange is called in highlightLayer which is called when the animator loads on page load. doesn't cause issues but deal with this later
 dispatch.on("yearChange", function (year) {
-    yearSelect = year;
 
-    var color = d3.scale.threshold()
-        .domain(BREAKS)
-        .range(COLORS);
+    yearSelect = year;
 
     data.forEach(function (d) {
         d.fips = +d.fips;
@@ -221,34 +240,7 @@ dispatch.on("yearChange", function (year) {
         }
     });
 
-    d3.selectAll("rect")
-        .attr("d", function (d) {
-            return d[yearSelect];
-        })
-        .attr("fill", function (d) {
-            if (d[yearSelect] == "") {
-                return "#ececec";
-            } else {
-                return color(d[yearSelect]);
-            }
-        });
-
-    d3.selectAll("path.statemap")
-        .attr("fill", function (d) {
-            if (VALUE[d.id] == null) {
-                return "#ececec";
-            } else {
-                return color(VALUE[d.id]);
-            }
-        });
-    d3.selectAll("path.metros")
-        .attr("fill", function (d) {
-            if (VALUE[d.id] == null) {
-                return "#fff";
-            } else {
-                return color(VALUE[d.id]);
-            }
-        });
+    recolor();
 });
 
 //on hover, class those states "hovered"

@@ -3,10 +3,6 @@ function gridmap() {
     outcomeSelect = d3.select("#statbtns .active").attr("value")
     catSelect = d3.select("#cat-select").property("value");
 
-    var color = d3.scale.threshold()
-        .domain(BREAKS)
-        .range(COLORS);
-
     data = data_main.filter(function (d) {
         return d.cat == catSelect & d.level == outcomeSelect & d.isstate == 1 & d.fips != 0;
     })
