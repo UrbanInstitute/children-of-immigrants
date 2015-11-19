@@ -39,21 +39,6 @@ dt <- dt %>% select(c(cat,catnum,level,statcode,statlabel,fips,abbrev,name),ever
 
 write.csv(dt, "data/areadata.csv", na="", row.names=F)
 
-#Make dataset of the included CBSAs to filter shapefile
-cbsas <- summaryBy(fips ~ name, data=mt) %>% 
-  rename(CBSAFP=fips.mean) %>% 
-  select(-name) %>% 
-  mutate(top100 = 1)
-
-#merge top 100 onto shapefile, subset and export new filtered shp
-library(rgdal)
-
-fullshp <- readOGR("scripts/cbsashp","tl_2015_us_cbsa")
-coishp<- merge(fullshp,temp,by="CBSAFP", all.x=T)
-coishp <- coishp %>% mutate(top100=replace(top100, is.na(top100), 0))
-coishp@data[is.na(coishp@data)] <- 0
-coiinc <- coishp[coishp$top100=="1",]
-writeOGR(coiinc, dsn="scripts/cbsashp", layer="coicbsa", driver="ESRI Shapefile")
 
 #Make data long
 # formatLong <- function(dt) {

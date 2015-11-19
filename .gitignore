@@ -10,3 +10,5 @@ data/original
 *.DS_Store
 scripts/stateshp
 scripts/cbsashp
+scripts/coishp
+*.zip
