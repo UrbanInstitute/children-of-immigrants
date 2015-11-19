@@ -1,5 +1,6 @@
 #Hannah Recht, 11-18-15
 #Subset CBSA shapefile for Children of Immigrants included areas
+#Create topojson of state + included CBSA boundaries for d3 map
 
 library(dplyr)
 library(rgdal)
