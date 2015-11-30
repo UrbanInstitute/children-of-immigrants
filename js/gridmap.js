@@ -8,12 +8,8 @@ function gridmap() {
     })
 
     var rect = d3.selectAll("rect")
-        .data(data)
-        .enter().append("rect")
-
-    var rects = d3.selectAll("rect")
         .data(data, function (d) {
-            return d.fips;
+            return (d ? d.fips : d3.select(this).attr("fips"));
         })
         .attr("fid", function (d) {
             return "f" + d.fips;
