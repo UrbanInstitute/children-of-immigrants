@@ -216,14 +216,12 @@ dispatch.on("change", function (metric) {
 
         var resp = updateData();
         resolve(resp)
-        console.log("hi");
     })
     promise.then(function (result) {
         return updateGraphs(result);
     })
 
 });
-
 
 //by changing the year, update the viz - good example to check functionality is "Household owns home"
 //note - this is getting a "data is undefined error bc yearChange is called in highlightLayer which is called when the animator loads on page load. doesn't cause issues but deal with this later

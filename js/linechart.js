@@ -50,6 +50,18 @@ function linechart(div, id) {
     outcomeSelect = d3.select("#statbtns .active").attr("value")
     catSelect = d3.select("#cat-select").property("value");
 
+    if (catSelect == "main" & outcomeSelect == 2) {
+        var max = 5000000;
+        FORMATTER = d3.format(".0s");
+    } else {
+        var max = catmax[catSelect];
+        FORMATTER = d3.format("%");
+    }
+
+    var y = d3.scale.linear()
+        .domain([0, max])
+        .range([height, 0]);
+
     data = data_main.filter(function (d) {
         if (catSelect == "main" & outcomeSelect > 1) {
             return d.cat == catSelect & d.level == outcomeSelect & d.isstate == STATEMAP & d.fips != 0;
@@ -57,12 +69,6 @@ function linechart(div, id) {
             return d.cat == catSelect & d.level == outcomeSelect & d.isstate == STATEMAP;
         }
     })
-
-    if (catSelect == "main" & outcomeSelect == 2) {
-        FORMATTER = d3.format(".0s");
-    } else {
-        FORMATTER = d3.format("%");
-    }
 
     color.domain(d3.keys(data[0]).filter(function (key) {
         return key == "name";
@@ -88,14 +94,12 @@ function linechart(div, id) {
         .attr("class", "x axis-show")
         .call(xAxis);
 
-    var y = d3.scale.linear()
-        .range([height, 0]);
 
-    y.domain([0, d3.max(linegroups, function (c) {
-        return d3.max(c.values, function (v) {
-            return v.val;
-        });
-    })]);
+    //y.domain([0, d3.max(linegroups, function (c) {
+    //    return d3.max(c.values, function (v) {
+    //        return v.val;
+    //    });
+    //})]);
 
     var yAxis = d3.svg.axis()
         .scale(y)

@@ -50,6 +50,42 @@ function gridmap() {
         .on("mouseout", function (d) {
             dispatch.dehoverState(d3.select(this).attr("fid"));
         });
+    
+    var labels = d3.selectAll(".st1")
+            .data(data, function (d) {
+            return (d ? d.fips : d3.select(this).attr("fips"));
+        })
+        .attr("fid", function (d) {
+            return "f" + d.fips;
+        })
+            .on("click", function (d) {
+            dispatch.clickState(d3.select(this).attr("fid"));
+        })
+        .on("mouseover", function (d) {
+            if (isIE != false) {
+                d3.selectAll(".hovered")
+                    .classed("hovered", false);
+                d3.selectAll("[fid='" + d3.select(this).attr("fid"))
+                    .classed("hovered", true)
+                    .moveToFront();
+                //tooltip(this.id);
+                this.parentNode.appendChild(this);
+            } else {
+                dispatch.hoverState(d3.select(this).attr("fid"));
+            }
+        })
+        .on('mousemove', function (d, i) {
+            // Move tooltip
+            var absoluteMousePos = d3.mouse(bodyNode);
+
+            tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
+                .style('top', (absoluteMousePos[1] - 50) + 'px');
+            var tooltipText = d.name + "<br>" + formatNApct(d[yearSelect]);
+            tooltipDiv.html(tooltipText);
+        })
+        .on("mouseout", function (d) {
+            dispatch.dehoverState(d3.select(this).attr("fid"));
+        });
 }
 
 var $legend = $("#legend");
