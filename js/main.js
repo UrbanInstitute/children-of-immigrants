@@ -21,14 +21,16 @@ var FORMATTER,
 
 var palette = {
     blue5: ["#b0d5f1", "#82c4e9", "#1696d2", "#00578b", "#00152A"],
+    blue8: ["#CFE8F3","#A2D4EC","#73BFE2","#46ABDB","#1696D2","#12719E","#0A4C6A","#062635"],
     yellow5: ["#fff2cf", "#fdd870", "#fdbf11", "#e88e2d", "#ca5800"],
     yellowblue: ["#ca5800", "#fcb918", "#ffedcd", "#d7e8f6", "#1696d2", "#00578b"],
     gray5: ["#ECECEC", "#DCDBDB", "#ccc", "#777", "#000"]
 };
 
 var FORMATTER = d3.format("%");
-var COLORS = palette.blue5;
-var BREAKS = [0.2, 0.4, 0.6, 0.8];
+var COLORS = palette.blue8;
+//var BREAKS = [0.2, 0.4, 0.6, 0.8];
+var BREAKS = [0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875];
 var us;
 
 //universal color ramp for maps
