@@ -20,7 +20,6 @@ maxs <- maxs %>% select(cat,max) %>%
 #Save as a js variable to use in d3 line charts
 items <- paste(maxs[,1], ":", maxs[,2], ",", sep="")
 js <- "var catmax = {"
-
 for (i in 1:length(items)) {
   js <- paste(js, items[i], sep="")
 }
