@@ -10,7 +10,7 @@ library(doBy)
 
 states<-read.csv("../higher-ed/data/states.csv",stringsAsFactors = F)
 st<-read.csv("data/original/InteractiveMap_State2013_11_09_2015.csv",stringsAsFactors = F)
-mt<-read.csv("data/original/metrodata.csv",stringsAsFactors = F)
+mt<-read.csv("data/InteractiveMap_Metro2013.csv",stringsAsFactors = F)
 
 states <- states %>% select(statefip,abbrev) %>% rename (fips=statefip)
 st <- st %>% rename(name=StateName,abbrev=StateCode,category=GROUPCODE,statcode=STATCODE,statlabel=STAT,isstate=ISSTATE)
@@ -24,15 +24,20 @@ metrics <- summaryBy(isstate ~ category + statcode + statistics_label + statlabe
   arrange(statid)
 write.csv(metrics, "data/metrics.csv", na="", row.names=F)
 
-mt <- mt %>% rename(name=MetroName,fips=MetroCode,category=GROUPCODE,statcode=STATCODE,statlabel=STAT,isstate=ISSTATE)
+#12-21-15: use existing dataset, just update metro
+dt <- read.csv("data/areadata.csv",stringsAsFactors = F)
+st <- dt %>% filter(isstate==1) %>% select(-cat,-catnum,-level)
+mt[mt == -97] <- NA
+mt <- mt %>% rename(name=MetroName,fips=MetroCode,category=GROUPCODE,statcode=STATCODE,statlabel=STAT,isstate=ISSTATE) %>% 
+  select(-category,-statlabel)
 dt <- bind_rows(st,mt)
 
 #join new metric ids to wide data
 metrics<-read.csv("data/metrics_edited.csv", stringsAsFactors = F)
 metrics <- metrics %>% select(statcode,cat,catnum,level)
 dt <- left_join(dt,metrics,by="statcode")
-dt <- dt %>% select(c(cat,catnum,level,statcode,statlabel,fips,abbrev,name),everything()) %>% 
-  select(-c(category,statid,statistics_label,statlabel)) %>% 
+dt <- dt %>% select(c(cat,catnum,level,statcode,fips,abbrev,name),everything()) %>% 
+  #select(-c(category,statid,statistics_label,statlabel)) %>% 
   arrange(catnum,level) %>% 
   #Island in RI wasn't capitalized
   mutate(name=replace(name, fips==44, "Rhode Island"))

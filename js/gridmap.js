@@ -90,12 +90,13 @@ function gridmap() {
 
 var $legend = $("#legend");
 
+var LEGBREAKS = [0,0.25,0.5,0.75,1];
 function legend() {
     var margin = {
         top: 3,
-        right: 1,
+        right: 15,
         bottom: 2,
-        left: 5
+        left: 15
     };
 
     var width = $legend.width() - margin.left - margin.right,
@@ -119,9 +120,9 @@ function legend() {
         .attr("class", "legend");
 
     legend.append("text")
-        .data(BREAKS)
+        .data(LEGBREAKS)
         .attr("x", function (d, i) {
-            return (i * ls_w) + lp_w + ls_w - 2;
+            return ((2*i) * ls_w) + lp_w  - 2;
         })
         .attr("y", 15)
         .attr("text-anchor", "middle")
@@ -135,7 +136,7 @@ function legend() {
             return (i * ls_w) + lp_w;
         })
         .attr("y", 20)
-        .attr("width", ls_w - 3)
+        .attr("width", ls_w)
         .attr("height", ls_h)
         .style("fill", function (d, i) {
             return COLORS[i];
