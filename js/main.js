@@ -303,12 +303,12 @@ function metrolines() {
 }
 
 function drawgraphs() {
+    legend();
     gridmap();
     metromap();
     statemap();
     statelines();
     metrolines();
-    legend();
 }
 
 

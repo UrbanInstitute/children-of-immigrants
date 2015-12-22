@@ -98,6 +98,7 @@ function legend() {
         bottom: 2,
         left: 15
     };
+    
 
     var width = $legend.width() - margin.left - margin.right,
         height = 50 - margin.top - margin.bottom;

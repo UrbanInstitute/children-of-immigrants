@@ -14,7 +14,7 @@ function linechart(div, id) {
         top: 25,
         right: 15,
         bottom: 45,
-        left: 55
+        left: 40
     };
 
     if ($GRAPHDIV.width() <= MOBILE_THRESHOLD) {
