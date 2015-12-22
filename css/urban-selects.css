@@ -36,3 +36,13 @@
 *:focus {
     outline: 0;
 }
+
+@media (max-width: 400px) {
+    .styled-select select {
+        width: 280px;
+        font-size: 13px;
+    }
+    .styled-select {
+        width: 250px;
+    }
+}
