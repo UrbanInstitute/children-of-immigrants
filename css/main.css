@@ -6,6 +6,13 @@ body {
     margin-top: 30px;
 }
 
+#statbtns {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100% !important;
+    display: table;
+}
+
 #maptoggler {
     display: inline-block;
     vertical-align: top;
@@ -182,6 +189,13 @@ body {
     #legend {
         display: block;
         float: left;
+        width: 100%;
+    }
+    #statbtns {
+        display: block;
+    }
+    #statbtns .urban-button {
+        display: block !important;
         width: 100%;
     }
     #maptoggler {

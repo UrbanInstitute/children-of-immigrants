@@ -175,13 +175,6 @@ li {
     text-align: center;
 }
 
-#statbtns {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100% !important;
-    display: table !important;
-}
-
 .urban-button {
     font-size: 14px;
     font-family: Lato, sans-serif;
@@ -190,7 +183,7 @@ li {
     border: none;
     color: #ffffff;
     background-color: #000;
-    display: table-cell !important;
+    display: table-cell;
     line-height: 12px;
     /*text-transform: uppercase;*/
     text-align: center;
