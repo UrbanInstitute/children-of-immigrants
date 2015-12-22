@@ -8,51 +8,49 @@ library(dplyr)
 library(tidyr)
 library(doBy)
 
-states<-read.csv("../higher-ed/data/states.csv",stringsAsFactors = F)
-st<-read.csv("data/original/InteractiveMap_State2013_11_09_2015.csv",stringsAsFactors = F)
-mt<-read.csv("data/InteractiveMap_Metro2013.csv",stringsAsFactors = F)
+states <- read.csv("data/states.csv",stringsAsFactors = F)
+st <- read.csv("data/InteractiveMap_State2013_11_09_2015.csv",stringsAsFactors = F)
+mt <- read.csv("data/InteractiveMap_Metro2013.csv",stringsAsFactors = F)
 
-states <- states %>% select(statefip,abbrev) %>% rename (fips=statefip)
-st <- st %>% rename(name=StateName,abbrev=StateCode,category=GROUPCODE,statcode=STATCODE,statlabel=STAT,isstate=ISSTATE)
-#low sample size flag: -97
-st[st == -97] <- NA
-st <- left_join(states,st,by="abbrev")
+colnames(st) <- tolower(colnames(st))
+colnames(mt) <- tolower(colnames(mt))
 
-#dataset of the metrics used and their descriptions - will need to edit
+########################################################################################################
+# Make dataset of the metrics used and their descriptions - make new category/level variables for vis
+# Reimport after editing for merge
+########################################################################################################
+
+# Export metrics for editing - only need to do once
 metrics <- summaryBy(isstate ~ category + statcode + statistics_label + statlabel + statid, data=st) %>% 
   select(-isstate.mean) %>% 
   arrange(statid)
 write.csv(metrics, "data/metrics.csv", na="", row.names=F)
 
-#12-21-15: use existing dataset, just update metro
-dt <- read.csv("data/areadata.csv",stringsAsFactors = F)
-st <- dt %>% filter(isstate==1) %>% select(-cat,-catnum,-level)
-mt[mt == -97] <- NA
-mt <- mt %>% rename(name=MetroName,fips=MetroCode,category=GROUPCODE,statcode=STATCODE,statlabel=STAT,isstate=ISSTATE) %>% 
-  select(-category,-statlabel)
-dt <- bind_rows(st,mt)
-
 #join new metric ids to wide data
 metrics<-read.csv("data/metrics_edited.csv", stringsAsFactors = F)
 metrics <- metrics %>% select(statcode,cat,catnum,level)
+
+########################################################################################################
+# Format & join datasets 
+########################################################################################################
+
+states <- states %>% select(fips,abbrev)
+st <- st %>% rename(name=statename,abbrev=statecode) 
+st <- left_join(states,st,by="abbrev")
+st <- st %>% select(fips,name,isstate,abbrev, statcode,y2006,y2007,y2008,y2009,y2010,y2011,y2012,y2013)
+
+mt <- mt %>% rename(name=metroname,fips=metrocode) %>%
+  select(fips,name,isstate, statcode,y2009,y2010,y2011,y2012,y2013)
+
+dt <- bind_rows(st,mt)
+#low sample size flag: -97
+dt[dt == -97] <- NA
+
 dt <- left_join(dt,metrics,by="statcode")
 dt <- dt %>% select(c(cat,catnum,level,statcode,fips,abbrev,name),everything()) %>% 
-  #select(-c(category,statid,statistics_label,statlabel)) %>% 
   arrange(catnum,level) %>% 
   #Island in RI wasn't capitalized
-  mutate(name=replace(name, fips==44, "Rhode Island"))
+  mutate(name=replace(name, fips==44, "Rhode Island")) %>%
+  filter(is.na(fips) == FALSE)
 
 write.csv(dt, "data/areadata.csv", na="", row.names=F)
-
-
-#Make data long
-# formatLong <- function(dt) {
-#   long <- dt %>% gather(year,value,6:13)
-#   long$year <- as.character(long$year)
-#   long <- long %>% mutate(year=sapply(strsplit(long$year, split='y', fixed=TRUE),function(x) (x[2])))
-#   long$year <- as.numeric(long$year)
-#   long <- long 
-# }
-# st2 <- st %>% select(fips,name,isstate,category,statcode,y2006,y2007,y2008,y2009,y2010,y2011,y2012,y2013)
-# st_long <- formatLong(st2)
-# write.csv(st_long, "data/areadata_long.csv", na="", row.names=F)
