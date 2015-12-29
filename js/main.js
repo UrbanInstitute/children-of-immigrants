@@ -154,6 +154,7 @@ function outcomechange() {
 
 //recolor the maps after changing the outcome or year displayed
 function recolor() {
+    console.log(yearSelect);
     //recolor grid map
     d3.selectAll("rect")
         .data(data, function (d) {
@@ -230,6 +231,7 @@ dispatch.on("change", function (metric) {
 dispatch.on("yearChange", function (year) {
 
     yearSelect = year;
+    console.log(yearSelect);
 
     data.forEach(function (d) {
         d.fips = +d.fips;
