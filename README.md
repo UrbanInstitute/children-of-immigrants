@@ -1,6 +1,6 @@
-# Children of Immigrants data tool
+# Children of Immigrants data viz
 Originally built in 2012. Version 2 built in 2015.
-[About the data](http://datatool.urban.org/charts/datatool/pages.cfm)
+[Appendix](http://datatool.urban.org/charts/datatool/pages.cfm)
 
 ## Data updates & custom topojson
 * First, run [formatdata.R](scripts/formatdata.R) to format and combine separate metro & state datasets for visualization 
