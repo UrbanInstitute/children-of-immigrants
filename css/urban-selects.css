@@ -2,11 +2,15 @@
     pointer-events: none;
 }
 
+.styled-select option {
+    font-size: 16px;
+}
+
 .styled-select select {
     background: transparent;
-    width: 450px;
+    width: 630px;
     height: 45px;
-    font: 24px Lato;
+    font: 36px Lato;
     color: #333;
     line-height: 1;
     border: 0;
@@ -20,7 +24,7 @@
 }
 
 .styled-select {
-    width: 400px;
+    width: 580px;
     height: 45px;
     overflow: hidden;
     background: url(../img/urban-select-2x.png) no-repeat right;
