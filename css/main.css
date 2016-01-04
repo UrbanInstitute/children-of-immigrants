@@ -2,6 +2,30 @@ body {
     overflow-x: hidden;
 }
 
+.intro {
+    background-color: #efefef;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.introtext {
+    color: #333;
+}
+
+.intro-buttons {
+    margin-top: 1em;
+}
+
+.title {
+    font-weight: 100;
+    font-size: 3em;
+    max-width: 650px;
+}
+
+#tool {
+    margin-top: 1em;
+}
+
 .holder {
     margin-top: 30px;
 }
