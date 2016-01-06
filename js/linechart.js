@@ -160,13 +160,15 @@ function linechart(div, id) {
             }
         })
         .on('mousemove', function (d, i) {
-            // Move tooltip
-            var absoluteMousePos = d3.mouse(bodyNode);
+            if (isIE == false) {
+                // Move tooltip
+                var absoluteMousePos = d3.mouse(bodyNode);
 
-            tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
-                .style('top', (absoluteMousePos[1] - 50) + 'px');
-            var tooltipText = d.name;
-            tooltipDiv.html(tooltipText);
+                tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
+                    .style('top', (absoluteMousePos[1] - 50) + 'px');
+                var tooltipText = d.name;
+                tooltipDiv.html(tooltipText);
+            }
         })
         .on("mouseout", function (d) {
             dispatch.dehoverState(d3.select(this).attr("fid"));

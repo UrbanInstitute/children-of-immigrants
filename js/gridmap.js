@@ -51,7 +51,8 @@ function gridmap() {
             dispatch.dehoverState(d3.select(this).attr("fid"));
         });
     
-    var labels = d3.selectAll(".st1")
+    //need to put fips on labels in svg for this to work
+    /*var labels = d3.selectAll(".st1")
             .data(data, function (d) {
             return (d ? d.fips : d3.select(this).attr("fips"));
         })
@@ -85,7 +86,7 @@ function gridmap() {
         })
         .on("mouseout", function (d) {
             dispatch.dehoverState(d3.select(this).attr("fid"));
-        });
+        });*/
 }
 
 var $legend = $("#legend");
@@ -143,55 +144,3 @@ function legend() {
             return COLORS[i];
         })
 }
-
-//vertical legend - not using right now
-/*function vlegend() {
-
-    var margin = {
-        top: 10,
-        right: 15,
-        bottom: 5,
-        left: 15
-    };
-
-    var width = 80 - margin.left - margin.right,
-        height = 130 - margin.top - margin.bottom;
-
-    var svg = d3.select("#legend").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    var lp_h = 20,
-        ls_w = 30,
-        ls_h = 20;
-
-    var legend = svg.selectAll("g.legend")
-        .data(COLORS)
-        .enter().append("g")
-        .attr("class", "legend");
-
-    //homicide map uses buckets of 1 - label side of bucket. Others - label breakpoints
-    legend.append("text")
-        .data(BREAKS)
-        .attr("x", ls_w + 5)
-        .attr("y", function (d, i) {
-            return i * ls_h + lp_h + 3;
-        })
-        .text(function (d, i) {
-            return FORMATTER(d);
-        });
-
-    legend.append("rect")
-        .data(COLORS)
-        .attr("x", 0)
-        .attr("y", function (d, i) {
-            return i * ls_h;
-        })
-        .attr("width", ls_w)
-        .attr("height", lp_h)
-        .style("fill", function (d, i) {
-            return COLORS[i];
-        })
-}*/
