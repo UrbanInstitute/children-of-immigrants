@@ -157,12 +157,12 @@ function recolor() {
     console.log(yearSelect);
     //recolor grid map
     d3.selectAll("rect")
-        .data(data, function (d) {
-            return d.fips;
-        })
-        .attr("d", function (d) {
-            return d[yearSelect];
-        })
+//        .data(data, function (d) {
+//            return d.fips;
+//        })
+//        .attr("d", function (d) {
+//            return d[yearSelect];
+//        })
         .attr("fill", function (d) {
             if (d[yearSelect] == "") {
                 return "#ececec";
