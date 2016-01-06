@@ -62,7 +62,7 @@ function linechart(div, id) {
         .domain([0, max])
         .range([height, 0]);
 
-    data = data_main.filter(function (d) {
+    linedata = data_main.filter(function (d) {
         if (catSelect == "main" & outcomeSelect > 1) {
             return d.cat == catSelect & d.level == outcomeSelect & d.isstate == STATEMAP & d.fips != 0;
         } else {
@@ -76,7 +76,7 @@ function linechart(div, id) {
 
     //nest data by fips, then have one year-value pair for each year in datayears
     var datayears = ["y2006", "y2007", "y2008", "y2009", "y2010", "y2011", "y2012", "y2013"];
-    var linegroups = data.map(function (d) {
+    var linegroups = linedata.map(function (d) {
         return {
             fips: +d.fips,
             name: d.name,

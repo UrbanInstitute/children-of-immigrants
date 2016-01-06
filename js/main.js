@@ -17,7 +17,8 @@ var FORMATTER,
     outcomeSelect,
     stateSelect,
     catSelect,
-    yearSelect;
+    yearSelect,
+    linedata;
 
 var palette = {
     blue5: ["#b0d5f1", "#82c4e9", "#1696d2", "#00578b", "#00152A"],
@@ -84,7 +85,7 @@ d3.selection.prototype.moveToFront = function () {
 };
 
 //radio buttons functions
-$(function () {
+/*$(function () {
     //toggle between tile map and state map - hide geographic map on page load
     $("#statemap").hide();
     $('input:radio[name="maptype"]').change(function () {
@@ -99,7 +100,7 @@ $(function () {
         }
     });
     outcomechange();
-});
+});*/
 
 //select the metric to display using dynamic buttons
 var selecter = d3.select("#cat-select");
@@ -151,25 +152,25 @@ function outcomechange() {
         dispatch.change(metric);
     });
 }
+outcomechange();
 
 //recolor the maps after changing the outcome or year displayed
 function recolor() {
-    console.log(yearSelect);
     //recolor grid map
-    d3.selectAll("rect")
-//        .data(data, function (d) {
-//            return d.fips;
-//        })
-//        .attr("d", function (d) {
-//            return d[yearSelect];
-//        })
-        .attr("fill", function (d) {
-            if (d[yearSelect] == "") {
-                return "#ececec";
-            } else {
-                return color(d[yearSelect]);
-            }
-        });
+//    d3.selectAll("rect")
+////        .data(data, function (d) {
+////            return d.fips;
+////        })
+////        .attr("d", function (d) {
+////            return d[yearSelect];
+////        })
+//        .attr("fill", function (d) {
+//            if (d[yearSelect] == "") {
+//                return "#ececec";
+//            } else {
+//                return color(d[yearSelect]);
+//            }
+ //       });
     //recolor geo maps
     d3.selectAll("path.statemap")
         .attr("fill", function (d) {
@@ -177,6 +178,7 @@ function recolor() {
                 return "#ececec";
             } else {
                 return color(VALUE[d.id]);
+                console.log("hi");
             }
         });
     d3.selectAll("path.metros")
@@ -185,6 +187,7 @@ function recolor() {
                 return "#fff";
             } else {
                 return color(VALUE[d.id]);
+                console.log("hi");
             }
         });
 }
@@ -231,10 +234,9 @@ dispatch.on("change", function (metric) {
 dispatch.on("yearChange", function (year) {
 
     yearSelect = year;
-    console.log(yearSelect);
 
     data.forEach(function (d) {
-        d.fips = +d.fips;
+        //d.fips = +d.fips;
         if (d[yearSelect] == "") {
             VALUE[d.fips] = null;
         } else {

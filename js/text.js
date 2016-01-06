@@ -18,7 +18,7 @@ var catname = {
 var levels = {
     main: ["Share of all children with immigrant parents", "Total number", "Children of immigrants by residence"],
     age: ["Age 0 to 3", "Age 4 to 5", "Age 6 to 12", "Age 13 to 17"],
-    origin: ["Mexico", "Other Central America & Spanish Caribbean", "Europe, Canada, & Australia", "East Asia & Pacific", "Africa", "The Middle East & South Asia", "South America", "Southeast Asia"],
+    origin: ["Mexico", "Other Central America & Spanish Caribbean", "Europe, Canada, & Australia", "East Asia & Pacific", "Africa", "Middle East & South Asia", "South America", "Southeast Asia"],
     citizenship: ["Citizen with citizen parents", "Citizen with non-citizen parents", "Non-citizen"],
     edukids: ["Not in school, age 3 to 5", "Not in school, age 6 to 17"],
     edupar: ["No high school degree", "High school degree", "Bachelor's degree or more"],
