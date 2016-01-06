@@ -59,6 +59,18 @@ footer {
     float: right;
 }
 
+.svgholder {
+    width: 100%;
+    position: relative;
+}
+
+svg {
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+
 .stateborders {
     fill: none;
     stroke: #ccc;
