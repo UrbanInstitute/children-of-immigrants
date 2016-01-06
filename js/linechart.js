@@ -155,6 +155,8 @@ function linechart(div, id) {
                     .moveToFront();
                 //tooltip(this.id);
                 this.parentNode.appendChild(this);
+                d3.selectAll(".st1")
+                    .moveToFront();
             } else {
                 dispatch.hoverState(d3.select(this).attr("fid"));
             }

@@ -68,7 +68,7 @@ function cbsamap(div) {
                 if (isIE != false) {
                     d3.selectAll(".hovered")
                         .classed("hovered", false);
-                    d3.selectAll("[fid='" + this.fid)
+                    d3.selectAll("[fid='" + d3.select(this).attr("fid"))
                         .classed("hovered", true)
                         .moveToFront();
                     //tooltip(this.id);
