@@ -89,13 +89,13 @@ $(function () {
     $("#statemap").hide();
     $('input:radio[name="maptype"]').change(function () {
         if ($(this).val() === 'geo') {
-            $("#tilemap").hide();
+            $("#tileholder").hide();
             $("#statemap").show();
             statemap();
         }
         if ($(this).val() === 'tile') {
             $("#statemap").hide();
-            $("#tilemap").show();
+            $("#tileholder").show();
         }
     });
     outcomechange();
