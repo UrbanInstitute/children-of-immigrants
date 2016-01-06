@@ -39,18 +39,20 @@ function gridmap() {
             }
         })
         .on('mousemove', function (d, i) {
-            // Move tooltip
-            var absoluteMousePos = d3.mouse(bodyNode);
+            if (isIE == false) {
+                // Move tooltip
+                var absoluteMousePos = d3.mouse(bodyNode);
 
-            tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
-                .style('top', (absoluteMousePos[1] - 50) + 'px');
-            var tooltipText = d.name + "<br>" + formatNApct(d[yearSelect]);
-            tooltipDiv.html(tooltipText);
+                tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
+                    .style('top', (absoluteMousePos[1] - 50) + 'px');
+                var tooltipText = d.name + "<br>" + formatNApct(d[yearSelect]);
+                tooltipDiv.html(tooltipText);
+            }
         })
         .on("mouseout", function (d) {
             dispatch.dehoverState(d3.select(this).attr("fid"));
         });
-    
+
     //need to put fips on labels in svg for this to work
     /*var labels = d3.selectAll(".st1")
             .data(data, function (d) {
@@ -91,7 +93,8 @@ function gridmap() {
 
 var $legend = $("#legend");
 
-var LEGBREAKS = [0,0.25,0.5,0.75,1];
+var LEGBREAKS = [0, 0.25, 0.5, 0.75, 1];
+
 function legend() {
     var margin = {
         top: 3,
@@ -99,7 +102,7 @@ function legend() {
         bottom: 2,
         left: 15
     };
-    
+
 
     var width = $legend.width() - margin.left - margin.right,
         height = 50 - margin.top - margin.bottom;
@@ -124,7 +127,7 @@ function legend() {
     legend.append("text")
         .data(LEGBREAKS)
         .attr("x", function (d, i) {
-            return ((2*i) * ls_w) + lp_w  - 2;
+            return ((2 * i) * ls_w) + lp_w - 2;
         })
         .attr("y", 15)
         .attr("text-anchor", "middle")
