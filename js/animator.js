@@ -16,7 +16,7 @@ function animator() {
             nextInterval = clearInterval(nextInterval);
             play_button.innerHTML = play;
         } else {
-            highlightLayer(i++);
+            //highlightLayer(i++);
             nextInterval = animate();
             play_button.innerHTML = pause;
         }
@@ -48,7 +48,7 @@ function animator() {
         id: "y2013"
      }];
 
-
+    console.log(layers.length);
     layers.forEach(function (layer, n) {
 
         layer.button = control.appendChild(document.createElement('a'));
@@ -64,7 +64,7 @@ function animator() {
     });
 
     // i is the number of the currently-selected layer
-    var i = 3;
+    var i = 7;
 
     // show the first overlay as soon as the map loads
     highlightLayer(i++);
@@ -74,15 +74,23 @@ function animator() {
     function animate() {
         // and then time the next() function to run every 1 seconds
         return setInterval(function () {
+            if (++i > layers.length-1) {
+                i = 0;
+                //console.log("zerod");
+            }
             highlightLayer(i);
-            if (++i >= layers.length) i = 0;
+            //console.log(i);
         }, 1000 * 1);
-
     }
 
     function highlightLayer(i) {
         var active = control.getElementsByClassName('active');
         for (var j = 0; j < active.length; j++) active[j].className = '';
+        
+        if (layers[i] == undefined) {
+            console.log("yo");
+            layers[i] = layers[0];
+        }
         layers[i].button.className = 'active';
         dispatch.yearChange(layers[i].id);
     }

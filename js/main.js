@@ -22,7 +22,7 @@ var FORMATTER,
 
 var palette = {
     blue5: ["#b0d5f1", "#82c4e9", "#1696d2", "#00578b", "#00152A"],
-    blue8: ["#CFE8F3","#A2D4EC","#73BFE2","#46ABDB","#1696D2","#12719E","#0A4C6A","#062635"],
+    blue8: ["#CFE8F3", "#A2D4EC", "#73BFE2", "#46ABDB", "#1696D2", "#12719E", "#0A4C6A", "#062635"],
     yellow5: ["#fff2cf", "#fdd870", "#fdbf11", "#e88e2d", "#ca5800"],
     yellowblue: ["#ca5800", "#fcb918", "#ffedcd", "#d7e8f6", "#1696d2", "#00578b"],
     gray5: ["#ECECEC", "#DCDBDB", "#ccc", "#777", "#000"]
@@ -30,7 +30,6 @@ var palette = {
 
 var FORMATTER = d3.format("%");
 var COLORS = palette.blue8;
-//var BREAKS = [0.2, 0.4, 0.6, 0.8];
 var BREAKS = [0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875];
 var us;
 
@@ -83,24 +82,6 @@ d3.selection.prototype.moveToFront = function () {
         this.parentNode.parentNode.appendChild(this.parentNode);
     });
 };
-
-//radio buttons functions
-/*$(function () {
-    //toggle between tile map and state map - hide geographic map on page load
-    $("#statemap").hide();
-    $('input:radio[name="maptype"]').change(function () {
-        if ($(this).val() === 'geo') {
-            $("#tileholder").hide();
-            $("#statemap").show();
-            statemap();
-        }
-        if ($(this).val() === 'tile') {
-            $("#statemap").hide();
-            $("#tileholder").show();
-        }
-    });
-    outcomechange();
-});*/
 
 //select the metric to display using dynamic buttons
 var selecter = d3.select("#cat-select");
@@ -156,21 +137,6 @@ outcomechange();
 
 //recolor the maps after changing the outcome or year displayed
 function recolor() {
-    //recolor grid map
-//    d3.selectAll("rect")
-////        .data(data, function (d) {
-////            return d.fips;
-////        })
-////        .attr("d", function (d) {
-////            return d[yearSelect];
-////        })
-//        .attr("fill", function (d) {
-//            if (d[yearSelect] == "") {
-//                return "#ececec";
-//            } else {
-//                return color(d[yearSelect]);
-//            }
- //       });
     //recolor geo maps
     d3.selectAll("path.statemap")
         .attr("fill", function (d) {
@@ -308,7 +274,6 @@ function metrolines() {
 
 function drawgraphs() {
     legend();
-    gridmap();
     metromap();
     statemap();
     statelines();
