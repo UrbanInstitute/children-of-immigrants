@@ -37,10 +37,6 @@ footer {
     margin-top: 1em;
 }
 
-.holder {
-    margin-top: 30px;
-}
-
 #statbtns {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -48,17 +44,18 @@ footer {
     display: table;
 }
 
-#maptoggler {
+/*#maptoggler {
     display: inline-block;
     vertical-align: top;
-}
+}*/
 
 #legend {
-    min-width: 220px;
+    min-width: 200px;
     display: inline-block;
     float: right;
 }
 
+/*
 #tileholder {
     width: 100%;
     height: 0;
@@ -71,6 +68,7 @@ footer {
     top: 0;
     left: 0;
 }
+*/
 
 .stateborders {
     fill: none;
@@ -101,14 +99,14 @@ footer {
 
 /*svg grid map*/
 
-.st2 {
+/*.st2 {
     font-size: 10px;
     fill: #fff;
 }
 
 #tilemap {
     margin-top: 10px;
-}
+}*/
 
 .map-tooltip {
     padding: 4px;
@@ -123,7 +121,8 @@ footer {
 /*animation buttons*/
 
 .layer-holder {
-    width: 100%;
+    /*width: 100%;*/
+    display: inline-block;
 }
 
 #layers {
@@ -145,10 +144,10 @@ footer {
     padding: 6px;
     height: 28px;
     min-width: 36px;
-    width: 10.7%;
+    width: 5.5%;
     text-align: center;
     background-color: #000000;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     text-decoration: none;
     color: #ffffff;
 }
@@ -246,7 +245,7 @@ footer {
         display: block !important;
         width: 100%;
     }
-    #maptoggler {
+/*    #maptoggler {
         margin-top: 20px;
         margin-bottom: 20px;
         width: 100% !important;
@@ -254,5 +253,5 @@ footer {
     }
     .#maptoggler.btn {
         display: table-cell !important;
-    }
+    }*/
 }

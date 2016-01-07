@@ -16,7 +16,6 @@ function legend() {
         left: 15
     };
 
-
     var width = $legend.width() - margin.left - margin.right,
         height = 50 - margin.top - margin.bottom;
 
@@ -30,7 +29,7 @@ function legend() {
 
     var lp_w = 0,
         ls_w = (width / COLORS.length),
-        ls_h = 15;
+        ls_h = 20;
 
     var legend = svg.selectAll("g.legend")
         .data(COLORS)
@@ -42,7 +41,7 @@ function legend() {
         .attr("x", function (d, i) {
             return ((2 * i) * ls_w) + lp_w - 2;
         })
-        .attr("y", 15)
+        .attr("y", 17)
         .attr("text-anchor", "middle")
         .text(function (d, i) {
             return FORMATTER(d);
@@ -53,7 +52,7 @@ function legend() {
         .attr("x", function (d, i) {
             return (i * ls_w) + lp_w;
         })
-        .attr("y", 20)
+        .attr("y", 22)
         .attr("width", ls_w)
         .attr("height", ls_h)
         .style("fill", function (d, i) {
