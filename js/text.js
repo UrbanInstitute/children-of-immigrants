@@ -14,7 +14,7 @@ var catname = {
 };
 */
 
-//text for levels of categories - don't bother with the csvs! make all edits here
+//text for levels of categories - make all edits here
 var levels = {
     main: ["Share of all children with immigrant parents", "Total number", "Children of immigrants by residence"],
     age: ["Age 0 to 3", "Age 4 to 5", "Age 6 to 12", "Age 13 to 17"],
@@ -29,7 +29,7 @@ var levels = {
     incbenefits: ["Family below the poverty line", "Family below 200% of the poverty line", "At least one working parent", "At least one working parent and below 200% of the poverty line", "Household owns home"]
 };
 
-//sumamary text for each category
+//summary text for each category
 var cattext = {
     main: "From 2011 to 2013, the number of children of immigrants grew from 17.2 million to 17.6 million. As before, these children continue to be clustered in six states that are traditional immigrant destinations: California, New York, New Jersey, Florida, Illinois, and Texas. Yet, percentage of children of immigrants in California has declined from 2006 to 2013 and some nontraditional states, such as Kansas and South Carolina, saw an increase in the share of children of immigrants. Below, you'll see what percentage of children in each state are born to immigrant parents, and what percentage of all children of immigrants live in each state.",
     age: "Share of children in a certain age group that are children of immigrants.",
