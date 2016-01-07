@@ -40,7 +40,7 @@ st <- left_join(states,st,by="abbrev")
 st <- st %>% select(fips,name,isstate,abbrev, statcode,y2006,y2007,y2008,y2009,y2010,y2011,y2012,y2013)
 
 mt <- mt %>% rename(name=metroname,fips=metrocode) %>%
-  select(fips,name,isstate, statcode,y2009,y2010,y2011,y2012,y2013)
+  select(fips,name,isstate, statcode,y2006,y2007,y2008,y2009,y2010,y2011,y2012,y2013)
 
 dt <- bind_rows(st,mt)
 #low sample size flag: -97
