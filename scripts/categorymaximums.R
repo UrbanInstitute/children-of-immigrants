@@ -26,4 +26,4 @@ for (i in 1:nrow(maxs)) {
 }
 js <- substr(js, 1, nchar(js)-2) 
 js <- paste(js, "};")
-write(js,"data/catmax.js")
+write(js,"data/categorymaximums.js")
