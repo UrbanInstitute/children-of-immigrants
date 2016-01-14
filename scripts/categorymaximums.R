@@ -2,7 +2,6 @@
 #Calculate maximums of each category to use as Y axis maximums
 
 library(dplyr)
-library(doBy)
 library(jsonlite)
 
 dt<-read.csv("data/areadata.csv",stringsAsFactors = F)

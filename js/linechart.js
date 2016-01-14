@@ -50,13 +50,8 @@ function linechart(div, id) {
     outcomeSelect = d3.select("#statbtns .active").attr("value")
     catSelect = d3.select("#cat-select").property("value");
 
-    if (catSelect == "main" & outcomeSelect == 2) {
-        var max = 5000000;
-        FORMATTER = d3.format(".0s");
-    } else {
-        var max = catmax[catSelect];
-        FORMATTER = d3.format("%");
-    }
+    var max = catmax[catSelect];
+    FORMATTER = d3.format("%");
 
     var y = d3.scale.linear()
         .domain([0, max])
