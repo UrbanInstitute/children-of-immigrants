@@ -236,12 +236,7 @@ function cbsamap(div) {
                 }
             })
             .on("mouseout", function (d) {
-                if (isIE != false) {
-                    d3.select('body').selectAll('div.tooltip').remove();
-                    tooltipDiv.remove();
-                } else {
-                    dispatch.dehoverState(d3.select(this).attr("fid"));
-                }
+                dispatch.dehoverState(d3.select(this).attr("fid"));
             })
             .on("mouseleave", function (d) {
                 if (isIE != false) {
