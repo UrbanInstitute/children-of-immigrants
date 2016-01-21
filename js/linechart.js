@@ -159,6 +159,7 @@ function linechart(div, id) {
         })
         .on('mousemove', function (d, i) {
             if (isIE != false) {
+                d3.select('body').selectAll('div.tooltip').remove();
                 var absoluteMousePos = d3.mouse(bodyNode);
 
                 tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
