@@ -246,6 +246,5 @@ function cbsamap(div) {
                         .classed("hovered", false);
                 }
             });
-
     }
 }

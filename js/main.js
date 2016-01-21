@@ -163,6 +163,9 @@ function recolor() {
 //changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks
 dispatch.on("change", function (metric) {
 
+    d3.selectAll(".hovered")
+        .classed("hovered", false);
+
     function updateData() {
         data = data_main.filter(function (d) {
             return d.cat == catSelect & d.level == outcomeSelect;
