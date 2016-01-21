@@ -161,12 +161,13 @@ function linechart(div, id) {
         .on('mousemove', function (d, i) {
             if (isIE != false) {
                 d3.select('body').selectAll('div.tooltip').remove();
-                var absoluteMousePos = d3.mouse(bodyNode);
+                tooltipDiv.remove();
+                /*var absoluteMousePos = d3.mouse(bodyNode);
 
                 tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
                     .style('top', (absoluteMousePos[1] - 50) + 'px');
                 var tooltipText = d.name;
-                tooltipDiv.html(tooltipText);
+                tooltipDiv.html(tooltipText);*/
             } else {
                 // Move tooltip
                 var absoluteMousePos = d3.mouse(bodyNode);
