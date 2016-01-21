@@ -152,7 +152,7 @@ function linechart(div, id) {
                     .style('position', 'absolute')
                     .style('z-index', 1001);
                 // Add text using the accessor function
-                var tooltipText = d3.select(this).attr("fid");
+                var tooltipText = d.name;
                 tooltipDiv.html(tooltipText);
             } else {
                 dispatch.hoverState(d3.select(this).attr("fid"));
@@ -161,15 +161,11 @@ function linechart(div, id) {
         .on('mousemove', function (d, i) {
             if (isIE != false) {
                 d3.select('body').selectAll('div.tooltip').remove();
-                // Append tooltip
-                tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
                 var absoluteMousePos = d3.mouse(bodyNode);
+
                 tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
-                    .style('top', (absoluteMousePos[1] - 50) + 'px')
-                    .style('position', 'absolute')
-                    .style('z-index', 1001);
-                // Add text using the accessor function
-                var tooltipText = d3.select(this).attr("fid");
+                    .style('top', (absoluteMousePos[1] - 50) + 'px');
+                var tooltipText = d.name;
                 tooltipDiv.html(tooltipText);
             } else {
                 // Move tooltip
