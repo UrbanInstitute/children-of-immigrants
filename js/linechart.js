@@ -131,9 +131,6 @@ function linechart(div, id) {
                 return "#ccc";
             }
         })
-        .on("click", function (d) {
-            dispatch.clickState(d3.select(this).attr("fid"));
-        })
         .on("mouseover", function (d) {
             if (isIE != false) {
                 d3.selectAll(".hovered")
@@ -162,12 +159,6 @@ function linechart(div, id) {
             if (isIE != false) {
                 d3.select('body').selectAll('div.tooltip').remove();
                 tooltipDiv.remove();
-                /*var absoluteMousePos = d3.mouse(bodyNode);
-
-                tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
-                    .style('top', (absoluteMousePos[1] - 50) + 'px');
-                var tooltipText = d.name;
-                tooltipDiv.html(tooltipText);*/
             } else {
                 // Move tooltip
                 var absoluteMousePos = d3.mouse(bodyNode);
