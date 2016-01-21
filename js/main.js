@@ -163,8 +163,11 @@ function recolor() {
 //changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks
 dispatch.on("change", function (metric) {
 
+    //remove hover class and tooltips
     d3.selectAll(".hovered")
         .classed("hovered", false);
+    d3.select('body').selectAll('div.tooltip').remove();
+    tooltipDiv.remove();
 
     function updateData() {
         data = data_main.filter(function (d) {
