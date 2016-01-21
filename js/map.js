@@ -1,6 +1,3 @@
-var tooltipDiv;
-var bodyNode = d3.select('body').node();
-
 var map_aspect_width = 1,
     map_aspect_height = 0.7;
 

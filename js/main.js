@@ -1,7 +1,6 @@
 var MOBILE_THRESHOLD = 600;
 
 var main_data_url = "data/areadata.csv";
-var long_data_url = "data/areadata_long.csv";
 var map_data_url = "data/metros.json";
 var data, data_main;
 var FORMATTER,
@@ -17,8 +16,10 @@ var FORMATTER,
     outcomeSelect,
     stateSelect,
     catSelect,
-    yearSelect,
+    yearSelect = "y2013",
     linedata;
+var tooltipDiv,
+    bodyNode = d3.select('body').node();
 
 var palette = {
     blue5: ["#b0d5f1", "#82c4e9", "#1696d2", "#00578b", "#00152A"],
@@ -75,7 +76,7 @@ function detectIE() {
     return false;
 }
 var isIE = detectIE();
-console.log(isIE);
+//console.log(isIE);
 
 d3.selection.prototype.moveToFront = function () {
     return this.each(function () {
@@ -219,8 +220,6 @@ dispatch.on("hoverState", function (areaName) {
         .classed("hovered", true);
     d3.selectAll("[fid='" + areaName + "']")
         .moveToFront();
-    d3.selectAll(".st1")
-        .moveToFront();
 
     //tooltips
     // Clean up lost tooltips
@@ -240,7 +239,7 @@ dispatch.on("hoverState", function (areaName) {
 
 //declass "hovered"
 dispatch.on("dehoverState", function (areaName) {
-    console.log(areaName);
+    //console.log(areaName);
     d3.selectAll("[fid='" + areaName + "']")
         .classed("hovered", false);
     tooltipDiv.remove();
@@ -288,8 +287,7 @@ $(window).load(function () {
             d3.json(map_data_url, function (mapdata) {
                 data_main = rates;
                 us = mapdata;
-
-                yearSelect = "y2009";
+                //data = data_main;
 
                 drawgraphs();
                 window.onresize = drawgraphs;

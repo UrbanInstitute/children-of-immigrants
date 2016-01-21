@@ -89,13 +89,6 @@ function linechart(div, id) {
         .attr("class", "x axis-show")
         .call(xAxis);
 
-
-    //y.domain([0, d3.max(linegroups, function (c) {
-    //    return d3.max(c.values, function (v) {
-    //        return v.val;
-    //    });
-    //})]);
-
     var yAxis = d3.svg.axis()
         .scale(y)
         .outerTickSize(0)
@@ -148,16 +141,26 @@ function linechart(div, id) {
                 d3.selectAll("[fid='" + d3.select(this).attr("fid"))
                     .classed("hovered", true)
                     .moveToFront();
-                //tooltip(this.id);
-                this.parentNode.appendChild(this);
-                d3.selectAll(".st1")
-                    .moveToFront();
+                //tooltips
+                // Clean up lost tooltips
+                d3.select('body').selectAll('div.tooltip').remove();
+                // Append tooltip
+                tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
+                var absoluteMousePos = d3.mouse(bodyNode);
+                tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
+                    .style('top', (absoluteMousePos[1] - 50) + 'px')
+                    .style('position', 'absolute')
+                    .style('z-index', 1001);
+                // Add text using the accessor function
+                var tooltipText = d3.select(this).attr("fid");
             } else {
                 dispatch.hoverState(d3.select(this).attr("fid"));
             }
         })
         .on('mousemove', function (d, i) {
-            if (isIE == false) {
+            if (isIE != false) {
+                tooltipDiv.remove();
+            } else {
                 // Move tooltip
                 var absoluteMousePos = d3.mouse(bodyNode);
 
@@ -168,7 +171,18 @@ function linechart(div, id) {
             }
         })
         .on("mouseout", function (d) {
-            dispatch.dehoverState(d3.select(this).attr("fid"));
+            if (isIE != false) {
+                tooltipDiv.remove();
+            } else {
+                dispatch.dehoverState(d3.select(this).attr("fid"));
+            }
+        })
+        .on("mouseleave", function (d) {
+            if (isIE != false) {
+                d3.selectAll(".hovered")
+                    .classed("hovered", false);
+                tooltipDiv.remove();
+            }
         });
 
 }
