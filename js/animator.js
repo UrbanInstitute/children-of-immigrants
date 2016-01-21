@@ -48,7 +48,7 @@ function animator() {
         id: "y2013"
      }];
 
-    console.log(layers.length);
+    //console.log(layers.length);
     layers.forEach(function (layer, n) {
 
         layer.button = control.appendChild(document.createElement('a'));

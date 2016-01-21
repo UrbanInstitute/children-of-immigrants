@@ -75,6 +75,7 @@ function detectIE() {
     return false;
 }
 var isIE = detectIE();
+console.log(isIE);
 
 d3.selection.prototype.moveToFront = function () {
     return this.each(function () {
@@ -239,9 +240,9 @@ dispatch.on("hoverState", function (areaName) {
 
 //declass "hovered"
 dispatch.on("dehoverState", function (areaName) {
-    d3.selectAll("[fid='" + areaName).classed("hovered", false);
-    //d3.selectAll("[id='" + menuId + "']")
-    //    .moveToFront();
+    console.log(areaName);
+    d3.selectAll("[fid='" + areaName + "']")
+        .classed("hovered", false);
     tooltipDiv.remove();
 });
 
