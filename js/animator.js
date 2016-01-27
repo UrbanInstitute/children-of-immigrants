@@ -7,18 +7,19 @@ function animator() {
 
     // Add a play button div
     var play_button = control.appendChild(document.createElement('a'))
-    var pause = "&#9616;&#9616;";
-    var play = "&#9654;";
-    play_button.innerHTML = play;
+    play_button.className = "play";
+    //var pause = "&#9616;&#9616;";
+    //var play = "&#9654;";
+    play_button.innerHTML = "";
     play_button.id = "play_button";
     play_button.onclick = function () {
         if (nextInterval) {
             nextInterval = clearInterval(nextInterval);
-            play_button.innerHTML = play;
+            play_button.className = "play";
         } else {
             //highlightLayer(i++);
             nextInterval = animate();
-            play_button.innerHTML = pause;
+            play_button.className = "pause";
         }
     }
 
@@ -59,7 +60,7 @@ function animator() {
             i = n;
             dispatch.yearChange(layer.button.id);
             nextInterval = clearInterval(nextInterval);
-            play_button.innerHTML = play;
+            play_button.className = "play";
         };
     });
 
