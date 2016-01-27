@@ -199,6 +199,7 @@ function cbsamap(div) {
             })
             .on("mouseover", function (d) {
                 if (isIE != false) {
+                    console.log("mouseover");
                     d3.selectAll(".hovered")
                         .classed("hovered", false);
                     d3.selectAll("[fid='" + d3.select(this).attr("fid"))
@@ -223,6 +224,7 @@ function cbsamap(div) {
             })
             .on('mousemove', function (d, i) {
                 if (isIE != false) {
+                    console.log("mousemove");
                     d3.select('body').selectAll('div.tooltip').remove();
                     tooltipDiv.remove();
                 } else {
@@ -236,10 +238,12 @@ function cbsamap(div) {
                 }
             })
             .on("mouseout", function (d) {
+                console.log("mouseout");
                 dispatch.dehoverState(d3.select(this).attr("fid"));
             })
             .on("mouseleave", function (d) {
                 if (isIE != false) {
+                    console.log("mouseleave");
                     d3.select('body').selectAll('div.tooltip').remove();
                     tooltipDiv.remove();
                     d3.selectAll(".hovered")
