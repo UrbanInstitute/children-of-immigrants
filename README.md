@@ -1,4 +1,4 @@
-# Children of Immigrants data viz
+# Children of Immigrants visualization
 Version 2 built in 2015, originally built in 2012.
 [Appendix](http://webapp.urban.org/charts/datatool/pages.cfm)
 
@@ -8,3 +8,4 @@ Version 2 built in 2015, originally built in 2012.
 * Then, if included CBSAs have changed, run [geodata.R](scripts/geodata.R) to download & unzip Census shapefiles, create subsetted CBSA shapefile that includes analyzed CBSAs only, and create merged state + CBSA topojson
  * Requires installation of [gdal](http://www.gdal.org/) and [topojson](https://github.com/mbostock/topojson/wiki/Installation)
 * Edit [text.js](js/text.js) to update metric labels and category text as needed
+* If adding additional years of data, add to [animator.js](/js/animator.js#L26) layers.
