@@ -3,14 +3,38 @@ body {
 }
 
 footer {
-    background-color: #000;
+    background-color: #222222;
     bottom: 0px;
     min-height: 50px;
     margin-top: 1em;
-    padding-top: 10px;
+    padding-top: 16px;
     position: relative;
     font-size: 14px;
     width: 100%;
+    color: #ffffff;
+}
+
+.projectcredits {
+    color: #ffffff;
+    font-size: 1.25em;
+}
+
+.credit,
+.credit a {
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.credittitle {
+    margin-bottom: 2px;
+    color: #1696d2;
+    font-size: 1em;
+}
+
+.copy {
+    font-style: italic;
+    font-size: 0.8em;
+    color: #efefef;
 }
 
 .intro {
@@ -167,6 +191,7 @@ footer {
     top: 1px;
     left: 6px;
 }
+
 
 /***line charts***/
 
