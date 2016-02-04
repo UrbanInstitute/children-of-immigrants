@@ -20,14 +20,15 @@ footer {
 }
 
 .credit,
-.credit a {
+.credit a,
+.about {
     color: #ffffff;
     font-size: 1em;
 }
 
 .credittitle {
     margin-bottom: 2px;
-    color: #1696d2;
+    color: #ccc;
     font-size: 1em;
 }
 
