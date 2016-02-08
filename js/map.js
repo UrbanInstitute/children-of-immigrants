@@ -145,7 +145,6 @@ function cbsamap(div) {
             .on('mousemove', function (d, i) {
                 if (isIE != false) {
                     d3.select('body').selectAll('div.tooltip').remove();
-                    tooltipDiv.remove();
                 } else {
                     // Move tooltip
                     var absoluteMousePos = d3.mouse(bodyNode);
@@ -159,7 +158,6 @@ function cbsamap(div) {
             .on("mouseout", function (d) {
                 if (isIE != false) {
                     d3.select('body').selectAll('div.tooltip').remove();
-                    tooltipDiv.remove();
                 } else {
                     dispatch.dehoverState(d3.select(this).attr("fid"));
                 }
@@ -169,7 +167,6 @@ function cbsamap(div) {
                     d3.selectAll(".hovered")
                         .classed("hovered", false);
                     d3.select('body').selectAll('div.tooltip').remove();
-                    tooltipDiv.remove();
                 }
             });
 
@@ -226,7 +223,6 @@ function cbsamap(div) {
                 if (isIE != false) {
                     console.log("mousemove");
                     d3.select('body').selectAll('div.tooltip').remove();
-                    tooltipDiv.remove();
                 } else {
                     // Move tooltip
                     var absoluteMousePos = d3.mouse(bodyNode);
@@ -245,7 +241,6 @@ function cbsamap(div) {
                 if (isIE != false) {
                     console.log("mouseleave");
                     d3.select('body').selectAll('div.tooltip').remove();
-                    tooltipDiv.remove();
                     d3.selectAll(".hovered")
                         .classed("hovered", false);
                 }

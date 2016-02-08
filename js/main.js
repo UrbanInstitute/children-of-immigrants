@@ -133,7 +133,7 @@ function outcomechange() {
     $('input:radio[name="outcome"]').change(function (metric) {
         var metric = $(this).val();
         dispatch.change(metric);
-        console.log(metric);
+        //console.log(metric);
     });
 }
 outcomechange();
@@ -147,7 +147,6 @@ function recolor() {
                 return "#ececec";
             } else {
                 return color(VALUE[d.id]);
-                console.log("hi");
             }
         });
     d3.selectAll("path.metros")
@@ -156,24 +155,24 @@ function recolor() {
                 return "#fff";
             } else {
                 return color(VALUE[d.id]);
-                console.log("hi");
             }
         });
 }
 
 //changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks
 dispatch.on("change", function (metric) {
-    console.log("changed");
+    console.log(metric);
+    outcomeSelect = metric;
+    catSelect = selecter.property("value");
+    
     //remove hover class and tooltips
     d3.selectAll(".hovered")
         .classed("hovered", false);
     d3.select('body').selectAll('div.tooltip').remove();
-    tooltipDiv.remove();
 
     function updateData() {
-        console.log(catSelect, outcomeSelect);
         data = data_main.filter(function (d) {
-            return d.cat == catSelect & d.level == outcomeSelect;
+            return d.cat == catSelect & d.level == metric;
         })
         data.forEach(function (d) {
             d.fips = +d.fips;
@@ -195,12 +194,14 @@ dispatch.on("change", function (metric) {
     var promise = new Promise(function (resolve, reject) {
         outcomeSelect = metric;
         catSelect = selecter.property("value");
+        //console.log("hi");
 
         var resp = updateData();
         resolve(resp)
     })
     promise.then(function (result) {
         return updateGraphs(result);
+        //console.log("bye");
     })
 
 });
@@ -250,7 +251,7 @@ dispatch.on("dehoverState", function (areaName) {
     //console.log(areaName);
     d3.selectAll("[fid='" + areaName + "']")
         .classed("hovered", false);
-    tooltipDiv.remove();
+    d3.select('body').selectAll('div.tooltip').remove();
 });
 
 
