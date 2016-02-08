@@ -161,7 +161,6 @@ function recolor() {
 
 //changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks
 dispatch.on("change", function (metric) {
-    console.log(metric);
     outcomeSelect = metric;
     catSelect = selecter.property("value");
     
