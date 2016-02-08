@@ -159,6 +159,8 @@ function linechart(div, id) {
             if (isIE != false) {
                 d3.select('body').selectAll('div.tooltip').remove();
                 tooltipDiv.remove();
+                d3.selectAll(".hovered")
+                    .classed("hovered", false);
             } else {
                 // Move tooltip
                 var absoluteMousePos = d3.mouse(bodyNode);
