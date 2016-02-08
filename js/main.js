@@ -169,6 +169,7 @@ dispatch.on("change", function (metric) {
     d3.selectAll(".hovered")
         .classed("hovered", false);
     d3.select('body').selectAll('div.tooltip').remove();
+    //tooltipDiv.remove();
 
     function updateData() {
         data = data_main.filter(function (d) {
@@ -251,7 +252,7 @@ dispatch.on("dehoverState", function (areaName) {
     //console.log(areaName);
     d3.selectAll("[fid='" + areaName + "']")
         .classed("hovered", false);
-    d3.select('body').selectAll('div.tooltip').remove();
+    tooltipDiv.remove();
 });
 
 
