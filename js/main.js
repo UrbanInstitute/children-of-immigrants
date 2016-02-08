@@ -133,6 +133,7 @@ function outcomechange() {
     $('input:radio[name="outcome"]').change(function (metric) {
         var metric = $(this).val();
         dispatch.change(metric);
+        console.log(metric);
     });
 }
 outcomechange();
@@ -162,7 +163,7 @@ function recolor() {
 
 //changing the metric shown changes: map coloring, line chart. Eventually: legend, breaks
 dispatch.on("change", function (metric) {
-
+    console.log("changed");
     //remove hover class and tooltips
     d3.selectAll(".hovered")
         .classed("hovered", false);
@@ -170,6 +171,7 @@ dispatch.on("change", function (metric) {
     tooltipDiv.remove();
 
     function updateData() {
+        console.log(catSelect, outcomeSelect);
         data = data_main.filter(function (d) {
             return d.cat == catSelect & d.level == outcomeSelect;
         })
