@@ -24,12 +24,14 @@ footer {
 .about {
     color: #ffffff;
     font-size: 1em;
+    margin-bottom: 0.7em;
 }
 
 .credittitle {
     margin-bottom: 2px;
     color: #ccc;
-    font-size: 1em;
+    font-size: 1.2em;
+    /*text-transform: uppercase;*/
 }
 
 .copy {
