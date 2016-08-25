@@ -138,7 +138,7 @@ footer {
     margin: 2px 1px 1px 1px;
     padding: 6px;
     height: 28px;
-    min-width: 36px;
+    min-width: 32px;
     width: 5.5%;
     text-align: center;
     background-color: #000000;
@@ -254,13 +254,18 @@ footer {
     }
 }
 
-@media (max-width: 370px) {
-    #layers a {
-        min-width: 25px;
-    }
-}
-
 @media (max-width: 600px) {
+    #layer-holder {
+        min-width: 100%;
+    }
+    #layers {
+        min-width: 100%;
+                margin: 2px 0px 12px 0px;
+    }
+    #layers a {
+        width: 9%;
+
+    }
     #legend {
         display: block;
         float: left;
@@ -272,5 +277,11 @@ footer {
     #statbtns .urban-button {
         display: block !important;
         width: 100%;
+    }
+}
+
+@media (max-width: 370px) {
+    #layers a {
+        width: 18%;
     }
 }

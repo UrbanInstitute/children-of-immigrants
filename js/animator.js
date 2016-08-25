@@ -47,9 +47,11 @@ function animator() {
      }, {
         name: "'13",
         id: "y2013"
+     }, {
+        name: "'14",
+        id: "y2014"
      }];
 
-    //console.log(layers.length);
     layers.forEach(function (layer, n) {
 
         layer.button = control.appendChild(document.createElement('a'));
@@ -64,8 +66,8 @@ function animator() {
         };
     });
 
-    // i is the number of the currently-selected layer
-    var i = 7;
+    // starting layer: most recent year
+    var i = layers.length - 1;
 
     // show the first overlay as soon as the map loads
     highlightLayer(i++);
