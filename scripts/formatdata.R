@@ -9,8 +9,8 @@ library(tidyr)
 library(doBy)
 
 states <- read.csv("data/states.csv",stringsAsFactors = F)
-st <- read.csv("data/InteractiveMap_State2013_11_09_2015.csv",stringsAsFactors = F)
-mt <- read.csv("data/InteractiveMap_Metro2013.csv",stringsAsFactors = F)
+st <- read.csv("data/InteractiveMap_State2014.csv",stringsAsFactors = F)
+mt <- read.csv("data/InteractiveMap_Metro2014.csv",stringsAsFactors = F)
 
 colnames(st) <- tolower(colnames(st))
 colnames(mt) <- tolower(colnames(mt))
@@ -21,10 +21,10 @@ colnames(mt) <- tolower(colnames(mt))
 ########################################################################################################
 
 # Export metrics for editing - only need to do once
-metrics <- summaryBy(isstate ~ category + statcode + statistics_label + statlabel + statid, data=st) %>% 
-  select(-isstate.mean) %>% 
-  arrange(statid)
-write.csv(metrics, "data/metrics.csv", na="", row.names=F)
+#metrics <- summaryBy(isstate ~ category + statcode + statistics_label + statlabel + statid, data=st) %>% 
+#  select(-isstate.mean) %>% 
+#  arrange(statid)
+#write.csv(metrics, "data/metrics.csv", na="", row.names=F)
 
 #join new metric ids to wide data
 metrics<-read.csv("data/metrics_edited.csv", stringsAsFactors = F)
@@ -37,10 +37,10 @@ metrics <- metrics %>% select(statcode,cat,catnum,level)
 states <- states %>% select(fips,abbrev)
 st <- st %>% rename(name=statename,abbrev=statecode) 
 st <- left_join(states,st,by="abbrev")
-st <- st %>% select(fips,name,isstate,abbrev, statcode,y2006,y2007,y2008,y2009,y2010,y2011,y2012,y2013)
+st <- st %>% select(fips,name,isstate,abbrev, statcode, starts_with("y2"))
 
 mt <- mt %>% rename(name=metroname,fips=metrocode) %>%
-  select(fips,name,isstate, statcode,y2006,y2007,y2008,y2009,y2010,y2011,y2012,y2013)
+  select(fips,name,isstate, statcode, starts_with("y2"))
 
 dt <- bind_rows(st,mt)
 #low sample size flag: -97
