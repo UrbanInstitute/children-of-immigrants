@@ -31,10 +31,9 @@
                     <div id="legend"></div>
                 </div>
 
-
                 <div id="statemap"></div>
-
                 <div id="metromap"></div>
+                <div id="statemap2"></div>
             </div>
         </div>
 
@@ -45,7 +44,7 @@
         <script src="lib/bootstrap.min.js"></script>
 
         <script>
-            var main_data_url = "data/areadata.csv";
+            var main_data_url = "data/printmapdata.csv";
             var map_data_url = "data/metros.json";
             var data, data_main;
             var palette = {
@@ -71,22 +70,26 @@
                 yearSelect = "y2014",
                 linedata;
 
+            var MAPVAR;
+
             var FORMATTER = d3.format("%");
-            var COLORS = palette.blue8;
-            var BREAKS = [0.075, 0.15, 0.225, 0.3, 0.375, 0.45, 0.525];
+            var COLORS;
+            var BREAKS = [0, 0.02, 0.04, 0.06, 0.08];
             var us;
             var map_aspect_width = 1,
                 map_aspect_height = 0.7;
 
-            var color = d3.scale.threshold()
-                .domain(BREAKS)
-                .range(COLORS);
+            var color;
 
             var $legend = $("#legend");
 
-            var LEGBREAKS = [0, 0.15, 0.3, 0.45, 0.6];
-
             function legend() {
+
+                COLORS = ["#fdbf11", "#b0d5f1", "#82c4e9", "#1696d2", "#00578b", "#00152A"];
+                color = d3.scale.threshold()
+                    .domain(BREAKS)
+                    .range(COLORS);
+
                 var margin = {
                     top: 3,
                     right: 15,
@@ -115,9 +118,9 @@
                     .attr("class", "legend");
 
                 legend.append("text")
-                    .data(LEGBREAKS)
+                    .data(BREAKS)
                     .attr("x", function (d, i) {
-                        return ((2 * i) * ls_w) + lp_w - 2;
+                        return ((i + 1) * ls_w) + lp_w - 2;
                     })
                     .attr("y", 17)
                     .attr("text-anchor", "middle")
@@ -141,19 +144,14 @@
             //map - option for state or metro view
             function cbsamap(div) {
 
-                outcomeSelect = 1;
-                catSelect = "main";
-
-                data = data_main.filter(function (d) {
-                    return d.cat == catSelect & d.level == outcomeSelect & d.fips != 0;
-                })
+                data = data_main;
 
                 data.forEach(function (d) {
                     d.fips = +d.fips;
-                    if (d[yearSelect] == "") {
+                    if (d[MAPVAR] == "") {
                         VALUE[d.fips] = null;
                     } else {
-                        VALUE[d.fips] = +d[yearSelect];
+                        VALUE[d.fips] = d[MAPVAR];
                     }
                 });
 
@@ -229,21 +227,43 @@
 
 
             function statemap() {
+                MAPVAR = "pctgrowth"
                 $GRAPHDIV = $("#statemap");
+                COLORS = ["#fdbf11", "#b0d5f1", "#82c4e9", "#1696d2", "#00578b", "#00152A"];
+                color = d3.scale.threshold()
+                    .domain(BREAKS)
+                    .range(COLORS);
                 STATEMAP = 1;
                 cbsamap("#statemap");
             }
 
             function metromap() {
+                MAPVAR = "pctgrowth"
                 $GRAPHDIV = $("#metromap");
+                COLORS = ["#fdbf11", "#b0d5f1", "#82c4e9", "#1696d2", "#00578b", "#00152A"];
+                color = d3.scale.threshold()
+                    .domain(BREAKS)
+                    .range(COLORS);
                 STATEMAP = 0;
                 cbsamap("#metromap");
+            }
+
+            function statemap2() {
+                MAPVAR = "origin"
+                $GRAPHDIV = $("#statemap2");
+                COLORS = ["#1696d2", "#fdbf11", "#000000", "#ec008b", "#d2d2d2", "#55b748"];
+                color = d3.scale.ordinal()
+                    .domain(["Mexico", "Europe, Canada, and Australia", "Other Central America and Spanish Caribbean", "Africa", "East Asia and Pacific", "Middle East and South Asia"])
+                    .range(COLORS)
+                STATEMAP = 1;
+                cbsamap("#statemap2");
             }
 
             function drawgraphs() {
                 legend();
                 metromap();
                 statemap();
+                statemap2();
             }
 
 
