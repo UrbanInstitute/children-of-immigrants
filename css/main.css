@@ -285,3 +285,8 @@ footer {
         width: 18%;
     }
 }
+#updateDisclaimer{
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
