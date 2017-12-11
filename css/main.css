@@ -138,7 +138,7 @@ footer {
     margin: 2px 1px 1px 1px;
     padding: 6px;
     height: 28px;
-    min-width: 32px;
+    min-width: 28px;
     width: 5.5%;
     text-align: center;
     background-color: #000000;
@@ -248,6 +248,18 @@ footer {
     fill: #333;
 }
 
+@media (max-width: 1200px) {
+    #legend {
+        float: left;
+        margin-top: 18px;
+    }
+}
+@media (max-width: 990px) {
+    #legend {
+        float: right;
+        margin-top: 0px;
+    }
+}
 @media (max-width: 516px) {
     #layers a {
         width: 10%;

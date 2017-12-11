@@ -211,15 +211,16 @@ dispatch.on("change", function (metric) {
 dispatch.on("yearChange", function (year) {
 
     yearSelect = year;
-
-    data.forEach(function (d) {
-        //d.fips = +d.fips;
-        if (d[yearSelect] == "") {
-            VALUE[d.fips] = null;
-        } else {
-            VALUE[d.fips] = +d[yearSelect];
-        }
-    });
+    if(typeof(data) != "undefined"){
+        data.forEach(function (d) {
+            //d.fips = +d.fips;
+            if (d[yearSelect] == "") {
+                VALUE[d.fips] = null;
+            } else {
+                VALUE[d.fips] = +d[yearSelect];
+            }
+        });
+    }
 
     recolor();
 });

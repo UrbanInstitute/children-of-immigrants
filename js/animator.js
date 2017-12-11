@@ -50,6 +50,9 @@ function animator() {
      }, {
         name: "'14",
         id: "y2014"
+     }, {
+        name: "'15",
+        id: "y2015"
      }];
 
     layers.forEach(function (layer, n) {
