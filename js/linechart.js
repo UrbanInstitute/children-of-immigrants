@@ -30,7 +30,7 @@ function linechart(div, id) {
     $GRAPHDIV.empty();
 
     var x = d3.scale.linear()
-        .domain([2006, 2015])
+        .domain([2006, 2017])
         .range([0, width]);
 
     var color = d3.scale.ordinal()
@@ -70,7 +70,7 @@ function linechart(div, id) {
     }));
 
     //nest data by fips, then have one year-value pair for each year in datayears
-    var datayears = ["y2006", "y2007", "y2008", "y2009", "y2010", "y2011", "y2012", "y2013", "y2014","y2015"];
+    var datayears = ["y2006", "y2007", "y2008", "y2009", "y2010", "y2011", "y2012", "y2013", "y2014", "y2015", "y2016", "y2017"];
     var linegroups = linedata.map(function (d) {
         return {
             fips: +d.fips,

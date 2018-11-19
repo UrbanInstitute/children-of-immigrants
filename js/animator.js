@@ -53,6 +53,12 @@ function animator() {
      }, {
         name: "'15",
         id: "y2015"
+     }, {
+        name: "'16",
+        id: "y2016"
+     }, {
+        name: "'17",
+        id: "y2017"
      }];
 
     layers.forEach(function (layer, n) {
@@ -92,7 +98,7 @@ function animator() {
     function highlightLayer(i) {
         var active = control.getElementsByClassName('active');
         for (var j = 0; j < active.length; j++) active[j].className = '';
-        
+
         if (layers[i] == undefined) {
             console.log("yo");
             layers[i] = layers[0];
