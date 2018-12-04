@@ -26,7 +26,11 @@ var levels = {
     engpar: ["English-proficient parents", "At least one parent who is not English proficient", "No English-proficient parents", "Linguistically isolated households"],
     numkids: ["1", "2", "3-4", "5+"],
     numpar: ["One parent", "Two parents"],
-    incbenefits: ["Family below the federal poverty level", "Family below 200% of the federal poverty level", "At least one working parent", "At least one working parent and below 200% of the federal poverty level", "Household owns home"]
+    incbenefits: ["Family below the federal poverty level", "Family below 200% of the federal poverty level", "At least one working parent", "At least one working parent and below 200% of the federal poverty level", "Not covered by health insurance"],
+    housetrans: ["Household owns home", "Severely burdened by housing and utility costs", "Somewhat burdened by housing and utility costs", "Not burdened by housing and utility costs", "Multiple household vehicles available", "One household vehicle available", "No household vehicles available"],
+    paryears: ["At least one parent in US less than 5 years", "At least one parent in US 5-9 years, none less than 5", "At least one parent in US 10-19 years, none less than 10", "At least one parent in US 20+ years, none less than 20"],
+    disabledfam: ["Has disabled parent(s)", "Other disabled adult(s) in family", "No disabled adults in family"],
+    vetpar: ["Has veteran parent(s)", "No veteran parents"]
 };
 
 //summary text for each category
@@ -41,5 +45,9 @@ var cattext = {
     engpar: "Parents with limited or no English proficiency are more likely to have trouble navigating schools, health providers, and other government and community programs and institutions. Sixty percent of children of immigrants have at least one English-proficient parent. Still, in 2015, 21 percent of children of immigrants lived in linguistically isolated households (households in which there are no English-proficient family members over age 14).",
     numkids: "Children of immigrants are slightly more likely than other children to have many siblings. In 2015, 21 percent of children of immigrants lived in families with only one child compared with 24 percent of children of native-born parents.",
     numpar: "Children of immigrants are much more likely to live in two-parent homes than children of native-born parents. In 2015, 82 percent of children of immigrants lived in two-parent homes compared with just 69 percent of children of native-born parents.",
-    incbenefits: "Children of immigrants are more likely to live in poor families. In 2015, 24 percent of children of immigrants lived in poor families compared with 18 percent of children of native-born parents. The share of children of immigrants living in poor families has increased over the past several years: in 2006, only 22 percent of children of immigrants lived in poverty."
+    incbenefits: "Children of immigrants are more likely to live in poor families. In 2015, 24 percent of children of immigrants lived in poor families compared with 18 percent of children of native-born parents. The share of children of immigrants living in poor families has increased over the past several years: in 2006, only 22 percent of children of immigrants lived in poverty.",
+    housetrans: "",
+    paryears: "",
+    disabledfam: "",
+    vetpar: ""
 };
