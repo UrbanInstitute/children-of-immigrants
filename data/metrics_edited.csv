@@ -1,1 +1,55 @@
-category,statcode,statistics_label,statlabel,statid,cat,catnum,level,notesPopulation,Share,Share,"Children of immigrants, share",2,main,1,1,Education,age0_3,Age 0 to 3,Age 0 to 3,14,main,1,2,Education,age4_5,Age 4 to 5,Age 4 to 5,16,main,1,3,Education,age6_12,Age 6 to 8,Age 6 to 12,18,main,1,4,Education,age13_17,Age 13 to 15,Age 13 to 17,22,main,1,5,Country_of_Origin_of_Parents,mexico,Parents from Mexico,Mexico,90,origin,3,1,sum1Country_of_Origin_of_Parents,centralAmerica,Parents from Other Central America & Spanish Caribbean,Other Central America & Spanish Caribbean,92,origin,3,2,sum1Country_of_Origin_of_Parents,europe,"Parents from Europe, Canada & Australia","Europe, Canada & Australia",88,origin,3,3,sum1Country_of_Origin_of_Parents,eAsia,Parents from East Asia & Pacific,East Asia & Pacific,86,origin,3,4,sum1Country_of_Origin_of_Parents,Africa,Parents from Africa,Africa,84,origin,3,5,sum1Country_of_Origin_of_Parents,midEast,Parents from the Middle East & South Asia,The Middle East & South Asia,98,origin,3,6,sum1Country_of_Origin_of_Parents,southAmerica,Parents from South America,South America,94,origin,3,7,sum1Country_of_Origin_of_Parents,seAsia,Parents from Southeast Asia,Southeast Asia,96,origin,3,8,sum1Citizenship,citCitPar,Citizen children with citizen parents,Who are citizens with citizen parents,80,citizenship,4,1,sum1Citizenship,citNotCitPar,Citizen children with noncitizen parents,Who are citizens with non-citizen parents,76,citizenship,4,2,sum1Citizenship,notCit,Noncitizen,Who are not citizens,42,citizenship,4,3,sum1Education,NIS35,"Not in school, age 3 to 5","Who are not in school, age 3 to 5",26,edukids,5,1,Education,NIS617,"Not in school, age 6 to 17","Who are not in school, age 6 to 17",38,edukids,5,2,Education,lTHS,Parents with less than high school degree,With parents who have less than a high school degree,108,edupar,6,1,sum1Education,HS,Parents with high school degree,With parents who have a high school degree,110,edupar,6,2,sum1Education,col,Parents with at least four-year college degree,With parents who have at least four year college degree,112,edupar,6,3,sum1English_Proficiency,engPro,English proficient,Who are English Proficient,48,engkids,7,1,sum1English_Proficiency,limEng,Limited English Proficient,With Limited English Proficiency,50,engkids,7,2,sum1English_Proficiency,eppars,English proficient parents,English proficient parents,102,engpar,8,1,sum1English_Proficiency,oneleppar,At least one Limited English Proficient parent,At least one Limited English Proficient parent,100,engpar,8,2,sum1English_Proficiency,noeppars,No English proficient parents,No English proficient parents,104,engpar,8,3,English_Proficiency,linIso,Linguistically isolated household,Who live in Linguistically Isolated Households,134,engpar,8,4,Family_Structure,onekid,One child in family,One child in family,114,numkids,9,1,sum1Family_Structure,twokid,Two children in family,Two children in famiy,116,numkids,9,2,sum1Family_Structure,threekid,Three to four children in family,Three to four children in family,118,numkids,9,3,sum1Family_Structure,fourkid,More than four children in family,More than four children in family,120,numkids,9,4,sum1Family_Structure,sPar,One-parent families,In single parent families,130,numpar,10,1,sum1Family_Structure,tPar,Two-parent families,In two-parent families,132,numpar,10,2,sum1Poverty_Income_and_Benefit_Receipt,pov100,Family incomes below poverty,In families below 100% of the poverty line,138,incbenefits,11,1,Poverty_Income_and_Benefit_Receipt,pov200,Family incomes below twice poverty level,In families below 200% of the poverty line,142,incbenefits,11,2,Poverty_Income_and_Benefit_Receipt,work,Working families,Working Family,160,incbenefits,11,3,Poverty_Income_and_Benefit_Receipt,LIWF,Low-income working families,In low income working families,164,incbenefits,11,4,Poverty_Income_and_Benefit_Receipt,home,Household owns home,Household owns Home,150,incbenefits,11,5,
+category,statcode,statistics_label,statlabel,statid,cat,catnum,level,notes
+Population,Share,Share,"Children of immigrants, share",2,main,1,1,
+Education,age0_3,Age 0 to 3,Age 0 to 3,14,main,1,2,
+Education,age4_5,Age 4 to 5,Age 4 to 5,16,main,1,3,
+Education,age6_12,Age 6 to 8,Age 6 to 12,18,main,1,4,
+Education,age13_17,Age 13 to 15,Age 13 to 17,22,main,1,5,
+Country_of_Origin_of_Parents,mexico,Parents from Mexico,Mexico,90,origin,3,1,sum1
+Country_of_Origin_of_Parents,centralAmerica,Parents from Other Central America & Spanish Caribbean,Other Central America & Spanish Caribbean,92,origin,3,2,sum1
+Country_of_Origin_of_Parents,europe,"Parents from Europe, Canada & Australia","Europe, Canada & Australia",88,origin,3,3,sum1
+Country_of_Origin_of_Parents,eAsia,Parents from East Asia & Pacific,East Asia & Pacific,86,origin,3,4,sum1
+Country_of_Origin_of_Parents,Africa,Parents from Africa,Africa,84,origin,3,5,sum1
+Country_of_Origin_of_Parents,midEast,Parents from the Middle East & South Asia,The Middle East & South Asia,98,origin,3,6,sum1
+Country_of_Origin_of_Parents,southAmerica,Parents from South America,South America,94,origin,3,7,sum1
+Country_of_Origin_of_Parents,seAsia,Parents from Southeast Asia,Southeast Asia,96,origin,3,8,sum1
+Citizenship,citCitPar,Citizen children with citizen parents,Who are citizens with citizen parents,80,citizenship,4,1,sum1
+Citizenship,citNotCitPar,Citizen children with noncitizen parents,Who are citizens with non-citizen parents,76,citizenship,4,2,sum1
+Citizenship,notCit,Noncitizen,Who are not citizens,42,citizenship,4,3,sum1
+Education,NIS35,"Not in school, age 3 to 5","Who are not in school, age 3 to 5",26,edukids,5,1,
+Education,NIS617,"Not in school, age 6 to 17","Who are not in school, age 6 to 17",38,edukids,5,2,
+Education,lTHS,Parents with less than high school degree,With parents who have less than a high school degree,108,edupar,6,1,sum1
+Education,HS,Parents with high school degree,With parents who have a high school degree,110,edupar,6,2,sum1
+Education,col,Parents with at least four-year college degree,With parents who have at least four year college degree,112,edupar,6,3,sum1
+English_Proficiency,engPro,English proficient,Who are English Proficient,48,engkids,7,1,sum1
+English_Proficiency,limEng,Limited English Proficient,With Limited English Proficiency,50,engkids,7,2,sum1
+English_Proficiency,eppars,English proficient parents,English proficient parents,102,engpar,8,1,sum1
+English_Proficiency,oneleppar,At least one Limited English Proficient parent,At least one Limited English Proficient parent,100,engpar,8,2,sum1
+English_Proficiency,noeppars,No English proficient parents,No English proficient parents,104,engpar,8,3,
+English_Proficiency,linIso,Linguistically isolated household,Who live in Linguistically Isolated Households,134,engpar,8,4,
+Family_Structure,onekid,One child in family,One child in family,114,numkids,9,1,sum1
+Family_Structure,twokid,Two children in family,Two children in famiy,116,numkids,9,2,sum1
+Family_Structure,threekid,Three to four children in family,Three to four children in family,118,numkids,9,3,sum1
+Family_Structure,fourkid,More than four children in family,More than four children in family,120,numkids,9,4,sum1
+Family_Structure,sPar,One-parent families,In single parent families,130,numpar,10,1,sum1
+Family_Structure,tPar,Two-parent families,In two-parent families,132,numpar,10,2,sum1
+Poverty_Income_and_Benefit_Receipt,pov100,Family incomes below poverty,In families below 100% of the poverty line,138,incbenefits,11,1,
+Poverty_Income_and_Benefit_Receipt,pov200,Family incomes below twice poverty level,In families below 200% of the poverty line,142,incbenefits,11,2,
+Poverty_Income_and_Benefit_Receipt,work,Working families,Working Family,160,incbenefits,11,3,
+Poverty_Income_and_Benefit_Receipt,LIWF,Low-income working families,In low income working families,164,incbenefits,11,4,
+Poverty_Income_and_Benefit_Receipt,noinsure,No health insurance coverage,Not covered by health insurance,169,incbenefits,11,5,
+Housing_Transportation,home,Household owns home,Household owns Home,150,housetrans,12,1,
+Housing_Transportation,hcbmax,Severely housing cost burdened,Severely burdened by housing and utility costs,199,housetrans,12,2,
+Housing_Transportation,hcbsome,"Housing cost burdened, not severely",Somewhat burdened by housing and utility costs,197,housetrans,12,3,
+Housing_Transportation,nothcb,Not housing cost burdened,Not burdened by housing and utility costs,195,housetrans,12,4,
+Housing_Transportation,multvehic,Multiple household vehicles available,Multiple household vehicles available,183,housetrans,12,5,
+Housing_Transportation,onevehic,Single household vehicle available,One household vehicle available,181,housetrans,12,6,
+Housing_Transportation,novehic,No household vehicles available,No household vehicles available,179,housetrans,12,7,
+Parent_Years_US,prtUSLT5yrs,At least one parent in US less than 5 years,At least one parent in US less than 5 years,201,paryears,13,1,
+Parent_Years_US,prtUS5to9yrs,"At least one parent in US 5-9 years, none less than 5","At least one parent in US 5-9 years, none less than 5",203,paryears,13,2,
+Parent_Years_US,prtUS10to19yrs,"At least one parent in US 10-19 years, none less than 10","At least one parent in US 10-19 years, none less than 10",205,paryears,13,3,
+Parent_Years_US,prtUS20pyrs,"At least one parent in US 20+ years, none less than 20","At least one parent in US 20+ years, none less than 20",207,paryears,13,4,
+Disabled_Adults_Fam,prtdisab,At least one parent has a disability,Has disabled parent(s),177,disabledfam,14,1,
+Disabled_Adults_Fam,othadultdis,"At least one adult in the family, but no parent has a disability",Other disabled adult(s) in family,175,disabledfam,14,2,
+Disabled_Adults_Fam,nofamdis,No adults in family have a disability,No disabled adults in family,173,disabledfam,14,3,
+Veteran_Parent,hasprtvets,Has veteran parents,Has veteran parent(s),187,vetpar,15,1,
+Veteran_Parent,noprtvets,No veteran parents,No veteran parents,185,vetpar,15,2,
