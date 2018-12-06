@@ -43,8 +43,9 @@ mt <- mt %>% rename(name=metroname,fips=metrocode) %>%
   select(fips,name,isstate, statcode, starts_with("y2"))
 
 dt <- bind_rows(st,mt)
-#low sample size flag: -97
+#low sample size flag: -97, -98
 dt[dt == -97] <- NA
+dt[dt == -98] <- NA
 
 dt <- left_join(dt,metrics,by="statcode")
 dt <- dt %>% select(c(cat,catnum,level,statcode,fips,abbrev,name),everything()) %>% 
