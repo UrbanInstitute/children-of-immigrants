@@ -10,7 +10,7 @@ dts <- dt %>% filter(statcode != "perChange" & statcode != "TotalNum" & statcode
   select(cat, y2006, y2007, y2008, y2009, y2010, y2011, y2012, y2013, y2014, y2015, y2016, y2017)
 
 #Calculate column maximiums by category
-maxs <- dts %>% group_by(cat) %>% summarise_each(funs(max(., na.rm = TRUE)))
+maxs <- dts %>% filter(cat != "") %>% group_by(cat) %>% summarise_all(funs(max(., na.rm = TRUE)))
 
 #Max of each row excluding cat column
 maxs$max <- apply(maxs[,-1], 1, max) 
