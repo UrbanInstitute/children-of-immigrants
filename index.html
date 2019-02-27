@@ -77,14 +77,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="title">Visualizing Trends for Children of Immigrants</h1>
-                    <div id = "updateDisclaimer">This feature was originally published in February 2016 and was updated in December 2017 with new data from the 2015 American Community Survey.</div>
-                    <p class="introtext">A growing number of children in the United States are born to immigrant parents. In 2015, children of immigrants accounted for nearly one-quarter of all US children. In fact, because the number of children with native-born parents has dropped, the increase in the number of children of immigrants is responsible for all population growth among US children from 2006 to 2015.</p>
-                    <p class="introtext">For this reason, up-to-date information about children of immigrants and the social policies that affect them is essential. Understanding the characteristics of children of immigrants, as well as their state- and metro-level demographic trends, is vital when considering policies that affect children and families.</p>
-                    <p class="introtext">On this page, you’ll find maps and charts that use data from the American Community Survey to break down who these children of immigrants are and how their demographics have changed over the years. With the exception of the first category, which maps children of immigrants as a share of all children, the maps display the share of children of immigrants who fall into a certain category. (For instance, the “English proficiency of parents” tab maps the percentage of children of immigrants whose parents are proficient in English.)
+                    <div id = "updateDisclaimer">This feature was originally published in February 2016 and was updated in February 2019 with new data from the 2017 American Community Survey.</div>
+                    <p class="introtext">A growing number of children in the United States are born to immigrant parents. Understanding the characteristics of these children and their families is critical when considering policies that affect all children and families.</p>
+                    <p class="introtext">This tool presents data and trends over time on children of immigrants and their parents, families, and households for states and the top 100 metropolitan areas. This information is available starting with 2005–06, the first years that American Community Survey data were available for detailed geographies. We will update this tool as new survey results are published.</p>
                     </p>
                     <div class="intro-buttons">
                         <a href="http://webapp.urban.org/charts/datatool/pages.cfm" target="_blank">
-                            <button type="button" class="urban-button-blue right">Download data</button>
+                            <button type="button" class="urban-button-blue right">Download the data</button>
                         </a>
                         <a href="http://www.urban.org/policy-centers/cross-center-initiatives/low-income-working-families/projects/children-immigrants" target="_blank">
                             <button type="button" class="urban-button-blue right">Read the research</button>
@@ -104,20 +103,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <!--option value="age">Age</option-->
                         <option value="origin">Parents' country of origin</option>
                         <option value="citizenship">Citizenship</option>
-                        <option value="edukids">Education of children</option>
-                        <option value="edupar">Education of parents</option>
-                        <option value="engkids">English proficiency of children</option>
-                        <option value="engpar">English proficiency of parents</option>
+                        <option value="edukids">Children's education</option>
+                        <option value="edupar">Parents' educational attainment</option>
+                        <option value="engkids">Children's language skills</option>
+                        <option value="engpar">Parents' language skills</option>
                         <option value="numkids">Number of children in household</option>
                         <option value="numpar">Number of parents in household</option>
-                        <option value="incbenefits">Income and benefits</option>
-                        <option value="housetrans">Housing_Transportation</option>
-                        <option value="paryears">Parent_Years_US</option>
-                        <option value="disabledfam">Disabled_Adults_Fam</option>
-                        <option value="vetpar">Veteran_Parent</option>
+                        <option value="incbenefits">Income, employment, and benefits</option>
+                        <option value="housetrans">Housing and transportation</option>
+                        <option value="paryears">Years immigrant parent(s) have been in the US</option>
+                        <option value="disabledfam">Adults with disability in family</option>
+                        <option value="vetpar">Veteran parent(s)</option>
                     </select>
                 </div>
-                <p id="cat-text"></p>
+                <div id="cat-text"></div>
                 <div id="statbtns" data-toggle="buttons"></div>
 
                 <h2>States</h2>
@@ -162,19 +161,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="row">
                     <div class="col-md-6">
                         <h2 class="projectcredits">About This Visualization</h2>
+                        <p class="about">With the exception of the first category, which maps children of immigrants as a share of all children, the maps display the share of children of immigrants who fall into a certain category. (For instance, the “English proficiency of parents” tab maps the percentage of children of immigrants whose parents are proficient in English.) Trends for some small populations (e.g., local geographies) may be volatile due to small survey sample sizes, and differences between estimates derived from small sample sizes will often not be statistically significant.</p>
+                        <p class="about">Furthermore, estimates presented in this feature may differ from those in other publications by the Urban Institute or other organizations due to differences in analysis; for instance, estimates of health insurance coverage may differ from those produced by Urban’s Health Policy Center due to differences in how time periods, age groups, family relationships, and other factors are defined.</p>
                         <p class="about">For more information on the definition and the sources of these statistics see the children of immigrants data tool <a href="http://webapp.urban.org/charts/datatool/pages.cfm" target="_blank">appendix</a>.</p>
-                        <p class="about">This project was funded by the Annie E. Casey Foundation through the Urban Institute’s Low-Income Working Families initiative, a multiyear effort that focuses on the private- and public-sector contexts for families’ well-being. We are grateful to them and to all our funders, who make it possible for Urban to advance its mission. The views expressed are those of the authors and should not be attributed to the Urban Institute, its trustees, or its funders. Funders do not determine research findings or the insights and recommendations of our experts. More information on our funding principles is available here. Read our terms of service here.The views expressed are those of the authors and should not be attributed to the Urban Institute, its trustees, or its funders. Funders do not determine research findings or the insights and recommendations of Urban experts. More information on our funding principles is available <a href="https://www.urban.org/support/funding-principles" target="_blank">here</a>. Read our terms of service <a href="https://www.urban.org/terms-service" target="_blank">here</a>.</p>
+                        <p class="about">This project was funded by the Annie E. Casey Foundation through the Urban Institute’s Low-Income Working Families initiative, a multiyear effort that focuses on the private- and public-sector contexts for families’ well-being. We are grateful to them and to all our funders, who make it possible for Urban to advance its mission. The views expressed are those of the authors and should not be attributed to the Urban Institute, its trustees, or its funders. Funders do not determine research findings or the insights and recommendations of our experts. More information on our funding principles is available here. More information on our funding principles is available <a href="https://www.urban.org/support/funding-principles" target="_blank">here</a>. Read our terms of service <a href="https://www.urban.org/terms-service" target="_blank">here</a>.</p>
+                        <p class="about">We would like to thank Victoria Lynch and Jennifer Haley in the Urban Institute’s Health Policy Center for providing edited health insurance coverage data and guidance on using and presenting these data to allow for more accurate coverage estimates.</p>
                     </div>
                     <div class="col-md-6">
                         <h2 class="projectcredits">Project Credits</h2>
                         <h3 class="credittitle">Research</h3>
-                        <p class="credit"><a href="https://www.urban.org/author/cary-lou">Cary Lou</a>, <a href="http://www.urban.org/author/devlin-hanson" target="_blank">Devlin Hanson</a>, <a href="http://www.urban.org/author/karina-fortuny" target="_blank">Karina Fortuny</a>, and <a href="http://www.urban.org/author/margaret-simms" target="_blank">Margaret Simms</a></p>
+                        <p class="credit"><a href="https://www.urban.org/author/cary-lou">Cary Lou</a>, Gina Adams, Hamutal Bernstein, <a href="http://www.urban.org/author/devlin-hanson" target="_blank">Devlin Hanson</a>, and <a href="http://www.urban.org/author/karina-fortuny" target="_blank">Karina Fortuny</a></p>
 
                         <h3 class="credittitle">Development and Design</h3>
-                        <p class="credit"><a href="http://www.urban.org/author/hannah-recht" target="_blank">Hannah Recht</a> and <a href="http://www.urban.org/author/tim-meko" target="_blank">Tim Meko</a></p>
+                        <p class="credit">Alice Feng, <a href="http://www.urban.org/author/hannah-recht" target="_blank">Hannah Recht</a>, and <a href="http://www.urban.org/author/tim-meko" target="_blank">Tim Meko</a></p>
 
                         <h3 class="credittitle">Editorial</h3>
-                        <p class="credit"><a href="http://www.urban.org/author/alexandra-tilsley" target="_blank">Alexandra Tilsley</a> and <a href="http://www.urban.org/author/michael-marazzi" target="_blank">Michael Marazzi</a></p>
+                        <p class="credit">Liza Hagerman, Serena Lei, <a href="http://www.urban.org/author/michael-marazzi" target="_blank">Michael Marazzi</a>, and <a href="http://www.urban.org/author/alexandra-tilsley" target="_blank">Alexandra Tilsley</a></p>
                     </div>
                 </div>
 

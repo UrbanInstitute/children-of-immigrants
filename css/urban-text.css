@@ -92,7 +92,7 @@ li {
 
 .date {
     /*     text-align: center;*/
-    
+
     font: italic 14px Georgia, serif;
     color: #666;
 }
@@ -108,7 +108,7 @@ li {
 
 .image-caption {
     /*    font: normal 400 14px/20px Lato,sans-serif;*/
-    
+
     font-family: Georgia, serif;
     font-size: 12px;
     line-height: 16px;
@@ -177,13 +177,13 @@ li {
 .urban-button {
     font-size: 14px;
     font-family: Lato, sans-serif;
-    padding: 14px;
+    padding: 12px;
     cursor: pointer;
     border: none;
     color: #ffffff;
     background-color: #000;
     display: table-cell;
-    line-height: 12px;
+    line-height: 16px;
     /*text-transform: uppercase;*/
     text-align: center;
     margin-right: 0px;
