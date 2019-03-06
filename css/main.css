@@ -302,3 +302,9 @@ footer {
     font-style: italic;
     margin-bottom: 20px;
 }
+
+.voronoi path {
+    fill: none;
+    pointer-events: all;
+    /*stroke: red;*/
+}

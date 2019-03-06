@@ -36,6 +36,11 @@ function linechart(div, id) {
     var color = d3.scale.ordinal()
         .range(["#ccc"]);
 
+    var voronoi = d3.geom.voronoi()
+        .x(function(d) { return x(d.year); })
+        .y(function(d) { return y(d.val); })
+        .clipExtent([[0, 0], [width, height]]);
+
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
@@ -77,6 +82,8 @@ function linechart(div, id) {
             name: d.name,
             values: datayears.map(function (y) {
                 return {
+                    fips: +d.fips,
+                    name: d.name,
                     year: +y.slice(1),
                     val: +d[y]
                 };
@@ -130,57 +137,79 @@ function linechart(div, id) {
             } else {
                 return "#ccc";
             }
-        })
-        .on("mouseover", function (d) {
-            if (isIE != false) {
-                d3.selectAll(".hovered")
-                    .classed("hovered", false);
-                d3.selectAll("[fid='" + d3.select(this).attr("fid"))
-                    .classed("hovered", true)
-                    .moveToFront();
-                //tooltips
-                // Clean up lost tooltips
-                d3.select('body').selectAll('div.tooltip').remove();
-                // Append tooltip
-                tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
-                var absoluteMousePos = d3.mouse(bodyNode);
-                tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
-                    .style('top', (absoluteMousePos[1] - 50) + 'px')
-                    .style('position', 'absolute')
-                    .style('z-index', 1001);
-                // Add text using the accessor function
-                var tooltipText = d.name;
-                tooltipDiv.html(tooltipText);
-            } else {
-                dispatch.hoverState(d3.select(this).attr("fid"));
-            }
-        })
-        .on('mousemove', function (d, i) {
-            if (isIE != false) {
-                d3.selectAll(".hovered")
-                    .classed("hovered", false);
-                d3.select('body').selectAll('div.tooltip').remove();
-                tooltipDiv.remove();
-            } else {
-                // Move tooltip
-                var absoluteMousePos = d3.mouse(bodyNode);
-
-                tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
-                    .style('top', (absoluteMousePos[1] - 50) + 'px');
-                var tooltipText = d.name;
-                tooltipDiv.html(tooltipText);
-            }
-        })
-        .on("mouseout", function (d) {
-            dispatch.dehoverState(d3.select(this).attr("fid"));
-        })
-        .on("mouseleave", function (d) {
-            if (isIE != false) {
-                d3.selectAll(".hovered")
-                    .classed("hovered", false);
-                d3.select('body').selectAll('div.tooltip').remove();
-                tooltipDiv.remove();
-            }
         });
 
+    var voronoiGroup = svg.append("g")
+        .attr("class", "voronoi");
+
+    voronoiGroup.selectAll("path")
+        .data(voronoi(d3.merge(linegroups.map(function(d) { return d.values; }))))
+        .enter().append("path")
+        .attr("d", function(d) { return d ? "M" + d.join("L") + "Z" : null; })
+        .on("mouseover", function (d) {
+            chartMouseover("f" + d.point.fips, d.point.name);
+        })
+        .on('mousemove', function (d, i) {
+            chartMousemove(d.point.name);
+        })
+        .on("mouseout", function (d) {
+            chartMouseout("f" + d.point.fips);
+        })
+        .on("mouseleave", function (d) {
+            chartMouseleave();
+        })
+
+}
+
+function chartMouseover(fid, name) {
+    if (isIE != false) {
+        d3.selectAll(".hovered")
+            .classed("hovered", false);
+        d3.selectAll("[fid='" + fid)
+            .classed("hovered", true)
+            .moveToFront();
+        //tooltips
+        // Clean up lost tooltips
+        d3.select('body').selectAll('div.tooltip').remove();
+        // Append tooltip
+        tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
+        var absoluteMousePos = d3.mouse(bodyNode);
+        tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
+            .style('top', (absoluteMousePos[1] - 50) + 'px')
+            .style('position', 'absolute')
+            .style('z-index', 1001);
+        // Add text using the accessor function
+        var tooltipText = name;
+        tooltipDiv.html(tooltipText);
+    } else {
+        dispatch.hoverState(fid);
+    }
+}
+
+function chartMouseout(fid) {
+    dispatch.dehoverState(fid);
+}
+
+function chartMousemove(name) {
+    if (isIE != false) {
+        d3.selectAll(".hovered").classed("hovered", false);
+        d3.select('body').selectAll('div.tooltip').remove();
+        tooltipDiv.remove();
+    } else {
+        // Move tooltip
+        var absoluteMousePos = d3.mouse(bodyNode);
+
+        tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
+            .style('top', (absoluteMousePos[1] - 50) + 'px');
+        var tooltipText = name;
+        tooltipDiv.html(tooltipText);
+    }
+}
+
+function chartMouseleave() {
+    if (isIE != false) {
+        d3.selectAll(".hovered").classed("hovered", false);
+        d3.select('body').selectAll('div.tooltip').remove();
+        tooltipDiv.remove();
+    }
 }
