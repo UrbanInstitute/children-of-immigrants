@@ -137,27 +137,39 @@ function linechart(div, id) {
             } else {
                 return "#ccc";
             }
-        });
-
-    var voronoiGroup = svg.append("g")
-        .attr("class", "voronoi");
-
-    voronoiGroup.selectAll("path")
-        .data(voronoi(d3.merge(linegroups.map(function(d) { return d.values; }))))
-        .enter().append("path")
-        .attr("d", function(d) { return d ? "M" + d.join("L") + "Z" : null; })
+        })
         .on("mouseover", function (d) {
-            chartMouseover("f" + d.point.fips, d.point.name);
+            chartMouseover("f" + d.fips, d.name);
         })
         .on('mousemove', function (d, i) {
-            chartMousemove(d.point.name);
+            chartMousemove(d.name);
         })
         .on("mouseout", function (d) {
-            chartMouseout("f" + d.point.fips);
+            chartMouseout("f" + d.fips);
         })
         .on("mouseleave", function (d) {
             chartMouseleave();
-        })
+        });
+
+    // var voronoiGroup = svg.append("g")
+    //     .attr("class", "voronoi");
+
+    // voronoiGroup.selectAll("path")
+    //     .data(voronoi(d3.merge(linegroups.map(function(d) { return d.values; }))))
+    //     .enter().append("path")
+    //     .attr("d", function(d) { return d ? "M" + d.join("L") + "Z" : null; });
+        // .on("mouseover", function (d) {
+        //     chartMouseover("f" + d.point.fips, d.point.name);
+        // })
+        // .on('mousemove', function (d, i) {
+        //     chartMousemove(d.point.name);
+        // })
+        // .on("mouseout", function (d) {
+        //     chartMouseout("f" + d.point.fips);
+        // })
+        // .on("mouseleave", function (d) {
+        //     chartMouseleave();
+        // });
 
 }
 
