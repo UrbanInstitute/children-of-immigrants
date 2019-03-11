@@ -201,6 +201,7 @@ footer {
 .chartline {
     fill: none;
     stroke-width: 1px;
+    pointer-events: none;
 }
 
 .chartline.selected,
