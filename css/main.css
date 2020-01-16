@@ -136,10 +136,10 @@ footer {
 #layers a {
     display: inline-block;
     margin: 2px 1px 1px 1px;
-    padding: 4px;
+    padding: 3px;
     height: 26px;
-    min-width: 25px;
-    width: 5.5%;
+    min-width: 23px;
+    width: 5%;
     text-align: center;
     background-color: #000000;
     /*border-radius: 5px;*/
