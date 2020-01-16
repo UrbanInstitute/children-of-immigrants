@@ -20,7 +20,7 @@ var levels = {
     //age: ["Age 0 to 3", "Age 4 to 5", "Age 6 to 12", "Age 13 to 17"],
     origin: ["Mexico", "Rest of Central America or the Spanish Caribbean", "Europe, Canada, Australia, or New Zealand", "East Asia or the Pacific", "Africa or the West Indies", "Middle East or South Asia", "South America", "Southeast Asia"],
     citizenship: ["US citizen with at least one US-citizen parent", "US citizen with only noncitizen parents", "Noncitizen"],
-    edukids: ["Not in school, ages 3 to 5", "Not in school, ages 6 to 17"],
+    edukids: ["In preschool, ages 3 to 5", "In kindergarten or grade school, ages 3 to 5", "Not in school, ages 3 to 5", "Not in school, ages 6 to 17"],
     edupar: ["All parents have less than a high school education", "At least one parent has a high school education, some college, or an associate’s degree; none has a four-year college degree or more", "At least one parent has a four-year college degree or more"],
     engkids: ["English proficient", "Limited English proficiency"],
     engpar: ["All English-proficient parents", "At least one parent has limited English proficiency", "All parents have limited English proficiency", "Linguistically isolated households"],
@@ -31,7 +31,7 @@ var levels = {
     paryears: ["One or more foreign-born parents in US fewer than 5 years", "One or more foreign-born parents in US 5–9 years, none fewer than 5", "One or more foreign-born parents in US 10–19 years, none fewer than 10", "All foreign-born parents in US 20 years or more"],
     disabledfam: ["At least one parent has a disability", "At least one adult in family has a disability, but no parent has a disability", "No adults in family have a disability"],
     vetpar: ["Has veteran parent(s)", "No veteran parents"],
-    race: ["Hispanic", "African American", "Asian", "White", "Other or multiracial"]
+    race: ["Hispanic", "White", "Asian or Pacific Islander", "African American", "Another race or multiracial"]
 };
 
 //summary text for each category
