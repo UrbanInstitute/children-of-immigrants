@@ -7,7 +7,7 @@ library(jsonlite)
 dt<-read.csv("data/areadata.csv",stringsAsFactors = F)
 #subset removing totals and NA category (from old metro data)
 dts <- dt %>% filter(statcode != "perChange" & statcode != "TotalNum" & statcode != "Population" & statcode != "Percent") %>%
-  select(cat, y2006, y2007, y2008, y2009, y2010, y2011, y2012, y2013, y2014, y2015, y2016, y2017)
+  select(cat, y2006, y2007, y2008, y2009, y2010, y2011, y2012, y2013, y2014, y2015, y2016, y2017, y2018)
 
 #Calculate column maximiums by category
 maxs <- dts %>% filter(cat != "") %>% group_by(cat) %>% summarise_all(funs(max(., na.rm = TRUE)))
