@@ -15,10 +15,10 @@ Country_of_Origin_of_Parents,seAsia,Parents from Southeast Asia,Southeast Asia,9
 Citizenship,citCitPar,Citizen children with citizen parents,Who are citizens with citizen parents,80,citizenship,4,1,sum1
 Citizenship,citNotCitPar,Citizen children with noncitizen parents,Who are citizens with non-citizen parents,76,citizenship,4,2,sum1
 Citizenship,notCit,Noncitizen,Who are not citizens,42,citizenship,4,3,sum1
-Education,NIS35,"Not in school, age 3 to 5","Who are not in school, age 3 to 5",26,edukids,5,1,
-Education,NIS617,"Not in school, age 6 to 17","Who are not in school, age 6 to 17",38,edukids,5,2,
-Education,presch3to5,"In preschool, age 3 to 5, missing outside age range","Who are in preschool, age 3 to 5",217,edukids,5,3,
-Education,school3to5,"In school (K or grade), age 3 to 5, missing outside age range","Who are in school, age 3 to 5",219,edukids,5,4,
+Education,presch3to5,"In preschool, age 3 to 5, missing outside age range","Who are in preschool, age 3 to 5",217,edukids,5,1,
+Education,school3to5,"In school (K or grade), age 3 to 5, missing outside age range","Who are in school, age 3 to 5",219,edukids,5,2,
+Education,NIS35,"Not in school, age 3 to 5","Who are not in school, age 3 to 5",26,edukids,5,3,
+Education,NIS617,"Not in school, age 6 to 17","Who are not in school, age 6 to 17",38,edukids,5,4,
 Education,lTHS,Parents with less than high school degree,With parents who have less than a high school degree,108,edupar,6,1,sum1
 Education,HS,Parents with high school degree,With parents who have a high school degree,110,edupar,6,2,sum1
 Education,col,Parents with at least four-year college degree,With parents who have at least four year college degree,112,edupar,6,3,sum1
