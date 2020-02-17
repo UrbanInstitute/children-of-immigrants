@@ -24,7 +24,7 @@ var levels = {
     edupar: ["All parents have less than a high school education", "At least one parent has a high school education, some college, or an associate’s degree; none has a four-year college degree or more", "At least one parent has a four-year college degree or more"],
     engkids: ["English proficient", "Limited English proficiency"],
     engpar: ["All English-proficient parents", "At least one parent has limited English proficiency", "All parents have limited English proficiency", "Linguistically isolated households"],
-    numkids: ["1", "2", "3-4", "5+"],
+    numkids: ["1", "2", "3–4", "5+"],
     numpar: ["One parent", "Two parents"],
     incbenefits: ["Family with income below poverty level", "Family with low income", "Family with substantial work hours", "Family with low income and substantial work hours", "Not covered by health insurance"],
     housetrans: ["Household owns home", "Severely burdened by housing and utility costs", "Somewhat burdened by housing and utility costs", "Not burdened by housing and utility costs", "Multiple household vehicles available", "One household vehicle available", "No household vehicles available"],
