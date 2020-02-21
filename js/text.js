@@ -31,7 +31,7 @@ var levels = {
     paryears: ["One or more foreign-born parents in US fewer than 5 years", "One or more foreign-born parents in US 5–9 years, none fewer than 5", "One or more foreign-born parents in US 10–19 years, none fewer than 10", "All foreign-born parents in US 20 years or more"],
     disabledfam: ["At least one parent has a disability", "At least one adult in family has a disability, but no parent has a disability", "No adults in family have a disability"],
     vetpar: ["Has veteran parent(s)", "No veteran parents"],
-    race: ["Hispanic", "White", "Asian or Pacific Islander", "African American", "Another race or multiracial"]
+    race: ["Hispanic", "Asian or Pacific Islander", "White", "African American", "Another race or multiracial"]
 };
 
 //summary text for each category
