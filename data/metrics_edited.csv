@@ -1,9 +1,9 @@
 category,statcode,statistics_label,statlabel,statid,cat,catnum,level,notes
 Population,Share,Share,"Children of immigrants, share",2,main,1,1,
-Education,age0_3,Age 0 to 3,Age 0 to 3,14,main,1,2,
-Education,age4_5,Age 4 to 5,Age 4 to 5,16,main,1,3,
-Education,age6_12,Age 6 to 8,Age 6 to 12,18,main,1,4,
-Education,age13_17,Age 13 to 15,Age 13 to 17,22,main,1,5,
+Population,age0_3,Age 0 to 3,Age 0 to 3,14,main,1,2,
+Population,age4_5,Age 4 to 5,Age 4 to 5,16,main,1,3,
+Population,age6_12,Age 6 to 8,Age 6 to 12,18,main,1,4,
+Population,age13_17,Age 13 to 15,Age 13 to 17,22,main,1,5,
 Country_of_Origin_of_Parents,mexico,Parents from Mexico,Mexico,90,origin,3,1,sum1
 Country_of_Origin_of_Parents,centralAmerica,Parents from Other Central America & Spanish Caribbean,Other Central America & Spanish Caribbean,92,origin,3,2,sum1
 Country_of_Origin_of_Parents,europe,"Parents from Europe, Canada & Australia","Europe, Canada & Australia",88,origin,3,3,sum1
@@ -15,8 +15,10 @@ Country_of_Origin_of_Parents,seAsia,Parents from Southeast Asia,Southeast Asia,9
 Citizenship,citCitPar,Citizen children with citizen parents,Who are citizens with citizen parents,80,citizenship,4,1,sum1
 Citizenship,citNotCitPar,Citizen children with noncitizen parents,Who are citizens with non-citizen parents,76,citizenship,4,2,sum1
 Citizenship,notCit,Noncitizen,Who are not citizens,42,citizenship,4,3,sum1
-Education,NIS35,"Not in school, age 3 to 5","Who are not in school, age 3 to 5",26,edukids,5,1,
-Education,NIS617,"Not in school, age 6 to 17","Who are not in school, age 6 to 17",38,edukids,5,2,
+Education,presch3to5,"In preschool, age 3 to 5, missing outside age range","Who are in preschool, age 3 to 5",217,edukids,5,1,
+Education,school3to5,"In school (K or grade), age 3 to 5, missing outside age range","Who are in school, age 3 to 5",219,edukids,5,2,
+Education,NIS35,"Not in school, age 3 to 5","Who are not in school, age 3 to 5",26,edukids,5,3,
+Education,NIS617,"Not in school, age 6 to 17","Who are not in school, age 6 to 17",38,edukids,5,4,
 Education,lTHS,Parents with less than high school degree,With parents who have less than a high school degree,108,edupar,6,1,sum1
 Education,HS,Parents with high school degree,With parents who have a high school degree,110,edupar,6,2,sum1
 Education,col,Parents with at least four-year college degree,With parents who have at least four year college degree,112,edupar,6,3,sum1
@@ -53,3 +55,8 @@ Disabled_Adults_Fam,othadultdis,"At least one adult in the family, but no parent
 Disabled_Adults_Fam,nofamdis,No adults in family have a disability,No disabled adults in family,173,disabledfam,14,3,
 Veteran_Parent,hasprtvets,Has veteran parents,Has veteran parent(s),187,vetpar,15,1,
 Veteran_Parent,noprtvets,No veteran parents,No veteran parents,185,vetpar,15,2,
+Race_Ethnicity,hispanic,Hispanic,Who are Hispanic,8,race,16,1,
+Race_Ethnicity,black,African American,Who are black,6,race,16,4,
+Race_Ethnicity,asian,Asian,Who are Asian,4,race,16,2,
+Race_Ethnicity,white,White,Who are white,12,race,16,3,
+Race_Ethnicity,othmult,Other or multiracial,Who are another race or multiracial,215,race,16,5,
