@@ -9,8 +9,8 @@ library(tidyr)
 library(doBy)
 
 states <- read.csv("data/states.csv",stringsAsFactors = F)
-st <- read.csv("data/InteractiveMap_wSameSexParents_State2018.csv",stringsAsFactors = F)
-mt <- read.csv("data/InteractiveMap_wSameSexParents_Metro2018.csv",stringsAsFactors = F)
+st <- read.csv("data/InteractiveMap_wSameSexParents_State2019.csv",stringsAsFactors = F)
+mt <- read.csv("data/InteractiveMap_wSameSexParents_Metro2019.csv",stringsAsFactors = F)
 
 colnames(st) <- tolower(colnames(st))
 colnames(mt) <- tolower(colnames(mt))
