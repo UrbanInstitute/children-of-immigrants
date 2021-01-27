@@ -73,8 +73,9 @@ footer {
 
 #legend {
     min-width: 200px;
-    display: inline-block;
-    float: right;
+    margin-top: 2%;
+    /*display: inline-block;*/
+    /*float: right;*/
 }
 
 .stateborders {
@@ -117,18 +118,18 @@ footer {
 
 .layer-holder {
     /*width: 100%;*/
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 #layers {
-    margin: auto;
+    /*margin: auto;*/
     color: #333;
-    position: relative !important;
-    top: 12px;
+    /*position: relative !important;*/
+    /*top: 12px;*/
     height: auto;
     font-size: 12px;
     border-radius: 5px;
-    text-align: center;
+    /*text-align: center;*/
     z-index: 10;
     min-height: 36px;
 }
@@ -138,8 +139,8 @@ footer {
     margin: 2px 1px 1px 1px;
     padding: 3px;
     height: 26px;
-    min-width: 23px;
-    width: 5%;
+    min-width: 30px;
+    width: 4.5%;
     text-align: center;
     background-color: #000000;
     /*border-radius: 5px;*/
@@ -249,6 +250,7 @@ footer {
     fill: #333;
 }
 
+/*
 @media (max-width: 1200px) {
     #legend {
         float: left;
@@ -261,6 +263,7 @@ footer {
         margin-top: 0px;
     }
 }
+*/
 @media (max-width: 516px) {
     #layers a {
         width: 10%;
