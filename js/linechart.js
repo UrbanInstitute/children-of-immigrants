@@ -31,7 +31,13 @@ function linechart(div, id) {
 
     var x = d3.scale.linear()
         .domain([2006, 2021])
-        .range([0, width]);
+        .range([0, width])
+
+    //this set creates a list of odd numbered years for ticks
+    /*var xValues = new Array() //x.domain()[1] - x.domain()[0] + 1 
+    for (i = x.domain()[0]; i <= x.domain()[1]; i ++){
+        if (i == x.domain()[0] || i % 2 == 1) xValues.push(i)
+    }*/
 
     var color = d3.scale.ordinal()
         .range(["#ccc"]);
@@ -44,6 +50,8 @@ function linechart(div, id) {
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
+        .ticks(15) //this is a rough count and may need updated as years are added
+        //.tickValues(xValues) //for odd numbered years only
         .tickFormat(formatYear);
 
     var svg = d3.select(div).append("svg")
@@ -63,11 +71,14 @@ function linechart(div, id) {
         .range([height, 0]);
 
     linedata = data_main.filter(function (d) {
-        if (catSelect == "main" & outcomeSelect > 1) {
-            return d.cat == catSelect & d.level == outcomeSelect & d.isstate == STATEMAP & d.fips != 0;
+        //always show US line
+        return d.cat == catSelect & d.level == outcomeSelect & d.isstate == STATEMAP;
+
+        /*if (catSelect == "main" & outcomeSelect > 1) {
+            return d.cat == catSelect & d.level == outcomeSelect & d.isstate == STATEMAP & d.fips != 0; 
         } else {
             return d.cat == catSelect & d.level == outcomeSelect & d.isstate == STATEMAP;
-        }
+        }*/
     })
 
     color.domain(d3.keys(data[0]).filter(function (key) {
@@ -138,18 +149,19 @@ function linechart(div, id) {
                 return "#ccc";
             }
         })
-        // .on("mouseover", function (d) {
-        //     chartMouseover("f" + d.fips, d.name);
-        // })
-        // .on('mousemove', function (d, i) {
-        //     chartMousemove(d.name);
-        // })
-        // .on("mouseout", function (d) {
-        //     chartMouseout("f" + d.fips);
-        // })
-        // .on("mouseleave", function (d) {
-        //     chartMouseleave();
-        // });
+        //commented out
+        /* .on("mouseover", function (d) {
+             chartMouseover("f" + d.fips, d.name);
+         })
+         .on('mousemove', function (d, i) {
+             chartMousemove(d.name);
+         })
+         .on("mouseout", function (d) {
+             chartMouseout("f" + d.fips);
+         })
+         .on("mouseleave", function (d) {
+             chartMouseleave();
+         });*/
 
     var voronoiGroup = svg.append("g")
         .attr("class", "voronoi");
