@@ -66,8 +66,11 @@ function animator() {
         name: "'19",
         id: "y2019"
      }, {
-        name: "'20",
-        id: "y2020"
+         name: "'20",
+         id: "y2020"
+     }, {
+         name: "'21",
+         id: "y2021"
      }];
 
     layers.forEach(function (layer, n) {
