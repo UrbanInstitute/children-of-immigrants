@@ -1,1 +1,1 @@
-var catmax = {citizenship: 1, disabledfam: 1, edukids: 0.80645162, edupar: 0.78002721, engkids: 1, engpar: 0.86356324, housetrans: 1, incbenefits: 1, main: 0.67346936, numkids: 0.65725809, numpar: 1, origin: 1, paryears: 0.650877, race: 1, vetpar: 1 };
+var catmax = {citizenship: 1, disabledfam: 1, edukids: 0.84238303, edupar: 0.86134887, engkids: 1, engpar: 0.87670213, housetrans: 1, incbenefits: 1, main: 0.67346936, numkids: 0.65725809, numpar: 1, origin: 1, paryears: 0.650877, race: 1, vetpar: 1 };

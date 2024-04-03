@@ -30,7 +30,7 @@ function linechart(div, id) {
     $GRAPHDIV.empty();
 
     var x = d3.scale.linear()
-        .domain([2006, 2021])
+        .domain([2006, 2022])
         .range([0, width])
 
     //this set creates a list of odd numbered years for ticks
@@ -50,7 +50,7 @@ function linechart(div, id) {
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
-        .ticks(15) //this is a rough count and may need updated as years are added
+        .ticks(16) //this is a rough count and may need updated as years are added
         //.tickValues(xValues) //for odd numbered years only
         .tickFormat(formatYear);
 
@@ -86,7 +86,7 @@ function linechart(div, id) {
     }));
 
     //nest data by fips, then have one year-value pair for each year in datayears
-    var datayears = ["y2006", "y2007", "y2008", "y2009", "y2010", "y2011", "y2012", "y2013", "y2014", "y2015", "y2016", "y2017", "y2018", "y2019","y2020","y2021"];
+    var datayears = ["y2006", "y2007", "y2008", "y2009", "y2010", "y2011", "y2012", "y2013", "y2014", "y2015", "y2016", "y2017", "y2018", "y2019","y2020","y2021","y2022"];
     var linegroups = linedata.map(function (d) {
         return {
             fips: +d.fips,
@@ -194,9 +194,10 @@ function chartMouseover(fid, name) {
             .moveToFront();
         //tooltips
         // Clean up lost tooltips
-        d3.select('body').selectAll('div.tooltip').remove();
+        //d3.select('body').selectAll('div.tooltip').remove();
         // Append tooltip
-        tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
+        //tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
+        tooltipDiv.style('display','block')
         var absoluteMousePos = d3.mouse(bodyNode);
         tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
             .style('top', (absoluteMousePos[1] - 50) + 'px')
@@ -206,6 +207,7 @@ function chartMouseover(fid, name) {
         var tooltipText = name;
         tooltipDiv.html(tooltipText);
     } else {
+        //console.log("chart mouseover")
         dispatch.hoverState(fid);
     }
 }
@@ -217,8 +219,9 @@ function chartMouseout(fid) {
 function chartMousemove(name) {
     if (isIE != false) {
         d3.selectAll(".hovered").classed("hovered", false);
-        d3.select('body').selectAll('div.tooltip').remove();
-        tooltipDiv.remove();
+        //d3.select('body').selectAll('div.tooltip').remove();
+        //tooltipDiv.remove();
+        tooltipDiv.style('display','none')
     } else {
         // Move tooltip
         var absoluteMousePos = d3.mouse(bodyNode);
@@ -233,7 +236,8 @@ function chartMousemove(name) {
 function chartMouseleave() {
     if (isIE != false) {
         d3.selectAll(".hovered").classed("hovered", false);
-        d3.select('body').selectAll('div.tooltip').remove();
-        tooltipDiv.remove();
+        //d3.select('body').selectAll('div.tooltip').remove();
+        //tooltipDiv.remove();
+        tooltipDiv.style('display','none')
     }
 }
