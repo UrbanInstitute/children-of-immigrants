@@ -129,11 +129,12 @@ function cbsamap(div) {
                     // Clean up lost tooltips
                     d3.select('body').selectAll('div.tooltip').remove();
                     // Append tooltip
-                    tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
+                    //tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
                     var absoluteMousePos = d3.mouse(bodyNode);
                     tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
                         .style('top', (absoluteMousePos[1] - 50) + 'px')
                         .style('position', 'absolute')
+                        .style('display','block')
                         .style('z-index', 1001);
                     // Add text using the accessor function
                     var tooltipText = d.properties.name + "<br>" + formatNApct(VALUE[d.id]);
@@ -144,8 +145,10 @@ function cbsamap(div) {
             })
             .on('mousemove', function (d, i) {
                 if (isIE != false) {
-                    d3.select('body').selectAll('div.tooltip').remove();
-                    tooltipDiv.remove();
+                    //d3.select('body').selectAll('div.tooltip').remove();
+                    tooltipDiv.style('display','none')
+
+                    //tooltipDiv.remove();
                 } else {
                     // Move tooltip
                     var absoluteMousePos = d3.mouse(bodyNode);
@@ -158,8 +161,10 @@ function cbsamap(div) {
             })
             .on("mouseout", function (d) {
                 if (isIE != false) {
-                    d3.select('body').selectAll('div.tooltip').remove();
-                    tooltipDiv.remove();
+                    //d3.select('body').selectAll('div.tooltip').remove();
+                    //tooltipDiv.remove();
+                    tooltipDiv.style('display','none')
+
                 } else {
                     dispatch.dehoverState(d3.select(this).attr("fid"));
                 }
@@ -169,7 +174,8 @@ function cbsamap(div) {
                     d3.selectAll(".hovered")
                         .classed("hovered", false);
                     d3.select('body').selectAll('div.tooltip').remove();
-                    tooltipDiv.remove();
+                    tooltipDiv.style('display','none')
+                    //tooltipDiv.remove();
                 }
             });
 
@@ -207,44 +213,51 @@ function cbsamap(div) {
                         .moveToFront();
                     //tooltips
                     // Clean up lost tooltips
-                    d3.select('body').selectAll('div.tooltip').remove();
+                    //d3.select('body').selectAll('div.tooltip').remove();
                     // Append tooltip
-                    tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
+                    //tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
                     var absoluteMousePos = d3.mouse(bodyNode);
                     tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
                         .style('top', (absoluteMousePos[1] - 50) + 'px')
                         .style('position', 'absolute')
+                        .style('dsiplay','block')
                         .style('z-index', 1001);
                     // Add text using the accessor function
                     var tooltipText = d.properties.name + "<br>" + formatNApct(VALUE[d.id]);
                     tooltipDiv.html(tooltipText);
                 } else {
+                    //console.log("mouseover here",d3.select(this).attr("fid"));
                     dispatch.hoverState(d3.select(this).attr("fid"));
                 }
             })
             .on('mousemove', function (d, i) {
                 if (isIE != false) {
                     //console.log("mousemove");
-                    d3.select('body').selectAll('div.tooltip').remove();
-                    tooltipDiv.remove();
+                    //d3.select('body').selectAll('div.tooltip').remove();
+                    //tooltipDiv.remove();
+                    tooltipDiv.style('display','none')
                 } else {
                     // Move tooltip
+                    //console.log("mousemove found")
                     var absoluteMousePos = d3.mouse(bodyNode);
 
                     tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
                         .style('top', (absoluteMousePos[1] - 50) + 'px');
                     var tooltipText = d.properties.name + "<br>" + formatNApct(VALUE[d.id]);
                     tooltipDiv.html(tooltipText);
+                    //console.log(tooltipText, tooltipDiv)
                 }
             })
             .on("mouseout", function (d) {
+                //console.log("mouseout")
                 dispatch.dehoverState(d3.select(this).attr("fid"));
             })
             .on("mouseleave", function (d) {
+                //console.log("mouseleave")
                 if (isIE != false) {
-                    console.log("mouseleave");
                     d3.select('body').selectAll('div.tooltip').remove();
-                    tooltipDiv.remove();
+                    //tooltipDiv.remove();
+                    tooltipDiv.style('display','none')
                     d3.selectAll(".hovered")
                         .classed("hovered", false);
                 }

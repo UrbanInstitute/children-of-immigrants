@@ -18,8 +18,8 @@ var FORMATTER,
     catSelect,
     yearSelect = "y2013",
     linedata;
-var tooltipDiv,
-    bodyNode = d3.select('body').node();
+var tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
+var bodyNode = d3.select('body').node();
 
 var palette = {
     blue5: ["#b0d5f1", "#82c4e9", "#1696d2", "#00578b", "#00152A"],
@@ -168,6 +168,7 @@ dispatch.on("change", function (metric) {
     d3.selectAll(".hovered")
         .classed("hovered", false);
     d3.select('body').selectAll('div.tooltip').remove();
+    tooltipDiv.style('display','none')
     //tooltipDiv.remove();
 
     function updateData() {
@@ -226,20 +227,24 @@ dispatch.on("yearChange", function (year) {
 });
 
 dispatch.on("hoverState", function (areaName) {
+    d3.selectAll(".hovered")
+        .classed("hovered", false);
     d3.selectAll("[fid='" + areaName + "']")
-        .classed("hovered", true);
-    d3.selectAll("[fid='" + areaName + "']")
+        .classed("hovered", true)
         .moveToFront();
 
     //tooltips
     // Clean up lost tooltips
-    d3.select('body').selectAll('div.tooltip').remove();
+    //console.log("all tooltips: ",d3.select('body').selectAll('div.map-tooltip'))
+    //d3.select('body').selectAll('div.tooltip').remove();
+    //d3.select('body').selectAll('div.map-tooltip').remove();
     // Append tooltip
-    tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
+    //tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
     var absoluteMousePos = d3.mouse(bodyNode);
     tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
         .style('top', (absoluteMousePos[1] - 50) + 'px')
         .style('position', 'absolute')
+        .style('display','block')
         .style('z-index', 1001);
     // Add text using the accessor function
     var tooltipText = areaName;
@@ -252,7 +257,9 @@ dispatch.on("dehoverState", function (areaName) {
     //console.log(areaName);
     d3.selectAll("[fid='" + areaName + "']")
         .classed("hovered", false);
-    tooltipDiv.remove();
+    tooltipDiv.style('display','none')
+
+    //tooltipDiv.remove();
 });
 
 

@@ -3,7 +3,7 @@
 #Create topojson of state + included CBSA boundaries for d3 map
 
 library(dplyr)
-library(rgdal)
+library(rgdal) #archived in 2016
 
 dt<-read.csv("data/areadata.csv",stringsAsFactors = F)
 
