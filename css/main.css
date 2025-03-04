@@ -1,97 +1,97 @@
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 footer {
-    background-color: #222222;
-    bottom: 0px;
-    min-height: 50px;
-    margin-top: 1em;
-    padding-top: 16px;
-    position: relative;
-    font-size: 14px;
-    width: 100%;
-    color: #ffffff;
+  background-color: #222222;
+  bottom: 0px;
+  min-height: 50px;
+  margin-top: 1em;
+  padding-top: 16px;
+  position: relative;
+  font-size: 14px;
+  width: 100%;
+  color: #ffffff;
 }
 
 .projectcredits {
-    color: #ffffff;
-    font-size: 1.25em;
+  color: #ffffff;
+  font-size: 1.25em;
 }
 
 .credit,
 .credit a,
 .about {
-    color: #ffffff;
-    font-size: 1em;
-    margin-bottom: 0.7em;
+  color: #ffffff;
+  font-size: 1em;
+  margin-bottom: 0.7em;
 }
 
 .credittitle {
-    margin-bottom: 2px;
-    color: #ccc;
-    font-size: 1.2em;
-    /*text-transform: uppercase;*/
+  margin-bottom: 2px;
+  color: #ccc;
+  font-size: 1.2em;
+  /*text-transform: uppercase;*/
 }
 
 .copy {
-    font-style: italic;
-    font-size: 0.8em;
-    color: #efefef;
+  font-style: italic;
+  font-size: 0.8em;
+  color: #efefef;
 }
 
 .intro {
-    background-color: #efefef;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+  background-color: #efefef;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .introtext {
-    color: #333;
+  color: #333;
 }
 
 .intro-buttons {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .title {
-    font-weight: 100;
-    font-size: 3em;
-    max-width: 650px;
+  font-weight: 100;
+  font-size: 3em;
+  max-width: 650px;
 }
 
 #tool {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 #statbtns {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100% !important;
-    display: table;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100% !important;
+  display: table;
 }
 
 #legend {
-    min-width: 200px;
-    margin-top: 2%;
-    /*display: inline-block;*/
-    /*float: right;*/
+  min-width: 200px;
+  margin-top: 2%;
+  /*display: inline-block;*/
+  /*float: right;*/
 }
 
 .stateborders {
-    fill: none;
-    stroke: #ccc;
-    stroke-linejoin: round;
-    pointer-events: none;
+  fill: none;
+  stroke: #ccc;
+  stroke-linejoin: round;
+  pointer-events: none;
 }
 
 .metros {
-    stroke: none;
+  stroke: none;
 }
 
 .statemap {
-    stroke: #fff;
-    stroke-linejoin: round;
+  stroke: #fff;
+  stroke-linejoin: round;
 }
 
 .metros.selected,
@@ -100,154 +100,152 @@ footer {
 .statemap.hovered,
 .st0.selected,
 .st0.hovered {
-    stroke: #fdbf11;
-    stroke-width: 3px;
+  stroke: #fdbf11;
+  stroke-width: 3px;
 }
 
 .map-tooltip {
-    padding: 4px;
-    font-size: 12px;
-    background: rgba(255, 255, 255, 0.8);
-    color: #333;
-    border: 1px solid #aaa;
-    pointer-events: none;
+  padding: 4px;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  border: 1px solid #aaa;
+  pointer-events: none;
 }
-
 
 /*animation buttons*/
 
 .layer-holder {
-    /*width: 100%;*/
-    /*display: inline-block;*/
+  width: 100%;
+  display: inline-block;
 }
 
 #layers {
-    /*margin: auto;*/
-    color: #333;
-    /*position: relative !important;*/
-    /*top: 12px;*/
-    height: auto;
-    font-size: 12px;
-    border-radius: 5px;
-    /*text-align: center;*/
-    z-index: 10;
-    min-height: 36px;
+  /*margin: auto;*/
+  color: #333;
+  /*position: relative !important;*/
+  /*top: 12px;*/
+  height: auto;
+  font-size: 12px;
+  border-radius: 5px;
+  /*text-align: center;*/
+  z-index: 10;
+  min-height: 36px;
 }
 
 #layers a {
-    display: inline-block;
-    margin: 2px 1px 1px 1px;
-    padding: 3px;
-    height: 26px;
-    min-width: 28px;
-    width: 4.5%;
-    text-align: center;
-    background-color: #000000;
-    /*border-radius: 5px;*/
-    text-decoration: none;
-    color: #ffffff;
+  display: inline-block;
+  margin: 2px 1px 1px 1px;
+  padding: 3px;
+  height: 26px;
+  min-width: 27px;
+  width: 4.5%;
+  text-align: center;
+  background-color: #000000;
+  /*border-radius: 5px;*/
+  text-decoration: none;
+  color: #ffffff;
 }
 
 #layers a.active,
 #layers a#play_button:hover {
-    background: #fdbf11;
-    color: #000000;
-    font-weight: 900;
+  background: #fdbf11;
+  color: #000000;
+  font-weight: 900;
 }
 
 #layers a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #layers a#play_button {
-    background: #000;
+  background: #000;
 }
 
 .play:after {
-    content: '';
-    display: inline-block;
-    position: relative;
-    top: 1px;
-    left: 2px;
-    border-style: solid;
-    border-width: 6px 0 6px 12px;
-    border-color: transparent transparent transparent white;
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  left: 2px;
+  border-style: solid;
+  border-width: 6px 0 6px 12px;
+  border-color: transparent transparent transparent white;
 }
 
 .pause:after {
-    content: "";
-    display: inline-block;
-    position: relative;
-    background-color: #fff;
-    width: 3px;
-    height: 13px;
-    top: 1px;
-    left: -6px;
+  content: "";
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  width: 3px;
+  height: 13px;
+  top: 1px;
+  left: -6px;
 }
 
 .pause:before {
-    content: "";
-    display: inline-block;
-    position: relative;
-    background-color: #fff;
-    width: 3px;
-    height: 13px;
-    top: 1px;
-    left: 6px;
+  content: "";
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  width: 3px;
+  height: 13px;
+  top: 1px;
+  left: 6px;
 }
-
 
 /***line charts***/
 
 .chartline {
-    fill: none;
-    stroke-width: 1px;
-    pointer-events: none;
+  fill: none;
+  stroke-width: 1px;
+  pointer-events: none;
 }
 
 .chartline.selected,
 .chartline.hovered {
-    stroke: #fdbf11;
-    stroke-width: 3;
+  stroke: #fdbf11;
+  stroke-width: 3;
 }
 
 .axis,
 .axis-show {
-    font-size: 12px;
-    color: #333;
+  font-size: 12px;
+  color: #333;
 }
 
 .axis path {
-    display: none;
+  display: none;
 }
 
 .axis line {
-    stroke: #000;
-    shape-rendering: crispEdges;
+  stroke: #000;
+  shape-rendering: crispEdges;
 }
 
 .axis .minor line {
-    stroke: #efefef;
+  stroke: #efefef;
 }
 
 .axis-show path,
 .axis-show line {
-    fill: none;
-    stroke-width: 1px;
-    stroke: #000;
-    shape-rendering: crispEdges;
+  fill: none;
+  stroke-width: 1px;
+  stroke: #000;
+  shape-rendering: crispEdges;
 }
 
 .zeroline {
-    stroke: #000;
-    stroke-width: 1;
-    fill: none;
-    shape-rendering: crispEdges;
+  stroke: #000;
+  stroke-width: 1;
+  fill: none;
+  shape-rendering: crispEdges;
 }
 
 .legend {
-    font-size: 12px;
-    fill: #333;
+  font-size: 12px;
+  fill: #333;
 }
 
 /*
@@ -265,50 +263,49 @@ footer {
 }
 */
 @media (max-width: 516px) {
-    #layers a {
-        width: 10%;
-    }
+  #layers a {
+    width: 10%;
+  }
 }
 
 @media (max-width: 600px) {
-    #layer-holder {
-        min-width: 100%;
-    }
-    #layers {
-        min-width: 100%;
-                margin: 2px 0px 12px 0px;
-    }
-    #layers a {
-        width: 9%;
-
-    }
-    #legend {
-        display: block;
-        float: left;
-        width: 100%;
-    }
-    #statbtns {
-        display: block;
-    }
-    #statbtns .urban-button {
-        display: block !important;
-        width: 100%;
-    }
+  #layer-holder {
+    min-width: 100%;
+  }
+  #layers {
+    min-width: 100%;
+    margin: 2px 0px 12px 0px;
+  }
+  #layers a {
+    width: 9%;
+  }
+  #legend {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  #statbtns {
+    display: block;
+  }
+  #statbtns .urban-button {
+    display: block !important;
+    width: 100%;
+  }
 }
 
 @media (max-width: 370px) {
-    #layers a {
-        width: 18%;
-    }
+  #layers a {
+    width: 18%;
+  }
 }
-#updateDisclaimer{
-    font-size: 14px;
-    font-style: italic;
-    margin-bottom: 20px;
+#updateDisclaimer {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 20px;
 }
 
 .voronoi path {
-    fill: none;
-    pointer-events: all;
-    /*stroke: red;*/
+  fill: none;
+  pointer-events: all;
+  /*stroke: red;*/
 }
